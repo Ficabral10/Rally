@@ -339,17 +339,20 @@ class YTClip extends EventTarget {
           onError: () => this.dispatchEvent(new Event("error")) } });
     }).catch(() => this.dispatchEvent(new Event("error")));
   }
-  _doPlay() { if (!this.p || !this.ready) return; const g = this.segAt(this._vt); this._seg = g.k; try { const cur = this.p.getCurrentTime(); if (Math.abs(cur - g.real) > 1.2) this.p.seekTo(g.real, true); this._muted ? this.p.mute() : this.p.unMute(); this.p.playVideo(); } catch (e) {} this.paused = false; this.ended = false; clearInterval(this._poll); this._poll = setInterval(() => this._watch(), 150); }
+  _doPlay() { if (!this.p || !this.ready) return; const g = this.segAt(this._vt); this._seg = g.k; try { const cur = this.p.getCurrentTime(); if (Math.abs(cur - g.real) > 1.2) this._seek(g.real); this._muted ? this.p.mute() : this.p.unMute(); this.p.playVideo(); } catch (e) {} this.paused = false; this.ended = false; clearInterval(this._poll); this._poll = setInterval(() => this._watch(), 150); }
+  _seek(real) { this._seekTarget = real; this._seekAt = Date.now(); try { this.p.seekTo(real, true); } catch (e) {} }
   _watch() { if (!this.p || this.paused) return; let t; try { t = this.p.getCurrentTime(); } catch (e) { return; } const g = this.segs[this._seg]; if (!g) return;
+    /* right after a seek the player still reports the old position for a moment; don't act on that stale time */
+    if (this._seekAt) { if (Math.abs(t - this._seekTarget) > 1.5 && Date.now() - this._seekAt < 2500) return; this._seekAt = 0; }
     if (t < g.s - 1.5 || t > g.e + 3) { /* the viewer scrubbed with YouTube's own bar: follow them into whichever moment they landed in */ const k = this.segs.findIndex(x => t >= x.s - 0.5 && t <= x.e); if (k >= 0) this._seg = k; }
     const cur = this.segs[this._seg];
     this._vt = this.offsetOf(this._seg) + Math.max(0, Math.min(cur.e - cur.s, t - cur.s));
-    if (t >= cur.e - 0.05) { if (this._seg + 1 < this.segs.length) { this._seg++; try { this.p.seekTo(this.segs[this._seg].s, true); } catch (e) {} this.dispatchEvent(new CustomEvent("moment", { detail: this._seg })); } else this._finish(); } }
+    if (t >= cur.e - 0.05) { if (this._seg + 1 < this.segs.length) { this._seg++; this._seek(this.segs[this._seg].s); this.dispatchEvent(new CustomEvent("moment", { detail: this._seg })); } else this._finish(); } }
   _finish() { clearInterval(this._poll); try { this.p.pauseVideo(); } catch (e) {} this.paused = true; this.ended = true; this._vt = this.total; this.dispatchEvent(new Event("ended")); }
   play() { this._want = true; if (!this.p) this.load(); else this._doPlay(); return Promise.resolve(); }
   pause() { this._want = false; clearInterval(this._poll); if (this.p && this.ready) { try { this.p.pauseVideo(); } catch (e) {} } this.paused = true; }
   get currentTime() { return this._vt; }
-  set currentTime(v) { this._vt = Math.max(0, Math.min(this.total, v)); if (this._vt < this.total) this.ended = false; const g = this.segAt(this._vt); this._seg = g.k; if (this.p && this.ready) { try { this.p.seekTo(g.real, true); } catch (e) {} } }
+  set currentTime(v) { this._vt = Math.max(0, Math.min(this.total, v)); if (this._vt < this.total) this.ended = false; const g = this.segAt(this._vt); this._seg = g.k; if (this.p && this.ready) this._seek(g.real); }
   get muted() { return this._muted; }
   set muted(m) { this._muted = !!m; if (this.p && this.ready) { try { m ? this.p.mute() : this.p.unMute(); } catch (e) {} } }
   jump(k) { this.currentTime = this.offsetOf(k) + 0.01; this._seg = k; }
