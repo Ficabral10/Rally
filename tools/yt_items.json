@@ -1,5 +1,87 @@
 [
  {
+  "id": "y-fs-huang-nvidia",
+  "yt": "SOwUWPtXQ9I",
+  "lang": "en",
+  "kind": "tech",
+  "topic": "Tech",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=SOwUWPtXQ9I",
+  "headline": "Fireship on Jensen Huang leaving Nvidia",
+  "kicker": "TECH · NVIDIA · NOV 12",
+  "published": "2026-11-12T00:00:00Z",
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship",
+   "date": "Nov 12, 2026"
+  },
+  "follow": {
+   "type": "read",
+   "id": "s-nvidia-open"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 336,
+    "cue": "The backstory before this week's earnings call"
+   }
+  ],
+  "sources": [
+   {
+    "name": "TechCrunch",
+    "url": "https://techcrunch.com/2026/11/17/nvidia-says-its-open-source-ai-strategy-remains-intact-after-jensen-huangs-exit/"
+   }
+  ],
+  "verify": {
+   "embeddable": true,
+   "author": "Fireship",
+   "duration": 336,
+   "timestamps": "whole-video"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-18T21:44:13Z"
+ },
+ {
+  "id": "y-fs-ms365-outage",
+  "yt": "ytmawkPTP24",
+  "lang": "en",
+  "kind": "tech",
+  "topic": "Tech",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=ytmawkPTP24",
+  "headline": "Why Microsoft 365 stayed down for 36 hours",
+  "kicker": "TECH · OUTAGE · NOV 16",
+  "published": "2026-11-16T00:00:00Z",
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship",
+   "date": "Nov 16, 2026"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 382,
+    "cue": "A latent bug, a traffic surge and missing capacity, all at once"
+   }
+  ],
+  "sources": [
+   {
+    "name": "ITPro",
+    "url": "https://www.itpro.com/software/microsoft/microsoft-365-outage-company-exec-lifts-lid-on-the-cascading-failure-that-caused-lengthy-disruption"
+   }
+  ],
+  "verify": {
+   "embeddable": true,
+   "author": "Fireship",
+   "duration": 382,
+   "timestamps": "whole-video"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-18T21:44:13Z"
+ },
+ {
   "id": "y-arg-cri-7",
   "yt": "tZX91fVB1R4",
   "publisher": "CONMEBOL",
