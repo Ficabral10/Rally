@@ -1,0 +1,21 @@
+{"clips": [], "stories": [
+ {"id": "s-openai-embedded", "lang": "en", "topic": "Tech", "status": "completed", "spoiler": false,
+  "published": "2026-11-16T17:02:00Z",
+  "title": "OpenAI lets four outside safety labs work inside the company",
+  "summary": "Apollo Research, METR, Transluce and Goodfire signed on for OpenAI's first embedded assessments. Apollo starts this week, looking for models that quietly work against their own safeguards.",
+  "happened": "OpenAI announced embedded pilots with four independent assessors. Apollo is checking whether models try to undermine alignment or control mechanisms and whether that'd be detectable. METR is looking for dangerous behavior and whether OpenAI's monitors catch it. Transluce is grading OpenAI's post-training safety evals, and Goodfire is bringing interpretability tools for monitoring training runs.",
+  "why": "Outside testers usually get a model for days near launch. This gives them checkpoints, training code and staff access over a longer stretch. The catch: OpenAI can still withhold info for security or IP reasons and limit the evidence behind published findings, which Apollo has pushed back on.",
+  "next": "Transluce plans a follow-on in 2027 on how safety tests feed release decisions. METR's second evaluation is still waiting on an agreed scope.",
+  "visual": {"type": "timeline", "items": [{"t": "Apollo", "l": "Covert subversion"}, {"t": "METR", "l": "Bad behavior + monitors"}, {"t": "Transluce", "l": "Safety eval quality"}, {"t": "Goodfire", "l": "Interpretability"}]},
+  "source": "TechCrunch",
+  "url": "https://techcrunch.com/2026/11/16/openai-will-embed-apollo-researchers-to-investigate-ai-subversion/"},
+ {"id": "s-openai-researchers", "lang": "en", "topic": "Tech", "status": "completed", "spoiler": false,
+  "published": "2026-11-16T18:06:00Z",
+  "title": "OpenAI adds 50,000 free ChatGPT grants for researchers, but it's Plus now, not Pro",
+  "summary": "Each grant covers a researcher and up to two collaborators. Applications open November 23, first come first served.",
+  "happened": "OpenAI expanded ChatGPT for Academic Researchers with 50,000 new grants, aiming for 200,000 researchers, double the pilot's goal. New grants get ChatGPT Plus instead of Pro, allow two collaborators instead of four, and go to the first eligible applicants instead of a lottery. About 20,000 researchers in 33 countries have joined so far.",
+  "why": "It's a cheaper, wider version of the pilot. OpenAI says most pilot users would've stayed within Plus limits. Its own study of 1,800+ scientists found reading and writing were most of their science use, and it says the study doesn't prove AI speeds up discovery.",
+  "next": "Applications open November 23.",
+  "source": "The Next Web",
+  "url": "https://thenextweb.com/news/openai-chatgpt-academic-researchers-50000-grants-plus"}
+]}

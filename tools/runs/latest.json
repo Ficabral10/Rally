@@ -1,24 +1,12 @@
 {
- "at": "2026-11-18T06:07:32Z",
- "found": 4,
- "clipsAdded": [
-  "y-arg-cri-7"
- ],
+ "at": "2026-11-18T13:52:56Z",
+ "found": 2,
+ "clipsAdded": [],
  "storiesAdded": [
-  "s-arg-cri"
+  "s-openai-embedded",
+  "s-openai-researchers"
  ],
- "dropped": [
-  {
-   "id": "y-upires-bra-sin",
-   "headline": "O último jogo da Seleção em 2026",
-   "why": "publisher 'UPires Futebol' isn't on the official list (likely a reupload)"
-  },
-  {
-   "id": "y-getv-bra-sin",
-   "headline": "Singapura 0 x 7 Brasil, melhores momentos",
-   "why": "ge tv: Geo-blocked in the US (checked Nov 17, 2026): 'The uploader has not made this video available in your country.'"
-  }
- ],
+ "dropped": [],
  "expired": 0,
  "inventory": 23,
  "inline": 23,
