@@ -97,5 +97,284 @@
     "url": "https://www.101greatgoals.com/?p=221439"
    }
   ]
+ },
+ {
+  "id": "y-gpt62-3d-sets",
+  "type": "yt",
+  "yt": "tKoDPOrLMX0",
+  "lang": "en",
+  "kind": "tech",
+  "topic": "Tech",
+  "publisher": "OpenAI",
+  "url": "https://www.youtube.com/watch?v=tKoDPOrLMX0",
+  "headline": "That room isn't real: GPT-6.2 rebuilt it in Blender from two frames",
+  "kicker": "AI · DEMO · NOV 17",
+  "published": "2026-11-17T16:00:00Z",
+  "spoiler": false,
+  "match": {
+   "home": "GPT-6.2 Astra demo",
+   "comp": "OpenAI",
+   "date": "Nov 17, 2026"
+  },
+  "follow": {
+   "type": "read",
+   "id": "s-gpt62"
+  },
+  "moments": [
+   {
+    "label": "The reveal",
+    "start": 0,
+    "end": 19,
+    "cue": "Keep your eye on the room behind him"
+   },
+   {
+    "label": "The prompt",
+    "start": 31,
+    "end": 46,
+    "cue": "The actual ask: two frames in, a whole room in Blender out"
+   }
+  ],
+  "sources": [
+   {
+    "name": "9to5Mac",
+    "url": "https://9to5mac.com/2026/11/17/openai-upgrades-chatgpt-and-codex-with-new-gpt-6-2-astra-and-sol-models/"
+   }
+  ]
+ },
+ {
+  "id": "y-fs-binary-search",
+  "type": "yt",
+  "yt": "MFhxShGxHWc",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=MFhxShGxHWc",
+  "headline": "Binary search in 100 seconds",
+  "kicker": "SWE · EXPLAINER",
+  "published": "2024-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 138.5,
+    "cue": "Count how many guesses it takes to find one item in a sorted list"
+   }
+  ],
+  "sources": [],
+  "follow": {
+   "type": "try",
+   "drill": "dx-bsearch-bounds"
+  }
+ },
+ {
+  "id": "y-fs-big-o",
+  "type": "yt",
+  "yt": "g2o22C3CRfU",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=g2o22C3CRfU",
+  "headline": "Big-O notation in 100 seconds",
+  "kicker": "SWE · EXPLAINER",
+  "published": "2024-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 98.5,
+    "cue": "Watch how each curve grows as the input gets bigger"
+   }
+  ],
+  "sources": [],
+  "follow": {
+   "type": "try",
+   "drill": "d-26"
+  }
+ },
+ {
+  "id": "y-fs-recursion",
+  "type": "yt",
+  "yt": "rf60MejMz3E",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=rf60MejMz3E",
+  "headline": "Recursion in 100 seconds",
+  "kicker": "SWE · EXPLAINER",
+  "published": "2024-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 98.5,
+    "cue": "Look for the base case: it's what stops the function calling itself forever"
+   }
+  ],
+  "sources": [],
+  "follow": {
+   "type": "try",
+   "drill": "d-14"
+  }
+ },
+ {
+  "id": "y-fs-ml",
+  "type": "yt",
+  "yt": "PeMlggyqz0Y",
+  "lang": "en",
+  "kind": "mle",
+  "topic": "MLE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=PeMlggyqz0Y",
+  "headline": "Machine learning in 100 seconds",
+  "kicker": "MLE · EXPLAINER",
+  "published": "2024-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 153.5,
+    "cue": "Notice where the training data stops and the prediction starts"
+   }
+  ],
+  "sources": [],
+  "follow": {
+   "type": "try",
+   "drill": "dm-baseline"
+  }
+ },
+ {
+  "id": "y-fs-cuda",
+  "type": "yt",
+  "yt": "pPStdjuYzSI",
+  "lang": "en",
+  "kind": "tech",
+  "topic": "Tech",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=pPStdjuYzSI",
+  "headline": "CUDA in 100 seconds: why GPUs run AI",
+  "kicker": "TECH · EXPLAINER",
+  "published": "2024-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 191.5,
+    "cue": "Watch how one job gets split across thousands of tiny cores"
+   }
+  ],
+  "sources": [],
+  "follow": {
+   "type": "try",
+   "drill": "dm-batching"
+  }
+ },
+ {
+  "id": "y-fs-redis",
+  "type": "yt",
+  "yt": "G1rOthIU-uo",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=G1rOthIU-uo",
+  "headline": "Redis in 100 seconds: the cache behind fast apps",
+  "kicker": "SWE · SYSTEM DESIGN",
+  "published": "2024-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 144.5,
+    "cue": "Watch where Redis sits between the app and the database"
+   }
+  ],
+  "sources": []
+ },
+ {
+  "id": "y-fs-git",
+  "type": "yt",
+  "yt": "hwP7WQkmECE",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=hwP7WQkmECE",
+  "headline": "Git in 100 seconds",
+  "kicker": "SWE · TOOLS",
+  "published": "2024-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 115.5,
+    "cue": "Follow one change from your folder to a commit"
+   }
+  ],
+  "sources": []
+ },
+ {
+  "id": "y-fs-docker",
+  "type": "yt",
+  "yt": "Gjnup-PuquQ",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=Gjnup-PuquQ",
+  "headline": "Docker in 100 seconds",
+  "kicker": "SWE · TOOLS",
+  "published": "2024-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 125.5,
+    "cue": "Watch the difference between an image and a container"
+   }
+  ],
+  "sources": []
  }
 ]

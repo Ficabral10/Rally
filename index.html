@@ -189,7 +189,7 @@ textarea{width:100%;min-height:160px;background:#0b0d0d;color:#e8f0ec;border:1px
 <div id="toast" role="status"></div>
 <script>
 "use strict";
-const BUILD = "gh-1.1.0";
+const BUILD = "gh-1.2.0";
 const NEED = 10, DRILL_NEED = 3;
 /* ---------- helpers ---------- */
 const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -383,7 +383,7 @@ function buildRoster() {
 }
 function signal(c, f, n = 1) { const k = c.kind + ":foryou"; const p = (state.pref[k] ||= { s: 0, d: 0, m: 0, l: 0, k: 0, e: 0, o: 0, r: 0 }); p[f] = (p[f] || 0) + n; state.prefT = Date.now(); persist(); }
 /* re-rank only what you haven't reached yet, so the order you're swiping through never shifts under you */
-function rerankUnseen() { const d = day(); if (!d.vroster) return; const ids = d.vroster.ids, cut = Math.max(0, ...ids.map((id, i) => seen[id] ? i : -1)) + 1; const head = ids.slice(0, cut), tail = ids.slice(cut).filter(id => CLIP.has(id)); tail.sort((a, b) => prefScore(CLIP.get(b)) - prefScore(CLIP.get(a))); const mixed = []; let last = null; while (tail.length) { let k = tail.findIndex(id => CLIP.get(id).kind !== last); if (k < 0) k = 0; const id = tail.splice(k, 1)[0]; mixed.push(id); last = CLIP.get(id).kind; } d.vroster.ids = head.concat(mixed); }
+function rerankUnseen() { const d = day(); if (!d.vroster) return; const ids = d.vroster.ids, cut = Math.max(Math.min(5, ids.length), Math.max(0, ...ids.map((id, i) => seen[id] ? i : -1)) + 1); const head = ids.slice(0, cut), tail = ids.slice(cut).filter(id => CLIP.has(id)); tail.sort((a, b) => prefScore(CLIP.get(b)) - prefScore(CLIP.get(a))); const mixed = []; let last = null; while (tail.length) { let k = tail.findIndex(id => CLIP.get(id).kind !== last); if (k < 0) k = 0; const id = tail.splice(k, 1)[0]; mixed.push(id); last = CLIP.get(id).kind; } d.vroster.ids = head.concat(mixed); }
 function prefScore(c) { const p = state.pref[c.kind + ":foryou"] || {}; return (p.m || 0) * 2 - (p.d || 0) * 2 + (p.s || 0) * 0.5 + (p.r || 0) * 0.7 - (p.k || 0) * 0.15; }
 function feedOrder() { const d = day(); const ids = [...(d.vroster.fresh || []).slice().reverse(), ...d.vroster.ids]; return uniq(ids).filter(id => CLIP.has(id)); }
 function slideFor(c, i) {
@@ -426,7 +426,7 @@ function slideFor(c, i) {
 
 function ytLayout(c, v, s) {
   const pt = c.lang === "pt", m = c.match || {};
-  const top = h("div", { class: "ythead" }, [h("div", { class: "comp", text: [m.comp, m.date].filter(Boolean).join(" · ") }), h("div", { class: "teams", text: (m.home || "") + (m.away ? "  ×  " + m.away : "") })]);
+  const top = h("div", { class: "ythead" }, [h("div", { class: "comp", text: [m.comp, m.date].filter(Boolean).join(" · ") }), c.kind === "sports" ? h("div", { class: "teams", text: (m.home || "") + (m.away ? "  ×  " + m.away : "") }) : null]);
   const pick = c.moments.length > 1 ? h("div", { class: "moments", role: "tablist" }, c.moments.map((mo, k) => h("button", { role: "tab", "aria-selected": String(k === 0), text: mo.label + (mo.minute ? " · " + mo.minute : ""), onclick: e => { e.stopPropagation(); v.jump(k); paintMoments(s, k); s.classList.remove("ended", "paused"); playActive(); } }))) : null;
   const src = h("div", { class: "ytsrc" }, [h("span", { text: (pt ? "Vídeo oficial: " : "Official video: ") + c.publisher }), h("span", { class: "ythint", text: pt ? " · Toque no vídeo pra começar" : " · Tap the video to start" })]);
   return h("div", { class: "ytwrap" }, [top, v.el, src, pick]);
