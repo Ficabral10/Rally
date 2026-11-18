@@ -1,15 +1,16 @@
 {
- "at": "2026-11-18T13:52:56Z",
- "found": 2,
+ "at": "2026-11-18T17:50:13Z",
+ "found": 3,
  "clipsAdded": [],
  "storiesAdded": [
-  "s-openai-embedded",
-  "s-openai-researchers"
+  "s-mai-code-2",
+  "s-gemini-retention",
+  "s-brasileirao-35"
  ],
  "dropped": [],
  "expired": 0,
  "inventory": 23,
  "inline": 23,
  "portuguese": 4,
- "build": "run-1118-0607-23"
+ "build": "run-1118-1750-23"
 }
