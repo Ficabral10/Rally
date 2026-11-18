@@ -1,7 +1,7 @@
 """Merge Rally originals (rendered MP4s) and verified official YouTube moments into manifest.json."""
 import json, datetime, sys, os
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-orig = json.load(open("/home/claude/vapp/manifest.json"))["clips"]
+orig = json.load(open(os.path.join(ROOT, "tools", "originals.json")))  # Rally-made clips in clips/
 yts = json.load(open(os.path.join(ROOT, "tools", "yt_items.json")))
 for y in yts:
     y["src"] = "yt:" + y["yt"]; y["poster"] = f"https://i.ytimg.com/vi/{y['yt']}/hqdefault.jpg"

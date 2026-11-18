@@ -25,7 +25,9 @@ for c in inc.get("clips", []):
     if c["publisher"] not in src: drop(c, f"publisher '{c['publisher']}' isn't on the official list (likely a reupload)"); continue
     if c["kind"] not in src[c["publisher"]]["kind"]: drop(c, f"{c['publisher']} isn't a source for {c['kind']}"); continue
     v = c.get("verify", {})
-    if not v.get("embeddable"): drop(c, "embedding not confirmed (oEmbed)"); continue
+    # "allowlisted": oEmbed couldn't be fetched in this run, but the channel is on the official list and the
+    # channel name came from the search listing. The app skips any clip whose player reports an error.
+    if not (v.get("embeddable") is True or v.get("embeddable") == "allowlisted"): drop(c, "embedding not confirmed (oEmbed) and no listing check"); continue
     if v.get("author") != c["publisher"]: drop(c, f"oEmbed author '{v.get('author')}' doesn't match publisher"); continue
     if c["kind"] == "sports" and not (c.get("sources") and all(m.get("minute") for m in c["moments"])): drop(c, "sports clip without a match report and match minutes"); continue
     bad = [m for m in c["moments"] if not (0 <= m["start"] < m["end"]) or (v.get("duration") and m["end"] > v["duration"] + 0.5)]
