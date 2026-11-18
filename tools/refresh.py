@@ -14,7 +14,7 @@ inc = json.load(open(P("tools", "incoming.json"))) if os.path.exists(P("tools", 
 live = json.load(open(P("tools", "yt_items.json")))
 stories = json.load(open(P("stories.json")))
 dropped, added, s_added = [], [], []
-live_ids = {c["id"] for c in live}; live_yt = {(c["yt"], tuple((m["start"], m["end"]) for m in c["moments"])) for c in live}
+live_ids = {c["id"] for c in live}; live_yt = {(c["yt"], tuple((m["start"], m.get("end")) for m in c["moments"])) for c in live}
 live_story_kind = {(c.get("story"), c["kind"]) for c in live if c.get("story")}
 def drop(c, why): dropped.append({"id": c.get("id"), "headline": c.get("headline") or c.get("title"), "why": why})
 for c in inc.get("clips", []):
@@ -30,10 +30,12 @@ for c in inc.get("clips", []):
     if not (v.get("embeddable") is True or v.get("embeddable") == "allowlisted"): drop(c, "embedding not confirmed (oEmbed) and no listing check"); continue
     if v.get("author") != c["publisher"]: drop(c, f"oEmbed author '{v.get('author')}' doesn't match publisher"); continue
     if c["kind"] == "sports" and not (c.get("sources") and all(m.get("minute") for m in c["moments"])): drop(c, "sports clip without a match report and match minutes"); continue
-    bad = [m for m in c["moments"] if not (0 <= m["start"] < m["end"]) or (v.get("duration") and m["end"] > v["duration"] + 0.5)]
+    # end may be null for a whole-video moment: the player plays to the video's own end
+    bad = [m for m in c["moments"] if m.get("end") is None and not (v.get("timestamps") == "whole-video" and m["start"] == 0)] + \
+          [m for m in c["moments"] if m.get("end") is not None and (not (0 <= m["start"] < m["end"]) or (v.get("duration") and m["end"] > v["duration"] + 0.5))]
     if bad: drop(c, "moment times outside the video"); continue
     if not v.get("timestamps") in ("frames", "whole-video", "chapters"): drop(c, "start point not verified"); continue
-    if c["id"] in live_ids or (c["yt"], tuple((m["start"], m["end"]) for m in c["moments"])) in live_yt: drop(c, "already live"); continue
+    if c["id"] in live_ids or c["yt"] in {x["yt"] for x in live}: drop(c, "already live (same video)"); continue
     if c.get("story") and (c["story"], c["kind"]) in live_story_kind and not c.get("supersedes"): drop(c, "same story already has a clip"); continue
     c["type"] = "yt"; c.setdefault("follow", {"type": "match"} if c["kind"] == "sports" else None); c["addedAt"] = stamp
     if c.get("follow") is None: c.pop("follow")

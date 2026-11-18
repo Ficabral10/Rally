@@ -7,7 +7,7 @@ for y in yts:
     y["src"] = "yt:" + y["yt"]; y["poster"] = f"https://i.ytimg.com/vi/{y['yt']}/hqdefault.jpg"
     off, cues = 0, []
     for m in y["moments"]:
-        L = m["end"] - m["start"]; cues.append({"s": round(off + 0.3, 2), "e": round(off + L, 2), "t": m["cue"]}); off += L
+        L = (m["end"] if m.get("end") is not None else (y.get("verify", {}).get("duration") or 90)) - m["start"]; cues.append({"s": round(off + 0.3, 2), "e": round(off + L, 2), "t": m["cue"]}); off += L
     y["dur"] = round(off, 2); y["cues"] = cues; y["transcript"] = " ".join(f"{m['label']} ({m.get('minute','')}): {m['cue']}." for m in y["moments"])
 label = sys.argv[1] if len(sys.argv) > 1 else "gh"
 now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")

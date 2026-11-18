@@ -14,7 +14,7 @@ Rally (https://ficabral10.github.io/Rally/) plays official YouTube clips inside 
 3. **Verify every clip before it goes into `incoming.json`:**
    - `verify.embeddable` and `verify.author`: try `https://www.youtube.com/oembed?url=<watch url>&format=json`. A 401/404 means it can't be embedded. `author_name` must equal `publisher`.
      If oEmbed can't be reached from this run (scheduled runs often can't reach youtube.com), set `embeddable: "allowlisted"` and `author` to the channel name shown next to the video in your search results. This is only allowed when that channel is in `tools/sources.json`. The app skips any clip whose player errors.
-   - `verify.duration`: the video length in seconds.
+   - `verify.duration`: the video length in seconds, if you can get it (search listings often show it, like "1:40"). If you can't, use a whole-video moment with `"start": 0, "end": null`. The player then stops at the video's real end.
    - `verify.timestamps`:
      - `"whole-video"` when the moment is the entire video (start 0, end ≈ duration). This is the only option a run without a browser can use.
      - `"chapters"` when the start comes from chapter marks in the description.
