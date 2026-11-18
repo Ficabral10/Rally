@@ -1,0 +1,18 @@
+{
+ "_note": "Official publishers Rally will play inline. A candidate from any other channel is dropped. Add channels here only after checking they're the rights holder or the original creator.",
+ "youtube": {
+  "TNT Sports Brasil": {"handle": "@TNTSportsBR", "kind": ["sports"], "lang": "pt", "note": "Brazilian broadcaster; Seleção friendlies. Plays in the US."},
+  "Major League Soccer": {"handle": "@mls", "kind": ["sports"], "lang": "en", "note": "League's own channel; single-goal clips are ideal."},
+  "CONMEBOL": {"handle": "@CONMEBOL", "kind": ["sports"], "lang": "es", "note": "Confederation highlights; no on-screen score bug, so timestamps need extra care."},
+  "FOX Sports": {"handle": "@FOXSports", "kind": ["sports"], "lang": "en", "note": "US rights holder for some UEFA and national-team games."},
+  "OpenAI": {"handle": "@OpenAI", "kind": ["tech"], "lang": "en"},
+  "Anthropic": {"handle": "@anthropic-ai", "kind": ["tech"], "lang": "en"},
+  "Google DeepMind": {"handle": "@googledeepmind", "kind": ["tech"], "lang": "en"},
+  "NVIDIA": {"handle": "@NVIDIA", "kind": ["tech"], "lang": "en"},
+  "Fireship": {"handle": "@Fireship", "kind": ["swe", "mle", "tech"], "lang": "en", "note": "Original creator; 100-second explainers."},
+  "Código Fonte TV": {"handle": "@codigofontetv", "kind": ["swe", "tech"], "lang": "pt", "note": "Original creator; long videos need a verified window."},
+  "3Blue1Brown": {"handle": "@3blue1brown", "kind": ["mle"], "lang": "en"},
+  "StatQuest with Josh Starmer": {"handle": "@statquest", "kind": ["mle"], "lang": "en"}
+ },
+ "blocked_for_us_viewers": {"ge tv": "Geo-blocked in the US (checked Nov 17, 2026): 'The uploader has not made this video available in your country.'"}
+}

@@ -189,7 +189,7 @@ textarea{width:100%;min-height:160px;background:#0b0d0d;color:#e8f0ec;border:1px
 <div id="toast" role="status"></div>
 <script>
 "use strict";
-const BUILD = "gh-1.2.1";
+const BUILD = "gh-1.3.0";
 const NEED = 10, DRILL_NEED = 3;
 /* ---------- helpers ---------- */
 const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -775,9 +775,10 @@ function openStatus() {
     tg("Show sports results", !!state.settings.spoilers, () => { state.settings.spoilers = !state.settings.spoilers; state.settings.t = Date.now(); persist(); return state.settings.spoilers; }),
     tg("Captions", ccOn, () => { ccOn = !ccOn; state.settings.captions = ccOn; state.settings.t = Date.now(); persist(); document.body.classList.toggle("nocc", !ccOn); return ccOn; }),
     h("p", {}, h("button", { class: "btn ghost", text: "Check for new clips", onclick: () => { closeSheet(); show("foryou"); pullRefresh(); } })),
+    h("p", { class: "fine", id: "runline", text: "" }),
     h("p", { class: "fine", text: "Build " + BUILD + " · clips " + (feedMeta.build || "?") + " · updated " + (feedMeta.checkedAt ? timeFmt(feedMeta.checkedAt) : "—") + " · sync: " + syncState })], { kind: "status" });
 }
-$("#brand").onclick = openStatus; $("#prog").onclick = openStatus;
+$("#brand").onclick = () => { openStatus(); fetch("run.json?b=" + Date.now(), { cache: "no-store" }).then(r => r.json()).then(r => { const e = $("#runline"); if (e) e.textContent = "Last refresh " + new Date(r.at).toLocaleString([], { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }) + ": " + r.found + " found, " + (r.clipsAdded.length + r.storiesAdded.length) + " went live, " + r.dropped.length + " dropped" + (r.dropped.length ? " (" + r.dropped.map(d => d.why).join("; ") + ")" : "") + ". " + r.inventory + " clips in rotation."; }).catch(() => {}); }; $("#prog").onclick = openStatus;
 function checkDay() { const k = pacificKey(); if (k !== TODAY) { TODAY = k; watched.date = k; watched.ids = {}; buildRoster(); renderFeed(); paintHeader(); } }
 /* ================= boot ================= */
 (async function boot() {

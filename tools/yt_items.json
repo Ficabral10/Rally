@@ -1,5 +1,55 @@
 [
  {
+  "id": "y-arg-cri-7",
+  "yt": "tZX91fVB1R4",
+  "publisher": "CONMEBOL",
+  "url": "https://www.youtube.com/watch?v=tZX91fVB1R4",
+  "lang": "es",
+  "kind": "sports",
+  "topic": "Sports",
+  "headline": "Argentina 7, Costa Rica 0: Paz, Álvarez and Mastantuono all score twice",
+  "headlineSafe": "Argentina vs Costa Rica in Córdoba: the highlights",
+  "kicker": "ARGENTINA · FRIENDLY",
+  "published": "2026-11-18T02:30:00Z",
+  "spoiler": true,
+  "story": "arg-cri-2026-11-17",
+  "match": {
+   "home": "Argentina",
+   "away": "Costa Rica",
+   "comp": "International friendly",
+   "date": "Nov 17, 2026",
+   "venue": "Córdoba"
+  },
+  "moments": [
+   {
+    "label": "All seven goals",
+    "minute": "8'–88'",
+    "start": 0,
+    "end": 176,
+    "cue": "Two each for Paz, Álvarez and Mastantuono, one for Mac Allister",
+    "note": "Paz 8' and 38', Álvarez 35' and 43', Mastantuono 48' and 88', Mac Allister 78'. This was Argentina's second game since Messi retired; the first was a 2-1 loss to Uruguay."
+   }
+  ],
+  "sources": [
+   {
+    "name": "ESPN match report",
+    "url": "https://www.espn.com/soccer/report/_/gameId/401930895"
+   }
+  ],
+  "verify": {
+   "embeddable": true,
+   "author": "CONMEBOL",
+   "duration": 178.2,
+   "timestamps": "whole-video",
+   "checked": "oEmbed + played in Chrome (US), Nov 17"
+  },
+  "type": "yt",
+  "follow": {
+   "type": "match"
+  },
+  "addedAt": "2026-11-18T06:07:32Z"
+ },
+ {
   "id": "y-bra-sin-vini",
   "type": "yt",
   "yt": "VXDnHnWsC_A",
@@ -52,7 +102,15 @@
     "name": "O Povo",
     "url": "https://www.opovo.com.br/esportes/futebol-internacional/2026/11/17/com-hat-trick-de-vini-jr-brasil-goleou-singapura-em-ultimo-compromisso-de-2026.html"
    }
-  ]
+  ],
+  "addedAt": "2026-11-18T06:07:32Z",
+  "verify": {
+   "embeddable": true,
+   "author": "TNT Sports Brasil",
+   "duration": 169.1,
+   "timestamps": "frames"
+  },
+  "story": "bra-sin-2026"
  },
  {
   "id": "y-depaul-35yd",
@@ -96,7 +154,15 @@
     "name": "101 Great Goals",
     "url": "https://www.101greatgoals.com/?p=221439"
    }
-  ]
+  ],
+  "addedAt": "2026-11-18T06:07:32Z",
+  "verify": {
+   "embeddable": true,
+   "author": "Major League Soccer",
+   "duration": 61.3,
+   "timestamps": "frames"
+  },
+  "story": "mia-clt-2026-11-07"
  },
  {
   "id": "y-gpt62-3d-sets",
@@ -139,7 +205,14 @@
     "name": "9to5Mac",
     "url": "https://9to5mac.com/2026/11/17/openai-upgrades-chatgpt-and-codex-with-new-gpt-6-2-astra-and-sol-models/"
    }
-  ]
+  ],
+  "addedAt": "2026-11-18T06:07:32Z",
+  "verify": {
+   "embeddable": true,
+   "author": "OpenAI",
+   "duration": 82.4,
+   "timestamps": "frames"
+  }
  },
  {
   "id": "y-fs-binary-search",
@@ -170,6 +243,12 @@
   "follow": {
    "type": "try",
    "drill": "dx-bsearch-bounds"
+  },
+  "addedAt": "2026-11-18T06:07:32Z",
+  "verify": {
+   "embeddable": true,
+   "author": "Fireship",
+   "timestamps": "whole-video"
   }
  },
  {
@@ -201,6 +280,12 @@
   "follow": {
    "type": "try",
    "drill": "d-26"
+  },
+  "addedAt": "2026-11-18T06:07:32Z",
+  "verify": {
+   "embeddable": true,
+   "author": "Fireship",
+   "timestamps": "whole-video"
   }
  },
  {
@@ -232,6 +317,12 @@
   "follow": {
    "type": "try",
    "drill": "d-14"
+  },
+  "addedAt": "2026-11-18T06:07:32Z",
+  "verify": {
+   "embeddable": true,
+   "author": "Fireship",
+   "timestamps": "whole-video"
   }
  },
  {
@@ -263,6 +354,12 @@
   "follow": {
    "type": "try",
    "drill": "dm-baseline"
+  },
+  "addedAt": "2026-11-18T06:07:32Z",
+  "verify": {
+   "embeddable": true,
+   "author": "Fireship",
+   "timestamps": "whole-video"
   }
  },
  {
@@ -294,6 +391,12 @@
   "follow": {
    "type": "try",
    "drill": "dm-batching"
+  },
+  "addedAt": "2026-11-18T06:07:32Z",
+  "verify": {
+   "embeddable": true,
+   "author": "Fireship",
+   "timestamps": "whole-video"
   }
  },
  {
@@ -321,7 +424,13 @@
     "cue": "Watch where Redis sits between the app and the database"
    }
   ],
-  "sources": []
+  "sources": [],
+  "addedAt": "2026-11-18T06:07:32Z",
+  "verify": {
+   "embeddable": true,
+   "author": "Fireship",
+   "timestamps": "whole-video"
+  }
  },
  {
   "id": "y-fs-git",
@@ -348,7 +457,13 @@
     "cue": "Follow one change from your folder to a commit"
    }
   ],
-  "sources": []
+  "sources": [],
+  "addedAt": "2026-11-18T06:07:32Z",
+  "verify": {
+   "embeddable": true,
+   "author": "Fireship",
+   "timestamps": "whole-video"
+  }
  },
  {
   "id": "y-fs-docker",
@@ -375,6 +490,12 @@
     "cue": "Watch the difference between an image and a container"
    }
   ],
-  "sources": []
+  "sources": [],
+  "addedAt": "2026-11-18T06:07:32Z",
+  "verify": {
+   "embeddable": true,
+   "author": "Fireship",
+   "timestamps": "whole-video"
+  }
  }
 ]
