@@ -1,0 +1,14 @@
+[
+ {"id": "y-bra-sin-vini", "type": "yt", "yt": "VXDnHnWsC_A", "lang": "pt", "kind": "sports", "topic": "Sports",
+  "publisher": "TNT Sports Brasil", "url": "https://www.youtube.com/watch?v=VXDnHnWsC_A",
+  "headline": "Os três gols do Vini em 12 minutos contra Singapura", "headlineSafe": "Seleção x Singapura: os lances do Vini",
+  "kicker": "SELEÇÃO · AMISTOSO", "published": "2026-11-17T12:30:00Z", "spoiler": true, "related": "s-brasil-singapura",
+  "match": {"home": "Singapura", "away": "Brasil", "comp": "Amistoso", "date": "17 nov 2026", "venue": "Estádio Nacional de Singapura"},
+  "follow": {"type": "match"},
+  "moments": [
+   {"label": "1º gol", "minute": "8'", "start": 18.5, "end": 26, "cue": "Olha o Vini (7) entrando pela esquerda da área"},
+   {"label": "2º gol", "minute": "13'", "start": 35, "end": 45, "cue": "Arrancada desde o meio-campo, depois o drible no goleiro"},
+   {"label": "3º gol", "minute": "20'", "start": 61, "end": 69, "cue": "Repara em quem ataca o primeiro pau"}
+  ],
+  "sources": [{"name": "O Povo", "url": "https://www.opovo.com.br/esportes/futebol-internacional/2026/11/17/com-hat-trick-de-vini-jr-brasil-goleou-singapura-em-ultimo-compromisso-de-2026.html"}]}
+]
