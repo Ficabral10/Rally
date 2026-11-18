@@ -189,7 +189,7 @@ textarea{width:100%;min-height:160px;background:#0b0d0d;color:#e8f0ec;border:1px
 <div id="toast" role="status"></div>
 <script>
 "use strict";
-const BUILD = "gh-1.0.0";
+const BUILD = "gh-1.1.0";
 const NEED = 10, DRILL_NEED = 3;
 /* ---------- helpers ---------- */
 const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -370,14 +370,21 @@ function buildRoster() {
   const fresh = pool.filter(c => !seen[c.id]), old = pool.filter(c => seen[c.id]);
   const pick = [], kinds = [];
   const rest = fresh.slice();
+  /* the first five swipes should show range: a real sports moment, tech, a news update, a coding/ML reveal, something in Portuguese */
+  const opening = [c => c.type === "yt" && c.kind === "sports", c => c.topic === "Tech", c => c.kind === "news", c => c.kind === "swe" || c.kind === "mle", c => c.lang === "pt"];
+  for (const want of opening) { const k = rest.findIndex(c => want(c) && !(pick.length && pick[pick.length - 1].kind === c.kind && c.kind !== "news")); if (k >= 0) { const c = rest.splice(k, 1)[0]; pick.push(c); kinds.push(c.kind); } }
   while (rest.length) {
     let best = 0, bs = -1e9;
-    rest.forEach((c, i) => { let s = -i * 0.4; if (kinds[kinds.length - 1] === c.kind) s -= 5; if (kinds[kinds.length - 2] === c.kind) s -= 2; if (pick.length === 2 && c.lang === "pt" && !pick.some(x => x.lang === "pt")) s += 6; if (pick.length === 0 && c.type === "yt") s += 12; if (pick.length === 0 && c.kind === "news") s += 3; if (pick.length === 1 && (c.kind === "swe" || c.kind === "mle")) s += 3; if (s > bs) { bs = s; best = i; } });
+    rest.forEach((c, i) => { let s = -i * 0.4 + (state.pref[c.kind + ":foryou"] ? prefScore(c) : 0); if (kinds[kinds.length - 1] === c.kind) s -= 5; if (kinds[kinds.length - 2] === c.kind) s -= 2; if (c.type === "yt") s += 1; if (s > bs) { bs = s; best = i; } });
     const c = rest.splice(best, 1)[0]; pick.push(c); kinds.push(c.kind);
   }
   d.vroster = { ids: pick.concat(old).map(c => c.id), createdAt: Date.now(), fresh: [], build: feedMeta.build };
   persist();
 }
+function signal(c, f, n = 1) { const k = c.kind + ":foryou"; const p = (state.pref[k] ||= { s: 0, d: 0, m: 0, l: 0, k: 0, e: 0, o: 0, r: 0 }); p[f] = (p[f] || 0) + n; state.prefT = Date.now(); persist(); }
+/* re-rank only what you haven't reached yet, so the order you're swiping through never shifts under you */
+function rerankUnseen() { const d = day(); if (!d.vroster) return; const ids = d.vroster.ids, cut = Math.max(0, ...ids.map((id, i) => seen[id] ? i : -1)) + 1; const head = ids.slice(0, cut), tail = ids.slice(cut).filter(id => CLIP.has(id)); tail.sort((a, b) => prefScore(CLIP.get(b)) - prefScore(CLIP.get(a))); const mixed = []; let last = null; while (tail.length) { let k = tail.findIndex(id => CLIP.get(id).kind !== last); if (k < 0) k = 0; const id = tail.splice(k, 1)[0]; mixed.push(id); last = CLIP.get(id).kind; } d.vroster.ids = head.concat(mixed); }
+function prefScore(c) { const p = state.pref[c.kind + ":foryou"] || {}; return (p.m || 0) * 2 - (p.d || 0) * 2 + (p.s || 0) * 0.5 + (p.r || 0) * 0.7 - (p.k || 0) * 0.15; }
 function feedOrder() { const d = day(); const ids = [...(d.vroster.fresh || []).slice().reverse(), ...d.vroster.ids]; return uniq(ids).filter(id => CLIP.has(id)); }
 function slideFor(c, i) {
   const spoil = c.spoiler && !state.settings.spoilers;
@@ -445,7 +452,7 @@ function load(s, pre) { const v = s._v; if (!v || broken.has(s._c.id)) return; i
 function unload(s) { const v = s._v; if (!v || !v.getAttribute("src")) return; s._keepT = v.currentTime; v.pause(); v.removeAttribute("src"); v.load(); }
 function setActive(i, startT) {
   if (i < 0 || i >= slides.length) return;
-  const prev = slides[active]; if (prev && prev._v) { prev._v.pause(); prev._keepT = prev._v.currentTime; prev.classList.remove("active"); }
+  const prev = slides[active]; if (prev && prev._v) { prev._v.pause(); prev._keepT = prev._v.currentTime; prev.classList.remove("active"); if (prev._c && prev._enterAt && Date.now() - prev._enterAt < 2500 && !prev.classList.contains("counted") && !prev.classList.contains("broken")) signal(prev._c, "k"); }
   active = i; const s = slides[i]; s.classList.add("active");
   slides.forEach((x, j) => { if (!x._v) return; if (Math.abs(j - i) <= 1) load(x, j !== i); else if (Math.abs(j - i) > 2) unload(x); });
   s.classList.remove("chipgone"); clearTimeout(s._chipT); s._chipT = setTimeout(() => s.classList.add("chipgone"), 4000);
@@ -467,7 +474,7 @@ function playActive() {
 }
 function pauseActive() { const s = slides[active]; if (s && s._v) { s._v.pause(); s._keepT = s._v.currentTime; } }
 function togglePause(s) { const v = s._v; if (!v) return; if (v.paused) { s.classList.remove("paused"); v.muted = !soundOn; v.play().catch(() => s.classList.add("paused")); } else { v.pause(); s.classList.add("paused"); } }
-function replay(s) { const v = s._v; s.classList.remove("ended"); v.currentTime = 0; s._keepT = 0; playActive(); }
+function replay(s) { const v = s._v; if (s._c) signal(s._c, "r"); s.classList.remove("ended"); v.currentTime = 0; s._keepT = 0; playActive(); }
 function retry(s) { const i = slides.indexOf(s); broken.delete(s._c.id); clearTimeout(s._skipT); s.classList.remove("broken"); const v = s._v; v.removeAttribute("src"); v.load(); load(s); if (i === active) playActive(); }
 function markBroken(s, i) {
   if (!s._v.getAttribute("src")) return;
@@ -515,7 +522,7 @@ function paintSave(c, b) { const on = isSaved(c.id); b.classList.toggle("on", on
 function toggleSave(c, b) {
   const on = isSaved(c.id);
   if (on) state.reviews[c.id] = { ...state.reviews[c.id], removed: true, t: Date.now() };
-  else state.reviews[c.id] = { t: Date.now(), step: 0, due: addDays(TODAY, 1), added: TODAY, kind: c.headline ? "clip" : "story", title: c.headline || c.title, ref: c.id };
+  else { state.reviews[c.id] = { t: Date.now(), step: 0, due: addDays(TODAY, 1), added: TODAY, kind: c.headline ? "clip" : "story", title: c.headline || c.title, ref: c.id }; if (c.kind) signal(c, "s"); }
   persist(); if (b) paintSave(c, b); $$(".slide").forEach(s => { if (s._c && s._c.id === c.id) paintSave(c, $(".sv", s)); });
   toast(on ? "Removed from Saved" : "Saved"); if (curView === "saved") renderSaved();
 }
@@ -565,7 +572,7 @@ function openMore(c) {
     h("button", { class: "toggle", role: "switch", "aria-checked": String(ccOn), html: "<span>Captions</span><i></i>", onclick: e => { ccOn = !ccOn; state.settings.captions = ccOn; state.settings.t = Date.now(); persist(); document.body.classList.toggle("nocc", !ccOn); e.currentTarget.setAttribute("aria-checked", String(ccOn)); } }),
     h("h4", { text: "Sources" }), ...(c.sources || []).map(s => safeUrl(s.url) ? h("div", {}, h("a", { class: "src", href: s.url, target: "_blank", rel: "noopener", text: s.name + " ↗" })) : null),
     h("p", { class: "fine", text: "Made by Rally from the sources above: script, narration (AI voice), captions and graphics. Published " + new Date(c.published).toLocaleString([], { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }) + "." }),
-    h("p", {}, h("button", { class: "btn ghost", text: "Not for me, fewer like this", onclick: () => { const k = c.kind + ":foryou"; const p = (state.pref[k] ||= { s: 0, d: 0, m: 0, l: 0, k: 0, e: 0, o: 0 }); p.d++; state.prefT = Date.now(); persist(); toast("Got it, fewer " + c.topic.toLowerCase() + " clips"); } })), box];
+    h("div", { class: "row", style: "display:flex;gap:10px;flex-wrap:wrap;margin:12px 0" }, [h("button", { class: "btn", text: "More like this", onclick: () => { signal(c, "m"); toast("More " + c.topic.toLowerCase() + " coming up next time you refresh"); } }), h("button", { class: "btn ghost", text: "Less like this", onclick: () => { signal(c, "d"); toast("Fewer " + c.topic.toLowerCase() + " clips from now on"); } })]), box];
   openSheet(c.lang === "pt" ? "Mais" : "More", body, { kind: "more" });
 }
 async function translate(c, out) {
@@ -580,7 +587,7 @@ async function translate(c, out) {
 /* ---------- refresh ---------- */
 let checking = false;
 async function fetchManifest() { const r = await fetch("manifest.json?ts=" + Date.now(), { cache: "no-store" }); if (!r.ok) throw new Error("http " + r.status); return r.json(); }
-function ingest(m) { CLIPS = (m.clips || []).filter(c => c && c.id && c.src); CLIPS.forEach(c => CLIP.set(c.id, c)); feedMeta.updatedAt = Date.parse(m.updatedAt) || 0; feedMeta.build = m.build || ""; LS.set("rally-vmanifest", m); }
+function ingest(m) { CLIPS = (m.clips || []).filter(c => c && c.id && c.src && !(QS.get("noyt") && c.type === "yt")); CLIPS.forEach(c => CLIP.set(c.id, c)); feedMeta.updatedAt = Date.parse(m.updatedAt) || 0; feedMeta.build = m.build || ""; LS.set("rally-vmanifest", m); }
 function unseenNew() { const d = day(), known = new Set([...(d.vroster.ids || []), ...(d.vroster.fresh || [])]); const now = clock().getTime(); return CLIPS.filter(c => !known.has(c.id) && Date.parse(c.published) <= now); }
 async function checkNew(manual) {
   if (checking) return; checking = true;
@@ -592,7 +599,7 @@ async function checkNew(manual) {
   finally { checking = false; }
 }
 function applyNew(n) {
-  const d = day(); n.sort((a, b) => Date.parse(a.published) - Date.parse(b.published)).forEach(c => { if (!d.vroster.fresh.includes(c.id)) d.vroster.fresh.push(c.id); }); persist();
+  const d = day(); n.sort((a, b) => Date.parse(a.published) - Date.parse(b.published)).forEach(c => { if (!d.vroster.fresh.includes(c.id)) d.vroster.fresh.push(c.id); }); rerankUnseen(); persist();
   $("#pill").classList.remove("show"); renderFeed(n[n.length - 1].id, 0); toast(n.length + " new clip" + (n.length > 1 ? "s" : "") + " · updated " + timeFmt(feedMeta.checkedAt));
 }
 $("#pill").onclick = () => { const n = unseenNew(); if (n.length) applyNew(n); else $("#pill").classList.remove("show"); };
@@ -781,7 +788,7 @@ function checkDay() { const k = pacificKey(); if (k !== TODAY) { TODAY = k; watc
   ingest(m);
   const [sj, dj] = await Promise.all([fetch("stories.json").then(r => r.json()).catch(() => ({ stories: [] })), fetch("drills.json").then(r => r.json()).catch(() => [])]);
   STORIES = sj.stories || []; STORIES.forEach(s => STORY.set(s.id, s)); DRILLS = dj; DRILLS.forEach(d => DRILL.set(d.id, d));
-  buildRoster(); paintHeader();
+  buildRoster(); rerankUnseen(); paintHeader();
   const ret = LS.get("rally-vreturn") || LS.get("rally-vpos"); const ok = ret && (ret.date === TODAY || (ret.at && Date.now() - ret.at < 6 * 3600e3)) && CLIP.has(ret.id);
   renderFeed(ok ? ret.id : null, ok ? ret.t : null); LS.del("rally-vreturn");
   const n = unseenNew(); if (n.length) { const p = $("#pill"); p.textContent = n.length + " new clip" + (n.length > 1 ? "s" : "") + " ↑"; p.classList.add("show"); }

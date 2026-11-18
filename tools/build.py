@@ -11,6 +11,7 @@ for y in yts:
     y["dur"] = round(off, 2); y["cues"] = cues; y["transcript"] = " ".join(f"{m['label']} ({m.get('minute','')}): {m['cue']}." for m in y["moments"])
 label = sys.argv[1] if len(sys.argv) > 1 else "gh"
 now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-items = yts + orig
+HIDE = {"c-vini-12min", "c-england-madrid"}  # synthetic sports clips replaced by real footage
+items = yts + [o for o in orig if o["id"] not in HIDE]
 json.dump({"build": f"{label}-{len(items)}", "updatedAt": now, "clips": items}, open(os.path.join(ROOT, "manifest.json"), "w"), ensure_ascii=False)
 print(label, len(items), "items:", sum(1 for i in items if i.get("type") == "yt"), "official YouTube,", sum(1 for i in items if i.get("type") != "yt"), "Rally originals")

@@ -1,14 +1,101 @@
 [
- {"id": "y-bra-sin-vini", "type": "yt", "yt": "VXDnHnWsC_A", "lang": "pt", "kind": "sports", "topic": "Sports",
-  "publisher": "TNT Sports Brasil", "url": "https://www.youtube.com/watch?v=VXDnHnWsC_A",
-  "headline": "Os três gols do Vini em 12 minutos contra Singapura", "headlineSafe": "Seleção x Singapura: os lances do Vini",
-  "kicker": "SELEÇÃO · AMISTOSO", "published": "2026-11-17T12:30:00Z", "spoiler": true, "related": "s-brasil-singapura",
-  "match": {"home": "Singapura", "away": "Brasil", "comp": "Amistoso", "date": "17 nov 2026", "venue": "Estádio Nacional de Singapura"},
-  "follow": {"type": "match"},
+ {
+  "id": "y-bra-sin-vini",
+  "type": "yt",
+  "yt": "VXDnHnWsC_A",
+  "lang": "pt",
+  "kind": "sports",
+  "topic": "Sports",
+  "publisher": "TNT Sports Brasil",
+  "url": "https://www.youtube.com/watch?v=VXDnHnWsC_A",
+  "headline": "Os três gols do Vini em 12 minutos contra Singapura",
+  "headlineSafe": "Seleção x Singapura: os lances do Vini",
+  "kicker": "SELEÇÃO · AMISTOSO",
+  "published": "2026-11-17T12:30:00Z",
+  "spoiler": true,
+  "related": "s-brasil-singapura",
+  "match": {
+   "home": "Singapura",
+   "away": "Brasil",
+   "comp": "Amistoso",
+   "date": "17 nov 2026",
+   "venue": "Estádio Nacional de Singapura"
+  },
+  "follow": {
+   "type": "match"
+  },
   "moments": [
-   {"label": "1º gol", "minute": "8'", "start": 18.5, "end": 26, "cue": "Olha o Vini (7) entrando pela esquerda da área"},
-   {"label": "2º gol", "minute": "13'", "start": 35, "end": 45, "cue": "Arrancada desde o meio-campo, depois o drible no goleiro"},
-   {"label": "3º gol", "minute": "20'", "start": 61, "end": 69, "cue": "Repara em quem ataca o primeiro pau"}
+   {
+    "label": "1º gol",
+    "minute": "8'",
+    "start": 18.5,
+    "end": 26,
+    "cue": "Olha o Vini (7) entrando pela esquerda da área"
+   },
+   {
+    "label": "2º gol",
+    "minute": "13'",
+    "start": 35,
+    "end": 45,
+    "cue": "Arrancada desde o meio-campo, depois o drible no goleiro"
+   },
+   {
+    "label": "3º gol",
+    "minute": "20'",
+    "start": 61,
+    "end": 69,
+    "cue": "Repara em quem ataca o primeiro pau"
+   }
   ],
-  "sources": [{"name": "O Povo", "url": "https://www.opovo.com.br/esportes/futebol-internacional/2026/11/17/com-hat-trick-de-vini-jr-brasil-goleou-singapura-em-ultimo-compromisso-de-2026.html"}]}
+  "sources": [
+   {
+    "name": "O Povo",
+    "url": "https://www.opovo.com.br/esportes/futebol-internacional/2026/11/17/com-hat-trick-de-vini-jr-brasil-goleou-singapura-em-ultimo-compromisso-de-2026.html"
+   }
+  ]
+ },
+ {
+  "id": "y-depaul-35yd",
+  "type": "yt",
+  "yt": "Yi1pUQxXbP0",
+  "lang": "en",
+  "kind": "sports",
+  "topic": "Sports",
+  "publisher": "Major League Soccer",
+  "url": "https://www.youtube.com/watch?v=Yi1pUQxXbP0",
+  "headline": "De Paul gets 30 yards of space and puts it in the bottom corner",
+  "kicker": "MLS · DECISION DAY",
+  "published": "2026-11-08T00:00:00Z",
+  "spoiler": false,
+  "match": {
+   "home": "Inter Miami",
+   "away": "Charlotte FC",
+   "comp": "MLS Decision Day",
+   "date": "Nov 7, 2026",
+   "venue": "Nu Stadium, Miami"
+  },
+  "follow": {
+   "type": "match"
+  },
+  "moments": [
+   {
+    "label": "Goal",
+    "minute": "42'",
+    "start": 3,
+    "end": 17,
+    "cue": "Watch how much room De Paul gets after Segovia's pass",
+    "note": "Collects Telasco Segovia's pass and drills a low shot into the bottom corner from about 35 yards."
+   }
+  ],
+  "sources": [
+   {
+    "name": "Inter Miami CF match recap",
+    "url": "https://www.intermiamicf.com/news/match-recap-inter-miami-cf-closes-out-regular-season-with-3-3-draw-against-charlotte-fc"
+   },
+   {
+    "name": "101 Great Goals",
+    "url": "https://www.101greatgoals.com/?p=221439"
+   }
+  ]
+ }
 ]
