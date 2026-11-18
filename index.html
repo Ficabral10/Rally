@@ -189,7 +189,7 @@ textarea{width:100%;min-height:160px;background:#0b0d0d;color:#e8f0ec;border:1px
 <div id="toast" role="status"></div>
 <script>
 "use strict";
-const BUILD = "gh-1.3.0";
+const BUILD = "gh-1.3.1";
 const NEED = 10, DRILL_NEED = 3;
 /* ---------- helpers ---------- */
 const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -495,6 +495,7 @@ function tick() {
   const s = slides[active];
   if (s && s._v && s._c) {
     const v = s._v, c = s._c, t = v.currentTime || 0, dur = v.duration || c.dur;
+    if (c.type === "yt" && s._paintSeg !== v._seg) { s._paintSeg = v._seg; paintMoments(s, v._seg); }
     const cap = $(".cap", s), txt = ccOn ? cueAt(c, t) : "";
     if (cap._t !== txt) { cap._t = txt; cap.replaceChildren(txt ? h("span", { text: txt }) : ""); }
     $(".bar i", s).style.width = (Math.min(1, t / dur) * 100).toFixed(2) + "%";
@@ -789,6 +790,8 @@ function checkDay() { const k = pacificKey(); if (k !== TODAY) { TODAY = k; watc
   ingest(m);
   const [sj, dj] = await Promise.all([fetch("stories.json?b=" + Date.now(), { cache: "no-store" }).then(r => r.json()).catch(() => ({ stories: [] })), fetch("drills.json?b=" + Date.now(), { cache: "no-store" }).then(r => r.json()).catch(() => [])]);
   STORIES = sj.stories || []; STORIES.forEach(s => STORY.set(s.id, s)); DRILLS = dj; DRILLS.forEach(d => DRILL.set(d.id, d));
+  /* one-time carry-over from the claude.ai Rally: #import=<base64url JSON of its saved progress> */
+  if (location.hash.startsWith("#import=")) { try { const raw = atob(location.hash.slice(8).replace(/-/g, "+").replace(/_/g, "/")); const bytes = Uint8Array.from(raw, ch => ch.charCodeAt(0)); const inc = JSON.parse(new TextDecoder().decode(bytes)); state = mergeState(state, inc); persist(); history.replaceState(null, "", location.pathname + location.search); setTimeout(() => toast("Imported your Rally progress: " + Object.keys(inc.days || {}).length + " days, " + Object.keys(inc.reviews || {}).length + " saved"), 800); } catch (e) { setTimeout(() => toast("That import link didn't work"), 800); } }
   buildRoster(); rerankUnseen(); paintHeader();
   const ret = LS.get("rally-vreturn") || LS.get("rally-vpos"); const ok = ret && (ret.date === TODAY || (ret.at && Date.now() - ret.at < 6 * 3600e3)) && CLIP.has(ret.id);
   renderFeed(ok ? ret.id : null, ok ? ret.t : null); LS.del("rally-vreturn");
