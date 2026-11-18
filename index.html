@@ -189,7 +189,7 @@ textarea{width:100%;min-height:160px;background:#0b0d0d;color:#e8f0ec;border:1px
 <div id="toast" role="status"></div>
 <script>
 "use strict";
-const BUILD = "gh-1.2.0";
+const BUILD = "gh-1.2.1";
 const NEED = 10, DRILL_NEED = 3;
 /* ---------- helpers ---------- */
 const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -371,7 +371,7 @@ function buildRoster() {
   const pick = [], kinds = [];
   const rest = fresh.slice();
   /* the first five swipes should show range: a real sports moment, tech, a news update, a coding/ML reveal, something in Portuguese */
-  const opening = [c => c.type === "yt" && c.kind === "sports", c => c.topic === "Tech", c => c.kind === "news", c => c.kind === "swe" || c.kind === "mle", c => c.lang === "pt"];
+  const opening = [c => c.type === "yt" && c.kind === "sports" && !(c.spoiler && !state.settings.spoilers), c => c.topic === "Tech", c => c.kind === "news", c => c.kind === "swe" || c.kind === "mle", c => c.lang === "pt"];
   for (const want of opening) { const k = rest.findIndex(c => want(c) && !(pick.length && pick[pick.length - 1].kind === c.kind && c.kind !== "news")); if (k >= 0) { const c = rest.splice(k, 1)[0]; pick.push(c); kinds.push(c.kind); } }
   while (rest.length) {
     let best = 0, bs = -1e9;
@@ -786,7 +786,7 @@ function checkDay() { const k = pacificKey(); if (k !== TODAY) { TODAY = k; watc
   try { m = await fetchManifest(); feedMeta.checkedAt = Date.now(); } catch (e) { m = LS.get("rally-vmanifest"); }
   if (!m) { feed.append(h("section", { class: "slide endcard" }, [h("h2", { text: "Can't reach Rally" }), h("p", { text: "Check your connection and reopen." })])); return; }
   ingest(m);
-  const [sj, dj] = await Promise.all([fetch("stories.json").then(r => r.json()).catch(() => ({ stories: [] })), fetch("drills.json").then(r => r.json()).catch(() => [])]);
+  const [sj, dj] = await Promise.all([fetch("stories.json?b=" + Date.now(), { cache: "no-store" }).then(r => r.json()).catch(() => ({ stories: [] })), fetch("drills.json?b=" + Date.now(), { cache: "no-store" }).then(r => r.json()).catch(() => [])]);
   STORIES = sj.stories || []; STORIES.forEach(s => STORY.set(s.id, s)); DRILLS = dj; DRILLS.forEach(d => DRILL.set(d.id, d));
   buildRoster(); rerankUnseen(); paintHeader();
   const ret = LS.get("rally-vreturn") || LS.get("rally-vpos"); const ok = ret && (ret.date === TODAY || (ret.at && Date.now() - ret.at < 6 * 3600e3)) && CLIP.has(ret.id);
