@@ -157,7 +157,7 @@ textarea{width:100%;min-height:160px;background:#0b0d0d;color:#e8f0ec;border:1px
 .ytframe{position:relative;width:100%;aspect-ratio:16/9;background:#000}.ytframe iframe,.ytframe>div{position:absolute;inset:0;width:100%;height:100%;border:0}
 .ytsrc{padding:0 14px;font-size:12px;color:#a3aaa8}.ythint{display:none;color:#ffcf6a;font-weight:700}.needtap .ythint{display:inline}
 .moments{display:flex;gap:8px;overflow-x:auto;padding:4px 14px;scrollbar-width:none}.moments button{flex:none;min-height:40px;padding:0 14px;border-radius:20px;border:1px solid rgba(255,255,255,.25);font-size:14px;font-weight:700;color:#e8efec}.moments button[aria-selected=true]{background:#fff;color:#000;border-color:#fff}
-.slide.yt .cap{top:auto;bottom:150px}
+.slide.yt .cap{position:static;transform:none;margin:4px 14px 0;text-align:left;font-size:19px}
 .slide.yt .center{display:none!important}.slide.yt.ended .center.replay{display:flex!important;top:auto;bottom:200px}
 .slide.yt .shade{height:38%}
 @media (min-width:600px){.view,#hdr{max-width:480px;margin:0 auto}#nav{max-width:480px;margin:0 auto}#sheet{max-width:480px;margin:0 auto}}
@@ -206,6 +206,7 @@ const ICON = {
   read: '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>',
   try: '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg>',
   watch: '<svg viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg>',
+  match: '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7l4 3-1.5 5h-5L8 10z"/></svg>',
   more2: '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg>'
 };
 /* ---------- Pacific dates ---------- */
@@ -399,7 +400,8 @@ function slideFor(c, i) {
   const err = h("div", { class: "errbox" }, [h("p", { text: "This clip didn't load." }), h("div", { class: "row" }, [h("button", { class: "btn", text: "Skip", onclick: e => { e.stopPropagation(); go(i + 1); } }), h("button", { class: "btn ghost", text: "Retry", onclick: e => { e.stopPropagation(); retry(s); } })]), h("p", { class: "fine skipin" })]);
   const sp = h("div", { class: "spoil" }, [h("h3", { text: c.headlineSafe || "Result inside" }), h("p", { class: "fine", text: c.type === "yt" ? (c.lang === "pt" ? "O vídeo oficial mostra o placar no título e na tela. Ele só carrega se você escolher ver." : "The official video shows the score in its title and on screen. It only loads if you choose to see it.") : (c.lang === "pt" ? "Esse vídeo mostra o resultado." : "This clip shows the result.") }), h("button", { class: "btn", text: c.lang === "pt" ? "Ver mesmo assim" : "Show result", onclick: e => { e.stopPropagation(); s.classList.remove("hidespoil"); $("h2", meta).textContent = c.headline; if (slides.indexOf(s) === active) load(s); playActive(); } }), h("button", { class: "btn ghost", text: c.lang === "pt" ? "Pular" : "Skip", onclick: e => { e.stopPropagation(); go(i + 1); } })]);
   const media = isYT ? ytLayout(c, v, s) : v;
-  s.append(media, h("div", { class: "shade" }), cap, h("div", { class: "center play", html: ICON.play }), h("button", { class: "center replay", "aria-label": "Replay", html: ICON.replay, onclick: e => { e.stopPropagation(); replay(s); } }), meta, rail, bar, h("button", { class: "unmute", html: ICON.soundOff.replace('width', 'w') + " Tap for sound", onclick: e => { e.stopPropagation(); setSound(true); } }), sp, err);
+  if (isYT) media.append(cap);
+  s.append(...[media, h("div", { class: "shade" }), isYT ? null : cap, h("div", { class: "center play", html: ICON.play }), h("button", { class: "center replay", "aria-label": "Replay", html: ICON.replay, onclick: e => { e.stopPropagation(); replay(s); } }), meta, rail, bar, h("button", { class: "unmute", html: ICON.soundOff.replace('width', 'w') + " Tap for sound", onclick: e => { e.stopPropagation(); setSound(true); } }), sp, err].filter(Boolean));
   $(".unmute svg", s) && ($(".unmute svg", s).style.cssText = "width:16px;height:16px");
   s.addEventListener("click", () => { if (s.classList.contains("broken") || s.classList.contains("hidespoil")) return; if (s.classList.contains("ended")) return replay(s); togglePause(s); });
   v.addEventListener("error", () => markBroken(s, i));
