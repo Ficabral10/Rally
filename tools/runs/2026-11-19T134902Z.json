@@ -1,0 +1,18 @@
+{
+ "at": "2026-11-19T13:49:02Z",
+ "found": 4,
+ "clipsAdded": [
+  "y-sq-bias-variance",
+  "y-sq-roc-auc",
+  "y-fs-graph-search"
+ ],
+ "storiesAdded": [
+  "s-anthropic-ipo"
+ ],
+ "dropped": [],
+ "expired": 0,
+ "inventory": 38,
+ "inline": 38,
+ "portuguese": 5,
+ "build": "run-1119-1349-38"
+}

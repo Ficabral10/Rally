@@ -1,5 +1,116 @@
 [
  {
+  "id": "y-fs-graph-search",
+  "yt": "cWNEl4HE2OE",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=cWNEl4HE2OE",
+  "headline": "Graph search: BFS and DFS in 100 seconds and beyond",
+  "kicker": "SWE · ALGORITHMS",
+  "published": "2020-04-25T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-2"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "BFS goes level by level, which is why it finds the shortest path"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "timestamps": "whole-video"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-19T13:49:02Z"
+ },
+ {
+  "id": "y-sq-roc-auc",
+  "yt": "4jRBRDbJemM",
+  "lang": "en",
+  "kind": "mle",
+  "topic": "MLE",
+  "publisher": "StatQuest with Josh Starmer",
+  "url": "https://www.youtube.com/watch?v=4jRBRDbJemM",
+  "headline": "ROC and AUC, threshold by threshold",
+  "kicker": "MLE · EVALUATION",
+  "published": "2019-07-11T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "StatQuest"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dm-recall-cost"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Each point on the curve is one threshold, so pick the one your costs favor"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "StatQuest with Josh Starmer",
+   "timestamps": "whole-video"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-19T13:49:02Z"
+ },
+ {
+  "id": "y-sq-bias-variance",
+  "yt": "EuBBz3bI-aA",
+  "lang": "en",
+  "kind": "mle",
+  "topic": "MLE",
+  "publisher": "StatQuest with Josh Starmer",
+  "url": "https://www.youtube.com/watch?v=EuBBz3bI-aA",
+  "headline": "Bias vs variance, the overfitting tradeoff",
+  "kicker": "MLE · BASICS",
+  "published": "2018-09-17T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "StatQuest"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dm-train-score"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Why the squiggly line that nails training data loses on the test set"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "StatQuest with Josh Starmer",
+   "timestamps": "whole-video"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-19T13:49:02Z"
+ },
+ {
   "id": "y-sq-ml-intro",
   "yt": "Gv9_4yMHFhI",
   "lang": "en",
