@@ -1,5 +1,117 @@
 [
  {
+  "id": "y-sq-ml-intro",
+  "yt": "Gv9_4yMHFhI",
+  "lang": "en",
+  "kind": "mle",
+  "topic": "MLE",
+  "publisher": "StatQuest with Josh Starmer",
+  "url": "https://www.youtube.com/watch?v=Gv9_4yMHFhI",
+  "headline": "A gentle intro to machine learning",
+  "kicker": "MLE · BASICS",
+  "published": "2018-11-26T17:00:01Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "StatQuest"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dm-train-score"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Why fitting the training data well isn't the goal, testing data is"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "StatQuest with Josh Starmer",
+   "duration": 765,
+   "timestamps": "whole-video"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-19T09:42:37Z"
+ },
+ {
+  "id": "y-sq-sens-spec",
+  "yt": "vP06aMoz4v8",
+  "lang": "en",
+  "kind": "mle",
+  "topic": "MLE",
+  "publisher": "StatQuest with Josh Starmer",
+  "url": "https://www.youtube.com/watch?v=vP06aMoz4v8",
+  "headline": "Sensitivity vs specificity, and why you need both",
+  "kicker": "MLE · EVALUATION",
+  "published": "2019-12-02T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "StatQuest"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dx-rare-screen"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Catching the sick vs clearing the healthy are two different scores"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "StatQuest with Josh Starmer",
+   "timestamps": "whole-video"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-19T09:42:37Z"
+ },
+ {
+  "id": "y-sq-confusion",
+  "yt": "Kdsp6soqA7o",
+  "lang": "en",
+  "kind": "mle",
+  "topic": "MLE",
+  "publisher": "StatQuest with Josh Starmer",
+  "url": "https://www.youtube.com/watch?v=Kdsp6soqA7o",
+  "headline": "The confusion matrix, square by square",
+  "kicker": "MLE · EVALUATION",
+  "published": "2018-10-29T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "StatQuest"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dv-confusion-recall"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Which box holds the misses, and which holds the false alarms"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "StatQuest with Josh Starmer",
+   "timestamps": "whole-video"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-19T09:42:37Z"
+ },
+ {
   "id": "tt-cor-bot-4x0",
   "type": "tt",
   "lang": "pt",
