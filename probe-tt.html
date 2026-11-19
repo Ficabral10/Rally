@@ -1,0 +1,17 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TikTok + NASA probe</title>
+<style>body{background:#111;color:#eee;font:14px system-ui;margin:10px}iframe{width:100%;max-width:360px;aspect-ratio:9/16;border:0;display:block}video{width:100%;max-width:360px}pre{white-space:pre-wrap;font-size:12px}</style></head><body>
+<p>TikTok embed player v1 (Corinthians, Kaio César 1st goal)</p>
+<iframe id="tt" allow="autoplay; fullscreen" src="https://www.tiktok.com/player/v1/7709719797948288277?autoplay=1&muted=1&loop=0&controls=1&progress_bar=1&play_button=1&volume_control=1&fullscreen_button=0&timestamp=1&music_info=0&description=0&rel=0&native_context_menu=0&closed_caption=0"></iframe>
+<p><button id="p">pause</button> <button id="pl">play</button> <button id="um">unmute</button> <button id="sk">seek 10s</button></p>
+<p>NASA public-domain MP4 (SPLICE precision landing)</p>
+<video id="n" muted playsinline autoplay controls src="https://images-assets.nasa.gov/video/AFRC-2026-14632-01_SPLICE_B-Roll_UHD/AFRC-2026-14632-01_SPLICE_B-Roll_UHD~mobile.mp4"></video>
+<pre id="log"></pre>
+<script>
+const L=t=>{document.getElementById('log').textContent=(t+"\n"+document.getElementById('log').textContent).slice(0,4000)};
+window.__msgs=[];
+addEventListener('message',e=>{ if(!/tiktok/.test(e.origin)) return; let d=e.data; try{ if(typeof d==='string') d=JSON.parse(d);}catch(x){} window.__msgs.push(d); if(d && d.type!=='onCurrentTime') L('TT '+JSON.stringify(d).slice(0,200)); else window.__tt=d; });
+const tt=document.getElementById('tt'); const send=(type,value)=>tt.contentWindow.postMessage({type,value,'x-tiktok-player':true},'*');
+p.onclick=()=>send('pause'); pl.onclick=()=>send('play'); um.onclick=()=>send('unMute'); sk.onclick=()=>send('seekTo',10);
+window.__send=send;
+const n=document.getElementById('n'); ['playing','error','loadedmetadata'].forEach(ev=>n.addEventListener(ev,()=>L('NASA '+ev+' dur='+n.duration+' t='+n.currentTime.toFixed(1))));
+</script></body></html>
