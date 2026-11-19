@@ -1,18 +1,18 @@
 {
- "at": "2026-11-19T13:49:02Z",
+ "at": "2026-11-19T17:42:28Z",
  "found": 4,
  "clipsAdded": [
-  "y-sq-bias-variance",
-  "y-sq-roc-auc",
-  "y-fs-graph-search"
+  "y-sq-cross-validation",
+  "y-fs-jax",
+  "y-cftv-sql"
  ],
  "storiesAdded": [
-  "s-anthropic-ipo"
+  "s-ant-first-trade"
  ],
  "dropped": [],
  "expired": 0,
- "inventory": 38,
- "inline": 38,
- "portuguese": 5,
- "build": "run-1119-1349-38"
+ "inventory": 41,
+ "inline": 41,
+ "portuguese": 6,
+ "build": "run-1119-1742-41"
 }

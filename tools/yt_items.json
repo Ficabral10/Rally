@@ -1,5 +1,116 @@
 [
  {
+  "id": "y-cftv-sql",
+  "yt": "kMznyI7r2Tc",
+  "lang": "pt",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Código Fonte TV",
+  "url": "https://www.youtube.com/watch?v=kMznyI7r2Tc",
+  "headline": "SQL, o básico que todo dev usa",
+  "kicker": "SWE · BANCO DE DADOS",
+  "published": "2019-08-12T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Dicionário do Programador"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "ds-null"
+  },
+  "moments": [
+   {
+    "label": "Assistir",
+    "start": 0,
+    "end": null,
+    "cue": "Tabelas, linhas e consultas: a linguagem dos bancos relacionais"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Código Fonte TV",
+   "timestamps": "whole-video"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-19T17:42:28Z"
+ },
+ {
+  "id": "y-fs-jax",
+  "yt": "_0D5lXDjNpw",
+  "lang": "en",
+  "kind": "mle",
+  "topic": "MLE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=_0D5lXDjNpw",
+  "headline": "JAX in 100 seconds: NumPy that runs on GPUs and TPUs",
+  "kicker": "MLE · TOOLS",
+  "published": "2024-06-03T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dm-batching"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "jit, grad and vmap: compile it, differentiate it, batch it"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "timestamps": "whole-video"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-19T17:42:28Z"
+ },
+ {
+  "id": "y-sq-cross-validation",
+  "yt": "fSytzGwwBVw",
+  "lang": "en",
+  "kind": "mle",
+  "topic": "MLE",
+  "publisher": "StatQuest with Josh Starmer",
+  "url": "https://www.youtube.com/watch?v=fSytzGwwBVw",
+  "headline": "Cross validation, fold by fold",
+  "kicker": "MLE · EVALUATION",
+  "published": "2018-04-24T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "StatQuest"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dx-leak-patient"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Every chunk of data gets a turn as the test set, so one lucky split can't fool you"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "StatQuest with Josh Starmer",
+   "timestamps": "whole-video"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-19T17:42:28Z"
+ },
+ {
   "id": "y-fs-graph-search",
   "yt": "cWNEl4HE2OE",
   "lang": "en",
