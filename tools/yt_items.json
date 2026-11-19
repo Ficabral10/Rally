@@ -1,5 +1,121 @@
 [
  {
+  "id": "y-sq-knn",
+  "yt": "HVXime0nQeI",
+  "lang": "en",
+  "kind": "mle",
+  "topic": "MLE",
+  "publisher": "StatQuest with Josh Starmer",
+  "url": "https://www.youtube.com/watch?v=HVXime0nQeI",
+  "headline": "K-nearest neighbors, clearly explained",
+  "kicker": "MLE · CLASSIC ML",
+  "published": "2024-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "StatQuest"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dm-knn-cost"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Classify a new point by asking its closest neighbors"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "StatQuest with Josh Starmer",
+   "timestamps": "whole-video"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-19T01:48:26Z"
+ },
+ {
+  "id": "y-fs-sql",
+  "yt": "zsjvFFKOm3c",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=zsjvFFKOm3c",
+  "headline": "SQL in 100 seconds",
+  "kicker": "SWE · DATA",
+  "published": "2024-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "ds-null"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Tables, rows and the query that ties them together"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "timestamps": "whole-video"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-19T01:48:26Z"
+ },
+ {
+  "id": "y-openai-gpt62-launch",
+  "yt": "C1zYX5jwqq4",
+  "lang": "en",
+  "kind": "tech",
+  "topic": "Tech",
+  "publisher": "OpenAI",
+  "url": "https://www.youtube.com/watch?v=C1zYX5jwqq4",
+  "headline": "OpenAI's own launch video for GPT-6.2 Astra and Sol",
+  "kicker": "TECH · OPENAI · NOV 17",
+  "published": "2026-11-17T18:00:00Z",
+  "spoiler": false,
+  "match": {
+   "comp": "OpenAI",
+   "date": "Nov 17, 2026"
+  },
+  "follow": {
+   "type": "read",
+   "id": "s-gpt62-astra-sol"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Astra for the hard projects, Sol for everyday work"
+   }
+  ],
+  "sources": [
+   {
+    "name": "OpenAI Developer Community",
+    "url": "https://community.openai.com/t/gpt-6-2-astra-and-sol-are-now-available/1417531"
+   }
+  ],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "OpenAI",
+   "timestamps": "whole-video"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-19T01:48:26Z"
+ },
+ {
   "id": "y-fs-huang-nvidia",
   "yt": "SOwUWPtXQ9I",
   "lang": "en",
