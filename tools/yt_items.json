@@ -1,5 +1,157 @@
 [
  {
+  "id": "tt-cor-bot-4x0",
+  "type": "tt",
+  "lang": "pt",
+  "kind": "sports",
+  "topic": "Sports",
+  "publisher": "Corinthians",
+  "url": "https://www.tiktok.com/@corinthians/video/7709719797948288277",
+  "headline": "Corinthians 4 x 0 Botafogo: o hat-trick do Kaio César e o gol do Memphis",
+  "headlineSafe": "Corinthians x Botafogo: os gols da noite na Neo Química Arena",
+  "kicker": "CORINTHIANS · BRASILEIRÃO",
+  "published": "2026-11-19T03:30:32Z",
+  "addedAt": "2026-11-19T07:11:08Z",
+  "spoiler": true,
+  "story": "cor-bot-2026-11-18",
+  "related": "s-cor-bot",
+  "tags": [
+   "club:corinthians",
+   "comp:brasileirao"
+  ],
+  "match": {
+   "home": "Corinthians",
+   "away": "Botafogo",
+   "comp": "Brasileirão · 35ª rodada",
+   "date": "18 nov 2026",
+   "venue": "Neo Química Arena"
+  },
+  "follow": {
+   "type": "match"
+  },
+  "moments": [
+   {
+    "label": "1º gol · Kaio César",
+    "minute": "27'",
+    "tt": "7709719797948288277",
+    "start": 0,
+    "end": null,
+    "dur": 38,
+    "cue": "Olha a jogada do Vitinho pela esquerda antes do chute"
+   },
+   {
+    "label": "2º gol · Memphis",
+    "minute": "33'",
+    "tt": "7709725975398878516",
+    "start": 0,
+    "end": null,
+    "dur": 30,
+    "cue": "O clube dá o gol ao Memphis; parte da imprensa registrou contra do Arthur Chaves",
+    "note": "Some reports (Estadão's match sheet) list it as an Arthur Chaves own goal; the club and Lance credit Memphis."
+   },
+   {
+    "label": "3º gol · Kaio César",
+    "minute": "60'",
+    "tt": "7709718314158656789",
+    "start": 0,
+    "end": null,
+    "dur": 39,
+    "cue": "Tabela entre Memphis e Kaio César"
+   },
+   {
+    "label": "4º gol · Kaio César",
+    "minute": "66'",
+    "tt": "7709721711238843700",
+    "start": 0,
+    "end": null,
+    "dur": 48,
+    "cue": "Contra-ataque rápido, passe do Vitinho, hat-trick"
+   }
+  ],
+  "sources": [
+   {
+    "name": "Lance!",
+    "url": "https://www.lance.com.br/futebol-nacional/ao-vivo-siga-corinthians-x-botafogo-pelo-brasileirao.html"
+   },
+   {
+    "name": "O Estado de Rondônia (ficha técnica, Estadão Conteúdo)",
+    "url": "https://oestadoderondonia.com.br/corinthians-atropela-o-botafogo-por-4-a-0-e-deixa-o-z4/"
+   }
+  ],
+  "discovery": {
+   "provider": "Corinthians on TikTok",
+   "url": "https://www.tiktok.com/@corinthians"
+  },
+  "playback": {
+   "provider": "TikTok",
+   "method": "embed player v1"
+  },
+  "verify": {
+   "embeddable": true,
+   "author": "Corinthians",
+   "timestamps": "whole-video",
+   "checked": "played inline in Chrome on GitHub Pages, Nov 18 PT"
+  }
+ },
+ {
+  "id": "n-nasa-splice",
+  "type": "mp4seg",
+  "lang": "en",
+  "kind": "tech",
+  "topic": "Tech",
+  "publisher": "NASA",
+  "url": "https://images.nasa.gov/details/AFRC-2026-14632-01_SPLICE_B-Roll_UHD",
+  "src": "https://images-assets.nasa.gov/video/AFRC-2026-14632-01_SPLICE_B-Roll_UHD/AFRC-2026-14632-01_SPLICE_B-Roll_UHD~mobile.mp4",
+  "poster": "https://images-assets.nasa.gov/video/AFRC-2026-14632-01_SPLICE_B-Roll_UHD/AFRC-2026-14632-01_SPLICE_B-Roll_UHD~small.jpg",
+  "headline": "NASA flew a Moon-landing sensor package on a drone to practice landing precisely",
+  "kicker": "NASA · TECH TEST",
+  "published": "2026-07-15T00:00:00Z",
+  "addedAt": "2026-11-19T07:11:08Z",
+  "evergreen": true,
+  "spoiler": false,
+  "tags": [
+   "topic:space"
+  ],
+  "match": {
+   "comp": "NASA Armstrong · SPLICE tests"
+  },
+  "moments": [
+   {
+    "label": "The flight",
+    "start": 76,
+    "end": 122,
+    "cue": "The box under the drone is SPLICE: sensors that pick a safe landing spot on their own"
+   },
+   {
+    "label": "The hardware",
+    "start": 31,
+    "end": 42,
+    "cue": "Up close: the sensor package before it flies"
+   }
+  ],
+  "sources": [
+   {
+    "name": "NASA Image and Video Library",
+    "url": "https://images.nasa.gov/details/AFRC-2026-14632-01_SPLICE_B-Roll_UHD"
+   }
+  ],
+  "discovery": {
+   "provider": "NASA Image and Video Library API",
+   "url": "https://images-api.nasa.gov"
+  },
+  "playback": {
+   "provider": "NASA (publisher-hosted MP4)",
+   "method": "native video"
+  },
+  "verify": {
+   "embeddable": true,
+   "author": "NASA",
+   "duration": 123.9,
+   "timestamps": "frames",
+   "license": "NASA media is generally not copyrighted (public domain)"
+  }
+ },
+ {
   "id": "y-sq-logistic",
   "yt": "yIYKR4sgzI8",
   "lang": "en",
@@ -34,7 +186,15 @@
    "timestamps": "whole-video"
   },
   "type": "yt",
-  "addedAt": "2026-11-19T05:42:12Z"
+  "addedAt": "2026-11-19T05:42:12Z",
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "YouTube channel: StatQuest with Josh Starmer",
+   "url": "https://www.youtube.com/watch?v=yIYKR4sgzI8"
+  }
  },
  {
   "id": "y-fs-kubernetes",
@@ -68,7 +228,15 @@
    "timestamps": "whole-video"
   },
   "type": "yt",
-  "addedAt": "2026-11-19T05:42:12Z"
+  "addedAt": "2026-11-19T05:42:12Z",
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "YouTube channel: Fireship",
+   "url": "https://www.youtube.com/watch?v=PziYflu8cB8"
+  }
  },
  {
   "id": "y-sq-knn",
@@ -105,7 +273,15 @@
    "timestamps": "whole-video"
   },
   "type": "yt",
-  "addedAt": "2026-11-19T01:48:26Z"
+  "addedAt": "2026-11-19T01:48:26Z",
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "YouTube channel: StatQuest with Josh Starmer",
+   "url": "https://www.youtube.com/watch?v=HVXime0nQeI"
+  }
  },
  {
   "id": "y-fs-sql",
@@ -142,7 +318,15 @@
    "timestamps": "whole-video"
   },
   "type": "yt",
-  "addedAt": "2026-11-19T01:48:26Z"
+  "addedAt": "2026-11-19T01:48:26Z",
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "YouTube channel: Fireship",
+   "url": "https://www.youtube.com/watch?v=zsjvFFKOm3c"
+  }
  },
  {
   "id": "y-openai-gpt62-launch",
@@ -184,7 +368,15 @@
    "timestamps": "whole-video"
   },
   "type": "yt",
-  "addedAt": "2026-11-19T01:48:26Z"
+  "addedAt": "2026-11-19T01:48:26Z",
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "YouTube channel: OpenAI",
+   "url": "https://www.youtube.com/watch?v=C1zYX5jwqq4"
+  }
  },
  {
   "id": "y-fs-huang-nvidia",
@@ -227,7 +419,15 @@
    "timestamps": "whole-video"
   },
   "type": "yt",
-  "addedAt": "2026-11-18T21:44:13Z"
+  "addedAt": "2026-11-18T21:44:13Z",
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "YouTube channel: Fireship",
+   "url": "https://www.youtube.com/watch?v=SOwUWPtXQ9I"
+  }
  },
  {
   "id": "y-fs-ms365-outage",
@@ -266,7 +466,15 @@
    "timestamps": "whole-video"
   },
   "type": "yt",
-  "addedAt": "2026-11-18T21:44:13Z"
+  "addedAt": "2026-11-18T21:44:13Z",
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "YouTube channel: Fireship",
+   "url": "https://www.youtube.com/watch?v=ytmawkPTP24"
+  }
  },
  {
   "id": "y-arg-cri-7",
@@ -316,7 +524,16 @@
   "follow": {
    "type": "match"
   },
-  "addedAt": "2026-11-18T06:07:32Z"
+  "addedAt": "2026-11-18T06:07:32Z",
+  "tags": [],
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "YouTube channel: CONMEBOL",
+   "url": "https://www.youtube.com/watch?v=tZX91fVB1R4"
+  }
  },
  {
   "id": "y-bra-sin-vini",
@@ -379,7 +596,16 @@
    "duration": 169.1,
    "timestamps": "frames"
   },
-  "story": "bra-sin-2026"
+  "story": "bra-sin-2026",
+  "tags": [],
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "YouTube channel: TNT Sports Brasil",
+   "url": "https://www.youtube.com/watch?v=VXDnHnWsC_A"
+  }
  },
  {
   "id": "y-depaul-35yd",
@@ -431,7 +657,16 @@
    "duration": 61.3,
    "timestamps": "frames"
   },
-  "story": "mia-clt-2026-11-07"
+  "story": "mia-clt-2026-11-07",
+  "tags": [],
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "YouTube channel: Major League Soccer",
+   "url": "https://www.youtube.com/watch?v=Yi1pUQxXbP0"
+  }
  },
  {
   "id": "y-gpt62-3d-sets",
@@ -481,6 +716,14 @@
    "author": "OpenAI",
    "duration": 82.4,
    "timestamps": "frames"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "YouTube channel: OpenAI",
+   "url": "https://www.youtube.com/watch?v=tKoDPOrLMX0"
   }
  },
  {
@@ -518,6 +761,14 @@
    "embeddable": true,
    "author": "Fireship",
    "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "YouTube channel: Fireship",
+   "url": "https://www.youtube.com/watch?v=MFhxShGxHWc"
   }
  },
  {
@@ -555,6 +806,14 @@
    "embeddable": true,
    "author": "Fireship",
    "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "YouTube channel: Fireship",
+   "url": "https://www.youtube.com/watch?v=g2o22C3CRfU"
   }
  },
  {
@@ -592,6 +851,14 @@
    "embeddable": true,
    "author": "Fireship",
    "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "YouTube channel: Fireship",
+   "url": "https://www.youtube.com/watch?v=rf60MejMz3E"
   }
  },
  {
@@ -629,6 +896,14 @@
    "embeddable": true,
    "author": "Fireship",
    "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "YouTube channel: Fireship",
+   "url": "https://www.youtube.com/watch?v=PeMlggyqz0Y"
   }
  },
  {
@@ -666,6 +941,14 @@
    "embeddable": true,
    "author": "Fireship",
    "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "YouTube channel: Fireship",
+   "url": "https://www.youtube.com/watch?v=pPStdjuYzSI"
   }
  },
  {
@@ -699,6 +982,14 @@
    "embeddable": true,
    "author": "Fireship",
    "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "YouTube channel: Fireship",
+   "url": "https://www.youtube.com/watch?v=G1rOthIU-uo"
   }
  },
  {
@@ -732,6 +1023,14 @@
    "embeddable": true,
    "author": "Fireship",
    "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "YouTube channel: Fireship",
+   "url": "https://www.youtube.com/watch?v=hwP7WQkmECE"
   }
  },
  {
@@ -765,6 +1064,14 @@
    "embeddable": true,
    "author": "Fireship",
    "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "YouTube channel: Fireship",
+   "url": "https://www.youtube.com/watch?v=Gjnup-PuquQ"
   }
  }
 ]

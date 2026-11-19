@@ -24,9 +24,12 @@ Rally (https://ficabral10.github.io/Rally/) plays official YouTube clips inside 
 4. Write `tools/incoming.json` as `{"clips": [...], "stories": [...]}`. Copy field names from an item in `tools/yt_items.json` and a story in `stories.json`.
 5. Run `python3 tools/refresh.py`. It validates the batch, drops anything that fails (with a reason), expires old items (news and tech: 3 days, sports: 7, evergreen: never), rebuilds `manifest.json`, and writes the run summary to `run.json` and `tools/runs/`.
 6. Read the printed summary. Fix and re-run only if a good item was dropped for a fixable reason (a missing field, say). Never relax a check to get an item through.
-7. Commit `manifest.json stories.json run.json tools/` with a message like `Refresh <date>: N live, M dropped`, then push to `main`. GitHub Pages updates in about a minute. Pull-to-refresh in the app picks up anything new.
+7. Commit `manifest.json stories.json run.json roles.json tools/` with a message like `Refresh <date>: N live, M dropped`, then push to `main`. GitHub Pages updates in about a minute. Pull-to-refresh in the app picks up anything new.
 8. If the GitHub push fails, say so with the exact error.
 9. Finish with the summary: what was found, what went live, what was dropped and why, and the inventory count.
+
+## Roles (internships)
+Run `python3 tools/roles.py` on every refresh. It rebuilds `roles.json` from the SimplifyJobs and vanshb03 Summer 2027 lists on GitHub. It groups duplicates by the employer posting, keeps `firstSeen`, and marks roles that drop off the list as closed for 14 days. If the lists can't be fetched, it leaves the last good `roles.json` alone. Commit `roles.json` together with the rest. Never use Jobby's API: its robots.txt disallows `/api/` and on-demand AI access.
 
 ## Rules
 - Only canonical YouTube watch URLs that appeared in what you read. Never construct IDs.

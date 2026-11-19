@@ -1,0 +1,54 @@
+{
+ "updatedAt": "2026-11-19T07:11:08Z",
+ "clubs": {
+  "corinthians": {
+   "name": "Corinthians",
+   "short": "Timão",
+   "league": "Brasileirão Série A",
+   "next": {
+    "home": "Atlético-MG",
+    "away": "Corinthians",
+    "comp": "Brasileirão · 36ª rodada",
+    "kickoff": "2026-11-25T23:00:00Z",
+    "venue": "Arena MRV, Belo Horizonte",
+    "lineups": null,
+    "source": {
+     "name": "CBF table via NetVasco",
+     "url": "https://www.netvasco.com.br/n/395385/cbf-divulga-tabela-detalhada-das-rodadas-35-e-36-do-brasileiro"
+    }
+   },
+   "recent": [
+    {
+     "date": "2026-11-18",
+     "home": "Corinthians",
+     "away": "Botafogo",
+     "score": "4 x 0",
+     "comp": "Brasileirão · 35ª rodada",
+     "clip": "tt-cor-bot-4x0",
+     "story": "s-cor-bot",
+     "source": {
+      "name": "Lance!",
+      "url": "https://www.lance.com.br/futebol-nacional/ao-vivo-siga-corinthians-x-botafogo-pelo-brasileirao.html"
+     }
+    }
+   ],
+   "table": {
+    "pos": 15,
+    "pts": 40,
+    "note": "Provisório: pode voltar ao Z-4 se Vitória e Internacional vencerem na quinta (19).",
+    "source": {
+     "name": "TMC / hoop78",
+     "url": "https://tmc.com.br/esporte/veja-os-gols-de-corinthians-4-x-0-botafogo-pelo-brasileirao/"
+    }
+   },
+   "coach": "Clarence Seedorf"
+  }
+ },
+ "competitions": {
+  "brasileirao": "Brasileirão Série A",
+  "copa-do-brasil": "Copa do Brasil",
+  "sul-americana": "Copa Sul-Americana",
+  "libertadores": "Copa Libertadores",
+  "cor-feminino": "Corinthians Feminino"
+ }
+}
