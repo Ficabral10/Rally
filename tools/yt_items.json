@@ -1,5 +1,153 @@
 [
  {
+  "id": "y-fs-react",
+  "yt": "Tn6-PIqc4UM",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=Tn6-PIqc4UM",
+  "headline": "React in 100 seconds",
+  "kicker": "SWE · FRONTEND",
+  "published": "2024-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dx-two-loops"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Components, state and the virtual DOM, minus the hype"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "timestamps": "whole-video"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-19T21:41:55Z"
+ },
+ {
+  "id": "y-sq-multiple-regression",
+  "yt": "EkAQAi3a4js",
+  "lang": "en",
+  "kind": "mle",
+  "topic": "MLE",
+  "publisher": "StatQuest with Josh Starmer",
+  "url": "https://www.youtube.com/watch?v=EkAQAi3a4js",
+  "headline": "Multiple regression, clearly explained",
+  "kicker": "MLE · CLASSIC ML",
+  "published": "2024-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "StatQuest"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dm-baseline"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Add more predictors and check whether they actually earn their place"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "StatQuest with Josh Starmer",
+   "timestamps": "whole-video"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-19T21:41:55Z"
+ },
+ {
+  "id": "y-cftv-debug",
+  "yt": "Wnb02kzc0Cw",
+  "lang": "pt",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Código Fonte TV",
+  "url": "https://www.youtube.com/watch?v=Wnb02kzc0Cw",
+  "headline": "Debug: como caçar o bug sem chutar",
+  "kicker": "SWE · FERRAMENTAS",
+  "published": "2024-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Dicionário do Programador"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dx-bsearch-bounds"
+  },
+  "moments": [
+   {
+    "label": "Assistir",
+    "start": 0,
+    "end": null,
+    "cue": "De onde vem o termo e como depurar passo a passo"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Código Fonte TV",
+   "timestamps": "whole-video"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-19T21:41:55Z"
+ },
+ {
+  "id": "y-cftv-api",
+  "yt": "vGuqKIRWosk",
+  "lang": "pt",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Código Fonte TV",
+  "url": "https://www.youtube.com/watch?v=vGuqKIRWosk",
+  "headline": "API, o contrato entre dois sistemas",
+  "kicker": "SWE · ARQUITETURA",
+  "published": "2024-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Dicionário do Programador"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dx-boundary-test"
+  },
+  "moments": [
+   {
+    "label": "Assistir",
+    "start": 0,
+    "end": null,
+    "cue": "O que é uma API e por que todo sistema conversa por uma"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Código Fonte TV",
+   "timestamps": "whole-video"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-19T21:41:55Z"
+ },
+ {
   "id": "y-cftv-sql",
   "yt": "kMznyI7r2Tc",
   "lang": "pt",
