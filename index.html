@@ -155,6 +155,7 @@ textarea{width:100%;min-height:160px;background:#0b0d0d;color:#e8f0ec;border:1px
 .ytwrap{position:absolute;left:0;right:0;top:calc(var(--st) + 64px);display:flex;flex-direction:column;gap:8px}
 .ythead{padding:0 14px}.ythead .comp{font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#9fe0b4}.ythead .teams{font-size:20px;font-weight:800;margin-top:2px}
 .ytframe{position:relative;width:100%;aspect-ratio:16/9;background:#000}.ytframe iframe,.ytframe>div{position:absolute;inset:0;width:100%;height:100%;border:0}
+.slowbar{position:absolute;z-index:6;left:12px;right:12px;bottom:110px;display:none;align-items:center;gap:8px;flex-wrap:wrap;padding:10px 12px;border-radius:14px;background:rgba(0,0,0,.8);font-size:14px;font-weight:600}.slowbar .btn{min-height:38px;font-size:14px;padding:0 14px}.slide.slow .slowbar{display:flex}
 .ytsrc{padding:0 14px;font-size:12px;color:#a3aaa8}.ythint{display:none;color:#ffcf6a;font-weight:700}.needtap .ythint{display:inline}
 .moments{display:flex;gap:8px;overflow-x:auto;padding:4px 14px;scrollbar-width:none}.moments button{flex:none;min-height:40px;padding:0 14px;border-radius:20px;border:1px solid rgba(255,255,255,.25);font-size:14px;font-weight:700;color:#e8efec}.moments button[aria-selected=true]{background:#fff;color:#000;border-color:#fff}
 .slide.yt .cap{position:static;transform:none;margin:4px 14px 0;text-align:left;font-size:19px}
@@ -213,7 +214,7 @@ input[type=text],input[type=url],select{width:100%;min-height:44px;background:#0
 <div id="toast" role="status"></div>
 <script>
 "use strict";
-const BUILD = "gh-2.0.0";
+const BUILD = "gh-2.1.0";
 const NEED = 10, DRILL_NEED = 3;
 /* ---------- helpers ---------- */
 const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -337,7 +338,7 @@ function ytApi() {
 class YTClip extends EventTarget {
   constructor(c) {
     super(); this.c = c; this.segs = c.moments.map(m => ({ s: m.start, e: m.end == null ? m.start + 90 : m.end, open: m.end == null })); this.total = this.segs.reduce((a, g) => a + (g.e - g.s), 0);
-    this.el = h("div", { class: "ytframe" }); this.slot = h("div"); this.el.append(this.slot);
+    this.el = h("div", { class: "ytframe" }); if (!c.spoiler) this.el.style.cssText = "background:#000 url('https://i.ytimg.com/vi/" + c.yt + "/hqdefault.jpg') center/cover"; this.slot = h("div"); this.el.append(this.slot);
     this._src = null; this.p = null; this.ready = false; this.paused = true; this.ended = false; this._muted = true; this._vt = 0; this._seg = 0; this._want = false; this.readyState = 0; this.preload = "auto"; this.poster = ""; this.defaultMuted = true; this.playbackRate = 1;
   }
   get duration() { return this.total; }
@@ -450,11 +451,11 @@ function buildRoster() {
   const pick = [], kinds = [];
   const rest = fresh.slice().sort((a, b) => clubBoost(b) * (Date.now() - Date.parse(b.addedAt || b.published) < 2 * 864e5 ? 1 : 0) - clubBoost(a) * (Date.now() - Date.parse(a.addedAt || a.published) < 2 * 864e5 ? 1 : 0));
   /* the first five swipes should show range: a real sports moment, tech, a news update, a coding/ML reveal, something in Portuguese */
-  const opening = [c => EMB(c) && c.kind === "sports" && (clubBoost(c) ? true : !(c.spoiler && !state.settings.spoilers)), c => c.topic === "Tech", c => c.kind === "news", c => c.kind === "swe" || c.kind === "mle", c => c.lang === "pt"];
+  const opening = [c => !provShaky(c) && !provSlow(c) && EMB(c) && c.kind === "sports" && (clubBoost(c) ? true : !(c.spoiler && !state.settings.spoilers)), c => c.topic === "Tech", c => c.kind === "news", c => c.kind === "swe" || c.kind === "mle", c => c.lang === "pt"];
   for (const want of opening) { const k = rest.findIndex(c => want(c) && !(pick.length && pick[pick.length - 1].kind === c.kind && c.kind !== "news")); if (k >= 0) { const c = rest.splice(k, 1)[0]; pick.push(c); kinds.push(c.kind); } }
   while (rest.length) {
     let best = 0, bs = -1e9;
-    rest.forEach((c, i) => { let s = -i * 0.4 + (state.pref[c.kind + ":foryou"] ? prefScore(c) : 0); if (kinds[kinds.length - 1] === c.kind) s -= 5; if (kinds[kinds.length - 2] === c.kind) s -= 2; if (EMB(c)) s += 1; if (clubBoost(c)) s += 6; if (s > bs) { bs = s; best = i; } });
+    rest.forEach((c, i) => { let s = -i * 0.4 + (state.pref[c.kind + ":foryou"] ? prefScore(c) : 0); if (kinds[kinds.length - 1] === c.kind) s -= 5; if (kinds[kinds.length - 2] === c.kind) s -= 2; if (EMB(c)) s += 1; if (provShaky(c) || provSlow(c)) s -= 4; if (clubBoost(c)) s += 6; if (s > bs) { bs = s; best = i; } });
     const c = rest.splice(best, 1)[0]; pick.push(c); kinds.push(c.kind);
   }
   d.vroster = { ids: pick.concat(old).map(c => c.id), createdAt: Date.now(), fresh: [], build: feedMeta.build };
@@ -487,15 +488,16 @@ function slideFor(c, i) {
   paintSave(c, saveB);
   const bar = h("div", { class: "bar" }, h("i"));
   const err = h("div", { class: "errbox" }, [h("p", { text: "This clip didn't load." }), h("div", { class: "row" }, [h("button", { class: "btn", text: "Skip", onclick: e => { e.stopPropagation(); go(slides.indexOf(s) + 1); } }), h("button", { class: "btn ghost", text: "Retry", onclick: e => { e.stopPropagation(); retry(s); } })]), h("p", { class: "fine skipin" })]);
+  const slowbar = h("div", { class: "slowbar" }, [h("span", { text: isYT ? (c.lang === "pt" ? "Demorando… toque no vídeo ou" : "Slow to start. Tap the video, or") : (c.lang === "pt" ? "Demorando pra carregar" : "Taking a while to load") }), h("button", { class: "btn ghost", text: "Retry", onclick: e => { e.stopPropagation(); s.classList.remove("slow"); s._wantPlay = Date.now(); retry(s); } }), h("button", { class: "btn", text: "Next", onclick: e => { e.stopPropagation(); go(slides.indexOf(s) + 1); } })]);
   const sp = h("div", { class: "spoil" }, [h("h3", { text: c.headlineSafe || "Result inside" }), h("p", { class: "fine", text: isYT ? (c.lang === "pt" ? "O vídeo oficial mostra o placar no título e na tela. Ele só carrega se você escolher ver." : "The official video shows the score in its title and on screen. It only loads if you choose to see it.") : (c.lang === "pt" ? "Esse vídeo mostra o resultado." : "This clip shows the result.") }), h("button", { class: "btn", text: c.lang === "pt" ? "Ver mesmo assim" : "Show result", onclick: e => { e.stopPropagation(); s.classList.remove("hidespoil"); $("h2", meta).textContent = c.headline; if (slides.indexOf(s) === active) load(s); playActive(); } }), h("button", { class: "btn ghost", text: c.lang === "pt" ? "Pular" : "Skip", onclick: e => { e.stopPropagation(); go(slides.indexOf(s) + 1); } })]);
   const media = isYT ? ytLayout(c, v, s) : v;
   if (isYT) media.append(cap);
-  s.append(...[media, h("div", { class: "shade" }), isYT ? null : cap, h("div", { class: "center play", html: ICON.play }), h("button", { class: "center replay", "aria-label": "Replay", html: ICON.replay, onclick: e => { e.stopPropagation(); replay(s); } }), meta, rail, bar, h("button", { class: "unmute", html: ICON.soundOff.replace('width', 'w') + " Tap for sound", onclick: e => { e.stopPropagation(); setSound(true); } }), sp, err].filter(Boolean));
+  s.append(...[media, h("div", { class: "shade" }), isYT ? null : cap, h("div", { class: "center play", html: ICON.play }), h("button", { class: "center replay", "aria-label": "Replay", html: ICON.replay, onclick: e => { e.stopPropagation(); replay(s); } }), meta, rail, bar, h("button", { class: "unmute", html: ICON.soundOff.replace('width', 'w') + " Tap for sound", onclick: e => { e.stopPropagation(); setSound(true); } }), slowbar, sp, err].filter(Boolean));
   $(".unmute svg", s) && ($(".unmute svg", s).style.cssText = "width:16px;height:16px");
   s.addEventListener("click", () => { if (s.classList.contains("broken") || s.classList.contains("hidespoil")) return; if (s.classList.contains("ended")) return replay(s); togglePause(s); });
   v.addEventListener("error", () => markBroken(s, i));
   v.addEventListener("ended", () => { s.classList.add("ended"); s.classList.remove("paused"); credit(s, true); });
-  v.addEventListener("playing", () => { s._stallFrom = 0; s.classList.remove("paused", "ended"); });
+  v.addEventListener("playing", () => { s._stallFrom = 0; s.classList.remove("paused", "ended", "slow"); const i2 = slides.indexOf(s); if (i2 === active && warmFor === s) setTimeout(() => warm(i2), 300); });
   v.addEventListener("waiting", () => { s._stallFrom = s._stallFrom || Date.now(); });
   v.addEventListener("pause", () => { if (slides.indexOf(s) === active && !sheetOpen && curView === "foryou") s.classList.add("paused"); });
   if (isYT) v.addEventListener("moment", e => paintMoments(s, e.detail));
@@ -530,13 +532,27 @@ function renderFeed(keepId, keepT) {
 }
 const io = new IntersectionObserver(es => { for (const e of es) if (e.isIntersecting && e.intersectionRatio >= 0.6) { const i = slides.indexOf(e.target); if (i !== active) setActive(i); } }, { root: feed, threshold: [0.6] });
 function srcFor(s) { const c = s._c; if (QS.get("break") === c.id) return c.type === "mp4seg" || !EMB(c) ? "clips/__missing__.mp4" : "broken:" + c.id; return c.type === "yt" ? "yt:" + c.yt : c.type === "tt" ? "tt:" + c.id : c.src; }
-function load(s, pre) { const v = s._v; if (!v || broken.has(s._c.id)) return; if (EMB(s._c) && s.classList.contains("hidespoil")) return; if (!v.getAttribute("src")) { v.preload = pre ? "auto" : "auto"; v.src = srcFor(s); try { v.load(); } catch (e) {} } }
+function load(s, pre) { const v = s._v; if (!v || broken.has(s._c.id)) return; if (EMB(s._c) && s.classList.contains("hidespoil")) return; if (!v.getAttribute("src")) { v.preload = pre === "metadata" ? "metadata" : "auto"; v.src = srcFor(s); try { v.load(); } catch (e) {} } else if (pre !== "metadata" && v.preload === "metadata") v.preload = "auto"; }
 function unload(s) { const v = s._v; if (!v || !v.getAttribute("src")) return; s._keepT = v.currentTime; v.pause(); v.removeAttribute("src"); v.load(); }
+/* ---- playback timing (kept in the app: __rally.perf()) ---- */
+const PERF = LS.get("rally-perf") || []; let perfCold = true, perfScenario = "swipe";
+function perfStart(s) { if (!s._c) return; const warm = !!(s._v && s._v.readyState >= 2); s._perf = { id: s._c.id, provider: s._c.type || "native", scenario: perfCold ? "cold" : perfScenario, warm, t0: performance.now(), sinceNav: perfCold ? performance.now() : null }; perfCold = false; perfScenario = "swipe"; }
+function perfMark(s, k) { const p = s && s._perf; if (p && p[k] == null) { p[k] = Math.round(performance.now() - p.t0); if (k === "frame") { PERF.push({ ...p, t0: undefined, at: Date.now(), net: (navigator.connection && navigator.connection.effectiveType) || "" }); if (PERF.length > 200) PERF.shift(); idleSave("rally-perf", PERF); } } }
+/* a provider whose recent first frames are slow stays out of the opening slots until it recovers */
+function provSlow(c) { const k = c.type || "native"; const v = PERF.filter(x => x.provider === k && Date.now() - (x.at || 0) < 3 * 864e5).map(x => x.frame).sort((a, b) => a - b); return v.length >= 3 && v[Math.floor(v.length / 2)] > 2500; }
+function perfReport() { const by = {}; PERF.forEach(x => { const k = x.provider + " · " + (x.scenario === "cold" ? "cold start" : "swipe"); (by[k] ||= []).push(x.scenario === "cold" ? x.frame + (x.sinceNav || 0) : x.frame); });
+  return Object.entries(by).map(([k, v]) => { v.sort((a, b) => a - b); return k + ": median " + v[Math.floor(v.length / 2)] + " ms, slowest " + v[v.length - 1] + " ms (n=" + v.length + ")"; }); }
+let warmT = 0, warmFor = null;
+function warm(i) { if (slides[active] !== slides[i] || curView !== "foryou") return; clearTimeout(warmT); const n = slides[i + 1], p = slides[i - 1]; if (n && n._v && !n.classList.contains("hidespoil")) load(n, "auto"); if (p && p._v && !EMB(p._c) && !p._v.getAttribute("src")) load(p, "metadata"); }
 function setActive(i, startT) {
   if (i < 0 || i >= slides.length) return;
   const prev = slides[active]; if (prev && prev._v) { prev._v.pause(); prev._keepT = prev._v.currentTime; prev.classList.remove("active"); if (prev._c && prev._enterAt && Date.now() - prev._enterAt < 2500 && !prev.classList.contains("counted") && !prev.classList.contains("broken")) signal(prev._c, "k"); }
-  active = i; const s = slides[i]; s.classList.add("active");
-  slides.forEach((x, j) => { if (!x._v) return; if (Math.abs(j - i) <= 1) load(x, j !== i); else if (Math.abs(j - i) > 2) unload(x); });
+  active = i; const s = slides[i]; s.classList.add("active"); perfStart(s); if (s._v) { s._perfT = null; }
+  /* only the active clip loads now; the next one warms up once this one is moving (or after 2.5 s), the previous keeps
+     what it already has. Anything further away is released, which also cancels queued work after fast swipes. */
+  clearTimeout(warmT); warmFor = s;
+  slides.forEach((x, j) => { if (!x._v) return; if (j === i) load(x); else if (Math.abs(j - i) > 1) unload(x); else if (j === i + 1 && !EMB(x._c) && x._v.getAttribute("src")) {} });
+  warmT = setTimeout(() => warm(i), 2500);
   s.classList.remove("chipgone"); clearTimeout(s._chipT); s._chipT = setTimeout(() => s.classList.add("chipgone"), 4000);
   if (s._c) { seen[s._c.id] = seen[s._c.id] || Date.now(); LS.set("rally-vseen", seen); s._enterAt = Date.now(); }
   if (s.classList.contains("broken")) startSkip(s);
@@ -558,7 +574,9 @@ function pauseActive() { const s = slides[active]; if (s && s._v) { s._v.pause()
 function togglePause(s) { const v = s._v; if (!v) return; if (v.paused) { s.classList.remove("paused"); v.muted = !soundOn; v.play().catch(() => s.classList.add("paused")); } else { v.pause(); s.classList.add("paused"); } }
 function replay(s) { const v = s._v; if (s._c) signal(s._c, "r"); s.classList.remove("ended"); v.currentTime = 0; s._keepT = 0; playActive(); }
 function retry(s) { const i = slides.indexOf(s); broken.delete(s._c.id); clearTimeout(s._skipT); s.classList.remove("broken"); const v = s._v; v.removeAttribute("src"); v.load(); load(s); if (i === active) playActive(); }
-function markBroken(s, i) {
+function provFail(c, why) { const k = c.type || "native", f = LS.get("rally-provfail") || {}; (f[k] ||= []).push(Date.now()); f[k] = f[k].filter(t => Date.now() - t < 864e5).slice(-20); LS.set("rally-provfail", f); }
+function provShaky(c) { const f = (LS.get("rally-provfail") || {})[c.type || "native"] || []; return f.filter(t => Date.now() - t < 864e5).length >= 3; }
+function markBroken(s, i) { provFail(s._c, "broken");
   if (!s._v.getAttribute("src")) return;
   broken.add(s._c.id); s.classList.add("broken"); s._v.removeAttribute("src");
   window.__rallyLog && window.__rallyLog.push("broken:" + s._c.id);
@@ -577,13 +595,15 @@ function tick() {
   const s = slides[active];
   if (s && s._v && s._c) {
     const v = s._v, c = s._c, t = v.currentTime || 0, dur = v.duration || c.dur;
+    if (s._perf && s._perf.frame == null) { if (v.readyState >= 1) perfMark(s, "ready"); if (!v.paused) { if (s._perfT == null) s._perfT = t; else if (t - s._perfT > 0.05) perfMark(s, "frame"); } }
     if (EMB(c) && s._paintSeg !== v._seg) { s._paintSeg = v._seg; paintMoments(s, v._seg); }
     const cap = $(".cap", s), txt = ccOn ? cueAt(c, t) : "";
     if (cap._t !== txt) { cap._t = txt; cap.replaceChildren(txt ? h("span", { text: txt }) : ""); }
     $(".bar i", s).style.width = (Math.min(1, t / dur) * 100).toFixed(2) + "%";
     if (!v.paused && !v.ended) { const w = (watched.ids[c.id] ||= []); const sec = Math.floor(t); if (!w.includes(sec)) { w.push(sec); if (w.length % 3 === 0) LS.set("rally-vwatch", watched); credit(s, false); } }
     if (EMB(c)) { s.classList.toggle("needtap", !!(s._wantPlay && v.readyState < 3 && v.paused !== true && Date.now() - s._wantPlay > 4000) || !!(s._wantPlay && v.readyState < 3 && Date.now() - s._wantPlay > 4000)); }
-    else if (!v.paused && s._wantPlay && v.readyState < 3) { if (Math.abs(t - (s._lastT || 0)) > 0.05) { s._lastT = t; s._stallFrom = 0; } else if (!s._stallFrom) s._stallFrom = Date.now(); else if (Date.now() - s._stallFrom > 12000 && !s.classList.contains("broken")) markBroken(s, active); }
+    if (s._wantPlay && !s.classList.contains("broken")) { const waited = Date.now() - s._wantPlay; const moving = s._perf && s._perf.frame != null; s.classList.toggle("slow", !moving && waited > (EMB(c) ? 4000 : 5000)); if (!moving && waited > 4000 && !s._slowNoted) { s._slowNoted = 1; provFail(c, "slow"); } }
+    if (EMB(c)) {} else if (!v.paused && s._wantPlay && v.readyState < 3) { if (Math.abs(t - (s._lastT || 0)) > 0.05) { s._lastT = t; s._stallFrom = 0; } else if (!s._stallFrom) s._stallFrom = Date.now(); else if (Date.now() - s._stallFrom > 12000 && !s.classList.contains("broken")) markBroken(s, active); }
     else s._lastT = t;
   }
   requestAnimationFrame(tick);
@@ -968,7 +988,7 @@ function extractSkills(text) {
 }
 /* Apply → Opened → Mark applied */
 function onApply(r) { const tr = track(r.key); if (!tr || ["saved", "dismissed", undefined].includes(tr.status)) setTrack(r, "opened"); LS.set("rally-rolereturn", { key: r.key, at: Date.now() }); }
-function checkRoleReturn() { const p = LS.get("rally-rolereturn"); if (!p || Date.now() - p.at > 6 * 3600e3) return; const r = ROLE.get(p.key) || { key: p.key, ...track(p.key) }; LS.del("rally-rolereturn"); show("roles"); renderRoles(p.key);
+function checkRoleReturn() { const p = LS.get("rally-rolereturn"); if (!p || Date.now() - p.at > 6 * 3600e3) return; if (!ROLE.has(p.key) && !ROLES.roles.length && !(state.roles || {})[p.key]) return; const r = ROLE.get(p.key) || { key: p.key, ...track(p.key) }; LS.del("rally-rolereturn"); show("roles"); renderRoles(p.key);
   openSheet("Back from " + (r.employer || "the application"), [h("h2", { text: r.title || "" }), h("p", { text: "Did you submit the application? Rally only marks it applied when you say so." }), h("div", { class: "row", style: "display:flex;gap:10px;flex-wrap:wrap" }, [h("button", { class: "btn", text: "Mark applied", onclick: () => { setTrack(r, "applied", { appliedAt: new Date().toISOString() }); closeSheet(); renderRoles(r.key); toast("Marked applied"); } }), h("button", { class: "btn ghost", text: "Not yet", onclick: () => { closeSheet(); renderRoles(r.key); } }), h("button", { class: "btn ghost", text: "Practice for it", onclick: () => practiceForRole(r) })])], { kind: "rolereturn" }); }
 function openTracker(r) {
   const tr = track(r.key) || {}; const note = h("textarea", { style: "min-height:90px", placeholder: "Notes (referral, recruiter name, deadline…)" }); note.value = tr.note || "";
@@ -1028,6 +1048,15 @@ async function practiceForRole(r) {
 }
 function rolesPill() { const p = $("#rolespill"); const n = rolesFor("new").filter(r => fitOf(r).score >= 8).length; if (n && curView === "foryou") { p.hidden = false; p.textContent = n + " new roles for you →"; p.onclick = () => { roleView = "new"; show("roles"); }; } else p.hidden = true; }
 
+function idleSave(k, v) { (window.requestIdleCallback || (f => setTimeout(f, 300)))(() => { try { LS.set(k, v); } catch (e) {} }); }
+let rolesLoading = null;
+function loadRoles() {
+  if (rolesLoading) return rolesLoading;
+  const cached = LS.get("rally-roles"); if (cached && cached.roles && !ROLES.roles.length) applyRoles(cached);
+  rolesLoading = fetch("roles.json?b=" + Date.now(), { cache: "no-store" }).then(r => r.json()).then(rj => { if (rj && rj.roles) { applyRoles(rj); idleSave("rally-roles", rj); } }).catch(() => {});
+  return rolesLoading;
+}
+function applyRoles(rj) { ROLES = rj; ROLE.clear(); Object.values(state.pasted || {}).forEach(r => { if (!ROLES.roles.find(x => x.key === r.key)) ROLES.roles.push(r); }); ROLES.roles.forEach(r => ROLE.set(r.key, r)); rolesPill(); if (curView === "roles") renderRoles(); checkRoleReturn(); }
 /* ================= NAV + STATUS ================= */
 function show(v) {
   if (v === curView) { if (v === "foryou" && active > 0) go(0); return; }
@@ -1035,7 +1064,7 @@ function show(v) {
   curView = v; $$(".view").forEach(x => x.hidden = x.id !== "v-" + v); $$("#nav button").forEach(b => b.toggleAttribute("aria-current", b.dataset.v === v) || b.removeAttribute("aria-current"));
   $$("#nav button").forEach(b => { if (b.dataset.v === v) b.setAttribute("aria-current", "page"); else b.removeAttribute("aria-current"); });
   $("#hdr").classList.toggle("solid", v !== "foryou");
-  if (v === "news") renderNews(); else if (v === "practice") renderPractice(); else if (v === "saved") renderSaved(); else if (v === "roles") renderRoles();
+  if (v === "news") renderNews(); else if (v === "practice") renderPractice(); else if (v === "saved") renderSaved(); else if (v === "roles") { renderRoles(); loadRoles(); }
   else playActive();
   LS.set("rally-vview", v);
 }
@@ -1048,6 +1077,7 @@ function openStatus() {
   openSheet("Today", [h("h2", { text: p.complete ? "Today counts 🔥" : statusText(p) }), h("p", { text: "The rule: 10 things a day, at least 3 of them drills. A clip counts once you've watched 85% of it. A clip and its written story count as one." }), h("div", { class: "week" }, wk), h("p", { class: "fine", text: "Streak: " + streak() + " day" + (streak() === 1 ? "" : "s") + " · " + p.done + " items · " + p.drills + " drills today" }),
     tg("Show sports results", !!state.settings.spoilers, () => { state.settings.spoilers = !state.settings.spoilers; state.settings.t = Date.now(); persist(); return state.settings.spoilers; }),
     tg("Captions", ccOn, () => { ccOn = !ccOn; state.settings.captions = ccOn; state.settings.t = Date.now(); persist(); document.body.classList.toggle("nocc", !ccOn); return ccOn; }),
+    h("details", {}, [h("summary", { text: "Playback timing on this device" }), ...(perfReport().length ? perfReport().map(l => h("p", { class: "fine", text: l })) : [h("p", { class: "fine", text: "No clips timed yet." })]), h("button", { class: "btn ghost", text: "Copy timing report", onclick: () => { const t = "Rally " + BUILD + " · " + navigator.userAgent + "\n" + perfReport().join("\n") + "\n" + JSON.stringify(PERF.slice(-40)); try { navigator.clipboard.writeText(t).then(() => toast("Copied. Paste it to Claude.")); } catch (e) { toast("Couldn't copy"); } } })]),
     h("p", {}, h("button", { class: "btn ghost", text: "Following & Corinthians", onclick: () => { closeSheet(); openFollows(); } })),
     h("p", {}, h("button", { class: "btn ghost", text: "Check for new clips", onclick: () => { closeSheet(); show("foryou"); pullRefresh(); } })),
     h("p", { class: "fine", id: "runline", text: "" }),
@@ -1057,26 +1087,43 @@ $("#brand").onclick = () => { openStatus(); fetch("run.json?b=" + Date.now(), { 
 function checkDay() { const k = pacificKey(); if (k !== TODAY) { TODAY = k; watched.date = k; watched.ids = {}; buildRoster(); renderFeed(); paintHeader(); } }
 /* ================= boot ================= */
 (async function boot() {
+  window.__boot = { start: Math.round(performance.now()) };
   ccOn = state.settings.captions !== false; document.body.classList.toggle("nocc", !ccOn);
-  let m = null;
-  try { m = await fetchManifest(); feedMeta.checkedAt = Date.now(); } catch (e) { m = LS.get("rally-vmanifest"); }
+  /* FAST START: only the clip list is on the path to the first frame. Render from the last good list right away;
+     the network refresh, stories, drills, club data and the 400 KB roles file all load after (or beside) playback. */
+  const getJSON = (f, ttl) => fetch(f + "?b=" + Date.now(), { cache: "no-store" }).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
+  const cachedM = LS.get("rally-vmanifest");
+  let m = cachedM, fromCache = !!cachedM;
+  const fresh = fetchManifest().then(x => { feedMeta.checkedAt = Date.now(); return x; }).catch(() => null);
+  if (!m) m = await fresh;
   if (!m) { feed.append(h("section", { class: "slide endcard" }, [h("h2", { text: "Can't reach Rally" }), h("p", { text: "Check your connection and reopen." })])); return; }
+  window.__boot.manifest = Math.round(performance.now()); window.__boot.fromCache = fromCache;
   ingest(m);
-  const [sj, dj] = await Promise.all([fetch("stories.json?b=" + Date.now(), { cache: "no-store" }).then(r => r.json()).catch(() => ({ stories: [] })), fetch("drills.json?b=" + Date.now(), { cache: "no-store" }).then(r => r.json()).catch(() => [])]);
-  STORIES = sj.stories || []; STORIES.forEach(s => STORY.set(s.id, s)); DRILLS = dj; DRILLS.forEach(d => DRILL.set(d.id, d));
-  const [cj, rj] = await Promise.all([fetch("clubs.json?b=" + Date.now(), { cache: "no-store" }).then(r => r.json()).catch(() => null), fetch("roles.json?b=" + Date.now(), { cache: "no-store" }).then(r => r.json()).catch(() => null)]);
-  if (cj) { CLUBS = cj; LS.set("rally-clubs", cj); } else CLUBS = LS.get("rally-clubs") || CLUBS;
-  if (rj && rj.roles) { ROLES = rj; try { LS.set("rally-roles", rj); } catch (e) {} } else ROLES = LS.get("rally-roles") || ROLES;
-  Object.values(state.pasted || {}).forEach(r => { if (!ROLES.roles.find(x => x.key === r.key)) ROLES.roles.push(r); }); ROLES.roles.forEach(r => ROLE.set(r.key, r));
-  follows(); $$("#modes button").forEach(b => b.setAttribute("aria-selected", String(b.dataset.m === feedMode)));
+  STORIES = (LS.get("rally-stories") || {}).stories || []; STORIES.forEach(x => STORY.set(x.id, x)); DRILLS = LS.get("rally-drills") || []; DRILLS.forEach(d => DRILL.set(d.id, d));
+  CLUBS = LS.get("rally-clubs") || CLUBS; follows(); $$("#modes button").forEach(b => b.setAttribute("aria-selected", String(b.dataset.m === feedMode)));
   /* one-time carry-over from the claude.ai Rally: #import=<base64url JSON of its saved progress> */
   if (location.hash.startsWith("#import=")) { try { const raw = atob(location.hash.slice(8).replace(/-/g, "+").replace(/_/g, "/")); const bytes = Uint8Array.from(raw, ch => ch.charCodeAt(0)); const inc = JSON.parse(new TextDecoder().decode(bytes)); state = mergeState(state, inc); persist(); history.replaceState(null, "", location.pathname + location.search); setTimeout(() => toast("Imported your Rally progress: " + Object.keys(inc.days || {}).length + " days, " + Object.keys(inc.reviews || {}).length + " saved"), 800); } catch (e) { setTimeout(() => toast("That import link didn't work"), 800); } }
+  window.__boot.data = Math.round(performance.now());
   buildRoster(); rerankUnseen(); paintHeader();
   const ret = LS.get("rally-vreturn") || LS.get("rally-vpos"); const ok = ret && (ret.date === TODAY || (ret.at && Date.now() - ret.at < 6 * 3600e3)) && CLIP.has(ret.id);
   renderFeed(ok ? ret.id : null, ok ? ret.t : null); LS.del("rally-vreturn");
-  const n = unseenNew(); if (n.length) { const p = $("#pill"); p.textContent = n.length + " new clip" + (n.length > 1 ? "s" : "") + " ↑"; p.classList.add("show"); }
-  requestAnimationFrame(tick); lastAuto = Date.now(); rolesPill(); setTimeout(checkRoleReturn, 400);
-  const v0 = LS.get("rally-vview"); if (v0 && v0 !== "foryou") show(v0);
+  requestAnimationFrame(tick); lastAuto = Date.now();
+  const v0 = LS.get("rally-vview"); if (v0 && v0 !== "foryou" && v0 !== "roles") show(v0);
+  /* background: fresh clip list (new items show up as the "new clips" pill, never by reshuffling what's playing) */
+  if (fromCache) fresh.then(x => { if (!x) return; ingest(x); const n = unseenNew(); if (n.length) { const p = $("#pill"); p.textContent = n.length + " new clip" + (n.length > 1 ? "s" : "") + " ↑"; p.classList.add("show"); } paintEnd(); });
+  else { const n = unseenNew(); if (n.length) { const p = $("#pill"); p.textContent = n.length + " new clip" + (n.length > 1 ? "s" : "") + " ↑"; p.classList.add("show"); } }
+  const afterFirstFrame = new Promise(res => { const t0 = Date.now(); const w = () => (PERF.length || Date.now() - t0 > 4000) ? res() : setTimeout(w, 150); w(); });
+  afterFirstFrame.then(async () => {
+    window.__boot.firstFrame = Math.round(performance.now());
+    const [sj, dj, cj] = await Promise.all([getJSON("stories.json").catch(() => null), getJSON("drills.json").catch(() => null), getJSON("clubs.json").catch(() => null)]);
+    if (sj) { STORIES = sj.stories || []; STORY.clear(); STORIES.forEach(x => STORY.set(x.id, x)); idleSave("rally-stories", sj); }
+    if (dj) { DRILLS = dj; DRILL.clear(); DRILLS.forEach(d => DRILL.set(d.id, d)); idleSave("rally-drills", dj); }
+    if (cj) { const had = !!Object.keys(CLUBS.clubs || {}).length; CLUBS = cj; idleSave("rally-clubs", cj); if (feedMode === "following" && !had) renderFeed(); }
+    if (curView === "news") renderNews(); if (curView === "practice") renderPractice();
+    ytApi().catch(() => {});   /* warm YouTube's player script before the first YouTube clip */
+    loadRoles();
+  });
+  setTimeout(checkRoleReturn, 400);
   use("sample").then(s => { if (s) sampleFn = s; });
   try {
     const [db, user] = await Promise.all([use("db"), use("user")]); if (!db || !user) return;
@@ -1089,7 +1136,7 @@ function checkDay() { const k = pacificKey(); if (k !== TODAY) { TODAY = k; watc
     ref.onSnapshot(s => { if (!s.exists || s.metadata.hasPendingWrites) return; state = mergeState(state, s.data()); LS.set(STATE_KEY, state); paintHeader(); slides.forEach(x => { if (x._c && day().done.includes(x._c.id)) x.classList.add("counted"); }); }, () => {});
   } catch (e) {}
 })();
-window.__rally = { roles: () => ROLES, roleInfo: () => roleInfo, renderRoles, practiceForRole, checkRole, setMode, openClub, mode: () => feedMode, state: () => state, order: () => order, active: () => active, activeVideo: () => { const s = slides[active]; return s && s._v ? { id: s._c.id, t: s._v.currentTime, paused: s._v.paused, muted: s._v.muted, src: s._v.currentSrc, ready: s._v.readyState } : null; }, videos: () => slides.filter(s => s._v).map(s => ({ id: s._c.id, hasSrc: !!s._v.getAttribute("src"), paused: s._v.paused, t: +s._v.currentTime.toFixed(2) })), progress, go, show, pullRefresh, checkNew, closeSheet, openFollow: id => openFollow(CLIP.get(id)), view: () => curView, sheet: () => sheetOpen, broken: () => [...broken], caption: () => { const s = slides[active]; return s ? $(".cap", s).textContent : ""; }, mergeState, build: BUILD };
+window.__rally = { perf: () => PERF.slice(), perfScenario: x => { perfScenario = x; }, roles: () => ROLES, roleInfo: () => roleInfo, renderRoles, practiceForRole, checkRole, setMode, openClub, mode: () => feedMode, state: () => state, order: () => order, active: () => active, activeVideo: () => { const s = slides[active]; return s && s._v ? { id: s._c.id, t: s._v.currentTime, paused: s._v.paused, muted: s._v.muted, src: s._v.currentSrc, ready: s._v.readyState } : null; }, videos: () => slides.filter(s => s._v).map(s => ({ id: s._c.id, hasSrc: !!s._v.getAttribute("src"), paused: s._v.paused, t: +s._v.currentTime.toFixed(2) })), progress, go, show, pullRefresh, checkNew, closeSheet, openFollow: id => openFollow(CLIP.get(id)), view: () => curView, sheet: () => sheetOpen, broken: () => [...broken], caption: () => { const s = slides[active]; return s ? $(".cap", s).textContent : ""; }, mergeState, build: BUILD };
 </script>
 </body>
 </html>
