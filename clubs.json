@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T07:11:08Z",
+ "updatedAt": "2026-11-20T04:16:42Z",
  "clubs": {
   "corinthians": {
    "name": "Corinthians",
@@ -33,15 +33,111 @@
     }
    ],
    "table": {
-    "pos": 15,
+    "pos": 16,
     "pts": 40,
-    "note": "Provisório: pode voltar ao Z-4 se Vitória e Internacional vencerem na quinta (19).",
+    "note": "Fora do Z-4 ao fim da 35ª rodada, dois pontos à frente de Internacional e Grêmio (38).",
     "source": {
-     "name": "TMC / hoop78",
-     "url": "https://tmc.com.br/esporte/veja-os-gols-de-corinthians-4-x-0-botafogo-pelo-brasileirao/"
+     "name": "Central do Timão",
+     "url": "https://centraldotimao.com.br/noticias/corinthians-encerra-a-rodada-fora-do-z4-confira-a-tabela/"
     }
    },
-   "coach": "Clarence Seedorf"
+   "coach": "Clarence Seedorf",
+   "matches": [
+    {
+     "id": "cor-bot-2026-11-18",
+     "status": "finished",
+     "kickoff": "2026-11-19T00:30:00Z",
+     "home": "Corinthians",
+     "away": "Botafogo",
+     "score": "4 x 0",
+     "comp": "Brasileirão · 35ª rodada",
+     "venue": "Neo Química Arena",
+     "goals": [
+      {
+       "min": "27'",
+       "player": "Kaio César",
+       "clip": "tt-cor-bot-4x0",
+       "moment": 0
+      },
+      {
+       "min": "33'",
+       "player": "Memphis",
+       "note": "ficha do Estadão: contra de Arthur Chaves",
+       "clip": "tt-cor-bot-4x0",
+       "moment": 1
+      },
+      {
+       "min": "60'",
+       "player": "Kaio César",
+       "clip": "tt-cor-bot-4x0",
+       "moment": 2
+      },
+      {
+       "min": "66'",
+       "player": "Kaio César",
+       "clip": "tt-cor-bot-4x0",
+       "moment": 3
+      }
+     ],
+     "recap": "s-cor-bot",
+     "clips": [
+      "tt-cor-bot-4x0"
+     ],
+     "sources": [
+      {
+       "name": "Lance!",
+       "url": "https://www.lance.com.br/futebol-nacional/ao-vivo-siga-corinthians-x-botafogo-pelo-brasileirao.html",
+       "role": "match data"
+      },
+      {
+       "name": "Corinthians no TikTok",
+       "url": "https://www.tiktok.com/@corinthians",
+       "role": "playback"
+      }
+     ]
+    },
+    {
+     "id": "cam-cor-2026-11-25",
+     "status": "scheduled",
+     "kickoff": "2026-11-25T23:00:00Z",
+     "home": "Atlético-MG",
+     "away": "Corinthians",
+     "comp": "Brasileirão · 36ª rodada",
+     "venue": "Arena MRV, Belo Horizonte",
+     "lineups": null,
+     "sources": [
+      {
+       "name": "CBF table via NetVasco",
+       "url": "https://www.netvasco.com.br/n/395385/cbf-divulga-tabela-detalhada-das-rodadas-35-e-36-do-brasileiro",
+       "role": "fixture"
+      }
+     ]
+    }
+   ],
+   "updates": [
+    {
+     "at": "2026-11-20T02:00:00Z",
+     "kind": "tabela",
+     "certainty": "confirmado",
+     "text": "O Inter perdeu para o Vasco (2 a 1) e o Vitória venceu o Bragantino (2 a 1). O Corinthians termina a 35ª rodada em 16º, com 40 pontos, fora do Z-4.",
+     "source": {
+      "name": "Central do Timão",
+      "url": "https://centraldotimao.com.br/noticias/corinthians-encerra-a-rodada-fora-do-z4-confira-a-tabela/"
+     }
+    },
+    {
+     "at": "2026-11-20T02:00:00Z",
+     "kind": "tabela",
+     "certainty": "confirmado",
+     "text": "Na zona: Internacional (17º) e Grêmio (18º), ambos com 38. Acima: Vitória e Mirassol, com 41.",
+     "source": {
+      "name": "Portal Hortolândia",
+      "url": "https://portalhortolandia.com.br/noticias/esporte/corinthians-assegura-permanencia-apos-vitorias-e-tropecos-rivais-245945/"
+     }
+    }
+   ],
+   "transfers": [],
+   "transfersNote": "Nenhuma transferência confirmada nas fontes checadas nesta atualização."
   }
  },
  "competitions": {
@@ -50,5 +146,37 @@
   "sul-americana": "Copa Sul-Americana",
   "libertadores": "Copa Libertadores",
   "cor-feminino": "Corinthians Feminino"
- }
+ },
+ "sourcesRegistry": [
+  {
+   "outlet": "Corinthians (TikTok oficial)",
+   "discovery": true,
+   "matchData": false,
+   "playback": "inline (TikTok embed player)"
+  },
+  {
+   "outlet": "Lance!",
+   "discovery": true,
+   "matchData": true,
+   "playback": "none (text)"
+  },
+  {
+   "outlet": "CBF tabela (via NetVasco)",
+   "discovery": false,
+   "matchData": true,
+   "playback": "none"
+  },
+  {
+   "outlet": "Central do Timão / TMC / Portal Hortolândia",
+   "discovery": true,
+   "matchData": true,
+   "playback": "none"
+  },
+  {
+   "outlet": "ge.globo",
+   "discovery": false,
+   "matchData": false,
+   "playback": "not used: blocked for Rally's tools; its YouTube highlights are geo-blocked in the US"
+  }
+ ]
 }

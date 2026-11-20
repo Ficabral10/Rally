@@ -16,6 +16,8 @@ a{color:inherit}
 .view{position:fixed;left:0;right:0;top:0;bottom:calc(var(--nav) + var(--sb));overflow:hidden}
 .view[hidden]{display:none}
 /* header */
+body:not([data-view="foryou"]) .hbtn{display:none}
+.hbtn{pointer-events:auto;background:rgba(0,0,0,.35);color:#fff;border:1px solid rgba(255,255,255,.25);border-radius:999px;min-height:36px;padding:0 12px;font:700 13px system-ui}
 #hdr{position:fixed;z-index:20;left:0;right:0;top:0;padding:calc(var(--st) + 8px) 14px 22px;display:flex;align-items:center;gap:10px;background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,0));pointer-events:none}
 #hdr>*{pointer-events:auto}
 #brand{font-weight:800;letter-spacing:-.02em;font-size:19px;display:flex;align-items:center;gap:6px;min-height:44px}
@@ -184,10 +186,10 @@ input[type=text],input[type=url],select{width:100%;min-height:44px;background:#0
 @media (min-width:600px){.view,#hdr{max-width:480px;margin:0 auto}#nav{max-width:480px;margin:0 auto}#sheet{max-width:480px;margin:0 auto}}
 </style>
 </head>
-<body class="muted">
+<body class="muted" data-view="foryou">
 <header id="hdr">
   <button id="brand" aria-label="Rally status">Rally <span id="streak" aria-label="streak">🔥<span id="sn">0</span></span></button>
-  <button id="prog" aria-label="Today's progress"><svg class="ring" viewBox="0 0 36 36"><circle cx="18" cy="18" r="15" fill="none" stroke="rgba(255,255,255,.2)" stroke-width="4"/><circle id="ringv" cx="18" cy="18" r="15" fill="none" stroke="#ffb547" stroke-width="4" stroke-linecap="round" stroke-dasharray="94.2" stroke-dashoffset="94.2" transform="rotate(-90 18 18)"/></svg><span id="pt">0/10</span></button>
+  <span style="flex:1"></span><button id="srch" class="hbtn" aria-label="Search">🔍</button><button id="brief" class="hbtn" aria-label="5-minute briefing">5 min</button><button id="prog" aria-label="Today's progress"><svg class="ring" viewBox="0 0 36 36"><circle cx="18" cy="18" r="15" fill="none" stroke="rgba(255,255,255,.2)" stroke-width="4"/><circle id="ringv" cx="18" cy="18" r="15" fill="none" stroke="#ffb547" stroke-width="4" stroke-linecap="round" stroke-dasharray="94.2" stroke-dashoffset="94.2" transform="rotate(-90 18 18)"/></svg><span id="pt">0/10</span></button>
 </header>
 <main>
   <section class="view" id="v-foryou" aria-label="For You">
@@ -214,7 +216,7 @@ input[type=text],input[type=url],select{width:100%;min-height:44px;background:#0
 <div id="toast" role="status"></div>
 <script>
 "use strict";
-const BUILD = "gh-2.1.0";
+const BUILD = "gh-2.2.0";
 const NEED = 10, DRILL_NEED = 3;
 /* ---------- helpers ---------- */
 const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
@@ -463,7 +465,7 @@ function buildRoster() {
 }
 function signal(c, f, n = 1) { const k = c.kind + ":foryou"; const p = (state.pref[k] ||= { s: 0, d: 0, m: 0, l: 0, k: 0, e: 0, o: 0, r: 0 }); p[f] = (p[f] || 0) + n; state.prefT = Date.now(); persist(); }
 /* re-rank only what you haven't reached yet, so the order you're swiping through never shifts under you */
-function rerankUnseen() { const d = day(); if (!d.vroster) return; const ids = d.vroster.ids, cut = Math.max(Math.min(5, ids.length), Math.max(0, ...ids.map((id, i) => seen[id] ? i : -1)) + 1); const head = ids.slice(0, cut), tail = ids.slice(cut).filter(id => CLIP.has(id)); tail.sort((a, b) => prefScore(CLIP.get(b)) - prefScore(CLIP.get(a))); const mixed = []; let last = null; while (tail.length) { let k = tail.findIndex(id => CLIP.get(id).kind !== last); if (k < 0) k = 0; const id = tail.splice(k, 1)[0]; mixed.push(id); last = CLIP.get(id).kind; } d.vroster.ids = head.concat(mixed); }
+function rerankUnseen() { const d = day(); if (!d.vroster) return; const ids = d.vroster.ids, cut = Math.max(Math.min(5, ids.length), Math.max(0, ...ids.map((id, i) => seen[id] ? i : -1)) + 1); const head = ids.slice(0, cut), tail = ids.slice(cut).filter(id => CLIP.has(id)); const sk = LS.get("rally-seenelsewhere") || {}; for (let j = tail.length - 1; j >= 0; j--) if (sk[tail[j]]) tail.splice(j, 1); tail.sort((a, b) => prefScore(CLIP.get(b)) - prefScore(CLIP.get(a))); const mixed = [], share = (state.settings.ptShare ?? 33) / 100; let last = null, pt = head.filter(id => (CLIP.get(id) || {}).lang === "pt").length; while (tail.length) { const want = (pt / Math.max(1, head.length + mixed.length)) < share ? "pt" : "en"; let k = tail.findIndex(id => CLIP.get(id).kind !== last && CLIP.get(id).lang === want); if (k < 0) k = tail.findIndex(id => CLIP.get(id).kind !== last); if (k < 0) k = 0; if (CLIP.get(tail[k]).lang === "pt") pt++; const id = tail.splice(k, 1)[0]; mixed.push(id); last = CLIP.get(id).kind; } d.vroster.ids = head.concat(mixed); }
 function prefScore(c) { const p = state.pref[c.kind + ":foryou"] || {}; return (p.m || 0) * 2 - (p.d || 0) * 2 + (p.s || 0) * 0.5 + (p.r || 0) * 0.7 - (p.k || 0) * 0.15; }
 function feedOrder() { const d = day(); const ids = uniq([...(d.vroster.fresh || []).slice().reverse(), ...d.vroster.ids]).filter(id => CLIP.has(id)); if (feedMode !== "following") return ids; return ids.filter(id => matchesFollow(CLIP.get(id))).sort((a, b) => clubBoost(CLIP.get(b)) - clubBoost(CLIP.get(a))); }
 function slideFor(c, i) {
@@ -525,6 +527,7 @@ function renderFeed(keepId, keepT) {
   slides.forEach(s => { if (s._v) { s._v.pause(); s._v.removeAttribute("src"); s._v.load(); } });
   order = feedOrder(); feed.replaceChildren(); slides = order.map((id, i) => slideFor(CLIP.get(id), i));
   if (feedMode === "following") { const cs = clubSlide(); if (cs) { slides.unshift(cs); order.unshift("__club"); } }
+  else { const cl = CLUBS.clubs[state.settings.favClub || "corinthians"], md = cl && mdState(cl), key = md && (md.phase + ":" + ((md.last || {}).id || "") + ":" + ((md.next || {}).id || "")); if (md && md.meaningful && LS.get("rally-mdseen") !== TODAY + key && slides.length > 2) { const cs = clubSlide(); if (cs) { slides.splice(2, 0, cs); order.splice(2, 0, "__club"); LS.set("rally-mdseen", TODAY + key); } } }
   slides.push(endSlide()); feed.append(...slides);
   active = -1; slides.forEach(s => io.observe(s));
   let idx = keepId ? order.indexOf(keepId) : 0; if (idx < 0) idx = 0;
@@ -675,7 +678,7 @@ function openMore(c) {
     h("button", { class: "toggle", role: "switch", "aria-checked": String(ccOn), html: "<span>Captions</span><i></i>", onclick: e => { ccOn = !ccOn; state.settings.captions = ccOn; state.settings.t = Date.now(); persist(); document.body.classList.toggle("nocc", !ccOn); e.currentTarget.setAttribute("aria-checked", String(ccOn)); } }),
     h("h4", { text: "Sources" }), ...(c.sources || []).map(s => safeUrl(s.url) ? h("div", {}, h("a", { class: "src", href: s.url, target: "_blank", rel: "noopener", text: s.name + " ↗" })) : null),
     h("p", { class: "fine", text: "Made by Rally from the sources above: script, narration (AI voice), captions and graphics. Published " + new Date(c.published).toLocaleString([], { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }) + "." }),
-    h("div", { class: "row", style: "display:flex;gap:10px;flex-wrap:wrap;margin:12px 0" }, [h("button", { class: "btn", text: "More like this", onclick: () => { signal(c, "m"); toast("More " + c.topic.toLowerCase() + " coming up next time you refresh"); } }), h("button", { class: "btn ghost", text: "Less like this", onclick: () => { signal(c, "d"); toast("Fewer " + c.topic.toLowerCase() + " clips from now on"); } })]), box];
+    h("div", { class: "row", style: "display:flex;gap:10px;flex-wrap:wrap;margin:12px 0" }, [h("button", { class: "btn", text: "More like this", onclick: () => { signal(c, "m"); toast("More " + c.topic.toLowerCase() + " coming up next time you refresh"); } }), h("button", { class: "btn ghost", text: "Less like this", onclick: () => { signal(c, "d"); toast("Fewer " + c.topic.toLowerCase() + " clips from now on"); } }), h("button", { class: "btn ghost", text: "Seen this", onclick: () => { const sk = LS.get("rally-seenelsewhere") || {}; sk[c.id] = Date.now(); LS.set("rally-seenelsewhere", sk); closeSheet(); toast("Skipped. It won't come back."); const i = order.indexOf(c.id); if (i >= 0) go(i + 1); } })]), box];
   openSheet(c.lang === "pt" ? "Mais" : "More", body, { kind: "more" });
 }
 async function translate(c, out) {
@@ -868,27 +871,51 @@ const tagsOf = c => (c && (c.tags || [])).concat(c && c.kind ? ["topic:" + c.kin
 const matchesFollow = c => tagsOf(c).some(t => isFollowed(t));
 const clubBoost = c => (c.tags || []).includes("club:" + (state.settings.favClub || "corinthians")) ? 1 : 0;
 const localKick = iso => new Date(iso).toLocaleString([], { weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit", timeZoneName: "short" });
+/* ================= MATCHDAY (pt-BR) ================= */
+function mdState(cl) {
+  const now = Date.now(), ms = cl.matches || [], last = ms.filter(m => m.status === "finished").sort((a, b) => Date.parse(b.kickoff) - Date.parse(a.kickoff))[0], next = ms.filter(m => m.status !== "finished" && Date.parse(m.kickoff) + 3 * 3600e3 > now).sort((a, b) => Date.parse(a.kickoff) - Date.parse(b.kickoff))[0];
+  let phase = "entre"; if (next && now >= Date.parse(next.kickoff) && now < Date.parse(next.kickoff) + 2.5 * 3600e3) phase = "aovivo"; else if (next && Date.parse(next.kickoff) - now < 48 * 3600e3) phase = "antes"; else if (last && now - Date.parse(last.kickoff) < 72 * 3600e3) phase = "depois";
+  const fresh = (cl.updates || []).filter(u => now - Date.parse(u.at) < 24 * 3600e3);
+  return { last, next, phase, meaningful: phase !== "entre" || fresh.length > 0, fresh };
+}
+const PH = { antes: "Antes do jogo", aovivo: "Ao vivo", depois: "Depois do jogo", entre: "Entre jogos" };
 function clubSlide() {
   const k = state.settings.favClub || "corinthians", cl = CLUBS.clubs[k]; if (!cl) return null;
+  const st = mdState(cl), spoil = !state.settings.spoilers, n = st.next, l = st.last;
   const s = h("section", { class: "slide clubcard", "data-id": "__club" });
-  const n = cl.next, spoil = !state.settings.spoilers, r0 = cl.recent && cl.recent[0];
-  s.append(h("div", { class: "crest", text: "SCCP" }), h("h2", { style: "margin:0;font-size:28px", text: cl.name }),
-    n ? h("div", { class: "fix" }, [h("small", { text: "Próximo jogo · " + n.comp }), h("b", { text: n.home + " × " + n.away }), h("div", { text: localKick(n.kickoff) + " (seu horário)" }), h("small", { text: n.venue + (n.lineups ? "" : " · escalações ainda não confirmadas") })]) : null,
-    r0 ? h("div", { class: "fix" }, [h("small", { text: "Último jogo · " + r0.comp }), h("b", { text: r0.home + " " + (spoil ? "×" : r0.score) + " " + r0.away }), spoil ? h("small", { text: "Placar escondido (spoilers desligados)" }) : null]) : null,
-    h("div", { class: "row", style: "display:flex;gap:10px;flex-wrap:wrap" }, [h("button", { class: "btn", text: "Abrir Corinthians", onclick: () => openClub(k) }), h("button", { class: "btn ghost", text: "Seguindo…", onclick: () => openFollows() })]));
+  s.append(h("div", { class: "fine", style: "font-weight:800;letter-spacing:.06em;color:#ffcf9a", text: "MATCHDAY · " + PH[st.phase].toUpperCase() }), h("h2", { style: "margin:0;font-size:28px", text: cl.name }),
+    st.phase === "aovivo" ? h("div", { class: "fix" }, [h("b", { text: n.home + " × " + n.away + " está rolando" }), h("small", { text: "O Rally ainda não tem uma fonte de placar ao vivo confiável. Acompanhe pela transmissão; os gols chegam aqui depois que o clube publicar." })]) : null,
+    l && st.phase !== "antes" ? h("div", { class: "fix" }, [h("small", { text: "Último jogo · " + l.comp }), h("b", { text: l.home + " " + (spoil ? "×" : l.score) + " " + l.away }), spoil ? h("small", { text: "Placar escondido (spoilers desligados)" }) : h("small", { text: (l.goals || []).map(g => g.min + " " + g.player).join(" · ") })]) : null,
+    n ? h("div", { class: "fix" }, [h("small", { text: "Próximo jogo · " + n.comp }), h("b", { text: n.home + " × " + n.away }), h("div", { text: localKick(n.kickoff) + " (seu horário)" }), h("small", { text: n.venue + (n.lineups ? " · escalação confirmada" : " · escalação ainda não confirmada") })]) : null,
+    st.fresh.length ? h("div", { class: "fix" }, [h("small", { text: "Novidade" }), h("div", { text: st.fresh[0].text })]) : null,
+    h("div", { class: "row", style: "display:flex;gap:10px;flex-wrap:wrap" }, [h("button", { class: "btn", text: "Abrir Matchday", onclick: () => openClub(k) }), l && l.clips && l.clips.length ? h("button", { class: "btn ghost", text: spoil ? "Ver os gols" : "Gols", onclick: () => openClipAt(l.clips[0], 0) }) : null]));
   return s;
 }
+function openClipAt(id, k) { const was = curView; openClip(id); const i = order.indexOf(id); if (i < 0) { setMode("foryou"); openClip(id); } setTimeout(() => { const s = slides[order.indexOf(id)]; if (!s) return; s.classList.remove("hidespoil"); const hd = $("h2", s); if (hd && s._c) hd.textContent = s._c.headline; load(s); if (s._v.jump) { s._v.jump(k); paintMoments(s, k); } s.classList.remove("ended", "paused"); playActive(); }, 150); }
 function openClub(k) {
-  const cl = CLUBS.clubs[k]; if (!cl) return; const spoil = !state.settings.spoilers;
-  const clips = CLIPS.filter(c => (c.tags || []).includes("club:" + k)), sts = STORIES.filter(x => (x.tags || []).includes("club:" + k));
-  const n = cl.next, safe = u => safeUrl(u);
-  openSheet(cl.name, [h("h2", { text: cl.name }), h("p", { class: "fine", text: (cl.coach ? "Técnico: " + cl.coach + " · " : "") + cl.league }),
-    n ? h("div", { class: "fix" }, [h("small", { text: "Próximo jogo · " + n.comp }), h("b", { text: n.home + " × " + n.away }), h("div", { text: localKick(n.kickoff) }), h("small", { text: n.venue }), h("div", {}, h("small", { text: n.lineups ? "Escalações confirmadas" : "Escalações saem perto do jogo." })), safe(n.source.url) ? h("a", { class: "src", href: n.source.url, target: "_blank", rel: "noopener", text: "Fonte: " + n.source.name + " ↗" }) : null]) : null,
-    cl.table ? h("div", { class: "fix", style: "margin-top:10px" }, [h("small", { text: "Tabela" }), h("b", { text: spoil ? "Posição escondida (spoilers)" : cl.table.pos + "º · " + cl.table.pts + " pontos" }), spoil ? null : h("small", { text: cl.table.note || "" })]) : null,
-    h("h4", { text: "Resultados recentes" }), ...(cl.recent || []).map(r => h("div", { class: "res" }, [h("span", { text: new Date(r.date + "T12:00:00Z").toLocaleDateString([], { day: "numeric", month: "short", timeZone: "UTC" }) + " · " + r.home + " × " + r.away }), h("b", { text: spoil ? "—" : r.score })])),
-    h("h4", { text: "Vídeos" }), clips.length ? h("div", { class: "grid" }, clips.map(c => h("button", { style: c.poster ? "background-image:url('" + c.poster + "')" : "background:#1b1e1f", onclick: () => { closeSheet(); openClip(c.id); } }, h("span", { text: spoil && c.headlineSafe ? c.headlineSafe : c.headline })))) : h("p", { class: "empty", text: "Nenhum vídeo agora." }),
-    h("h4", { text: "Notícias" }), ...sts.map(st => storyCard(st, () => openSheet("Matéria", storyBody(st, false), {}))),
-    h("h4", { text: "Seguir competições" }), followChips(Object.entries(CLUBS.competitions).map(([id, name]) => ["comp:" + id, name]))], { kind: "club" });
+  const cl = CLUBS.clubs[k]; if (!cl) return; const spoil = !state.settings.spoilers, st = mdState(cl), l = st.last, n = st.next, safe = u => safeUrl(u);
+  let reveal = !spoil; const box = h("div");
+  const paint = () => {
+    const goals = l ? (l.goals || []) : [], recap = l && l.recap && STORY.get(l.recap);
+    box.replaceChildren(
+      h("div", { class: "fine", style: "font-weight:800;color:#ffcf9a", text: "MATCHDAY · " + PH[st.phase].toUpperCase() }), h("h2", { text: cl.name }), h("p", { class: "fine", text: (cl.coach ? "Técnico: " + cl.coach + " · " : "") + cl.league }),
+      st.phase === "aovivo" ? h("div", { class: "fix" }, [h("b", { text: "Jogo em andamento" }), h("small", { text: "Sem placar ao vivo verificado no Rally. Atualizado quando o clube ou um veículo confiável publicar." })]) : null,
+      n && (st.phase === "antes" || st.phase === "aovivo") ? nextBox(n) : null,
+      l ? h("div", { class: "fix", style: "margin-top:10px" }, [h("small", { text: "Último jogo · " + l.comp + " · " + new Date(l.kickoff).toLocaleDateString([], { day: "numeric", month: "short" }) }), h("b", { text: l.home + " " + (reveal ? l.score : "×") + " " + l.away }),
+        reveal ? h("div", {}, goals.map((g, gi) => h("button", { class: "res", style: "width:100%;text-align:left", onclick: () => { closeSheet(); openClipAt(g.clip, g.moment); } }, [h("span", { text: g.min + " · " + g.player + (g.note ? " (" + g.note + ")" : "") }), h("b", { text: "▶" })])))
+          : h("button", { class: "btn ghost", text: "Mostrar placar e gols", onclick: () => { reveal = true; paint(); } }),
+        recap && reveal ? h("button", { class: "btn ghost", style: "margin-top:8px", text: "Resumo do jogo", onclick: () => openSheet("Matéria", storyBody(recap, false), { onclose: () => openClub(k) }) }) : null,
+        ...(l.sources || []).map(sv => safe(sv.url) ? h("a", { class: "src", href: sv.url, target: "_blank", rel: "noopener", text: sv.name + " (" + sv.role + ") ↗" }) : null)]) : null,
+      n && st.phase !== "antes" && st.phase !== "aovivo" ? nextBox(n) : null,
+      cl.table ? h("div", { class: "fix", style: "margin-top:10px" }, [h("small", { text: "Tabela do Brasileirão" }), h("b", { text: reveal ? cl.table.pos + "º · " + cl.table.pts + " pontos" : "Escondida (spoilers)" }), reveal ? h("small", { text: cl.table.note || "" }) : null]) : null,
+      h("h4", { text: "Entre jogos" }), ...((cl.updates || []).map(u => h("div", { class: "fix", style: "margin-bottom:8px" }, [h("small", { text: (u.certainty === "confirmado" ? "Confirmado" : u.certainty === "rumor" ? "Rumor" : "Apuração") + " · " + u.kind + " · " + ago2(u.at) }), h("div", { text: reveal ? u.text : "Atualização de tabela (escondida com spoilers desligados)" }), safe(u.source.url) ? h("a", { class: "src", href: u.source.url, target: "_blank", rel: "noopener", text: u.source.name + " ↗" }) : null]))),
+      h("p", { class: "fine", text: cl.transfersNote || "" }),
+      h("h4", { text: "Notícias do clube" }), ...STORIES.filter(x => (x.tags || []).includes("club:" + k)).map(x => storyCard(x, () => openSheet("Matéria", storyBody(x, false), { onclose: () => openClub(k) }))),
+      h("h4", { text: "Seguir" }), followChips([["club:corinthians", "Corinthians"], ["club:corinthians-fem", "Corinthians Feminino"], ...Object.entries(CLUBS.competitions).filter(([id]) => id !== "cor-feminino").map(([id, name]) => ["comp:" + id, name])]),
+      h("details", {}, [h("summary", { text: "De onde vêm os dados" }), ...(CLUBS.sourcesRegistry || []).map(r => h("p", { class: "fine", text: r.outlet + ": " + [r.discovery ? "descoberta" : null, r.matchData ? "dados do jogo" : null, "vídeo: " + r.playback].filter(Boolean).join(" · ") }))]));
+  };
+  const nextBox = n => h("div", { class: "fix", style: "margin-top:10px" }, [h("small", { text: "Próximo jogo · " + n.comp }), h("b", { text: n.home + " × " + n.away }), h("div", { text: localKick(n.kickoff) }), h("small", { text: n.venue }), h("div", {}, h("small", { text: n.lineups ? "Escalação: " + n.lineups : "Escalação ainda não confirmada." })), ...(n.sources || []).map(sv => safeUrl(sv.url) ? h("a", { class: "src", href: sv.url, target: "_blank", rel: "noopener", text: "Fonte: " + sv.name + " ↗" }) : null)]);
+  paint(); openSheet("Matchday · " + cl.name, box, { kind: "club" });
 }
 function followChips(list) { return h("div", { class: "chips", style: "flex-wrap:wrap" }, list.map(([tag, label]) => h("button", { "aria-pressed": String(isFollowed(tag)), text: label, onclick: e => { const on = toggleFollow(tag); e.currentTarget.setAttribute("aria-pressed", String(on)); if (feedMode === "following") renderFeed(); } }))); }
 function openFollows() {
@@ -918,14 +945,14 @@ function fitOf(r) {
   else if (REMOTE.test(locs) && p.where.includes("remote")) { s += 2; why.push("Remote"); }
   else if (p.where.includes("us")) s += 1; else s -= 3;
   if ((r.degrees || []).includes("Bachelor's")) s += 1;
-  if (info.skills && info.skills.length) { s += Math.min(3, info.skills.length); why.unshift("Posting names " + info.skills.slice(0, 3).join(", ")); }
+  if (info.skills && info.skills.length) { s += Math.min(3, info.skills.length); const q = info.quotes && info.quotes[info.skills[0]]; why.unshift("Posting asks for " + info.skills.slice(0, 3).join(", ") + (q ? ": “" + q.replace(/^…|…$/g, "") + "”" : "")); }
   const days = r.listedAt ? (Date.now() - Date.parse(r.listedAt)) / 864e5 : 60; s += Math.max(-2, 3 - days / 7);
   return { score: s, why: why.slice(0, 2) };
 }
 function eligibility(r) { const info = roleInfo[r.key] || {}, out = []; if (r.degrees && r.degrees.length) out.push("Degrees listed: " + r.degrees.join(", ")); if (info.elig && info.elig.length) out.push(...info.elig); return out.length ? out : ["Not stated in the listing. Check the posting."]; }
 function roleVisible(r) { const p = rprof(); if (p.hideCos.includes(r.employer)) return false; if (p.hideTypes.some(k => r.title.toLowerCase().includes(k))) return false; const tr = track(r.key); if (tr && tr.status === "dismissed") return false; return true; }
 function rolesFor(view) {
-  const open = ROLES.roles.filter(r => r.status === "open" && roleVisible(r));
+  const open = ROLES.roles.filter(r => r.status === "open" && roleVisible(r) && passFilter(r));
   if (view === "new") return open.filter(r => r.listedAt && (Date.now() - Date.parse(r.listedAt)) < 4 * 864e5).sort((a, b) => b.listedAt.localeCompare(a.listedAt));
   if (view === "saved") return Object.entries(state.roles || {}).filter(([, t]) => t.status && t.status !== "dismissed").map(([k, t]) => ROLE.get(k) || { key: k, employer: t.employer, title: t.title, applyUrl: t.url, locations: [], terms: [], status: "unknown", boards: [{ name: t.source || "Pasted" }] }).sort((a, b) => (track(b.key).t || 0) - (track(a.key).t || 0));
   return open.map(r => [r, fitOf(r).score]).sort((a, b) => b[1] - a[1]).map(x => x[0]);
@@ -941,6 +968,7 @@ function roleCard(r) {
     h("div", { class: "meta2", text: [r.locations.slice(0, 2).join(" · ") + (r.locations.length > 2 ? " +" + (r.locations.length - 2) : ""), (r.terms || []).join(", ")].filter(Boolean).join(" — ") }),
     h("ul", {}, [...fit.why.map(w => h("li", { text: "Fit: " + w })), ...eligibility(r).slice(0, 2).map(e => h("li", { text: "Eligibility: " + e }))]),
     h("div", { class: "fresh", text: fresh }),
+    tr && (tr.next || (roleInfo[r.key] || {}).deadline || (state.rolePractice || {})[r.key]) ? h("div", { class: "fresh", style: "color:#ffcf9a", text: [tr.next ? "Next: " + tr.next : null, (roleInfo[r.key] || {}).deadline ? "Deadline: " + roleInfo[r.key].deadline : null, (state.rolePractice || {})[r.key] ? "Prep " + ((state.rolePractice[r.key].done || []).length) + "/" + state.rolePractice[r.key].items.length : null].filter(Boolean).join(" · ") }) : null,
     h("div", { class: "fresh", text: "Source: " + (r.boards || []).map(b => b.name).join(" + ") + (r.provider && r.provider !== "other" ? " → employer posting on " + r.provider[0].toUpperCase() + r.provider.slice(1) : " → employer site") }),
     h("div", { class: "acts" }, [h("a", { class: "btn", href: r.applyUrl, target: "_blank", rel: "noopener", text: "Apply ↗", onclick: () => onApply(r) }),
       h("button", { class: "btn ghost", text: tr && tr.status !== "dismissed" ? "Track…" : "Save", onclick: () => tr && tr.status !== "dismissed" ? openTracker(r) : (setTrack(r, "saved"), toast("Saved " + r.employer), renderRoles()) }),
@@ -955,6 +983,7 @@ function renderRoles(keepKey) {
     h("div", { class: "chips", role: "toolbar" }, [...views.map(([k, l]) => h("button", { "aria-pressed": String(roleView === k), text: l + (k === "new" ? " (" + rolesFor("new").length + ")" : ""), onclick: () => { roleView = k; LS.set("rally-roleview", k); renderRoles(); } })),
       h("button", { "aria-pressed": "false", text: roleLayout === "list" ? "Cards" : "List", onclick: () => { roleLayout = roleLayout === "list" ? "cards" : "list"; LS.set("rally-rolelayout", roleLayout); renderRoles(); } }),
       h("button", { "aria-pressed": "false", text: "Profile", onclick: openRoleProfile }), h("button", { "aria-pressed": "false", text: "Paste job link", onclick: openPaste })]),
+    roleView === "saved" ? null : filterBar(),
     body,
     h("p", { class: "fine", text: (sum.open || 0) + " open internships from " + (ROLES.sources || []).map(s => s.name).join(" + ") + " (grouped by employer posting). Updated " + (ROLES.updatedAt ? ago2(ROLES.updatedAt) : "—") + ". Rally checks Greenhouse, Lever and Ashby postings live when you open them." }),
     h("p", {}, h("a", { class: "src", href: ROLES.jobby || "https://jobbys.vercel.app/?level=intern", target: "_blank", rel: "noopener", text: "Open Jobby ↗ (browse there; Jobby doesn't allow apps to read its listings)" })));
@@ -973,7 +1002,7 @@ async function checkRole(r, force) {
       if (r.provider === "greenhouse") { const d = document.createElement("div"); d.innerHTML = (j.content || "").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&").replace(/&quot;/g, '"'); text = d.textContent; posted = j.first_published || j.updated_at; }
       else if (r.provider === "lever") { text = (j.descriptionPlain || "") + " " + (j.lists || []).map(l => l.text + " " + (l.content || "").replace(/<[^>]+>/g, " ")).join(" ") + " " + (j.additionalPlain || ""); posted = j.createdAt ? new Date(j.createdAt).toISOString() : null; }
       else { const job = (j.jobs || []).find(x => x.id === r.jobId); if (!job) { info.status = "closed"; } else { text = job.descriptionPlain || ""; posted = job.publishedAt; } }
-      if (!info.status) { info.status = "open"; info.postedAt = posted; Object.assign(info, extractSkills(text)); }
+      if (!info.status) { info.status = "open"; info.postedAt = posted; Object.assign(info, extractSkills(text)); info.deadline = deadlineOf(text); }
     } else return cur || null;
     roleInfo[r.key] = info; LS.set("rally-roleinfo", roleInfo); return info;
   } catch (e) { return cur || null; }
@@ -990,14 +1019,6 @@ function extractSkills(text) {
 function onApply(r) { const tr = track(r.key); if (!tr || ["saved", "dismissed", undefined].includes(tr.status)) setTrack(r, "opened"); LS.set("rally-rolereturn", { key: r.key, at: Date.now() }); }
 function checkRoleReturn() { const p = LS.get("rally-rolereturn"); if (!p || Date.now() - p.at > 6 * 3600e3) return; if (!ROLE.has(p.key) && !ROLES.roles.length && !(state.roles || {})[p.key]) return; const r = ROLE.get(p.key) || { key: p.key, ...track(p.key) }; LS.del("rally-rolereturn"); show("roles"); renderRoles(p.key);
   openSheet("Back from " + (r.employer || "the application"), [h("h2", { text: r.title || "" }), h("p", { text: "Did you submit the application? Rally only marks it applied when you say so." }), h("div", { class: "row", style: "display:flex;gap:10px;flex-wrap:wrap" }, [h("button", { class: "btn", text: "Mark applied", onclick: () => { setTrack(r, "applied", { appliedAt: new Date().toISOString() }); closeSheet(); renderRoles(r.key); toast("Marked applied"); } }), h("button", { class: "btn ghost", text: "Not yet", onclick: () => { closeSheet(); renderRoles(r.key); } }), h("button", { class: "btn ghost", text: "Practice for it", onclick: () => practiceForRole(r) })])], { kind: "rolereturn" }); }
-function openTracker(r) {
-  const tr = track(r.key) || {}; const note = h("textarea", { style: "min-height:90px", placeholder: "Notes (referral, recruiter name, deadline…)" }); note.value = tr.note || "";
-  openSheet("Track", [h("h2", { text: r.employer + " · " + r.title }), h("p", { class: "fine", text: "Status: " + (STLAB[tr.status] || "—") + (tr.appliedAt ? " · applied " + new Date(tr.appliedAt).toLocaleDateString() : "") }),
-    h("div", { class: "seg" }, ["saved", "applied", "interviewing", "closed"].map(k => h("button", { "aria-pressed": String(tr.status === k), text: STLAB[k], onclick: () => { setTrack(r, k, { note: note.value, ...(k === "applied" && !tr.appliedAt ? { appliedAt: new Date().toISOString() } : {}) }); openTracker(r); renderRoles(r.key); } }))),
-    h("h4", { text: "Note" }), note, h("button", { class: "btn ghost", text: "Save note", onclick: () => { setTrack(r, tr.status || "saved", { note: note.value }); toast("Saved"); } }),
-    h("h4", { text: "History" }), ...(tr.history || []).map(x => h("div", { class: "fine", text: STLAB[x.status] + " · " + new Date(x.at).toLocaleString() })),
-    h("p", {}, h("a", { class: "src", href: r.applyUrl || tr.url, target: "_blank", rel: "noopener", text: "Employer posting ↗", onclick: () => onApply(r) }))], { kind: "track" });
-}
 function openDismiss(r) { const type = (r.title.match(/(machine learning|data|backend|frontend|full stack|mobile|security|embedded)/i) || [])[1];
   openSheet("Not for me", [h("h2", { text: r.employer + " · " + r.title }), h("button", { class: "btn ghost", text: "Hide this role", onclick: () => { setTrack(r, "dismissed"); closeSheet(); renderRoles(); } }), h("p"), h("button", { class: "btn ghost", text: "Hide all " + r.employer + " roles", onclick: () => { const p = rprof(); p.hideCos.push(r.employer); p.t = Date.now(); state.settings.t = Date.now(); persist(); closeSheet(); renderRoles(); } }), h("p"), type ? h("button", { class: "btn ghost", text: "Fewer " + type.toLowerCase() + " roles", onclick: () => { const p = rprof(); p.hideTypes.push(type.toLowerCase()); state.settings.t = Date.now(); persist(); closeSheet(); renderRoles(); } }) : null], {}); }
 function openRoleProfile() {
@@ -1029,23 +1050,63 @@ function openPaste() {
 /* practice built from the posting */
 const SKILL_DRILLS = { "Python": ["dv-two-sum-set", "d-14", "dv-window-max"], "SQL": ["ds-having", "ds-null"], "Data structures & algorithms": ["dv-window-max", "d-7", "dx-bsearch-bounds"], "ML evaluation": ["dv-confusion-recall", "dm-pr-calc", "dx-rare-screen"], "Retrieval/search": ["dx-rerank-latency", "dm-knn-cost", "dm-cosine"], "Deep learning": ["dm-train-score", "dm-leak-scaler"], "Statistics": ["dm-calibration", "dm-pr-calc"], "Distributed systems": ["dm-batching", "dm-online-offline"], "Java": ["d-7", "dx-bsearch-bounds"], "C++": ["dx-bsearch-bounds", "d-7"], "JavaScript/TypeScript": ["d-7", "dv-window-max"], "Go": ["d-7"] };
 const PROMPTS = { "APIs": "Two-minute API design: sketch the endpoints for saving and listing a user's bookmarks. What does each return, and how do you paginate?", "ML evaluation": "Two-minute explanation: your classifier's accuracy went up but users complain more. Which metrics do you check, and why?", "Retrieval/search": "Two-minute explanation: when would you add a re-ranker after nearest-neighbor retrieval, and what does it cost?", "Distributed systems": "Two-minute design: a counter that many servers update at once. How do you keep it correct and fast?" };
+/* ---- Roles workspace: filters, 10-minute prep, follow-up, resume match ---- */
+let roleFilter = LS.get("rally-rolefilter") || { term: "Summer 2027", where: "any", type: "any", grad: "any" };
+const RTYPES = { swe: /software|swe|developer|full[- ]?stack|engineer/i, backend: /backend|back-end|platform|infra|distributed|cloud/i, ml: /machine learning|\bml\b|\bai\b|applied scien|research eng|data scien/i, data: /data (engineer|platform|analy)|analytics/i };
+function passFilter(r) { const f = roleFilter, info = roleInfo[r.key] || {};
+  if (f.term !== "any" && !(r.terms || []).some(t => t.includes(f.term))) return false;
+  const locs = (r.locations || []).join(" | "); if (f.where === "bay" && !BAY.test(locs)) return false; if (f.where === "remote" && !REMOTE.test(locs)) return false;
+  if (f.type !== "any" && !RTYPES[f.type].test(r.title)) return false;
+  if (f.grad === "stated" && !(info.elig && info.elig.length)) return false; if (f.grad === "unknown" && info.elig && info.elig.length) return false; return true; }
+function filterBar() { const sel = (k, opts) => { const e = h("select", { "aria-label": k, style: "min-height:38px;font-size:14px;width:auto;flex:1" }, opts.map(([v, l]) => h("option", { value: v, selected: roleFilter[k] === v ? true : null, text: l }))); e.onchange = () => { roleFilter[k] = e.value; LS.set("rally-rolefilter", roleFilter); renderRoles(); }; return e; };
+  return h("div", { style: "display:flex;gap:6px;margin:0 0 10px;flex-wrap:wrap" }, [sel("term", [["Summer 2027", "Summer 2027"], ["any", "Any term"]]), sel("where", [["any", "Anywhere US"], ["bay", "Bay Area"], ["remote", "Remote"]]), sel("type", [["any", "All types"], ["swe", "SWE"], ["backend", "Backend/infra"], ["ml", "ML/AI"], ["data", "Data"]]), sel("grad", [["any", "Any grad rule"], ["stated", "Grad rule stated"], ["unknown", "Grad rule unknown"]])]); }
+function deadlineOf(text) { const m = /(deadline|apply by|applications? (close|due)|accepting applications until)[^.]{0,40}?((jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)[a-z]*\.? \d{1,2}(, ?\d{4})?|\d{1,2}\/\d{1,2}(\/\d{2,4})?)/i.exec(text || ""); return m ? m[0].replace(/\s+/g, " ").slice(0, 80) : null; }
 async function practiceForRole(r) {
-  const info = await checkRole(r) || {}; let skills = info.skills && info.skills.length ? info.skills : [];
+  const info = await checkRole(r) || {}; let skills = info.skills && info.skills.length ? info.skills.slice() : [];
   const basedOn = skills.length ? "posting" : "title";
   if (!skills.length) { if (/machine learning|\bml\b|\bai\b/i.test(r.title)) skills = ["ML evaluation", "Python"]; else if (/data/i.test(r.title)) skills = ["SQL", "Python"]; else skills = ["Python", "Data structures & algorithms", "APIs"]; }
-  const set = [], used = new Set(); for (const sk of skills) { const id = (SKILL_DRILLS[sk] || []).find(x => DRILL.has(x) && !used.has(x)); if (id) { used.add(id); set.push({ sk, id }); } if (set.length >= 2) break; }
-  const pk = skills.find(sk => PROMPTS[sk]) || (/machine|ml|ai/i.test(r.title) ? "ML evaluation" : "APIs");
-  const items = [...set, { sk: pk, prompt: PROMPTS[pk] }];
-  state.rolePractice = state.rolePractice || {}; state.rolePractice[r.key] = { at: Date.now(), items: items.map(x => x.id || "prompt:" + x.sk), done: (state.rolePractice[r.key] || {}).done || [] }; persist();
-  const why = h("details", {}, [h("summary", { text: "Why these questions?" }), ...items.map(x => h("p", { class: "fine", text: x.sk + (info.quotes && info.quotes[x.sk] ? ": the posting says " + info.quotes[x.sk] : basedOn === "title" ? ": from the job title (Rally couldn't read this posting)" : "") }))]);
-  let k = 0; const wrap = h("div");
-  const step = () => { const x = items[k]; if (!x) { wrap.replaceChildren(h("h2", { text: "Set done" }), h("p", { text: "Nice. This set is saved under My roles so you can pick it back up." }), h("button", { class: "btn", text: "Back to the role", onclick: () => { closeSheet(); show("roles"); renderRoles(r.key); } })); return; }
-    const head = h("div", { class: "fine", text: "Practice based on the " + basedOn + " · " + (k + 1) + " of " + items.length + " · " + x.sk });
-    const next = () => { const rp = state.rolePractice[r.key]; rp.done = uniq([...(rp.done || []), x.id || "prompt:" + x.sk]); persist(); k++; step(); };
+  const used = new Set(), pickDrill = sk => (SKILL_DRILLS[sk] || []).find(x => DRILL.has(x) && !used.has(x));
+  const items = [];
+  for (const sk of skills) { const id = pickDrill(sk); if (id) { used.add(id); items.push({ kind: "Drill", sk, id }); break; } }
+  const applied = skills.find(sk => PROMPTS[sk]) || (/machine|ml|ai/i.test(r.title) ? "ML evaluation" : "APIs");
+  items.push({ kind: "Applied question", sk: applied, prompt: PROMPTS[applied] });
+  const projSk = skills[0] || "Python";
+  items.push({ kind: "Explain your work", sk: projSk, prompt: "Two minutes, out loud or typed: pick a project where you used " + projSk + ". What was the hardest technical decision, what did you choose, and what would you change now? (Interviewers for " + r.title + " ask this.)" });
+  state.rolePractice = state.rolePractice || {}; const rp0 = state.rolePractice[r.key] || {}; state.rolePractice[r.key] = { at: Date.now(), items: items.map(x => x.id || x.kind), done: rp0.done || [] }; persist();
+  const why = h("details", {}, [h("summary", { text: "Why these questions?" }), ...items.map(x => h("p", { class: "fine", text: x.kind + " → " + x.sk + (info.quotes && info.quotes[x.sk] ? ": the posting says " + info.quotes[x.sk] : basedOn === "title" ? ": from the job title (Rally couldn't read this posting)" : "") }))]);
+  let k = items.findIndex(x => !(rp0.done || []).includes(x.id || x.kind)); if (k < 0) k = 0;
+  const wrap = h("div");
+  const step = () => { const x = items[k]; if (!x) { wrap.replaceChildren(h("h2", { text: "Prep set done" }), h("p", { text: "Saved under My roles. Add a next action so future-you knows what's left." }), h("button", { class: "btn", text: "Back to the role", onclick: () => { closeSheet(); show("roles"); renderRoles(r.key); } })); return; }
+    const head = h("div", { class: "fine", text: "Practice based on the " + basedOn + " · " + (k + 1) + " of " + items.length + " · " + x.kind + " · prepares: " + x.sk + " · about " + [3, 3, 4][k] + " min" });
+    const next = () => { const rp = state.rolePractice[r.key]; rp.done = uniq([...(rp.done || []), x.id || x.kind]); persist(); k++; step(); };
     if (x.id) wrap.replaceChildren(head, drillBody(DRILL.get(x.id), { next, nextLabel: k + 1 < items.length ? "Next" : "Finish" }), why);
-    else { const key = "rally-draft:role:" + r.key, ta = h("textarea", { placeholder: "Type your answer, or just talk it through out loud." }); ta.value = LS.get(key) || ""; ta.oninput = () => LS.set(key, ta.value); wrap.replaceChildren(head, h("div", { class: "q", text: x.prompt }), ta, h("p", {}, h("button", { class: "btn", text: "Done", onclick: next })), why); } };
-  step(); openSheet("Practice · " + r.employer, [h("h2", { text: r.title }), wrap], { kind: "rolepractice" });
+    else { const key = "rally-draft:role:" + r.key + ":" + k, ta = h("textarea", { placeholder: "Type your answer, or talk it through out loud." }); ta.value = LS.get(key) || ""; ta.oninput = () => LS.set(key, ta.value); wrap.replaceChildren(head, h("div", { class: "q", text: x.prompt }), ta, h("p", {}, h("button", { class: "btn", text: "Done", onclick: next })), why); } };
+  step(); openSheet("10-minute prep · " + r.employer, [h("h2", { text: r.title }), wrap], { kind: "rolepractice" });
 }
+function openTracker(r) {
+  const tr = track(r.key) || {}, info = roleInfo[r.key] || {}; const note = h("textarea", { style: "min-height:70px", placeholder: "Notes (referral, recruiter, anything)" }); note.value = tr.note || "";
+  const nextAct = h("input", { type: "text", placeholder: "Next action, e.g. finish application, practice SQL joins" }); nextAct.value = tr.next || "";
+  openSheet("Track", [h("h2", { text: r.employer + " · " + r.title }), h("p", { class: "fine", text: "Status: " + (STLAB[tr.status] || "—") + (tr.appliedAt ? " · applied " + new Date(tr.appliedAt).toLocaleDateString() : "") }),
+    info.deadline ? h("p", { text: "Deadline in the posting: " + info.deadline }) : h("p", { class: "fine", text: "No deadline stated in the posting" + (info.checkedAt ? "." : " (or Rally couldn't read it).") }),
+    h("div", { class: "seg" }, ["saved", "applied", "interviewing", "closed"].map(k => h("button", { "aria-pressed": String(tr.status === k), text: STLAB[k], onclick: () => { setTrack(r, k, { note: note.value, next: nextAct.value, ...(k === "applied" && !tr.appliedAt ? { appliedAt: new Date().toISOString() } : {}) }); openTracker(r); renderRoles(r.key); } }))),
+    h("h4", { text: "Next action" }), nextAct, h("h4", { text: "Note" }), note, h("p", {}, h("button", { class: "btn ghost", text: "Save", onclick: () => { setTrack(r, tr.status || "saved", { note: note.value, next: nextAct.value }); toast("Saved"); renderRoles(r.key); } })),
+    h("p", {}, h("button", { class: "btn ghost", text: "Resume match for this role", onclick: () => openResumeMatch(r) })),
+    h("h4", { text: "Where it came from" }), h("p", { class: "fine", text: "Source: " + (r.boards || []).map(b => b.name).join(" + ") + (info.checkedAt ? " · last verified " + ago2(info.checkedAt) : r.lastSeen ? " · last listed " + ago2(r.lastSeen) : "") }),
+    h("p", {}, h("a", { class: "src", href: r.applyUrl || tr.url, target: "_blank", rel: "noopener", text: "Employer posting ↗", onclick: () => onApply(r) })),
+    h("h4", { text: "History" }), ...(tr.history || []).map(x => h("div", { class: "fine", text: STLAB[x.status] + " · " + new Date(x.at).toLocaleString() }))], { kind: "track" });
+}
+function openResumeMatch(r) {
+  const info = roleInfo[r.key] || {}, key = "rally-resume:" + r.key, reqs = (info.skills && info.skills.length ? info.skills : fitOf(r).why.map(w => w.replace(/^.*?: /, "")));
+  const ta = h("textarea", { style: "min-height:140px", placeholder: "Paste 2–5 resume bullets. They stay on this device." }); ta.value = LS.get(key) || ""; ta.oninput = () => LS.set(key, ta.value);
+  const out = h("div");
+  const mapIt = () => { const bullets = ta.value.split(/\n+/).map(x => x.replace(/^[-•*\s]+/, "").trim()).filter(Boolean); const rows = reqs.map(rq => { const re = (SKILLS.find(([n]) => n === rq) || [null, new RegExp(rq.split(/\W+/)[0], "i")])[1]; const hit = bullets.filter(b => re.test(b)); return { rq, hit }; });
+    out.replaceChildren(h("h4", { text: "Requirements → your bullets" }), ...rows.map(x => h("div", { class: "res" }, [h("span", { text: x.rq + (info.quotes && info.quotes[x.rq] ? " — " + info.quotes[x.rq] : "") }), h("b", { text: x.hit.length ? "✓ " + x.hit.length : "gap" })])),
+      h("p", { class: "fine", text: rows.filter(x => !x.hit.length).length ? "Gaps: say where you've actually used " + rows.filter(x => !x.hit.length).map(x => x.rq).join(", ") + ", if you have. Don't add what you haven't done." : "Every listed requirement shows up in at least one bullet." }),
+      h("h4", { text: "Want wording suggestions?" }), h("p", { class: "fine", text: "Nothing has been sent anywhere. Copy this prompt into Claude yourself if you want rewrites grounded in your bullets." }),
+      h("button", { class: "btn ghost", text: "Copy prompt for Claude", onclick: () => { const p = "Help me tighten these resume bullets for \"" + r.title + "\" at " + r.employer + ". Only reword what I actually did; don't invent numbers or tools. The posting asks for: " + reqs.join(", ") + ".\n\n" + bullets.map(b => "- " + b).join("\n"); try { navigator.clipboard.writeText(p).then(() => toast("Prompt copied")); } catch (e) { toast("Couldn't copy"); } } })); };
+  openSheet("Resume match · " + r.employer, [h("h2", { text: r.title }), h("p", { class: "fine", text: "Private draft: saved only in this browser." }), ta, h("p", {}, h("button", { class: "btn", text: "Map to requirements", onclick: mapIt })), out], { kind: "resume" });
+}
+
 function rolesPill() { const p = $("#rolespill"); const n = rolesFor("new").filter(r => fitOf(r).score >= 8).length; if (n && curView === "foryou") { p.hidden = false; p.textContent = n + " new roles for you →"; p.onclick = () => { roleView = "new"; show("roles"); }; } else p.hidden = true; }
 
 function idleSave(k, v) { (window.requestIdleCallback || (f => setTimeout(f, 300)))(() => { try { LS.set(k, v); } catch (e) {} }); }
@@ -1061,7 +1122,7 @@ function applyRoles(rj) { ROLES = rj; ROLE.clear(); Object.values(state.pasted |
 function show(v) {
   if (v === curView) { if (v === "foryou" && active > 0) go(0); return; }
   if (curView === "foryou") { pauseActive(); savePos(); }
-  curView = v; $$(".view").forEach(x => x.hidden = x.id !== "v-" + v); $$("#nav button").forEach(b => b.toggleAttribute("aria-current", b.dataset.v === v) || b.removeAttribute("aria-current"));
+  curView = v; document.body.dataset.view = v; $$(".view").forEach(x => x.hidden = x.id !== "v-" + v); $$("#nav button").forEach(b => b.toggleAttribute("aria-current", b.dataset.v === v) || b.removeAttribute("aria-current"));
   $$("#nav button").forEach(b => { if (b.dataset.v === v) b.setAttribute("aria-current", "page"); else b.removeAttribute("aria-current"); });
   $("#hdr").classList.toggle("solid", v !== "foryou");
   if (v === "news") renderNews(); else if (v === "practice") renderPractice(); else if (v === "saved") renderSaved(); else if (v === "roles") { renderRoles(); loadRoles(); }
@@ -1070,6 +1131,42 @@ function show(v) {
 }
 $$("#nav button").forEach(b => b.onclick = () => show(b.dataset.v));
 addEventListener("focus", () => checkRoleReturn());
+/* ================= 5-MINUTE BRIEFING + SEARCH ================= */
+function briefSeen() { return LS.get("rally-briefseen") || {}; }
+function markBrief(id) { const b = briefSeen(); b[id] = Date.now(); LS.set("rally-briefseen", b); }
+function briefItems() {
+  const bs = briefSeen(), out = [], wk = 7 * 864e5, now = Date.now();
+  const cl = CLUBS.clubs && CLUBS.clubs[state.settings.favClub || "corinthians"];
+  if (cl) { const md = mdState(cl), u = md.fresh[0], key = "club:" + (u ? u.at + u.text.slice(0, 20) : md.phase + ((md.last || {}).id || "")); if ((u || md.phase !== "entre") && !bs[key]) out.push({ key, kind: "Corinthians", label: u ? (state.settings.spoilers ? u.text : "Atualização da tabela (spoilers escondidos)") : PH[md.phase] + ": " + (md.next ? md.next.home + " × " + md.next.away + ", " + localKick(md.next.kickoff) : ""), act: "Read", run: () => openClub(state.settings.favClub || "corinthians") }); }
+  const st = STORIES.filter(x => !(x.tags || []).some(t => t.startsWith("club:")) && /world|business|tech|ai|news/i.test(x.topic || "") && !bs["story:" + x.id] && now - Date.parse(x.published || 0) < 3 * 864e5)[0];
+  if (st) out.push({ key: "story:" + st.id, kind: st.topic, label: st.title, act: "Read", run: ret => openSheet("Story", storyBody(st, false), { onclose: ret }) });
+  if (ROLES.roles && ROLES.roles.length) { const r = rolesFor("best").find(r => !bs["role:" + r.key] && !track(r.key)); if (r) out.push({ key: "role:" + r.key, kind: "Internship", label: r.employer + " · " + r.title, act: "Look", run: () => { show("roles"); renderRoles(r.key); } }); }
+  const due = dueReviews()[0], nd = due ? null : nextDrill(Math.random() < .5 ? "swe" : "mle"), dr = due ? DRILL.get(due) : nd && nd.d;
+  if (dr && !bs["drill:" + dr.id + ":" + TODAY]) out.push({ key: "drill:" + dr.id + ":" + TODAY, kind: due ? "Review due" : "Drill", label: (dr.q || "Quick drill").slice(0, 120), act: "Practice", run: ret => openSheet("Drill", drillBody(dr, { next: ret, nextLabel: "Back to briefing" }), { onclose: ret }) });
+  return out;
+}
+function openBriefing() {
+  const items = briefItems(), ret = () => setTimeout(openBriefing, 50);
+  const rows = items.length ? items.map(it => h("button", { class: "res", style: "width:100%;text-align:left;display:block;padding:12px", onclick: () => { markBrief(it.key); closeSheet(); it.run(ret); } }, [h("small", { class: "fine", text: it.kind + " · " + it.act }), h("div", { text: it.label })])) : [h("p", { text: "You're caught up. Nothing new worth five minutes right now." })];
+  openSheet("5-minute briefing", [h("p", { class: "fine", text: items.length < 4 && items.length ? "Only " + items.length + " thing" + (items.length > 1 ? "s" : "") + " worth your time right now." : "Tap one; you come back here when you're done." }), ...rows, h("p", {}, h("button", { class: "btn ghost", text: "Back to videos", onclick: closeSheet }))], { kind: "brief" });
+}
+function openSearch() {
+  const inp = h("input", { type: "search", placeholder: "Corinthians, data leakage, Stripe…", "aria-label": "Search", style: "width:100%" }), out = h("div");
+  const run = () => { const q = inp.value.trim().toLowerCase(); LS.set("rally-lastq", inp.value); if (q.length < 2) { out.replaceChildren(); return; } const m = t => (t || "").toLowerCase().includes(q);
+    const clips = CLIPS.filter(c => m(c.headline) || m(c.kicker) || m(c.topic) || m(c.transcript) || (c.tags || []).some(m)).slice(0, 8);
+    const stories = STORIES.filter(x => m(x.title) || m(x.summary) || m(x.happened) || (x.tags || []).some(m)).slice(0, 8);
+    const roles = (ROLES.roles || []).filter(r => r.status === "open" && (m(r.employer) || m(r.title))).slice(0, 8);
+    const drills = DRILLS.filter(d => m(d.q) || m(d.tag) || m(d.concept) || m(d.why) || m(d.trap)).slice(0, 8);
+    const grp = (name, arr, row) => arr.length ? [h("h4", { text: name + " (" + arr.length + ")" }), ...arr.map(row)] : [];
+    const res = [...grp("Clips", clips, c => h("button", { class: "res", style: "width:100%;text-align:left", onclick: () => { closeSheet(); if (order.indexOf(c.id) < 0) setMode("foryou"); openClip(c.id); } }, [h("span", { text: (c.spoiler && !state.settings.spoilers ? c.kicker : c.headline) }), h("b", { text: "▶" })])),
+      ...grp("Stories", stories, x => h("button", { class: "res", style: "width:100%;text-align:left", onclick: () => openSheet("Story", storyBody(x, false), { onclose: () => setTimeout(() => { openSearch(); }, 50) }) }, [h("span", { text: x.title }), h("b", { text: "›" })])),
+      ...grp("Roles", roles, r => h("button", { class: "res", style: "width:100%;text-align:left", onclick: () => { closeSheet(); show("roles"); renderRoles(r.key); } }, [h("span", { text: r.employer + " · " + r.title }), h("b", { text: "›" })])),
+      ...grp("Drills", drills, d => h("button", { class: "res", style: "width:100%;text-align:left", onclick: () => openSheet("Drill", drillBody(d, { next: () => setTimeout(openSearch, 50), nextLabel: "Back to search" })) }, [h("span", { text: (d.q || d.id).slice(0, 110) }), h("b", { text: "›" })]))];
+    out.replaceChildren(...(res.length ? res : [h("p", { class: "fine", text: "Nothing matches “" + inp.value + "”." + (ROLES.roles ? "" : " Roles are still loading.") })])); };
+  inp.oninput = run; inp.value = LS.get("rally-lastq") || ""; loadRoles().then(run).catch(() => {});
+  openSheet("Search", [inp, out], { kind: "search" }); run(); setTimeout(() => inp.focus(), 100);
+}
+
 function openStatus() {
   const wk = []; for (let k = 6; k >= 0; k--) { const key = addDays(TODAY, -k); wk.push(h("div", { class: ((state.days[key] || {}).complete ? "on " : "") + (k === 0 ? "today" : ""), text: new Date(key + "T12:00:00Z").toLocaleDateString([], { weekday: "short", timeZone: "UTC" }) })); }
   const p = progress();
@@ -1077,12 +1174,15 @@ function openStatus() {
   openSheet("Today", [h("h2", { text: p.complete ? "Today counts 🔥" : statusText(p) }), h("p", { text: "The rule: 10 things a day, at least 3 of them drills. A clip counts once you've watched 85% of it. A clip and its written story count as one." }), h("div", { class: "week" }, wk), h("p", { class: "fine", text: "Streak: " + streak() + " day" + (streak() === 1 ? "" : "s") + " · " + p.done + " items · " + p.drills + " drills today" }),
     tg("Show sports results", !!state.settings.spoilers, () => { state.settings.spoilers = !state.settings.spoilers; state.settings.t = Date.now(); persist(); return state.settings.spoilers; }),
     tg("Captions", ccOn, () => { ccOn = !ccOn; state.settings.captions = ccOn; state.settings.t = Date.now(); persist(); document.body.classList.toggle("nocc", !ccOn); return ccOn; }),
+    (() => { const v = state.settings.ptShare ?? 33, lab = h("span", { text: "Português: " + v + "% of the feed" }), r = h("input", { type: "range", min: 0, max: 70, step: 5, value: v, "aria-label": "Portuguese share", style: "width:100%" }); r.oninput = () => lab.textContent = "Português: " + r.value + "% of the feed"; r.onchange = () => { state.settings.ptShare = +r.value; state.settings.t = Date.now(); persist(); rerankUnseen(); toast("Applies to clips you haven't reached yet"); }; return h("div", { style: "margin:10px 0" }, [lab, r]); })(),
+    h("details", {}, [h("summary", { text: "Freshness by provider" }), ...Object.entries(CLIPS.reduce((a, c) => { const p = c.type === "yt" ? "YouTube" : c.type === "tt" ? "TikTok" : c.type === "mp4seg" ? "Publisher MP4" : "Rally originals"; (a[p] ||= []).push(Date.parse(c.published || 0)); return a; }, {})).map(([p, ts]) => { ts.sort((a, b) => b - a); return h("p", { class: "fine", text: p + ": " + ts.length + " clips · newest " + ago2(new Date(ts[0]).toISOString()) + " · " + ts.filter(t => Date.now() - t < 2 * 864e5).length + " from the last 48 h" }); })]),
     h("details", {}, [h("summary", { text: "Playback timing on this device" }), ...(perfReport().length ? perfReport().map(l => h("p", { class: "fine", text: l })) : [h("p", { class: "fine", text: "No clips timed yet." })]), h("button", { class: "btn ghost", text: "Copy timing report", onclick: () => { const t = "Rally " + BUILD + " · " + navigator.userAgent + "\n" + perfReport().join("\n") + "\n" + JSON.stringify(PERF.slice(-40)); try { navigator.clipboard.writeText(t).then(() => toast("Copied. Paste it to Claude.")); } catch (e) { toast("Couldn't copy"); } } })]),
     h("p", {}, h("button", { class: "btn ghost", text: "Following & Corinthians", onclick: () => { closeSheet(); openFollows(); } })),
     h("p", {}, h("button", { class: "btn ghost", text: "Check for new clips", onclick: () => { closeSheet(); show("foryou"); pullRefresh(); } })),
     h("p", { class: "fine", id: "runline", text: "" }),
     h("p", { class: "fine", text: "Build " + BUILD + " · clips " + (feedMeta.build || "?") + " · updated " + (feedMeta.checkedAt ? timeFmt(feedMeta.checkedAt) : "—") + " · sync: " + syncState })], { kind: "status" });
 }
+$("#srch").onclick = openSearch; $("#brief").onclick = openBriefing;
 $("#brand").onclick = () => { openStatus(); fetch("run.json?b=" + Date.now(), { cache: "no-store" }).then(r => r.json()).then(r => { const e = $("#runline"); if (e) e.textContent = "Last refresh " + new Date(r.at).toLocaleString([], { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }) + ": " + r.found + " found, " + (r.clipsAdded.length + r.storiesAdded.length) + " went live, " + r.dropped.length + " dropped" + (r.dropped.length ? " (" + r.dropped.map(d => d.why).join("; ") + ")" : "") + ". " + r.inventory + " clips in rotation."; }).catch(() => {}); }; $("#prog").onclick = openStatus;
 function checkDay() { const k = pacificKey(); if (k !== TODAY) { TODAY = k; watched.date = k; watched.ids = {}; buildRoster(); renderFeed(); paintHeader(); } }
 /* ================= boot ================= */
