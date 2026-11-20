@@ -1,5 +1,185 @@
 [
  {
+  "id": "y-cftv-ide",
+  "type": "yt",
+  "yt": "GPcIjsz-2cA",
+  "lang": "pt",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Código Fonte TV",
+  "url": "https://www.youtube.com/watch?v=GPcIjsz-2cA",
+  "headline": "IDE, muito mais que um editor de texto",
+  "kicker": "SWE · FERRAMENTAS",
+  "published": "2024-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Dicionário do Programador"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-20"
+  },
+  "moments": [
+   {
+    "label": "Assistir",
+    "start": 0,
+    "end": null,
+    "cue": "Editor, compilador e debugger no mesmo lugar, e quando isso ajuda"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Código Fonte TV",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com)",
+   "url": "https://www.youtube.com/watch?v=GPcIjsz-2cA"
+  },
+  "addedAt": "2026-11-20T13:42:21Z"
+ },
+ {
+  "id": "y-cftv-c",
+  "type": "yt",
+  "yt": "6mUCcsnCn08",
+  "lang": "pt",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Código Fonte TV",
+  "url": "https://www.youtube.com/watch?v=6mUCcsnCn08",
+  "headline": "C, a linguagem que é mãe de quase todas",
+  "kicker": "SWE · LINGUAGENS",
+  "published": "2024-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Dicionário do Programador"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-10"
+  },
+  "moments": [
+   {
+    "label": "Assistir",
+    "start": 0,
+    "end": null,
+    "cue": "Ponteiro, memória na mão e por que tanta linguagem copiou o C"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Código Fonte TV",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com)",
+   "url": "https://www.youtube.com/watch?v=6mUCcsnCn08"
+  },
+  "addedAt": "2026-11-20T13:42:21Z"
+ },
+ {
+  "id": "y-3b1b-gd",
+  "type": "yt",
+  "yt": "IHZwWFHWa-w",
+  "lang": "en",
+  "kind": "mle",
+  "topic": "MLE",
+  "publisher": "3Blue1Brown",
+  "url": "https://www.youtube.com/watch?v=IHZwWFHWa-w",
+  "headline": "Gradient descent, how neural networks learn",
+  "kicker": "MLE · OPTIMIZATION",
+  "published": "2024-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "3Blue1Brown"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dm-train-score"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Rolling downhill on the cost surface, and why a great training score can still fool you"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "3Blue1Brown",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com)",
+   "url": "https://www.youtube.com/watch?v=IHZwWFHWa-w"
+  },
+  "addedAt": "2026-11-20T13:42:21Z"
+ },
+ {
+  "id": "y-3b1b-gpt",
+  "type": "yt",
+  "yt": "wjZofJX0v4M",
+  "lang": "en",
+  "kind": "mle",
+  "topic": "MLE",
+  "publisher": "3Blue1Brown",
+  "url": "https://www.youtube.com/watch?v=wjZofJX0v4M",
+  "headline": "But what is a GPT? Transformers, visually",
+  "kicker": "MLE · LLMS",
+  "published": "2024-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "3Blue1Brown"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dm-cosine"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Words become vectors, and a dot product says how close two of them are"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "3Blue1Brown",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com)",
+   "url": "https://www.youtube.com/watch?v=wjZofJX0v4M"
+  },
+  "addedAt": "2026-11-20T13:42:21Z"
+ },
+ {
   "id": "y-cftv-pair",
   "type": "yt",
   "yt": "5M8yNQSFBPg",
