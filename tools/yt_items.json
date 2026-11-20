@@ -1,5 +1,230 @@
 [
  {
+  "id": "y-cftv-pair",
+  "type": "yt",
+  "yt": "5M8yNQSFBPg",
+  "lang": "pt",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Código Fonte TV",
+  "url": "https://www.youtube.com/watch?v=5M8yNQSFBPg",
+  "headline": "Pair programming, dois devs e um teclado",
+  "kicker": "SWE · PRÁTICAS",
+  "published": "2024-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Dicionário do Programador"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dx-boundary-test"
+  },
+  "moments": [
+   {
+    "label": "Assistir",
+    "start": 0,
+    "end": null,
+    "cue": "Quem pilota, quem navega e por que isso pega bug cedo"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Código Fonte TV",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com)",
+   "url": "https://www.youtube.com/watch?v=5M8yNQSFBPg"
+  },
+  "addedAt": "2026-11-20T09:41:47Z"
+ },
+ {
+  "id": "y-cftv-nosql",
+  "type": "yt",
+  "yt": "1B64oqE8PLs",
+  "lang": "pt",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Código Fonte TV",
+  "url": "https://www.youtube.com/watch?v=1B64oqE8PLs",
+  "headline": "NoSQL, quando a tabela não é a resposta",
+  "kicker": "SWE · BANCO DE DADOS",
+  "published": "2024-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Dicionário do Programador"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "ds-having"
+  },
+  "moments": [
+   {
+    "label": "Assistir",
+    "start": 0,
+    "end": null,
+    "cue": "Documento, chave-valor, grafo: o que muda quando você larga o SQL"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Código Fonte TV",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com)",
+   "url": "https://www.youtube.com/watch?v=1B64oqE8PLs"
+  },
+  "addedAt": "2026-11-20T09:41:47Z"
+ },
+ {
+  "id": "y-fs-networking",
+  "type": "yt",
+  "yt": "keeqnciDVOo",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=keeqnciDVOo",
+  "headline": "Computer networking in 100 seconds",
+  "kicker": "SWE · NETWORKS",
+  "published": "2024-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dx-boundary-test"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "How a packet finds its way from your laptop to a server"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com)",
+   "url": "https://www.youtube.com/watch?v=keeqnciDVOo"
+  },
+  "addedAt": "2026-11-20T09:41:47Z"
+ },
+ {
+  "id": "y-sq-fdr",
+  "type": "yt",
+  "yt": "L3nlGfSyHV0",
+  "lang": "en",
+  "kind": "mle",
+  "topic": "MLE",
+  "publisher": "StatQuest with Josh Starmer",
+  "url": "https://www.youtube.com/watch?v=L3nlGfSyHV0",
+  "headline": "False discovery rates, clearly explained",
+  "kicker": "MLE · STATS",
+  "published": "2024-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "StatQuest"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dx-rare-screen"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Run a thousand tests and some will lie to you. Here's how to catch them"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "StatQuest with Josh Starmer",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com)",
+   "url": "https://www.youtube.com/watch?v=L3nlGfSyHV0"
+  },
+  "addedAt": "2026-11-20T09:41:47Z"
+ },
+ {
+  "id": "y-sq-sgd",
+  "type": "yt",
+  "yt": "vMh0zPT0tLI",
+  "lang": "en",
+  "kind": "mle",
+  "topic": "MLE",
+  "publisher": "StatQuest with Josh Starmer",
+  "url": "https://www.youtube.com/watch?v=vMh0zPT0tLI",
+  "headline": "Stochastic gradient descent, clearly explained",
+  "kicker": "MLE · OPTIMIZATION",
+  "published": "2024-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "StatQuest"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dm-batching"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Why a random sample of the data is enough to take a step"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "StatQuest with Josh Starmer",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com)",
+   "url": "https://www.youtube.com/watch?v=vMh0zPT0tLI"
+  },
+  "addedAt": "2026-11-20T09:41:47Z"
+ },
+ {
   "id": "y-sq-power",
   "yt": "Rsc5znwR5FA",
   "lang": "en",
