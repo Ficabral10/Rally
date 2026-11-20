@@ -1,5 +1,185 @@
 [
  {
+  "id": "y-sq-attention",
+  "yt": "PSs6nxngL6k",
+  "lang": "en",
+  "kind": "mle",
+  "topic": "MLE",
+  "publisher": "StatQuest with Josh Starmer",
+  "url": "https://www.youtube.com/watch?v=PSs6nxngL6k",
+  "headline": "Attention, clearly explained",
+  "kicker": "MLE · LLMS",
+  "published": "2024-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "StatQuest"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dm-cosine"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Each word scores every other word with a dot product, then mixes them by those scores"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "StatQuest with Josh Starmer",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "StatQuest video index (statquest.org)",
+   "url": "https://youtu.be/PSs6nxngL6k"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-20T17:43:00Z"
+ },
+ {
+  "id": "y-sq-pca-5min",
+  "yt": "HMOI_lkzW08",
+  "lang": "en",
+  "kind": "mle",
+  "topic": "MLE",
+  "publisher": "StatQuest with Josh Starmer",
+  "url": "https://www.youtube.com/watch?v=HMOI_lkzW08",
+  "headline": "PCA in under 5 minutes",
+  "kicker": "MLE · CLASSIC ML",
+  "published": "2024-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "StatQuest"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dm-leak-scaler"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Squash many columns into a few that keep most of the spread"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "StatQuest with Josh Starmer",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "StatQuest video index (statquest.org)",
+   "url": "https://youtu.be/HMOI_lkzW08"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-20T17:43:00Z"
+ },
+ {
+  "id": "y-sq-naive-bayes",
+  "yt": "O2L2Uv9pdDA",
+  "lang": "en",
+  "kind": "mle",
+  "topic": "MLE",
+  "publisher": "StatQuest with Josh Starmer",
+  "url": "https://www.youtube.com/watch?v=O2L2Uv9pdDA",
+  "headline": "Naive Bayes, clearly explained",
+  "kicker": "MLE · CLASSIC ML",
+  "published": "2024-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "StatQuest"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dx-rare-screen"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Priors matter: start from how common each class is, then multiply in the evidence"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "StatQuest with Josh Starmer",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "StatQuest video index (statquest.org)",
+   "url": "https://youtu.be/O2L2Uv9pdDA"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-20T17:43:00Z"
+ },
+ {
+  "id": "y-sq-odds",
+  "yt": "ARfXDSkQf1Y",
+  "lang": "en",
+  "kind": "mle",
+  "topic": "MLE",
+  "publisher": "StatQuest with Josh Starmer",
+  "url": "https://www.youtube.com/watch?v=ARfXDSkQf1Y",
+  "headline": "Odds and log(odds), clearly explained",
+  "kicker": "MLE · STATS",
+  "published": "2024-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "StatQuest"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dm-calibration"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Why odds aren't probabilities, and why the log makes them symmetric"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "StatQuest with Josh Starmer",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "StatQuest video index (statquest.org)",
+   "url": "https://youtu.be/ARfXDSkQf1Y"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-20T17:43:00Z"
+ },
+ {
   "id": "y-cftv-ide",
   "type": "yt",
   "yt": "GPcIjsz-2cA",

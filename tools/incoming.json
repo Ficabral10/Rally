@@ -1,21 +1,149 @@
 {
  "clips": [
   {
-   "id": "y-3b1b-gpt",
-   "type": "yt",
-   "yt": "wjZofJX0v4M",
+   "id": "y-sq-odds",
+   "yt": "ARfXDSkQf1Y",
    "lang": "en",
    "kind": "mle",
    "topic": "MLE",
-   "publisher": "3Blue1Brown",
-   "url": "https://www.youtube.com/watch?v=wjZofJX0v4M",
-   "headline": "But what is a GPT? Transformers, visually",
+   "publisher": "StatQuest with Josh Starmer",
+   "url": "https://www.youtube.com/watch?v=ARfXDSkQf1Y",
+   "headline": "Odds and log(odds), clearly explained",
+   "kicker": "MLE · STATS",
+   "published": "2024-01-01T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "StatQuest"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "dm-calibration"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": null,
+     "cue": "Why odds aren't probabilities, and why the log makes them symmetric"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "StatQuest with Josh Starmer",
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "StatQuest video index (statquest.org)",
+    "url": "https://youtu.be/ARfXDSkQf1Y"
+   }
+  },
+  {
+   "id": "y-sq-naive-bayes",
+   "yt": "O2L2Uv9pdDA",
+   "lang": "en",
+   "kind": "mle",
+   "topic": "MLE",
+   "publisher": "StatQuest with Josh Starmer",
+   "url": "https://www.youtube.com/watch?v=O2L2Uv9pdDA",
+   "headline": "Naive Bayes, clearly explained",
+   "kicker": "MLE · CLASSIC ML",
+   "published": "2024-01-01T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "StatQuest"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "dx-rare-screen"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": null,
+     "cue": "Priors matter: start from how common each class is, then multiply in the evidence"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "StatQuest with Josh Starmer",
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "StatQuest video index (statquest.org)",
+    "url": "https://youtu.be/O2L2Uv9pdDA"
+   }
+  },
+  {
+   "id": "y-sq-pca-5min",
+   "yt": "HMOI_lkzW08",
+   "lang": "en",
+   "kind": "mle",
+   "topic": "MLE",
+   "publisher": "StatQuest with Josh Starmer",
+   "url": "https://www.youtube.com/watch?v=HMOI_lkzW08",
+   "headline": "PCA in under 5 minutes",
+   "kicker": "MLE · CLASSIC ML",
+   "published": "2024-01-01T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "StatQuest"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "dm-leak-scaler"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": null,
+     "cue": "Squash many columns into a few that keep most of the spread"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "StatQuest with Josh Starmer",
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "StatQuest video index (statquest.org)",
+    "url": "https://youtu.be/HMOI_lkzW08"
+   }
+  },
+  {
+   "id": "y-sq-attention",
+   "yt": "PSs6nxngL6k",
+   "lang": "en",
+   "kind": "mle",
+   "topic": "MLE",
+   "publisher": "StatQuest with Josh Starmer",
+   "url": "https://www.youtube.com/watch?v=PSs6nxngL6k",
+   "headline": "Attention, clearly explained",
    "kicker": "MLE · LLMS",
    "published": "2024-01-01T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
-    "comp": "3Blue1Brown"
+    "comp": "StatQuest"
    },
    "follow": {
     "type": "try",
@@ -26,13 +154,13 @@
      "label": "Watch",
      "start": 0,
      "end": null,
-     "cue": "Words become vectors, and a dot product says how close two of them are"
+     "cue": "Each word scores every other word with a dot product, then mixes them by those scores"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
-    "author": "3Blue1Brown",
+    "author": "StatQuest with Josh Starmer",
     "timestamps": "whole-video"
    },
    "playback": {
@@ -40,140 +168,8 @@
     "method": "IFrame API"
    },
    "discovery": {
-    "provider": "Web search (youtube.com)",
-    "url": "https://www.youtube.com/watch?v=wjZofJX0v4M"
-   }
-  },
-  {
-   "id": "y-3b1b-gd",
-   "type": "yt",
-   "yt": "IHZwWFHWa-w",
-   "lang": "en",
-   "kind": "mle",
-   "topic": "MLE",
-   "publisher": "3Blue1Brown",
-   "url": "https://www.youtube.com/watch?v=IHZwWFHWa-w",
-   "headline": "Gradient descent, how neural networks learn",
-   "kicker": "MLE · OPTIMIZATION",
-   "published": "2024-01-01T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "3Blue1Brown"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "dm-train-score"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": null,
-     "cue": "Rolling downhill on the cost surface, and why a great training score can still fool you"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "3Blue1Brown",
-    "timestamps": "whole-video"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "Web search (youtube.com)",
-    "url": "https://www.youtube.com/watch?v=IHZwWFHWa-w"
-   }
-  },
-  {
-   "id": "y-cftv-c",
-   "type": "yt",
-   "yt": "6mUCcsnCn08",
-   "lang": "pt",
-   "kind": "swe",
-   "topic": "SWE",
-   "publisher": "Código Fonte TV",
-   "url": "https://www.youtube.com/watch?v=6mUCcsnCn08",
-   "headline": "C, a linguagem que é mãe de quase todas",
-   "kicker": "SWE · LINGUAGENS",
-   "published": "2024-01-01T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "Dicionário do Programador"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "d-10"
-   },
-   "moments": [
-    {
-     "label": "Assistir",
-     "start": 0,
-     "end": null,
-     "cue": "Ponteiro, memória na mão e por que tanta linguagem copiou o C"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "Código Fonte TV",
-    "timestamps": "whole-video"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "Web search (youtube.com)",
-    "url": "https://www.youtube.com/watch?v=6mUCcsnCn08"
-   }
-  },
-  {
-   "id": "y-cftv-ide",
-   "type": "yt",
-   "yt": "GPcIjsz-2cA",
-   "lang": "pt",
-   "kind": "swe",
-   "topic": "SWE",
-   "publisher": "Código Fonte TV",
-   "url": "https://www.youtube.com/watch?v=GPcIjsz-2cA",
-   "headline": "IDE, muito mais que um editor de texto",
-   "kicker": "SWE · FERRAMENTAS",
-   "published": "2024-01-01T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "Dicionário do Programador"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "d-20"
-   },
-   "moments": [
-    {
-     "label": "Assistir",
-     "start": 0,
-     "end": null,
-     "cue": "Editor, compilador e debugger no mesmo lugar, e quando isso ajuda"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "Código Fonte TV",
-    "timestamps": "whole-video"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "Web search (youtube.com)",
-    "url": "https://www.youtube.com/watch?v=GPcIjsz-2cA"
+    "provider": "StatQuest video index (statquest.org)",
+    "url": "https://youtu.be/PSs6nxngL6k"
    }
   }
  ],
