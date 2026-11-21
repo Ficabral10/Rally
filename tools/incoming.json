@@ -1,16 +1,16 @@
 {
  "clips": [
   {
-   "id": "y-fs-nginx",
-   "yt": "JKxlsvZXG7c",
+   "id": "y-fs-graphql",
+   "yt": "eIQh02xuVw4",
    "lang": "en",
    "kind": "tech",
    "topic": "Tech",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=JKxlsvZXG7c",
-   "headline": "NGINX explained in 100 seconds",
-   "kicker": "TECH · WEB SERVERS",
-   "published": "2020-10-16T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=eIQh02xuVw4",
+   "headline": "GraphQL explained in 100 seconds",
+   "kicker": "TECH · APIS",
+   "published": "2021-02-13T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -20,15 +20,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 125,
-     "cue": "Reverse proxy, load balancer, static file server: one config file does all three"
+     "end": 142,
+     "cue": "One endpoint, a typed schema, and you ask for exactly the fields you need"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 125,
+    "duration": 142,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -37,20 +37,20 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/nginx-explained-in-100-seconds"
+    "url": "https://rosetta.to/u/fireship/graphql-explained-in-100-seconds"
    }
   },
   {
-   "id": "y-fs-kafka",
-   "yt": "uvb00oaa3k8",
+   "id": "y-fs-linux",
+   "yt": "rrB13utjYV4",
    "lang": "en",
    "kind": "tech",
    "topic": "Tech",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=uvb00oaa3k8",
-   "headline": "Kafka in 100 seconds",
-   "kicker": "TECH · DATA",
-   "published": "2023-01-10T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=rrB13utjYV4",
+   "headline": "Linux in 100 seconds",
+   "kicker": "TECH · OPERATING SYSTEMS",
+   "published": "2022-03-11T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -60,15 +60,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 154,
-     "cue": "Producers, topics, consumers: why event streams scale where queues choke"
+     "end": 161,
+     "cue": "What the kernel actually does between your hardware and your apps"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 154,
+    "duration": 161,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -77,20 +77,20 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/kafka-in-100-seconds"
+    "url": "https://rosetta.to/u/fireship/linux-in-100-seconds"
    }
   },
   {
-   "id": "y-fs-java",
-   "yt": "l9AzO1FMgM8",
+   "id": "y-fs-deno",
+   "yt": "F0G9lZ7gecE",
    "lang": "en",
-   "kind": "swe",
-   "topic": "SWE",
+   "kind": "tech",
+   "topic": "Tech",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=l9AzO1FMgM8",
-   "headline": "Java in 100 seconds",
-   "kicker": "SWE · LANGUAGES",
-   "published": "2021-11-03T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=F0G9lZ7gecE",
+   "headline": "Deno in 100 seconds",
+   "kicker": "TECH · RUNTIMES",
+   "published": "2020-05-05T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -100,15 +100,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 145,
-     "cue": "Write once, run anywhere: the JVM, classes, and a lot of boilerplate"
+     "end": 129,
+     "cue": "Secure by default, and imports come straight from URLs, no npm"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 145,
+    "duration": 129,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -117,24 +117,20 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/java-in-100-seconds"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "d-10"
+    "url": "https://rosetta.to/u/fireship/deno-in-100-seconds"
    }
   },
   {
-   "id": "y-fs-c",
-   "yt": "U3aXWizDbQ4",
+   "id": "y-fs-bun",
+   "yt": "M4TufsFlv_o",
    "lang": "en",
-   "kind": "swe",
-   "topic": "SWE",
+   "kind": "tech",
+   "topic": "Tech",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=U3aXWizDbQ4",
-   "headline": "C in 100 seconds",
-   "kicker": "SWE · LANGUAGES",
-   "published": "2021-11-10T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=M4TufsFlv_o",
+   "headline": "Bun in 100 seconds",
+   "kicker": "TECH · RUNTIMES",
+   "published": "2026-01-22T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -144,15 +140,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 145,
-     "cue": "Pointers, manual memory, and why half the world's software still runs on C"
+     "end": 166,
+     "cue": "Runtime, package manager, bundler and test runner in one binary"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 145,
+    "duration": 166,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -161,11 +157,7 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/c-in-100-seconds"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "dx-alias-grid"
+    "url": "https://rosetta.to/u/fireship/bun-in-100-seconds"
    }
   }
  ],

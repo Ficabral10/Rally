@@ -1,5 +1,173 @@
 [
  {
+  "id": "y-fs-bun",
+  "yt": "M4TufsFlv_o",
+  "lang": "en",
+  "kind": "tech",
+  "topic": "Tech",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=M4TufsFlv_o",
+  "headline": "Bun in 100 seconds",
+  "kicker": "TECH · RUNTIMES",
+  "published": "2026-01-22T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 166,
+    "cue": "Runtime, package manager, bundler and test runner in one binary"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 166,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/bun-in-100-seconds"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-21T09:42:05Z"
+ },
+ {
+  "id": "y-fs-deno",
+  "yt": "F0G9lZ7gecE",
+  "lang": "en",
+  "kind": "tech",
+  "topic": "Tech",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=F0G9lZ7gecE",
+  "headline": "Deno in 100 seconds",
+  "kicker": "TECH · RUNTIMES",
+  "published": "2020-05-05T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 129,
+    "cue": "Secure by default, and imports come straight from URLs, no npm"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 129,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/deno-in-100-seconds"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-21T09:42:05Z"
+ },
+ {
+  "id": "y-fs-linux",
+  "yt": "rrB13utjYV4",
+  "lang": "en",
+  "kind": "tech",
+  "topic": "Tech",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=rrB13utjYV4",
+  "headline": "Linux in 100 seconds",
+  "kicker": "TECH · OPERATING SYSTEMS",
+  "published": "2022-03-11T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 161,
+    "cue": "What the kernel actually does between your hardware and your apps"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 161,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/linux-in-100-seconds"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-21T09:42:05Z"
+ },
+ {
+  "id": "y-fs-graphql",
+  "yt": "eIQh02xuVw4",
+  "lang": "en",
+  "kind": "tech",
+  "topic": "Tech",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=eIQh02xuVw4",
+  "headline": "GraphQL explained in 100 seconds",
+  "kicker": "TECH · APIS",
+  "published": "2021-02-13T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 142,
+    "cue": "One endpoint, a typed schema, and you ask for exactly the fields you need"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 142,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/graphql-explained-in-100-seconds"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-21T09:42:05Z"
+ },
+ {
   "id": "y-fs-c",
   "yt": "U3aXWizDbQ4",
   "lang": "en",
@@ -2639,64 +2807,6 @@
   "discovery": {
    "provider": "YouTube channel: Major League Soccer",
    "url": "https://www.youtube.com/watch?v=Yi1pUQxXbP0"
-  }
- },
- {
-  "id": "y-gpt62-3d-sets",
-  "type": "yt",
-  "yt": "tKoDPOrLMX0",
-  "lang": "en",
-  "kind": "tech",
-  "topic": "Tech",
-  "publisher": "OpenAI",
-  "url": "https://www.youtube.com/watch?v=tKoDPOrLMX0",
-  "headline": "That room isn't real: GPT-6.2 rebuilt it in Blender from two frames",
-  "kicker": "AI · DEMO · NOV 17",
-  "published": "2026-11-17T16:00:00Z",
-  "spoiler": false,
-  "match": {
-   "home": "GPT-6.2 Astra demo",
-   "comp": "OpenAI",
-   "date": "Nov 17, 2026"
-  },
-  "follow": {
-   "type": "read",
-   "id": "s-gpt62"
-  },
-  "moments": [
-   {
-    "label": "The reveal",
-    "start": 0,
-    "end": 19,
-    "cue": "Keep your eye on the room behind him"
-   },
-   {
-    "label": "The prompt",
-    "start": 31,
-    "end": 46,
-    "cue": "The actual ask: two frames in, a whole room in Blender out"
-   }
-  ],
-  "sources": [
-   {
-    "name": "9to5Mac",
-    "url": "https://9to5mac.com/2026/11/17/openai-upgrades-chatgpt-and-codex-with-new-gpt-6-2-astra-and-sol-models/"
-   }
-  ],
-  "addedAt": "2026-11-18T06:07:32Z",
-  "verify": {
-   "embeddable": true,
-   "author": "OpenAI",
-   "duration": 82.4,
-   "timestamps": "frames"
-  },
-  "playback": {
-   "provider": "YouTube",
-   "method": "IFrame API"
-  },
-  "discovery": {
-   "provider": "YouTube channel: OpenAI",
-   "url": "https://www.youtube.com/watch?v=tKoDPOrLMX0"
   }
  },
  {
