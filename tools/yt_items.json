@@ -1,5 +1,181 @@
 [
  {
+  "id": "y-fs-c",
+  "yt": "U3aXWizDbQ4",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=U3aXWizDbQ4",
+  "headline": "C in 100 seconds",
+  "kicker": "SWE · LANGUAGES",
+  "published": "2021-11-10T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 145,
+    "cue": "Pointers, manual memory, and why half the world's software still runs on C"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 145,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/c-in-100-seconds"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dx-alias-grid"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-21T05:48:10Z"
+ },
+ {
+  "id": "y-fs-java",
+  "yt": "l9AzO1FMgM8",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=l9AzO1FMgM8",
+  "headline": "Java in 100 seconds",
+  "kicker": "SWE · LANGUAGES",
+  "published": "2021-11-03T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 145,
+    "cue": "Write once, run anywhere: the JVM, classes, and a lot of boilerplate"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 145,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/java-in-100-seconds"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-10"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-21T05:48:10Z"
+ },
+ {
+  "id": "y-fs-kafka",
+  "yt": "uvb00oaa3k8",
+  "lang": "en",
+  "kind": "tech",
+  "topic": "Tech",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=uvb00oaa3k8",
+  "headline": "Kafka in 100 seconds",
+  "kicker": "TECH · DATA",
+  "published": "2023-01-10T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 154,
+    "cue": "Producers, topics, consumers: why event streams scale where queues choke"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 154,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/kafka-in-100-seconds"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-21T05:48:10Z"
+ },
+ {
+  "id": "y-fs-nginx",
+  "yt": "JKxlsvZXG7c",
+  "lang": "en",
+  "kind": "tech",
+  "topic": "Tech",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=JKxlsvZXG7c",
+  "headline": "NGINX explained in 100 seconds",
+  "kicker": "TECH · WEB SERVERS",
+  "published": "2020-10-16T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 125,
+    "cue": "Reverse proxy, load balancer, static file server: one config file does all three"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 125,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/nginx-explained-in-100-seconds"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-21T05:48:10Z"
+ },
+ {
   "id": "y-fs-terraform",
   "yt": "tomUWcQ0P3k",
   "lang": "en",
