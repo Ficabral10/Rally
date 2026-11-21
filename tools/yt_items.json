@@ -1,5 +1,231 @@
 [
  {
+  "id": "y-fs-terraform",
+  "yt": "tomUWcQ0P3k",
+  "lang": "en",
+  "kind": "tech",
+  "topic": "Tech",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=tomUWcQ0P3k",
+  "headline": "Terraform in 100 seconds",
+  "kicker": "TECH · CLOUD",
+  "published": "2021-07-28T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 137,
+    "cue": "Infrastructure as code: describe the servers, let the tool build them"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 137,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/terraform-in-100-seconds"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-21T01:44:55Z"
+ },
+ {
+  "id": "y-fs-dns",
+  "yt": "UVR9lhUGAyU",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=UVR9lhUGAyU",
+  "headline": "DNS explained in 100 seconds",
+  "kicker": "SWE · NETWORKING",
+  "published": "2021-07-06T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dv-two-sum-set"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 135,
+    "cue": "How a domain name turns into an IP address, one lookup at a time"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 135,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/dns-explained-in-100-seconds"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-21T01:44:55Z"
+ },
+ {
+  "id": "y-fs-bash",
+  "yt": "I4EWvMFj37g",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=I4EWvMFj37g",
+  "headline": "Bash in 100 seconds",
+  "kicker": "SWE · TOOLS",
+  "published": "2021-08-23T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-24"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 153,
+    "cue": "Variables, pipes and scripts: the shell you already use every day"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 153,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/bash-in-100-seconds"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-21T01:44:55Z"
+ },
+ {
+  "id": "y-fs-go",
+  "yt": "446E-r0rXHI",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=446E-r0rXHI",
+  "headline": "Go in 100 seconds",
+  "kicker": "SWE · LANGUAGES",
+  "published": "2021-10-07T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dx-two-loops"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 149,
+    "cue": "Fast compiles, goroutines, and why Google wanted a simpler C"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 149,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/go-in-100-seconds"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-21T01:44:55Z"
+ },
+ {
+  "id": "y-fs-python",
+  "yt": "x7X9w_GIm1s",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=x7X9w_GIm1s",
+  "headline": "Python in 100 seconds",
+  "kicker": "SWE · LANGUAGES",
+  "published": "2021-10-25T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-12"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 143,
+    "cue": "Why Python reads like pseudocode, and what dynamic typing costs you"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 143,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/python-in-100-seconds"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-21T01:44:55Z"
+ },
+ {
   "id": "y-3b1b-nn",
   "yt": "aircAruvnKk",
   "lang": "en",
