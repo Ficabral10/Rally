@@ -1,164 +1,42 @@
 {
  "clips": [
   {
-   "id": "y-fs-graphql",
-   "yt": "eIQh02xuVw4",
-   "lang": "en",
-   "kind": "tech",
-   "topic": "Tech",
-   "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=eIQh02xuVw4",
-   "headline": "GraphQL explained in 100 seconds",
-   "kicker": "TECH · APIS",
-   "published": "2021-02-13T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "Fireship"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": 142,
-     "cue": "One endpoint, a typed schema, and you ask for exactly the fields you need"
-    }
-   ],
+   "id": "y-fs-tanstack-start", "type": "yt", "yt": "1fUBWAETmkk", "lang": "en", "kind": "tech", "topic": "Tech",
+   "publisher": "Fireship", "url": "https://www.youtube.com/watch?v=1fUBWAETmkk",
+   "headline": "TanStack Start in 100 seconds", "kicker": "TECH · WEB FRAMEWORKS",
+   "published": "2026-02-20T00:00:00Z", "evergreen": true, "spoiler": false,
+   "match": {"comp": "Fireship"},
+   "moments": [{"label": "Watch", "start": 0, "end": 138, "cue": "A full-stack React framework built on TanStack Router, minus the magic"}],
    "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "Fireship",
-    "duration": 142,
-    "timestamps": "whole-video"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/graphql-explained-in-100-seconds"
-   }
+   "verify": {"embeddable": "allowlisted", "author": "Fireship", "duration": 138, "timestamps": "whole-video"},
+   "playback": {"provider": "YouTube", "method": "IFrame API"},
+   "discovery": {"provider": "Rosetta archive: Fireship", "url": "https://rosetta.to/u/fireship/tanstack-start-in-100-seconds"}
   },
   {
-   "id": "y-fs-linux",
-   "yt": "rrB13utjYV4",
-   "lang": "en",
-   "kind": "tech",
-   "topic": "Tech",
-   "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=rrB13utjYV4",
-   "headline": "Linux in 100 seconds",
-   "kicker": "TECH · OPERATING SYSTEMS",
-   "published": "2022-03-11T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "Fireship"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": 161,
-     "cue": "What the kernel actually does between your hardware and your apps"
-    }
-   ],
+   "id": "y-sq-decision-trees", "type": "yt", "yt": "_L39rN6gz7Y", "lang": "en", "kind": "mle", "topic": "MLE",
+   "publisher": "StatQuest with Josh Starmer", "url": "https://www.youtube.com/watch?v=_L39rN6gz7Y",
+   "headline": "Decision trees, clearly explained", "kicker": "MLE · CLASSIC ML",
+   "published": "2024-01-01T00:00:00Z", "evergreen": true, "spoiler": false,
+   "match": {"comp": "StatQuest"},
+   "follow": {"type": "try", "drill": "dm-train-score"},
+   "moments": [{"label": "Watch", "start": 0, "end": null, "cue": "How a tree picks each split, and why a perfect fit on training data can fool you"}],
    "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "Fireship",
-    "duration": 161,
-    "timestamps": "whole-video"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/linux-in-100-seconds"
-   }
+   "verify": {"embeddable": "allowlisted", "author": "StatQuest with Josh Starmer", "timestamps": "whole-video"},
+   "playback": {"provider": "YouTube", "method": "IFrame API"},
+   "discovery": {"provider": "YouTube search: StatQuest with Josh Starmer", "url": "https://www.youtube.com/watch?v=_L39rN6gz7Y"}
   },
   {
-   "id": "y-fs-deno",
-   "yt": "F0G9lZ7gecE",
-   "lang": "en",
-   "kind": "tech",
-   "topic": "Tech",
-   "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=F0G9lZ7gecE",
-   "headline": "Deno in 100 seconds",
-   "kicker": "TECH · RUNTIMES",
-   "published": "2020-05-05T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "Fireship"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": 129,
-     "cue": "Secure by default, and imports come straight from URLs, no npm"
-    }
-   ],
+   "id": "y-sq-random-forests", "type": "yt", "yt": "J4Wdy0Wc_xQ", "lang": "en", "kind": "mle", "topic": "MLE",
+   "publisher": "StatQuest with Josh Starmer", "url": "https://www.youtube.com/watch?v=J4Wdy0Wc_xQ",
+   "headline": "Random forests: build one, use it, check it", "kicker": "MLE · CLASSIC ML",
+   "published": "2024-01-01T00:00:00Z", "evergreen": true, "spoiler": false,
+   "match": {"comp": "StatQuest"},
+   "follow": {"type": "try", "drill": "dm-train-score"},
+   "moments": [{"label": "Watch", "start": 0, "end": null, "cue": "Lots of slightly different trees vote, and out-of-bag samples tell you how good they are"}],
    "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "Fireship",
-    "duration": 129,
-    "timestamps": "whole-video"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/deno-in-100-seconds"
-   }
-  },
-  {
-   "id": "y-fs-bun",
-   "yt": "M4TufsFlv_o",
-   "lang": "en",
-   "kind": "tech",
-   "topic": "Tech",
-   "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=M4TufsFlv_o",
-   "headline": "Bun in 100 seconds",
-   "kicker": "TECH · RUNTIMES",
-   "published": "2026-01-22T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "Fireship"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": 166,
-     "cue": "Runtime, package manager, bundler and test runner in one binary"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "Fireship",
-    "duration": 166,
-    "timestamps": "whole-video"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/bun-in-100-seconds"
-   }
+   "verify": {"embeddable": "allowlisted", "author": "StatQuest with Josh Starmer", "timestamps": "whole-video"},
+   "playback": {"provider": "YouTube", "method": "IFrame API"},
+   "discovery": {"provider": "YouTube search: StatQuest with Josh Starmer", "url": "https://www.youtube.com/watch?v=J4Wdy0Wc_xQ"}
   }
  ],
  "stories": []
