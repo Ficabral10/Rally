@@ -1,5 +1,269 @@
 [
  {
+  "id": "y-fs-promise",
+  "type": "yt",
+  "yt": "RvYYCGs45L4",
+  "lang": "en",
+  "kind": "tech",
+  "topic": "Tech",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=RvYYCGs45L4",
+  "headline": "JavaScript promises in 100 seconds",
+  "kicker": "TECH · JAVASCRIPT",
+  "published": "2020-01-31T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 99,
+    "cue": "Pending, resolved, rejected, and how async/await cleans it up"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 99,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/javascript-promise-in-100-seconds"
+  },
+  "addedAt": "2026-11-21T17:45:26Z"
+ },
+ {
+  "id": "y-fs-assembly",
+  "type": "yt",
+  "yt": "4gwYkEK0gOk",
+  "lang": "en",
+  "kind": "tech",
+  "topic": "Tech",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=4gwYkEK0gOk",
+  "headline": "Assembly language in 100 seconds",
+  "kicker": "TECH · UNDER THE HOOD",
+  "published": "2022-04-14T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 164,
+    "cue": "What your code looks like one step above the CPU"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 164,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/assembly-language-in-100-seconds"
+  },
+  "addedAt": "2026-11-21T17:45:26Z"
+ },
+ {
+  "id": "y-fs-mongodb",
+  "type": "yt",
+  "yt": "-bt_y4Loofg",
+  "lang": "en",
+  "kind": "tech",
+  "topic": "Tech",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=-bt_y4Loofg",
+  "headline": "MongoDB in 100 seconds",
+  "kicker": "TECH · DATABASES",
+  "published": "2021-07-14T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 147,
+    "cue": "Documents instead of rows, and when that's the right call"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 147,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/mongodb-in-100-seconds"
+  },
+  "addedAt": "2026-11-21T17:45:26Z"
+ },
+ {
+  "id": "y-fs-cicd",
+  "type": "yt",
+  "yt": "scEDHsr3APg",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=scEDHsr3APg",
+  "headline": "DevOps and CI/CD in 100 seconds",
+  "kicker": "SWE · TOOLS",
+  "published": "2020-03-12T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 115,
+    "cue": "Every push gets built and tested before it ships"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 115,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/devops-ci-cd-explained-in-100-seconds"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dx-boundary-test"
+  },
+  "addedAt": "2026-11-21T17:45:26Z"
+ },
+ {
+  "id": "y-fs-closures",
+  "type": "yt",
+  "yt": "vKJpN5FAeF4",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=vKJpN5FAeF4",
+  "headline": "Closures explained in 100 seconds",
+  "kicker": "SWE · JAVASCRIPT",
+  "published": "2021-06-17T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 297,
+    "cue": "A function that remembers the variables around it, plus the interview trap"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 297,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/closures-explained-in-100-seconds-tricky-javascript-interview-prep"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-12"
+  },
+  "addedAt": "2026-11-21T17:45:26Z"
+ },
+ {
+  "id": "y-fs-tensorflow",
+  "type": "yt",
+  "yt": "i8NETqtGHms",
+  "lang": "en",
+  "kind": "mle",
+  "topic": "MLE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=i8NETqtGHms",
+  "headline": "TensorFlow in 100 seconds",
+  "kicker": "MLE · FRAMEWORKS",
+  "published": "2022-08-03T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 159,
+    "cue": "Tensors in, gradients out, and why Keras sits on top"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 159,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/tensorflow-in-100-seconds"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dm-baseline"
+  },
+  "addedAt": "2026-11-21T17:45:26Z"
+ },
+ {
   "id": "y-sq-random-forests",
   "type": "yt",
   "yt": "J4Wdy0Wc_xQ",
