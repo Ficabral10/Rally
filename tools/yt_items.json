@@ -1,5 +1,235 @@
 [
  {
+  "id": "y-fs-cors",
+  "type": "yt",
+  "yt": "4KHiSt0oLJ0",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=4KHiSt0oLJ0",
+  "headline": "CORS in 100 seconds",
+  "kicker": "SWE · WEB",
+  "published": "2021-03-29T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 151,
+    "cue": "Why the browser blocks your fetch, and the header that fixes it"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 151,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/cors-in-100-seconds"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-21"
+  },
+  "addedAt": "2026-11-22T13:43:38Z"
+ },
+ {
+  "id": "y-fs-cassandra",
+  "type": "yt",
+  "yt": "ziq7FUKpCS8",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=ziq7FUKpCS8",
+  "headline": "Cassandra in 100 seconds",
+  "kicker": "SWE · DATA",
+  "published": "2022-07-13T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 146,
+    "cue": "A wide-column store built to write fast across many nodes"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 146,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/cassandra-in-100-seconds"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "ds-having"
+  },
+  "addedAt": "2026-11-22T13:43:38Z"
+ },
+ {
+  "id": "y-fs-cpp",
+  "type": "yt",
+  "yt": "MNeX4EGtR5Y",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=MNeX4EGtR5Y",
+  "headline": "C++ in 100 seconds",
+  "kicker": "SWE · LANGUAGES",
+  "published": "2022-02-07T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 165,
+    "cue": "Classes, pointers and manual memory, on top of C"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 165,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/c-in-100-seconds-3"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-24"
+  },
+  "addedAt": "2026-11-22T13:43:38Z"
+ },
+ {
+  "id": "y-fs-testing",
+  "type": "yt",
+  "yt": "u6QfIXgjwGQ",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=u6QfIXgjwGQ",
+  "headline": "Software testing in 100 seconds",
+  "kicker": "SWE · TESTING",
+  "published": "2021-05-24T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 136,
+    "cue": "Unit, integration and end-to-end tests, and when each one earns its keep"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 136,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/software-testing-explained-in-100-seconds"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dx-boundary-test"
+  },
+  "addedAt": "2026-11-22T13:43:38Z"
+ },
+ {
+  "id": "y-fs-javascript",
+  "type": "yt",
+  "yt": "DHjqpvDnNGE",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=DHjqpvDnNGE",
+  "headline": "JavaScript in 100 seconds",
+  "kicker": "SWE · WEB",
+  "published": "2022-01-13T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 156,
+    "cue": "Dynamic types, first-class functions and the event loop"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 156,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/javascript-in-100-seconds"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-18"
+  },
+  "addedAt": "2026-11-22T13:43:38Z"
+ },
+ {
   "id": "y-fs-cssgrid",
   "type": "yt",
   "yt": "uuOXPWCh-6o",
