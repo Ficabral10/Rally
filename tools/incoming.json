@@ -1,17 +1,17 @@
 {
  "clips": [
   {
-   "id": "y-fs-javascript",
+   "id": "y-fs-redux",
    "type": "yt",
-   "yt": "DHjqpvDnNGE",
+   "yt": "_shA5Xwe8_4",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=DHjqpvDnNGE",
-   "headline": "JavaScript in 100 seconds",
+   "url": "https://www.youtube.com/watch?v=_shA5Xwe8_4",
+   "headline": "Redux in 100 seconds",
    "kicker": "SWE · WEB",
-   "published": "2022-01-13T00:00:00Z",
+   "published": "2022-04-21T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -21,15 +21,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 156,
-     "cue": "Dynamic types, first-class functions and the event loop"
+     "end": 153,
+     "cue": "One store, pure reducers, and why you never mutate state"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 156,
+    "duration": 153,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -38,25 +38,25 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/javascript-in-100-seconds"
+    "url": "https://rosetta.to/u/fireship/redux-in-100-seconds"
    },
    "follow": {
     "type": "try",
-    "drill": "d-18"
+    "drill": "d-16"
    }
   },
   {
-   "id": "y-fs-testing",
+   "id": "y-fs-react-query",
    "type": "yt",
-   "yt": "u6QfIXgjwGQ",
+   "yt": "novnyCaa7To",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=u6QfIXgjwGQ",
-   "headline": "Software testing in 100 seconds",
-   "kicker": "SWE · TESTING",
-   "published": "2021-05-24T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=novnyCaa7To",
+   "headline": "React Query in 100 seconds",
+   "kicker": "SWE · WEB",
+   "published": "2022-03-08T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -66,15 +66,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 136,
-     "cue": "Unit, integration and end-to-end tests, and when each one earns its keep"
+     "end": 152,
+     "cue": "Server state, caching, and refetching without a pile of useEffect"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 136,
+    "duration": 152,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -83,70 +83,25 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/software-testing-explained-in-100-seconds"
+    "url": "https://rosetta.to/u/fireship/react-query-in-100-seconds"
    },
    "follow": {
     "type": "try",
-    "drill": "dx-boundary-test"
+    "drill": "d-23"
    }
   },
   {
-   "id": "y-fs-cpp",
+   "id": "y-fs-perl",
    "type": "yt",
-   "yt": "MNeX4EGtR5Y",
+   "yt": "74_7LrRe5DI",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=MNeX4EGtR5Y",
-   "headline": "C++ in 100 seconds",
+   "url": "https://www.youtube.com/watch?v=74_7LrRe5DI",
+   "headline": "Perl in 100 seconds",
    "kicker": "SWE · LANGUAGES",
-   "published": "2022-02-07T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "Fireship"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": 165,
-     "cue": "Classes, pointers and manual memory, on top of C"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "Fireship",
-    "duration": 165,
-    "timestamps": "whole-video"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/c-in-100-seconds-3"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "d-24"
-   }
-  },
-  {
-   "id": "y-fs-cassandra",
-   "type": "yt",
-   "yt": "ziq7FUKpCS8",
-   "lang": "en",
-   "kind": "swe",
-   "topic": "SWE",
-   "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=ziq7FUKpCS8",
-   "headline": "Cassandra in 100 seconds",
-   "kicker": "SWE · DATA",
-   "published": "2022-07-13T00:00:00Z",
+   "published": "2022-04-29T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -157,7 +112,7 @@
      "label": "Watch",
      "start": 0,
      "end": 146,
-     "cue": "A wide-column store built to write fast across many nodes"
+     "cue": "The duct tape of the internet and its regex superpowers"
     }
    ],
    "sources": [],
@@ -173,25 +128,25 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/cassandra-in-100-seconds"
+    "url": "https://rosetta.to/u/fireship/perl-in-100-seconds"
    },
    "follow": {
     "type": "try",
-    "drill": "ds-having"
+    "drill": "d-15"
    }
   },
   {
-   "id": "y-fs-cors",
+   "id": "y-fs-unity",
    "type": "yt",
-   "yt": "4KHiSt0oLJ0",
+   "yt": "iqlH4okiQqg",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=4KHiSt0oLJ0",
-   "headline": "CORS in 100 seconds",
-   "kicker": "SWE · WEB",
-   "published": "2021-03-29T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=iqlH4okiQqg",
+   "headline": "Unity in 100 seconds",
+   "kicker": "SWE · GAMES",
+   "published": "2022-03-07T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -201,15 +156,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 151,
-     "cue": "Why the browser blocks your fetch, and the header that fixes it"
+     "end": 165,
+     "cue": "Scenes, game objects, components, and a C# script to move them"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 151,
+    "duration": 165,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -218,11 +173,56 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/cors-in-100-seconds"
+    "url": "https://rosetta.to/u/fireship/unity-in-100-seconds"
    },
    "follow": {
     "type": "try",
-    "drill": "d-21"
+    "drill": "d-2"
+   }
+  },
+  {
+   "id": "y-fs-fortran",
+   "type": "yt",
+   "yt": "NMWzgy8FsKs",
+   "lang": "en",
+   "kind": "swe",
+   "topic": "SWE",
+   "publisher": "Fireship",
+   "url": "https://www.youtube.com/watch?v=NMWzgy8FsKs",
+   "headline": "FORTRAN in 100 seconds",
+   "kicker": "SWE · LANGUAGES",
+   "published": "2022-06-10T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "Fireship"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": 159,
+     "cue": "The 1957 language still crunching numbers on supercomputers"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "Fireship",
+    "duration": 159,
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "Rosetta archive: Fireship",
+    "url": "https://rosetta.to/u/fireship/fortran-in-100-seconds"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "d-26"
    }
   }
  ],
