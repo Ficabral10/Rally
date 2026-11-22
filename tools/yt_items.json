@@ -1,5 +1,143 @@
 [
  {
+  "id": "y-fs-lua",
+  "type": "yt",
+  "yt": "jUuqBZwwkQw",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=jUuqBZwwkQw",
+  "headline": "Lua in 100 seconds",
+  "kicker": "SWE · LANGUAGES",
+  "published": "2022-02-14T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 144,
+    "cue": "21 keywords, one data structure, and arrays that start at 1"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 144,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/lua-in-100-seconds"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-15"
+  },
+  "addedAt": "2026-11-22T01:41:55Z"
+ },
+ {
+  "id": "y-fs-kotlin",
+  "type": "yt",
+  "yt": "xT8oP0wy-A0",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=xT8oP0wy-A0",
+  "headline": "Kotlin in 100 seconds",
+  "kicker": "SWE · LANGUAGES",
+  "published": "2021-11-05T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 141,
+    "cue": "Why Google picked it over Java for Android"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 141,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/kotlin-in-100-seconds"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-17"
+  },
+  "addedAt": "2026-11-22T01:41:55Z"
+ },
+ {
+  "id": "y-fs-haskell",
+  "type": "yt",
+  "yt": "Qa8IfEeBJqk",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=Qa8IfEeBJqk",
+  "headline": "Haskell in 100 seconds",
+  "kicker": "SWE · LANGUAGES",
+  "published": "2021-11-29T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 150,
+    "cue": "Same input, same output, every time. That's pure functions"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 150,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/haskell-in-100-seconds"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-16"
+  },
+  "addedAt": "2026-11-22T01:41:55Z"
+ },
+ {
   "id": "y-fs-svelte",
   "type": "yt",
   "yt": "rv3Yq-B8qp4",

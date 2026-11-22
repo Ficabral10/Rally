@@ -1,17 +1,17 @@
 {
  "clips": [
   {
-   "id": "y-fs-zig",
+   "id": "y-fs-haskell",
    "type": "yt",
-   "yt": "kxT8-C1vmd4",
+   "yt": "Qa8IfEeBJqk",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=kxT8-C1vmd4",
-   "headline": "Zig in 100 seconds",
+   "url": "https://www.youtube.com/watch?v=Qa8IfEeBJqk",
+   "headline": "Haskell in 100 seconds",
    "kicker": "SWE · LANGUAGES",
-   "published": "2023-08-03T00:00:00Z",
+   "published": "2021-11-29T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -21,15 +21,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 158,
-     "cue": "No hidden allocations, and errors you can't ignore"
+     "end": 150,
+     "cue": "Same input, same output, every time. That's pure functions"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 158,
+    "duration": 150,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -38,25 +38,25 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/zig-in-100-seconds"
+    "url": "https://rosetta.to/u/fireship/haskell-in-100-seconds"
    },
    "follow": {
     "type": "try",
-    "drill": "d-24"
+    "drill": "d-16"
    }
   },
   {
-   "id": "y-fs-elixir",
+   "id": "y-fs-kotlin",
    "type": "yt",
-   "yt": "R7t7zca8SyM",
+   "yt": "xT8oP0wy-A0",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=R7t7zca8SyM",
-   "headline": "Elixir in 100 seconds",
+   "url": "https://www.youtube.com/watch?v=xT8oP0wy-A0",
+   "headline": "Kotlin in 100 seconds",
    "kicker": "SWE · LANGUAGES",
-   "published": "2022-04-08T00:00:00Z",
+   "published": "2021-11-05T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -66,15 +66,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 154,
-     "cue": "Immutable data and millions of tiny processes on the BEAM"
+     "end": 141,
+     "cue": "Why Google picked it over Java for Android"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 154,
+    "duration": 141,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -83,25 +83,25 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/elixir-in-100-seconds"
+    "url": "https://rosetta.to/u/fireship/kotlin-in-100-seconds"
    },
    "follow": {
     "type": "try",
-    "drill": "d-10"
+    "drill": "d-17"
    }
   },
   {
-   "id": "y-fs-svelte",
+   "id": "y-fs-lua",
    "type": "yt",
-   "yt": "rv3Yq-B8qp4",
+   "yt": "jUuqBZwwkQw",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=rv3Yq-B8qp4",
-   "headline": "Svelte in 100 seconds",
-   "kicker": "SWE · WEB",
-   "published": "2021-04-13T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=jUuqBZwwkQw",
+   "headline": "Lua in 100 seconds",
+   "kicker": "SWE · LANGUAGES",
+   "published": "2022-02-14T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -111,15 +111,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 131,
-     "cue": "A compiler instead of a runtime, so state updates are just assignments"
+     "end": 144,
+     "cue": "21 keywords, one data structure, and arrays that start at 1"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 131,
+    "duration": 144,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -128,11 +128,11 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/svelte-in-100-seconds"
+    "url": "https://rosetta.to/u/fireship/lua-in-100-seconds"
    },
    "follow": {
     "type": "try",
-    "drill": "d-19"
+    "drill": "d-15"
    }
   }
  ],
