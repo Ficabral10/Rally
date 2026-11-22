@@ -1,17 +1,16 @@
 {
  "clips": [
   {
-   "id": "y-fs-redux",
-   "type": "yt",
-   "yt": "_shA5Xwe8_4",
+   "id": "y-fs-supabase",
+   "yt": "zBZgdTb-dns",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=_shA5Xwe8_4",
-   "headline": "Redux in 100 seconds",
-   "kicker": "SWE · WEB",
-   "published": "2022-04-21T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=zBZgdTb-dns",
+   "headline": "Supabase in 100 seconds",
+   "kicker": "SWE · DATA",
+   "published": "2022-11-25T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -21,15 +20,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 153,
-     "cue": "One store, pure reducers, and why you never mutate state"
+     "end": 156,
+     "cue": "Postgres with auth, storage and realtime bolted on"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 153,
+    "duration": 156,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -38,25 +37,156 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/redux-in-100-seconds"
+    "url": "https://rosetta.to/u/fireship/supabase-in-100-seconds"
    },
    "follow": {
     "type": "try",
-    "drill": "d-16"
+    "drill": "ds-null"
    }
   },
   {
-   "id": "y-fs-react-query",
-   "type": "yt",
-   "yt": "novnyCaa7To",
+   "id": "y-fs-nestjs",
+   "yt": "0M8AYU_hPas",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=novnyCaa7To",
-   "headline": "React Query in 100 seconds",
+   "url": "https://www.youtube.com/watch?v=0M8AYU_hPas",
+   "headline": "NestJS in 100 seconds",
+   "kicker": "SWE · BACKEND",
+   "published": "2021-07-30T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "Fireship"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": 141,
+     "cue": "Angular-style modules and decorators for your Node server"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "Fireship",
+    "duration": 141,
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "Rosetta archive: Fireship",
+    "url": "https://rosetta.to/u/fireship/nestjs-in-100-seconds"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "d-25"
+   }
+  },
+  {
+   "id": "y-fs-electron",
+   "yt": "m3OjWNFREJo",
+   "lang": "en",
+   "kind": "swe",
+   "topic": "SWE",
+   "publisher": "Fireship",
+   "url": "https://www.youtube.com/watch?v=m3OjWNFREJo",
+   "headline": "Electron in 100 seconds",
+   "kicker": "SWE · DESKTOP",
+   "published": "2020-02-26T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "Fireship"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": 109,
+     "cue": "A browser and Node in one box, so web apps ship as desktop apps"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "Fireship",
+    "duration": 109,
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "Rosetta archive: Fireship",
+    "url": "https://rosetta.to/u/fireship/electron-js-in-100-seconds"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "d-10"
+   }
+  },
+  {
+   "id": "y-fs-vite",
+   "yt": "KCrXgy8qtjM",
+   "lang": "en",
+   "kind": "swe",
+   "topic": "SWE",
+   "publisher": "Fireship",
+   "url": "https://www.youtube.com/watch?v=KCrXgy8qtjM",
+   "headline": "Vite in 100 seconds",
    "kicker": "SWE · WEB",
-   "published": "2022-03-08T00:00:00Z",
+   "published": "2022-02-23T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "Fireship"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": 148,
+     "cue": "Native ES modules in dev, so the server starts before you blink"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "Fireship",
+    "duration": 148,
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "Rosetta archive: Fireship",
+    "url": "https://rosetta.to/u/fireship/vite-in-100-seconds"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "d-14"
+   }
+  },
+  {
+   "id": "y-fs-solid",
+   "yt": "hw3Bx5vxKl0",
+   "lang": "en",
+   "kind": "swe",
+   "topic": "SWE",
+   "publisher": "Fireship",
+   "url": "https://www.youtube.com/watch?v=hw3Bx5vxKl0",
+   "headline": "Solid in 100 seconds",
+   "kicker": "SWE · WEB",
+   "published": "2022-05-16T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -67,7 +197,7 @@
      "label": "Watch",
      "start": 0,
      "end": 152,
-     "cue": "Server state, caching, and refetching without a pile of useEffect"
+     "cue": "Signals instead of a virtual DOM, and components that run once"
     }
    ],
    "sources": [],
@@ -83,146 +213,11 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/react-query-in-100-seconds"
+    "url": "https://rosetta.to/u/fireship/solid-in-100-seconds"
    },
    "follow": {
     "type": "try",
-    "drill": "d-23"
-   }
-  },
-  {
-   "id": "y-fs-perl",
-   "type": "yt",
-   "yt": "74_7LrRe5DI",
-   "lang": "en",
-   "kind": "swe",
-   "topic": "SWE",
-   "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=74_7LrRe5DI",
-   "headline": "Perl in 100 seconds",
-   "kicker": "SWE · LANGUAGES",
-   "published": "2022-04-29T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "Fireship"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": 146,
-     "cue": "The duct tape of the internet and its regex superpowers"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "Fireship",
-    "duration": 146,
-    "timestamps": "whole-video"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/perl-in-100-seconds"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "d-15"
-   }
-  },
-  {
-   "id": "y-fs-unity",
-   "type": "yt",
-   "yt": "iqlH4okiQqg",
-   "lang": "en",
-   "kind": "swe",
-   "topic": "SWE",
-   "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=iqlH4okiQqg",
-   "headline": "Unity in 100 seconds",
-   "kicker": "SWE · GAMES",
-   "published": "2022-03-07T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "Fireship"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": 165,
-     "cue": "Scenes, game objects, components, and a C# script to move them"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "Fireship",
-    "duration": 165,
-    "timestamps": "whole-video"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/unity-in-100-seconds"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "d-2"
-   }
-  },
-  {
-   "id": "y-fs-fortran",
-   "type": "yt",
-   "yt": "NMWzgy8FsKs",
-   "lang": "en",
-   "kind": "swe",
-   "topic": "SWE",
-   "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=NMWzgy8FsKs",
-   "headline": "FORTRAN in 100 seconds",
-   "kicker": "SWE · LANGUAGES",
-   "published": "2022-06-10T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "Fireship"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": 159,
-     "cue": "The 1957 language still crunching numbers on supercomputers"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "Fireship",
-    "duration": 159,
-    "timestamps": "whole-video"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/fortran-in-100-seconds"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "d-26"
+    "drill": "d-19"
    }
   }
  ],

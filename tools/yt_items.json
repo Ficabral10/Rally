@@ -1,5 +1,235 @@
 [
  {
+  "id": "y-fs-solid",
+  "yt": "hw3Bx5vxKl0",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=hw3Bx5vxKl0",
+  "headline": "Solid in 100 seconds",
+  "kicker": "SWE · WEB",
+  "published": "2022-05-16T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 152,
+    "cue": "Signals instead of a virtual DOM, and components that run once"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 152,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/solid-in-100-seconds"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-19"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-22T21:43:54Z"
+ },
+ {
+  "id": "y-fs-vite",
+  "yt": "KCrXgy8qtjM",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=KCrXgy8qtjM",
+  "headline": "Vite in 100 seconds",
+  "kicker": "SWE · WEB",
+  "published": "2022-02-23T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 148,
+    "cue": "Native ES modules in dev, so the server starts before you blink"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 148,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/vite-in-100-seconds"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-14"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-22T21:43:54Z"
+ },
+ {
+  "id": "y-fs-electron",
+  "yt": "m3OjWNFREJo",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=m3OjWNFREJo",
+  "headline": "Electron in 100 seconds",
+  "kicker": "SWE · DESKTOP",
+  "published": "2020-02-26T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 109,
+    "cue": "A browser and Node in one box, so web apps ship as desktop apps"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 109,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/electron-js-in-100-seconds"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-10"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-22T21:43:54Z"
+ },
+ {
+  "id": "y-fs-nestjs",
+  "yt": "0M8AYU_hPas",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=0M8AYU_hPas",
+  "headline": "NestJS in 100 seconds",
+  "kicker": "SWE · BACKEND",
+  "published": "2021-07-30T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 141,
+    "cue": "Angular-style modules and decorators for your Node server"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 141,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/nestjs-in-100-seconds"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-25"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-22T21:43:54Z"
+ },
+ {
+  "id": "y-fs-supabase",
+  "yt": "zBZgdTb-dns",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=zBZgdTb-dns",
+  "headline": "Supabase in 100 seconds",
+  "kicker": "SWE · DATA",
+  "published": "2022-11-25T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 156,
+    "cue": "Postgres with auth, storage and realtime bolted on"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 156,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/supabase-in-100-seconds"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "ds-null"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-22T21:43:54Z"
+ },
+ {
   "id": "y-fs-fortran",
   "type": "yt",
   "yt": "NMWzgy8FsKs",
