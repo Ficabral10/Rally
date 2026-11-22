@@ -1,17 +1,17 @@
 {
  "clips": [
   {
-   "id": "y-fs-swift",
+   "id": "y-fs-angular",
    "type": "yt",
-   "yt": "nAchMctX4YA",
+   "yt": "Ata9cSC2WpM",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=nAchMctX4YA",
-   "headline": "Swift in 100 seconds",
-   "kicker": "SWE · LANGUAGES",
-   "published": "2021-11-22T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=Ata9cSC2WpM",
+   "headline": "Angular in 100 seconds",
+   "kicker": "SWE · WEB",
+   "published": "2020-09-09T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -21,15 +21,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 145,
-     "cue": "let for constants, var for the rest, and ARC cleans up after you"
+     "end": 120,
+     "cue": "Components, templates and dependency injection, all in one framework"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 145,
+    "duration": 120,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -38,25 +38,25 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/swift-in-100-seconds"
+    "url": "https://rosetta.to/u/fireship/angular-in-100-seconds"
    },
    "follow": {
     "type": "try",
-    "drill": "dx-alias-grid"
+    "drill": "d-12"
    }
   },
   {
-   "id": "y-fs-ruby",
+   "id": "y-fs-vue",
    "type": "yt",
-   "yt": "UYm0kfnRTJk",
+   "yt": "nhBVL41-_Cw",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=UYm0kfnRTJk",
-   "headline": "Ruby in 100 seconds",
-   "kicker": "SWE · LANGUAGES",
-   "published": "2022-01-31T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=nhBVL41-_Cw",
+   "headline": "Vue.js in 100 seconds",
+   "kicker": "SWE · WEB",
+   "published": "2020-04-03T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -66,15 +66,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 156,
-     "cue": "No return keyword needed. The last line is the answer"
+     "end": 123,
+     "cue": "Reactive data and a template that updates itself"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 156,
+    "duration": 123,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -83,25 +83,115 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/ruby-in-100-seconds"
+    "url": "https://rosetta.to/u/fireship/vue-js-explained-in-100-seconds"
    },
    "follow": {
     "type": "try",
-    "drill": "d-11"
+    "drill": "d-14"
    }
   },
   {
-   "id": "y-fs-php",
+   "id": "y-fs-flutter",
    "type": "yt",
-   "yt": "a7_WFUlFS94",
+   "yt": "lHhRhPV--G0",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=a7_WFUlFS94",
-   "headline": "PHP in 100 seconds",
-   "kicker": "SWE · LANGUAGES",
-   "published": "2021-10-22T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=lHhRhPV--G0",
+   "headline": "Flutter in 100 seconds",
+   "kicker": "SWE · MOBILE",
+   "published": "2020-04-14T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "Fireship"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": 129,
+     "cue": "Everything's a widget, and one codebase ships to every screen"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "Fireship",
+    "duration": 129,
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "Rosetta archive: Fireship",
+    "url": "https://rosetta.to/u/fireship/flutter-in-100-seconds"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "d-15"
+   }
+  },
+  {
+   "id": "y-fs-auth",
+   "type": "yt",
+   "yt": "UBUNrFtufWo",
+   "lang": "en",
+   "kind": "swe",
+   "topic": "SWE",
+   "publisher": "Fireship",
+   "url": "https://www.youtube.com/watch?v=UBUNrFtufWo",
+   "headline": "Session vs token auth in 100 seconds",
+   "kicker": "SWE · SECURITY",
+   "published": "2020-10-29T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "Fireship"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": 138,
+     "cue": "Where the login state lives: on the server or in the token"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "Fireship",
+    "duration": 138,
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "Rosetta archive: Fireship",
+    "url": "https://rosetta.to/u/fireship/session-vs-token-authentication-in-100-seconds"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "d-19"
+   }
+  },
+  {
+   "id": "y-fs-tailwind",
+   "type": "yt",
+   "yt": "mr15Xzb1Ook",
+   "lang": "en",
+   "kind": "swe",
+   "topic": "SWE",
+   "publisher": "Fireship",
+   "url": "https://www.youtube.com/watch?v=mr15Xzb1Ook",
+   "headline": "Tailwind in 100 seconds",
+   "kicker": "SWE · WEB",
+   "published": "2021-08-26T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -112,7 +202,7 @@
      "label": "Watch",
      "start": 0,
      "end": 141,
-     "cue": "Dollar signs everywhere and loose types that bite"
+     "cue": "Utility classes right in the markup instead of a stylesheet"
     }
    ],
    "sources": [],
@@ -128,25 +218,25 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/php-in-100-seconds"
+    "url": "https://rosetta.to/u/fireship/tailwind-in-100-seconds"
    },
    "follow": {
     "type": "try",
-    "drill": "d-17"
+    "drill": "d-16"
    }
   },
   {
-   "id": "y-fs-dart",
+   "id": "y-fs-cssgrid",
    "type": "yt",
-   "yt": "NrO0CJCbYLA",
+   "yt": "uuOXPWCh-6o",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=NrO0CJCbYLA",
-   "headline": "Dart in 100 seconds",
-   "kicker": "SWE · LANGUAGES",
-   "published": "2021-10-13T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=uuOXPWCh-6o",
+   "headline": "CSS Grid in 100 seconds",
+   "kicker": "SWE · WEB",
+   "published": "2020-03-05T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -156,15 +246,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 150,
-     "cue": "Null safety means nothing's null unless you say so"
+     "end": 111,
+     "cue": "Rows and columns at once, which flexbox can't do"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 150,
+    "duration": 111,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -173,56 +263,11 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/dart-in-100-seconds"
+    "url": "https://rosetta.to/u/fireship/css-grid-in-100-seconds"
    },
    "follow": {
     "type": "try",
-    "drill": "d-24"
-   }
-  },
-  {
-   "id": "y-fs-csharp",
-   "type": "yt",
-   "yt": "ravLFzIguCM",
-   "lang": "en",
-   "kind": "swe",
-   "topic": "SWE",
-   "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=ravLFzIguCM",
-   "headline": "C# in 100 seconds",
-   "kicker": "SWE · LANGUAGES",
-   "published": "2021-12-06T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "Fireship"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": 147,
-     "cue": "LINQ turns loops into queries"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "Fireship",
-    "duration": 147,
-    "timestamps": "whole-video"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/c-in-100-seconds-2"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "d-13"
+    "drill": "d-27"
    }
   }
  ],

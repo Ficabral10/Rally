@@ -1,5 +1,281 @@
 [
  {
+  "id": "y-fs-cssgrid",
+  "type": "yt",
+  "yt": "uuOXPWCh-6o",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=uuOXPWCh-6o",
+  "headline": "CSS Grid in 100 seconds",
+  "kicker": "SWE · WEB",
+  "published": "2020-03-05T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 111,
+    "cue": "Rows and columns at once, which flexbox can't do"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 111,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/css-grid-in-100-seconds"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-27"
+  },
+  "addedAt": "2026-11-22T09:44:09Z"
+ },
+ {
+  "id": "y-fs-tailwind",
+  "type": "yt",
+  "yt": "mr15Xzb1Ook",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=mr15Xzb1Ook",
+  "headline": "Tailwind in 100 seconds",
+  "kicker": "SWE · WEB",
+  "published": "2021-08-26T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 141,
+    "cue": "Utility classes right in the markup instead of a stylesheet"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 141,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/tailwind-in-100-seconds"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-16"
+  },
+  "addedAt": "2026-11-22T09:44:09Z"
+ },
+ {
+  "id": "y-fs-auth",
+  "type": "yt",
+  "yt": "UBUNrFtufWo",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=UBUNrFtufWo",
+  "headline": "Session vs token auth in 100 seconds",
+  "kicker": "SWE · SECURITY",
+  "published": "2020-10-29T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 138,
+    "cue": "Where the login state lives: on the server or in the token"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 138,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/session-vs-token-authentication-in-100-seconds"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-19"
+  },
+  "addedAt": "2026-11-22T09:44:09Z"
+ },
+ {
+  "id": "y-fs-flutter",
+  "type": "yt",
+  "yt": "lHhRhPV--G0",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=lHhRhPV--G0",
+  "headline": "Flutter in 100 seconds",
+  "kicker": "SWE · MOBILE",
+  "published": "2020-04-14T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 129,
+    "cue": "Everything's a widget, and one codebase ships to every screen"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 129,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/flutter-in-100-seconds"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-15"
+  },
+  "addedAt": "2026-11-22T09:44:09Z"
+ },
+ {
+  "id": "y-fs-vue",
+  "type": "yt",
+  "yt": "nhBVL41-_Cw",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=nhBVL41-_Cw",
+  "headline": "Vue.js in 100 seconds",
+  "kicker": "SWE · WEB",
+  "published": "2020-04-03T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 123,
+    "cue": "Reactive data and a template that updates itself"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 123,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/vue-js-explained-in-100-seconds"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-14"
+  },
+  "addedAt": "2026-11-22T09:44:09Z"
+ },
+ {
+  "id": "y-fs-angular",
+  "type": "yt",
+  "yt": "Ata9cSC2WpM",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=Ata9cSC2WpM",
+  "headline": "Angular in 100 seconds",
+  "kicker": "SWE · WEB",
+  "published": "2020-09-09T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 120,
+    "cue": "Components, templates and dependency injection, all in one framework"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 120,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/angular-in-100-seconds"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-12"
+  },
+  "addedAt": "2026-11-22T09:44:09Z"
+ },
+ {
   "id": "y-fs-csharp",
   "type": "yt",
   "yt": "ravLFzIguCM",
