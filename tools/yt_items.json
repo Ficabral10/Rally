@@ -1,5 +1,235 @@
 [
  {
+  "id": "y-fs-csharp",
+  "type": "yt",
+  "yt": "ravLFzIguCM",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=ravLFzIguCM",
+  "headline": "C# in 100 seconds",
+  "kicker": "SWE · LANGUAGES",
+  "published": "2021-12-06T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 147,
+    "cue": "LINQ turns loops into queries"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 147,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/c-in-100-seconds-2"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-13"
+  },
+  "addedAt": "2026-11-22T05:42:20Z"
+ },
+ {
+  "id": "y-fs-dart",
+  "type": "yt",
+  "yt": "NrO0CJCbYLA",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=NrO0CJCbYLA",
+  "headline": "Dart in 100 seconds",
+  "kicker": "SWE · LANGUAGES",
+  "published": "2021-10-13T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 150,
+    "cue": "Null safety means nothing's null unless you say so"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 150,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/dart-in-100-seconds"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-24"
+  },
+  "addedAt": "2026-11-22T05:42:20Z"
+ },
+ {
+  "id": "y-fs-php",
+  "type": "yt",
+  "yt": "a7_WFUlFS94",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=a7_WFUlFS94",
+  "headline": "PHP in 100 seconds",
+  "kicker": "SWE · LANGUAGES",
+  "published": "2021-10-22T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 141,
+    "cue": "Dollar signs everywhere and loose types that bite"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 141,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/php-in-100-seconds"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-17"
+  },
+  "addedAt": "2026-11-22T05:42:20Z"
+ },
+ {
+  "id": "y-fs-ruby",
+  "type": "yt",
+  "yt": "UYm0kfnRTJk",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=UYm0kfnRTJk",
+  "headline": "Ruby in 100 seconds",
+  "kicker": "SWE · LANGUAGES",
+  "published": "2022-01-31T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 156,
+    "cue": "No return keyword needed. The last line is the answer"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 156,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/ruby-in-100-seconds"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-11"
+  },
+  "addedAt": "2026-11-22T05:42:20Z"
+ },
+ {
+  "id": "y-fs-swift",
+  "type": "yt",
+  "yt": "nAchMctX4YA",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=nAchMctX4YA",
+  "headline": "Swift in 100 seconds",
+  "kicker": "SWE · LANGUAGES",
+  "published": "2021-11-22T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 145,
+    "cue": "let for constants, var for the rest, and ARC cleans up after you"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 145,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/swift-in-100-seconds"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dx-alias-grid"
+  },
+  "addedAt": "2026-11-22T05:42:20Z"
+ },
+ {
   "id": "y-fs-lua",
   "type": "yt",
   "yt": "jUuqBZwwkQw",
@@ -3139,56 +3369,6 @@
   "discovery": {
    "provider": "YouTube channel: Fireship",
    "url": "https://www.youtube.com/watch?v=zsjvFFKOm3c"
-  }
- },
- {
-  "id": "y-openai-gpt62-launch",
-  "yt": "C1zYX5jwqq4",
-  "lang": "en",
-  "kind": "tech",
-  "topic": "Tech",
-  "publisher": "OpenAI",
-  "url": "https://www.youtube.com/watch?v=C1zYX5jwqq4",
-  "headline": "OpenAI's own launch video for GPT-6.2 Astra and Sol",
-  "kicker": "TECH · OPENAI · NOV 17",
-  "published": "2026-11-17T18:00:00Z",
-  "spoiler": false,
-  "match": {
-   "comp": "OpenAI",
-   "date": "Nov 17, 2026"
-  },
-  "follow": {
-   "type": "read",
-   "id": "s-gpt62-astra-sol"
-  },
-  "moments": [
-   {
-    "label": "Watch",
-    "start": 0,
-    "end": null,
-    "cue": "Astra for the hard projects, Sol for everyday work"
-   }
-  ],
-  "sources": [
-   {
-    "name": "OpenAI Developer Community",
-    "url": "https://community.openai.com/t/gpt-6-2-astra-and-sol-are-now-available/1417531"
-   }
-  ],
-  "verify": {
-   "embeddable": "allowlisted",
-   "author": "OpenAI",
-   "timestamps": "whole-video"
-  },
-  "type": "yt",
-  "addedAt": "2026-11-19T01:48:26Z",
-  "playback": {
-   "provider": "YouTube",
-   "method": "IFrame API"
-  },
-  "discovery": {
-   "provider": "YouTube channel: OpenAI",
-   "url": "https://www.youtube.com/watch?v=C1zYX5jwqq4"
   }
  },
  {

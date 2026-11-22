@@ -1,17 +1,17 @@
 {
  "clips": [
   {
-   "id": "y-fs-haskell",
+   "id": "y-fs-swift",
    "type": "yt",
-   "yt": "Qa8IfEeBJqk",
+   "yt": "nAchMctX4YA",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=Qa8IfEeBJqk",
-   "headline": "Haskell in 100 seconds",
+   "url": "https://www.youtube.com/watch?v=nAchMctX4YA",
+   "headline": "Swift in 100 seconds",
    "kicker": "SWE · LANGUAGES",
-   "published": "2021-11-29T00:00:00Z",
+   "published": "2021-11-22T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -21,15 +21,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 150,
-     "cue": "Same input, same output, every time. That's pure functions"
+     "end": 145,
+     "cue": "let for constants, var for the rest, and ARC cleans up after you"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 150,
+    "duration": 145,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -38,25 +38,70 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/haskell-in-100-seconds"
+    "url": "https://rosetta.to/u/fireship/swift-in-100-seconds"
    },
    "follow": {
     "type": "try",
-    "drill": "d-16"
+    "drill": "dx-alias-grid"
    }
   },
   {
-   "id": "y-fs-kotlin",
+   "id": "y-fs-ruby",
    "type": "yt",
-   "yt": "xT8oP0wy-A0",
+   "yt": "UYm0kfnRTJk",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=xT8oP0wy-A0",
-   "headline": "Kotlin in 100 seconds",
+   "url": "https://www.youtube.com/watch?v=UYm0kfnRTJk",
+   "headline": "Ruby in 100 seconds",
    "kicker": "SWE · LANGUAGES",
-   "published": "2021-11-05T00:00:00Z",
+   "published": "2022-01-31T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "Fireship"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": 156,
+     "cue": "No return keyword needed. The last line is the answer"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "Fireship",
+    "duration": 156,
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "Rosetta archive: Fireship",
+    "url": "https://rosetta.to/u/fireship/ruby-in-100-seconds"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "d-11"
+   }
+  },
+  {
+   "id": "y-fs-php",
+   "type": "yt",
+   "yt": "a7_WFUlFS94",
+   "lang": "en",
+   "kind": "swe",
+   "topic": "SWE",
+   "publisher": "Fireship",
+   "url": "https://www.youtube.com/watch?v=a7_WFUlFS94",
+   "headline": "PHP in 100 seconds",
+   "kicker": "SWE · LANGUAGES",
+   "published": "2021-10-22T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -67,7 +112,7 @@
      "label": "Watch",
      "start": 0,
      "end": 141,
-     "cue": "Why Google picked it over Java for Android"
+     "cue": "Dollar signs everywhere and loose types that bite"
     }
    ],
    "sources": [],
@@ -83,7 +128,7 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/kotlin-in-100-seconds"
+    "url": "https://rosetta.to/u/fireship/php-in-100-seconds"
    },
    "follow": {
     "type": "try",
@@ -91,17 +136,17 @@
    }
   },
   {
-   "id": "y-fs-lua",
+   "id": "y-fs-dart",
    "type": "yt",
-   "yt": "jUuqBZwwkQw",
+   "yt": "NrO0CJCbYLA",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=jUuqBZwwkQw",
-   "headline": "Lua in 100 seconds",
+   "url": "https://www.youtube.com/watch?v=NrO0CJCbYLA",
+   "headline": "Dart in 100 seconds",
    "kicker": "SWE · LANGUAGES",
-   "published": "2022-02-14T00:00:00Z",
+   "published": "2021-10-13T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -111,15 +156,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 144,
-     "cue": "21 keywords, one data structure, and arrays that start at 1"
+     "end": 150,
+     "cue": "Null safety means nothing's null unless you say so"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 144,
+    "duration": 150,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -128,11 +173,56 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/lua-in-100-seconds"
+    "url": "https://rosetta.to/u/fireship/dart-in-100-seconds"
    },
    "follow": {
     "type": "try",
-    "drill": "d-15"
+    "drill": "d-24"
+   }
+  },
+  {
+   "id": "y-fs-csharp",
+   "type": "yt",
+   "yt": "ravLFzIguCM",
+   "lang": "en",
+   "kind": "swe",
+   "topic": "SWE",
+   "publisher": "Fireship",
+   "url": "https://www.youtube.com/watch?v=ravLFzIguCM",
+   "headline": "C# in 100 seconds",
+   "kicker": "SWE · LANGUAGES",
+   "published": "2021-12-06T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "Fireship"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": 147,
+     "cue": "LINQ turns loops into queries"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "Fireship",
+    "duration": 147,
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "Rosetta archive: Fireship",
+    "url": "https://rosetta.to/u/fireship/c-in-100-seconds-2"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "d-13"
    }
   }
  ],
