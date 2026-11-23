@@ -1,5 +1,281 @@
 [
  {
+  "id": "y-fs-raspberry-pi",
+  "yt": "eZ74x6dVYes",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=eZ74x6dVYes",
+  "headline": "Raspberry Pi in 100 seconds",
+  "kicker": "SWE · HARDWARE",
+  "published": "2021-01-20T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 128,
+    "cue": "A full Linux computer on a credit-card-sized board"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 128,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/page/10"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-24"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-23T17:43:02Z"
+ },
+ {
+  "id": "y-fs-jquery",
+  "yt": "UU-GebNqdbg",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=UU-GebNqdbg",
+  "headline": "The legend of jQuery in 100 seconds",
+  "kicker": "SWE · WEB",
+  "published": "2020-09-14T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 131,
+    "cue": "How $() tamed the DOM, and why modern browsers made it optional"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 131,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/page/10"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-19"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-23T17:43:02Z"
+ },
+ {
+  "id": "y-fs-cobol",
+  "yt": "7d7-etf-wNI",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=7d7-etf-wNI",
+  "headline": "COBOL in 100 seconds",
+  "kicker": "SWE · LANGUAGES",
+  "published": "2020-04-11T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 123,
+    "cue": "The 1959 language still moving money through bank mainframes"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 123,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/page/10"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-10"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-23T17:43:02Z"
+ },
+ {
+  "id": "y-fs-console-log",
+  "yt": "L8CDt1J3DAw",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=L8CDt1J3DAw",
+  "headline": "Beyond console.log in 100 seconds",
+  "kicker": "SWE · DEBUG",
+  "published": "2020-02-18T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 104,
+    "cue": "console.table, timers and styled logs for faster bug hunts"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 104,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/topic/programming/page/4"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-21"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-23T17:43:02Z"
+ },
+ {
+  "id": "y-fs-js-modules",
+  "yt": "qgRUr-YUk1Q",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=qgRUr-YUk1Q",
+  "headline": "JavaScript modules in 100 seconds",
+  "kicker": "SWE · JS",
+  "published": "2020-01-02T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 104,
+    "cue": "import, export, and why script tags stopped being the whole story"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 104,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/topic/programming/page/4"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-18"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-23T17:43:02Z"
+ },
+ {
+  "id": "y-fs-array-reduce",
+  "yt": "tVCYa_bnITg",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=tVCYa_bnITg",
+  "headline": "Array reduce in 100 seconds",
+  "kicker": "SWE · JS",
+  "published": "2019-12-26T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 100,
+    "cue": "One accumulator, one callback, and a whole array folded into a single value"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 100,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/topic/programming/page/4"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dx-two-loops"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-23T17:43:02Z"
+ },
+ {
   "id": "y-fs-redwood",
   "yt": "o5Mwa_TJ3HM",
   "lang": "en",

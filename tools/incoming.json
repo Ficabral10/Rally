@@ -1,16 +1,16 @@
 {
  "clips": [
   {
-   "id": "y-fs-css",
-   "yt": "OEV8gMkCHXQ",
+   "id": "y-fs-array-reduce",
+   "yt": "tVCYa_bnITg",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=OEV8gMkCHXQ",
-   "headline": "CSS in 100 seconds",
-   "kicker": "SWE · WEB",
-   "published": "2021-12-14T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=tVCYa_bnITg",
+   "headline": "Array reduce in 100 seconds",
+   "kicker": "SWE · JS",
+   "published": "2019-12-26T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -20,15 +20,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 140,
-     "cue": "Selectors, the box model and the cascade in one pass"
+     "end": 100,
+     "cue": "One accumulator, one callback, and a whole array folded into a single value"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 140,
+    "duration": 100,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -37,20 +37,24 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/2021"
+    "url": "https://rosetta.to/u/fireship/topic/programming/page/4"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "dx-two-loops"
    }
   },
   {
-   "id": "y-fs-html",
-   "yt": "ok-plXXHlWw",
+   "id": "y-fs-js-modules",
+   "yt": "qgRUr-YUk1Q",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=ok-plXXHlWw",
-   "headline": "HTML in 100 seconds",
-   "kicker": "SWE · WEB",
-   "published": "2021-12-03T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=qgRUr-YUk1Q",
+   "headline": "JavaScript modules in 100 seconds",
+   "kicker": "SWE · JS",
+   "published": "2020-01-02T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -60,15 +64,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 153,
-     "cue": "Tags, attributes and the DOM tree the browser builds"
+     "end": 104,
+     "cue": "import, export, and why script tags stopped being the whole story"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 153,
+    "duration": 104,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -77,20 +81,24 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/2021"
+    "url": "https://rosetta.to/u/fireship/topic/programming/page/4"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "d-18"
    }
   },
   {
-   "id": "y-fs-postcss",
-   "yt": "WhCXiEwdU1A",
+   "id": "y-fs-console-log",
+   "yt": "L8CDt1J3DAw",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=WhCXiEwdU1A",
-   "headline": "PostCSS in 100 seconds",
-   "kicker": "SWE · WEB",
-   "published": "2021-09-02T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=L8CDt1J3DAw",
+   "headline": "Beyond console.log in 100 seconds",
+   "kicker": "SWE · DEBUG",
+   "published": "2020-02-18T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -100,15 +108,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 132,
-     "cue": "CSS goes in as an AST, plugins rewrite it, CSS comes out"
+     "end": 104,
+     "cue": "console.table, timers and styled logs for faster bug hunts"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 132,
+    "duration": 104,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -117,20 +125,24 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/2021"
+    "url": "https://rosetta.to/u/fireship/topic/programming/page/4"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "d-21"
    }
   },
   {
-   "id": "y-fs-hugo",
-   "yt": "0RKpf3rK57I",
+   "id": "y-fs-cobol",
+   "yt": "7d7-etf-wNI",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=0RKpf3rK57I",
-   "headline": "Hugo in 100 seconds",
-   "kicker": "SWE · WEB",
-   "published": "2022-08-12T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=7d7-etf-wNI",
+   "headline": "COBOL in 100 seconds",
+   "kicker": "SWE · LANGUAGES",
+   "published": "2020-04-11T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -140,15 +152,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 153,
-     "cue": "A static site generator written in Go that builds in milliseconds"
+     "end": 123,
+     "cue": "The 1959 language still moving money through bank mainframes"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 153,
+    "duration": 123,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -157,20 +169,24 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/page/7"
+    "url": "https://rosetta.to/u/fireship/page/10"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "d-10"
    }
   },
   {
-   "id": "y-fs-storybook",
-   "yt": "gdlTFPebzAU",
+   "id": "y-fs-jquery",
+   "yt": "UU-GebNqdbg",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=gdlTFPebzAU",
-   "headline": "Storybook in 100 seconds",
-   "kicker": "SWE · TOOLS",
-   "published": "2022-06-27T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=UU-GebNqdbg",
+   "headline": "The legend of jQuery in 100 seconds",
+   "kicker": "SWE · WEB",
+   "published": "2020-09-14T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -180,15 +196,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 139,
-     "cue": "Build and test UI components in isolation, one story per state"
+     "end": 131,
+     "cue": "How $() tamed the DOM, and why modern browsers made it optional"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 139,
+    "duration": 131,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -197,20 +213,24 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/page/7"
+    "url": "https://rosetta.to/u/fireship/page/10"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "d-19"
    }
   },
   {
-   "id": "y-fs-redwood",
-   "yt": "o5Mwa_TJ3HM",
+   "id": "y-fs-raspberry-pi",
+   "yt": "eZ74x6dVYes",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=o5Mwa_TJ3HM",
-   "headline": "Redwood in 100 seconds",
-   "kicker": "SWE · WEB",
-   "published": "2022-06-06T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=eZ74x6dVYes",
+   "headline": "Raspberry Pi in 100 seconds",
+   "kicker": "SWE · HARDWARE",
+   "published": "2021-01-20T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -220,15 +240,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 152,
-     "cue": "React, GraphQL and Prisma wired together as one full-stack framework"
+     "end": 128,
+     "cue": "A full Linux computer on a credit-card-sized board"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 152,
+    "duration": 128,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -237,7 +257,11 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/page/7"
+    "url": "https://rosetta.to/u/fireship/page/10"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "d-24"
    }
   }
  ],
