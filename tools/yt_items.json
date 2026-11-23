@@ -1,5 +1,257 @@
 [
  {
+  "id": "y-fs-redwood",
+  "yt": "o5Mwa_TJ3HM",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=o5Mwa_TJ3HM",
+  "headline": "Redwood in 100 seconds",
+  "kicker": "SWE · WEB",
+  "published": "2022-06-06T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 152,
+    "cue": "React, GraphQL and Prisma wired together as one full-stack framework"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 152,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/page/7"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-23T13:44:14Z"
+ },
+ {
+  "id": "y-fs-storybook",
+  "yt": "gdlTFPebzAU",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=gdlTFPebzAU",
+  "headline": "Storybook in 100 seconds",
+  "kicker": "SWE · TOOLS",
+  "published": "2022-06-27T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 139,
+    "cue": "Build and test UI components in isolation, one story per state"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 139,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/page/7"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-23T13:44:14Z"
+ },
+ {
+  "id": "y-fs-hugo",
+  "yt": "0RKpf3rK57I",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=0RKpf3rK57I",
+  "headline": "Hugo in 100 seconds",
+  "kicker": "SWE · WEB",
+  "published": "2022-08-12T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 153,
+    "cue": "A static site generator written in Go that builds in milliseconds"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 153,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/page/7"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-23T13:44:14Z"
+ },
+ {
+  "id": "y-fs-postcss",
+  "yt": "WhCXiEwdU1A",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=WhCXiEwdU1A",
+  "headline": "PostCSS in 100 seconds",
+  "kicker": "SWE · WEB",
+  "published": "2021-09-02T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 132,
+    "cue": "CSS goes in as an AST, plugins rewrite it, CSS comes out"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 132,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/2021"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-23T13:44:14Z"
+ },
+ {
+  "id": "y-fs-html",
+  "yt": "ok-plXXHlWw",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=ok-plXXHlWw",
+  "headline": "HTML in 100 seconds",
+  "kicker": "SWE · WEB",
+  "published": "2021-12-03T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 153,
+    "cue": "Tags, attributes and the DOM tree the browser builds"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 153,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/2021"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-23T13:44:14Z"
+ },
+ {
+  "id": "y-fs-css",
+  "yt": "OEV8gMkCHXQ",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=OEV8gMkCHXQ",
+  "headline": "CSS in 100 seconds",
+  "kicker": "SWE · WEB",
+  "published": "2021-12-14T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 140,
+    "cue": "Selectors, the box model and the cascade in one pass"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 140,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/2021"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-23T13:44:14Z"
+ },
+ {
   "id": "y-fs-vscode",
   "yt": "KMxo3T_MTvY",
   "lang": "en",
