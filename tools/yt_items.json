@@ -1,5 +1,215 @@
 [
  {
+  "id": "y-fs-aws",
+  "yt": "ZzI9JE0i6Lc",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=ZzI9JE0i6Lc",
+  "headline": "AWS for the haters in 100 seconds",
+  "kicker": "SWE · CLOUD",
+  "published": "2023-03-31T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 149,
+    "cue": "The AWS services you actually need, minus the jargon"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 149,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/aws-for-the-haters-in-100-seconds"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-23T05:42:04Z"
+ },
+ {
+  "id": "y-fs-sst",
+  "yt": "JY_d0vf-rfw",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=JY_d0vf-rfw",
+  "headline": "SST in 100 seconds",
+  "kicker": "SWE · CLOUD",
+  "published": "2023-06-20T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 144,
+    "cue": "Serverless apps on AWS defined in TypeScript"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 144,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/sst-in-100-seconds"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-23T05:42:04Z"
+ },
+ {
+  "id": "y-fs-sveltekit",
+  "yt": "H1eEFfAkIik",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=H1eEFfAkIik",
+  "headline": "SvelteKit in 100 seconds",
+  "kicker": "SWE · WEB",
+  "published": "2023-07-19T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 165,
+    "cue": "File-based routes and load functions, the SvelteKit way"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 165,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/sveltekit-in-100-seconds"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-23T05:42:04Z"
+ },
+ {
+  "id": "y-fs-nuxt",
+  "yt": "dCxSsr5xuL8",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=dCxSsr5xuL8",
+  "headline": "Nuxt in 100 seconds",
+  "kicker": "SWE · WEB",
+  "published": "2023-06-13T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 169,
+    "cue": "How Nuxt adds routing and server rendering to Vue"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 169,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/nuxt-in-100-seconds"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-23T05:42:04Z"
+ },
+ {
+  "id": "y-fs-htmx",
+  "yt": "r-GSGH2RxJs",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=r-GSGH2RxJs",
+  "headline": "htmx in 100 seconds",
+  "kicker": "SWE · WEB",
+  "published": "2023-07-07T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 146,
+    "cue": "HTML attributes doing the job of a JS framework"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 146,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/htmx-in-100-seconds"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-23T05:42:04Z"
+ },
+ {
   "id": "y-fs-gzip",
   "yt": "NLtt4S9ErIA",
   "lang": "en",

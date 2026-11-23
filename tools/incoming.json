@@ -1,216 +1,16 @@
 {
  "clips": [
   {
-   "id": "y-fs-llvm",
-   "yt": "BT2Cv-Tjq7Q",
+   "id": "y-fs-htmx",
+   "yt": "r-GSGH2RxJs",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=BT2Cv-Tjq7Q",
-   "headline": "LLVM in 100 seconds",
-   "kicker": "SWE · COMPILERS",
-   "published": "2022-05-23T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "Fireship"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": 156,
-     "cue": "How one compiler backend serves Rust, Swift and C++"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "Fireship",
-    "duration": 156,
-    "timestamps": "whole-video"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/llvm-in-100-seconds"
-   }
-  },
-  {
-   "id": "y-fs-prisma",
-   "yt": "rLRIB6AF2Dg",
-   "lang": "en",
-   "kind": "swe",
-   "topic": "SWE",
-   "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=rLRIB6AF2Dg",
-   "headline": "Prisma in 100 seconds",
-   "kicker": "SWE · DATA",
-   "published": "2022-01-26T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "Fireship"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": 153,
-     "cue": "A typed ORM generated straight from your schema file"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "Fireship",
-    "duration": 153,
-    "timestamps": "whole-video"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/prisma-in-100-seconds"
-   }
-  },
-  {
-   "id": "y-fs-tauri",
-   "yt": "-X8evddpu7M",
-   "lang": "en",
-   "kind": "swe",
-   "topic": "SWE",
-   "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=-X8evddpu7M",
-   "headline": "Tauri in 100 seconds",
-   "kicker": "SWE · DESKTOP",
-   "published": "2022-05-06T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "Fireship"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": 160,
-     "cue": "Desktop apps with a Rust core and a tiny bundle"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "Fireship",
-    "duration": 160,
-    "timestamps": "whole-video"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/tauri-in-100-seconds"
-   }
-  },
-  {
-   "id": "y-fs-cypress",
-   "yt": "BQqzfHQkREo",
-   "lang": "en",
-   "kind": "swe",
-   "topic": "SWE",
-   "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=BQqzfHQkREo",
-   "headline": "Cypress in 100 seconds",
-   "kicker": "SWE · TESTING",
-   "published": "2022-03-29T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "Fireship"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": 150,
-     "cue": "End-to-end tests that drive a real browser"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "Fireship",
-    "duration": 150,
-    "timestamps": "whole-video"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/cypress-in-100-seconds"
-   }
-  },
-  {
-   "id": "y-fs-julia",
-   "yt": "JYs_94znYy0",
-   "lang": "en",
-   "kind": "mle",
-   "topic": "MLE",
-   "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=JYs_94znYy0",
-   "headline": "Julia in 100 seconds",
-   "kicker": "MLE · LANGUAGES",
-   "published": "2022-05-19T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "Fireship"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": 159,
-     "cue": "Python-feel syntax with C-like speed for number crunching"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "Fireship",
-    "duration": 159,
-    "timestamps": "whole-video"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/julia-in-100-seconds"
-   }
-  },
-  {
-   "id": "y-fs-gzip",
-   "yt": "NLtt4S9ErIA",
-   "lang": "en",
-   "kind": "swe",
-   "topic": "SWE",
-   "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=NLtt4S9ErIA",
-   "headline": "gzip compression in 100 seconds",
+   "url": "https://www.youtube.com/watch?v=r-GSGH2RxJs",
+   "headline": "htmx in 100 seconds",
    "kicker": "SWE · WEB",
-   "published": "2022-07-15T00:00:00Z",
+   "published": "2023-07-07T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -220,15 +20,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 138,
-     "cue": "How LZ77 and Huffman coding shrink your files"
+     "end": 146,
+     "cue": "HTML attributes doing the job of a JS framework"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 138,
+    "duration": 146,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -237,7 +37,167 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/gzip-file-compression-in-100-seconds"
+    "url": "https://rosetta.to/u/fireship/htmx-in-100-seconds"
+   }
+  },
+  {
+   "id": "y-fs-nuxt",
+   "yt": "dCxSsr5xuL8",
+   "lang": "en",
+   "kind": "swe",
+   "topic": "SWE",
+   "publisher": "Fireship",
+   "url": "https://www.youtube.com/watch?v=dCxSsr5xuL8",
+   "headline": "Nuxt in 100 seconds",
+   "kicker": "SWE · WEB",
+   "published": "2023-06-13T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "Fireship"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": 169,
+     "cue": "How Nuxt adds routing and server rendering to Vue"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "Fireship",
+    "duration": 169,
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "Rosetta archive: Fireship",
+    "url": "https://rosetta.to/u/fireship/nuxt-in-100-seconds"
+   }
+  },
+  {
+   "id": "y-fs-sveltekit",
+   "yt": "H1eEFfAkIik",
+   "lang": "en",
+   "kind": "swe",
+   "topic": "SWE",
+   "publisher": "Fireship",
+   "url": "https://www.youtube.com/watch?v=H1eEFfAkIik",
+   "headline": "SvelteKit in 100 seconds",
+   "kicker": "SWE · WEB",
+   "published": "2023-07-19T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "Fireship"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": 165,
+     "cue": "File-based routes and load functions, the SvelteKit way"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "Fireship",
+    "duration": 165,
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "Rosetta archive: Fireship",
+    "url": "https://rosetta.to/u/fireship/sveltekit-in-100-seconds"
+   }
+  },
+  {
+   "id": "y-fs-sst",
+   "yt": "JY_d0vf-rfw",
+   "lang": "en",
+   "kind": "swe",
+   "topic": "SWE",
+   "publisher": "Fireship",
+   "url": "https://www.youtube.com/watch?v=JY_d0vf-rfw",
+   "headline": "SST in 100 seconds",
+   "kicker": "SWE · CLOUD",
+   "published": "2023-06-20T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "Fireship"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": 144,
+     "cue": "Serverless apps on AWS defined in TypeScript"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "Fireship",
+    "duration": 144,
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "Rosetta archive: Fireship",
+    "url": "https://rosetta.to/u/fireship/sst-in-100-seconds"
+   }
+  },
+  {
+   "id": "y-fs-aws",
+   "yt": "ZzI9JE0i6Lc",
+   "lang": "en",
+   "kind": "swe",
+   "topic": "SWE",
+   "publisher": "Fireship",
+   "url": "https://www.youtube.com/watch?v=ZzI9JE0i6Lc",
+   "headline": "AWS for the haters in 100 seconds",
+   "kicker": "SWE · CLOUD",
+   "published": "2023-03-31T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "Fireship"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": 149,
+     "cue": "The AWS services you actually need, minus the jargon"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "Fireship",
+    "duration": 149,
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "Rosetta archive: Fireship",
+    "url": "https://rosetta.to/u/fireship/aws-for-the-haters-in-100-seconds"
    }
   }
  ],
