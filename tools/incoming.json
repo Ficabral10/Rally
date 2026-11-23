@@ -1,16 +1,16 @@
 {
  "clips": [
   {
-   "id": "y-fs-supabase",
-   "yt": "zBZgdTb-dns",
+   "id": "y-fs-llvm",
+   "yt": "BT2Cv-Tjq7Q",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=zBZgdTb-dns",
-   "headline": "Supabase in 100 seconds",
-   "kicker": "SWE · DATA",
-   "published": "2022-11-25T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=BT2Cv-Tjq7Q",
+   "headline": "LLVM in 100 seconds",
+   "kicker": "SWE · COMPILERS",
+   "published": "2022-05-23T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -21,7 +21,7 @@
      "label": "Watch",
      "start": 0,
      "end": 156,
-     "cue": "Postgres with auth, storage and realtime bolted on"
+     "cue": "How one compiler backend serves Rust, Swift and C++"
     }
    ],
    "sources": [],
@@ -37,24 +37,20 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/supabase-in-100-seconds"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "ds-null"
+    "url": "https://rosetta.to/u/fireship/llvm-in-100-seconds"
    }
   },
   {
-   "id": "y-fs-nestjs",
-   "yt": "0M8AYU_hPas",
+   "id": "y-fs-prisma",
+   "yt": "rLRIB6AF2Dg",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=0M8AYU_hPas",
-   "headline": "NestJS in 100 seconds",
-   "kicker": "SWE · BACKEND",
-   "published": "2021-07-30T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=rLRIB6AF2Dg",
+   "headline": "Prisma in 100 seconds",
+   "kicker": "SWE · DATA",
+   "published": "2022-01-26T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -64,15 +60,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 141,
-     "cue": "Angular-style modules and decorators for your Node server"
+     "end": 153,
+     "cue": "A typed ORM generated straight from your schema file"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 141,
+    "duration": 153,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -81,24 +77,20 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/nestjs-in-100-seconds"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "d-25"
+    "url": "https://rosetta.to/u/fireship/prisma-in-100-seconds"
    }
   },
   {
-   "id": "y-fs-electron",
-   "yt": "m3OjWNFREJo",
+   "id": "y-fs-tauri",
+   "yt": "-X8evddpu7M",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=m3OjWNFREJo",
-   "headline": "Electron in 100 seconds",
+   "url": "https://www.youtube.com/watch?v=-X8evddpu7M",
+   "headline": "Tauri in 100 seconds",
    "kicker": "SWE · DESKTOP",
-   "published": "2020-02-26T00:00:00Z",
+   "published": "2022-05-06T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -108,15 +100,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 109,
-     "cue": "A browser and Node in one box, so web apps ship as desktop apps"
+     "end": 160,
+     "cue": "Desktop apps with a Rust core and a tiny bundle"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 109,
+    "duration": 160,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -125,24 +117,20 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/electron-js-in-100-seconds"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "d-10"
+    "url": "https://rosetta.to/u/fireship/tauri-in-100-seconds"
    }
   },
   {
-   "id": "y-fs-vite",
-   "yt": "KCrXgy8qtjM",
+   "id": "y-fs-cypress",
+   "yt": "BQqzfHQkREo",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=KCrXgy8qtjM",
-   "headline": "Vite in 100 seconds",
-   "kicker": "SWE · WEB",
-   "published": "2022-02-23T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=BQqzfHQkREo",
+   "headline": "Cypress in 100 seconds",
+   "kicker": "SWE · TESTING",
+   "published": "2022-03-29T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -152,15 +140,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 148,
-     "cue": "Native ES modules in dev, so the server starts before you blink"
+     "end": 150,
+     "cue": "End-to-end tests that drive a real browser"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 148,
+    "duration": 150,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -169,24 +157,60 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/vite-in-100-seconds"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "d-14"
+    "url": "https://rosetta.to/u/fireship/cypress-in-100-seconds"
    }
   },
   {
-   "id": "y-fs-solid",
-   "yt": "hw3Bx5vxKl0",
+   "id": "y-fs-julia",
+   "yt": "JYs_94znYy0",
+   "lang": "en",
+   "kind": "mle",
+   "topic": "MLE",
+   "publisher": "Fireship",
+   "url": "https://www.youtube.com/watch?v=JYs_94znYy0",
+   "headline": "Julia in 100 seconds",
+   "kicker": "MLE · LANGUAGES",
+   "published": "2022-05-19T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "Fireship"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": 159,
+     "cue": "Python-feel syntax with C-like speed for number crunching"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "Fireship",
+    "duration": 159,
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "Rosetta archive: Fireship",
+    "url": "https://rosetta.to/u/fireship/julia-in-100-seconds"
+   }
+  },
+  {
+   "id": "y-fs-gzip",
+   "yt": "NLtt4S9ErIA",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=hw3Bx5vxKl0",
-   "headline": "Solid in 100 seconds",
+   "url": "https://www.youtube.com/watch?v=NLtt4S9ErIA",
+   "headline": "gzip compression in 100 seconds",
    "kicker": "SWE · WEB",
-   "published": "2022-05-16T00:00:00Z",
+   "published": "2022-07-15T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -196,15 +220,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 152,
-     "cue": "Signals instead of a virtual DOM, and components that run once"
+     "end": 138,
+     "cue": "How LZ77 and Huffman coding shrink your files"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 152,
+    "duration": 138,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -213,11 +237,7 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/solid-in-100-seconds"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "d-19"
+    "url": "https://rosetta.to/u/fireship/gzip-file-compression-in-100-seconds"
    }
   }
  ],
