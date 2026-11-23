@@ -1,5 +1,257 @@
 [
  {
+  "id": "y-fs-vscode",
+  "yt": "KMxo3T_MTvY",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=KMxo3T_MTvY",
+  "headline": "VS Code in 100 seconds",
+  "kicker": "SWE · TOOLS",
+  "published": "2021-11-26T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 153,
+    "cue": "The editor most devs live in, and the shortcuts worth knowing"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 153,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/vs-code-in-100-seconds"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-23T09:42:39Z"
+ },
+ {
+  "id": "y-fs-webgl",
+  "yt": "f-9LEoYYvE4",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=f-9LEoYYvE4",
+  "headline": "WebGL 3D graphics in 100 seconds",
+  "kicker": "SWE · GRAPHICS",
+  "published": "2021-05-12T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 126,
+    "cue": "Shaders running on your GPU, right in the browser"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 126,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/webgl-3d-graphics-explained-in-100-seconds"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-23T09:42:39Z"
+ },
+ {
+  "id": "y-fs-svg",
+  "yt": "emFMHH2Bfvo",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=emFMHH2Bfvo",
+  "headline": "SVG explained in 100 seconds",
+  "kicker": "SWE · WEB",
+  "published": "2021-03-24T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 139,
+    "cue": "Why vector graphics stay sharp at any size"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 139,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/svg-explained-in-100-seconds"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-23T09:42:39Z"
+ },
+ {
+  "id": "y-fs-sass",
+  "yt": "akDIJa0AP5c",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=akDIJa0AP5c",
+  "headline": "Sass in 100 seconds",
+  "kicker": "SWE · WEB",
+  "published": "2021-04-27T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 151,
+    "cue": "Variables, nesting and mixins that compile down to plain CSS"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 151,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/sass-in-100-seconds"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-23T09:42:39Z"
+ },
+ {
+  "id": "y-fs-d3",
+  "yt": "bp2GF8XcJdY",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=bp2GF8XcJdY",
+  "headline": "D3.js in 100 seconds",
+  "kicker": "SWE · WEB",
+  "published": "2021-09-21T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 140,
+    "cue": "Data bound straight to DOM elements, then drawn"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 140,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/d3-js-in-100-seconds"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-23T09:42:39Z"
+ },
+ {
+  "id": "y-fs-react-native",
+  "yt": "gvkqT_Uoahw",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=gvkqT_Uoahw",
+  "headline": "React Native in 100 seconds",
+  "kicker": "SWE · MOBILE",
+  "published": "2021-09-28T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 137,
+    "cue": "One JavaScript codebase, real native views on iOS and Android"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 137,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/react-native-in-100-seconds"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-23T09:42:39Z"
+ },
+ {
   "id": "y-fs-aws",
   "yt": "ZzI9JE0i6Lc",
   "lang": "en",

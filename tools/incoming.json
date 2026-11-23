@@ -1,16 +1,56 @@
 {
  "clips": [
   {
-   "id": "y-fs-htmx",
-   "yt": "r-GSGH2RxJs",
+   "id": "y-fs-react-native",
+   "yt": "gvkqT_Uoahw",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=r-GSGH2RxJs",
-   "headline": "htmx in 100 seconds",
+   "url": "https://www.youtube.com/watch?v=gvkqT_Uoahw",
+   "headline": "React Native in 100 seconds",
+   "kicker": "SWE · MOBILE",
+   "published": "2021-09-28T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "Fireship"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": 137,
+     "cue": "One JavaScript codebase, real native views on iOS and Android"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "Fireship",
+    "duration": 137,
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "Rosetta archive: Fireship",
+    "url": "https://rosetta.to/u/fireship/react-native-in-100-seconds"
+   }
+  },
+  {
+   "id": "y-fs-d3",
+   "yt": "bp2GF8XcJdY",
+   "lang": "en",
+   "kind": "swe",
+   "topic": "SWE",
+   "publisher": "Fireship",
+   "url": "https://www.youtube.com/watch?v=bp2GF8XcJdY",
+   "headline": "D3.js in 100 seconds",
    "kicker": "SWE · WEB",
-   "published": "2023-07-07T00:00:00Z",
+   "published": "2021-09-21T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -20,15 +60,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 146,
-     "cue": "HTML attributes doing the job of a JS framework"
+     "end": 140,
+     "cue": "Data bound straight to DOM elements, then drawn"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 146,
+    "duration": 140,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -37,20 +77,20 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/htmx-in-100-seconds"
+    "url": "https://rosetta.to/u/fireship/d3-js-in-100-seconds"
    }
   },
   {
-   "id": "y-fs-nuxt",
-   "yt": "dCxSsr5xuL8",
+   "id": "y-fs-sass",
+   "yt": "akDIJa0AP5c",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=dCxSsr5xuL8",
-   "headline": "Nuxt in 100 seconds",
+   "url": "https://www.youtube.com/watch?v=akDIJa0AP5c",
+   "headline": "Sass in 100 seconds",
    "kicker": "SWE · WEB",
-   "published": "2023-06-13T00:00:00Z",
+   "published": "2021-04-27T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -60,15 +100,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 169,
-     "cue": "How Nuxt adds routing and server rendering to Vue"
+     "end": 151,
+     "cue": "Variables, nesting and mixins that compile down to plain CSS"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 169,
+    "duration": 151,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -77,20 +117,20 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/nuxt-in-100-seconds"
+    "url": "https://rosetta.to/u/fireship/sass-in-100-seconds"
    }
   },
   {
-   "id": "y-fs-sveltekit",
-   "yt": "H1eEFfAkIik",
+   "id": "y-fs-svg",
+   "yt": "emFMHH2Bfvo",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=H1eEFfAkIik",
-   "headline": "SvelteKit in 100 seconds",
+   "url": "https://www.youtube.com/watch?v=emFMHH2Bfvo",
+   "headline": "SVG explained in 100 seconds",
    "kicker": "SWE · WEB",
-   "published": "2023-07-19T00:00:00Z",
+   "published": "2021-03-24T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -100,15 +140,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 165,
-     "cue": "File-based routes and load functions, the SvelteKit way"
+     "end": 139,
+     "cue": "Why vector graphics stay sharp at any size"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 165,
+    "duration": 139,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -117,20 +157,20 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/sveltekit-in-100-seconds"
+    "url": "https://rosetta.to/u/fireship/svg-explained-in-100-seconds"
    }
   },
   {
-   "id": "y-fs-sst",
-   "yt": "JY_d0vf-rfw",
+   "id": "y-fs-webgl",
+   "yt": "f-9LEoYYvE4",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=JY_d0vf-rfw",
-   "headline": "SST in 100 seconds",
-   "kicker": "SWE · CLOUD",
-   "published": "2023-06-20T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=f-9LEoYYvE4",
+   "headline": "WebGL 3D graphics in 100 seconds",
+   "kicker": "SWE · GRAPHICS",
+   "published": "2021-05-12T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -140,15 +180,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 144,
-     "cue": "Serverless apps on AWS defined in TypeScript"
+     "end": 126,
+     "cue": "Shaders running on your GPU, right in the browser"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 144,
+    "duration": 126,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -157,20 +197,20 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/sst-in-100-seconds"
+    "url": "https://rosetta.to/u/fireship/webgl-3d-graphics-explained-in-100-seconds"
    }
   },
   {
-   "id": "y-fs-aws",
-   "yt": "ZzI9JE0i6Lc",
+   "id": "y-fs-vscode",
+   "yt": "KMxo3T_MTvY",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=ZzI9JE0i6Lc",
-   "headline": "AWS for the haters in 100 seconds",
-   "kicker": "SWE · CLOUD",
-   "published": "2023-03-31T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=KMxo3T_MTvY",
+   "headline": "VS Code in 100 seconds",
+   "kicker": "SWE · TOOLS",
+   "published": "2021-11-26T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -180,15 +220,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 149,
-     "cue": "The AWS services you actually need, minus the jargon"
+     "end": 153,
+     "cue": "The editor most devs live in, and the shortcuts worth knowing"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 149,
+    "duration": 153,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -197,7 +237,7 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/aws-for-the-haters-in-100-seconds"
+    "url": "https://rosetta.to/u/fireship/vs-code-in-100-seconds"
    }
   }
  ],
