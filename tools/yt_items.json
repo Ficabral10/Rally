@@ -1,5 +1,235 @@
 [
  {
+  "id": "y-fs-java-haters",
+  "yt": "m4-HM_sCvtQ",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=m4-HM_sCvtQ",
+  "headline": "Java for the haters in 100 seconds",
+  "kicker": "SWE · LANGUAGES",
+  "published": "2022-04-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 141,
+    "cue": "The case against Java, from boilerplate to the JVM"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 141,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/topic/programming/page/3"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dx-alias-grid"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-23T21:43:57Z"
+ },
+ {
+  "id": "y-fs-react-haters",
+  "yt": "HyWYpM_S-2c",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=HyWYpM_S-2c",
+  "headline": "React for the haters in 100 seconds",
+  "kicker": "SWE · WEB",
+  "published": "2022-04-22T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 153,
+    "cue": "Every complaint about React, rapid fire"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 153,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/topic/programming/page/3"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-18"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-23T21:43:57Z"
+ },
+ {
+  "id": "y-fs-linux-dirs",
+  "yt": "42iQKuQodW4",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=42iQKuQodW4",
+  "headline": "Linux directories in 100 seconds",
+  "kicker": "SWE · TOOLS",
+  "published": "2021-02-12T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 172,
+    "cue": "What actually lives in /etc, /bin, /var and the rest"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 172,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/page/9"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dx-boundary-test"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-23T21:43:57Z"
+ },
+ {
+  "id": "y-fs-hasura",
+  "yt": "xiZ61BkMKo8",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=xiZ61BkMKo8",
+  "headline": "Hasura in 100 seconds",
+  "kicker": "SWE · DATA",
+  "published": "2021-06-10T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 136,
+    "cue": "Point it at Postgres and get a GraphQL API back"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 136,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/page/9"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "ds-having"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-23T21:43:57Z"
+ },
+ {
+  "id": "y-fs-firebase",
+  "yt": "vAoB4VbhRzM",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=vAoB4VbhRzM",
+  "headline": "Firebase in 100 seconds",
+  "kicker": "SWE · BACKEND",
+  "published": "2022-02-17T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 155,
+    "cue": "A whole backend, database and auth included, without running a server"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 155,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/page/8"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "ds-null"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-23T21:43:57Z"
+ },
+ {
   "id": "y-fs-raspberry-pi",
   "yt": "eZ74x6dVYes",
   "lang": "en",

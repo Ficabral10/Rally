@@ -1,16 +1,16 @@
 {
  "clips": [
   {
-   "id": "y-fs-array-reduce",
-   "yt": "tVCYa_bnITg",
+   "id": "y-fs-firebase",
+   "yt": "vAoB4VbhRzM",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=tVCYa_bnITg",
-   "headline": "Array reduce in 100 seconds",
-   "kicker": "SWE · JS",
-   "published": "2019-12-26T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=vAoB4VbhRzM",
+   "headline": "Firebase in 100 seconds",
+   "kicker": "SWE · BACKEND",
+   "published": "2022-02-17T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -20,15 +20,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 100,
-     "cue": "One accumulator, one callback, and a whole array folded into a single value"
+     "end": 155,
+     "cue": "A whole backend, database and auth included, without running a server"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 100,
+    "duration": 155,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -37,24 +37,24 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/topic/programming/page/4"
+    "url": "https://rosetta.to/u/fireship/page/8"
    },
    "follow": {
     "type": "try",
-    "drill": "dx-two-loops"
+    "drill": "ds-null"
    }
   },
   {
-   "id": "y-fs-js-modules",
-   "yt": "qgRUr-YUk1Q",
+   "id": "y-fs-hasura",
+   "yt": "xiZ61BkMKo8",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=qgRUr-YUk1Q",
-   "headline": "JavaScript modules in 100 seconds",
-   "kicker": "SWE · JS",
-   "published": "2020-01-02T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=xiZ61BkMKo8",
+   "headline": "Hasura in 100 seconds",
+   "kicker": "SWE · DATA",
+   "published": "2021-06-10T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -64,15 +64,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 104,
-     "cue": "import, export, and why script tags stopped being the whole story"
+     "end": 136,
+     "cue": "Point it at Postgres and get a GraphQL API back"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 104,
+    "duration": 136,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -81,7 +81,95 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/topic/programming/page/4"
+    "url": "https://rosetta.to/u/fireship/page/9"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "ds-having"
+   }
+  },
+  {
+   "id": "y-fs-linux-dirs",
+   "yt": "42iQKuQodW4",
+   "lang": "en",
+   "kind": "swe",
+   "topic": "SWE",
+   "publisher": "Fireship",
+   "url": "https://www.youtube.com/watch?v=42iQKuQodW4",
+   "headline": "Linux directories in 100 seconds",
+   "kicker": "SWE · TOOLS",
+   "published": "2021-02-12T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "Fireship"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": 172,
+     "cue": "What actually lives in /etc, /bin, /var and the rest"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "Fireship",
+    "duration": 172,
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "Rosetta archive: Fireship",
+    "url": "https://rosetta.to/u/fireship/page/9"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "dx-boundary-test"
+   }
+  },
+  {
+   "id": "y-fs-react-haters",
+   "yt": "HyWYpM_S-2c",
+   "lang": "en",
+   "kind": "swe",
+   "topic": "SWE",
+   "publisher": "Fireship",
+   "url": "https://www.youtube.com/watch?v=HyWYpM_S-2c",
+   "headline": "React for the haters in 100 seconds",
+   "kicker": "SWE · WEB",
+   "published": "2022-04-22T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "Fireship"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": 153,
+     "cue": "Every complaint about React, rapid fire"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "Fireship",
+    "duration": 153,
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "Rosetta archive: Fireship",
+    "url": "https://rosetta.to/u/fireship/topic/programming/page/3"
    },
    "follow": {
     "type": "try",
@@ -89,60 +177,16 @@
    }
   },
   {
-   "id": "y-fs-console-log",
-   "yt": "L8CDt1J3DAw",
+   "id": "y-fs-java-haters",
+   "yt": "m4-HM_sCvtQ",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=L8CDt1J3DAw",
-   "headline": "Beyond console.log in 100 seconds",
-   "kicker": "SWE · DEBUG",
-   "published": "2020-02-18T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "Fireship"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": 104,
-     "cue": "console.table, timers and styled logs for faster bug hunts"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "Fireship",
-    "duration": 104,
-    "timestamps": "whole-video"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/topic/programming/page/4"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "d-21"
-   }
-  },
-  {
-   "id": "y-fs-cobol",
-   "yt": "7d7-etf-wNI",
-   "lang": "en",
-   "kind": "swe",
-   "topic": "SWE",
-   "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=7d7-etf-wNI",
-   "headline": "COBOL in 100 seconds",
+   "url": "https://www.youtube.com/watch?v=m4-HM_sCvtQ",
+   "headline": "Java for the haters in 100 seconds",
    "kicker": "SWE · LANGUAGES",
-   "published": "2020-04-11T00:00:00Z",
+   "published": "2022-04-01T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -152,15 +196,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 123,
-     "cue": "The 1959 language still moving money through bank mainframes"
+     "end": 141,
+     "cue": "The case against Java, from boilerplate to the JVM"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 123,
+    "duration": 141,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -169,99 +213,11 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/page/10"
+    "url": "https://rosetta.to/u/fireship/topic/programming/page/3"
    },
    "follow": {
     "type": "try",
-    "drill": "d-10"
-   }
-  },
-  {
-   "id": "y-fs-jquery",
-   "yt": "UU-GebNqdbg",
-   "lang": "en",
-   "kind": "swe",
-   "topic": "SWE",
-   "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=UU-GebNqdbg",
-   "headline": "The legend of jQuery in 100 seconds",
-   "kicker": "SWE · WEB",
-   "published": "2020-09-14T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "Fireship"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": 131,
-     "cue": "How $() tamed the DOM, and why modern browsers made it optional"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "Fireship",
-    "duration": 131,
-    "timestamps": "whole-video"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/page/10"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "d-19"
-   }
-  },
-  {
-   "id": "y-fs-raspberry-pi",
-   "yt": "eZ74x6dVYes",
-   "lang": "en",
-   "kind": "swe",
-   "topic": "SWE",
-   "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=eZ74x6dVYes",
-   "headline": "Raspberry Pi in 100 seconds",
-   "kicker": "SWE · HARDWARE",
-   "published": "2021-01-20T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "Fireship"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": 128,
-     "cue": "A full Linux computer on a credit-card-sized board"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "Fireship",
-    "duration": 128,
-    "timestamps": "whole-video"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/page/10"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "d-24"
+    "drill": "dx-alias-grid"
    }
   }
  ],
