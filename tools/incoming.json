@@ -1,16 +1,104 @@
 {
  "clips": [
   {
-   "id": "y-fs-firebase",
-   "yt": "vAoB4VbhRzM",
+   "id": "y-fs-css-pseudo-classes",
+   "yt": "kpXKwDGtjGE",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=vAoB4VbhRzM",
-   "headline": "Firebase in 100 seconds",
+   "url": "https://www.youtube.com/watch?v=kpXKwDGtjGE",
+   "headline": "CSS pseudo-classes in 100 seconds",
+   "kicker": "SWE · FRONTEND",
+   "published": "2020-06-08T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "Fireship"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": 120,
+     "cue": "Style hover, focus and nth-child states without touching JS"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "Fireship",
+    "duration": 120,
+    "timestamps": "whole-video"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "d-10"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "Rosetta archive: Fireship",
+    "url": "https://rosetta.to/u/fireship/page/10"
+   }
+  },
+  {
+   "id": "y-fs-css-pseudo-elements",
+   "yt": "e1KpKBHJOrA",
+   "lang": "en",
+   "kind": "swe",
+   "topic": "SWE",
+   "publisher": "Fireship",
+   "url": "https://www.youtube.com/watch?v=e1KpKBHJOrA",
+   "headline": "CSS pseudo-elements in 100 seconds",
+   "kicker": "SWE · FRONTEND",
+   "published": "2020-06-08T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "Fireship"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": 117,
+     "cue": "::before and ::after add content that isn't in your HTML"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "Fireship",
+    "duration": 117,
+    "timestamps": "whole-video"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "d-11"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "Rosetta archive: Fireship",
+    "url": "https://rosetta.to/u/fireship/page/10"
+   }
+  },
+  {
+   "id": "y-fs-stripe",
+   "yt": "7edR32QVp_A",
+   "lang": "en",
+   "kind": "swe",
+   "topic": "SWE",
+   "publisher": "Fireship",
+   "url": "https://www.youtube.com/watch?v=7edR32QVp_A",
+   "headline": "Get paid with Stripe in 100 seconds",
    "kicker": "SWE · BACKEND",
-   "published": "2022-02-17T00:00:00Z",
+   "published": "2020-05-12T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -20,129 +108,41 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 155,
-     "cue": "A whole backend, database and auth included, without running a server"
+     "end": 130,
+     "cue": "Why the card never touches your server"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 155,
+    "duration": 130,
     "timestamps": "whole-video"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/page/8"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "ds-null"
-   }
-  },
-  {
-   "id": "y-fs-hasura",
-   "yt": "xiZ61BkMKo8",
-   "lang": "en",
-   "kind": "swe",
-   "topic": "SWE",
-   "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=xiZ61BkMKo8",
-   "headline": "Hasura in 100 seconds",
-   "kicker": "SWE · DATA",
-   "published": "2021-06-10T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "Fireship"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": 136,
-     "cue": "Point it at Postgres and get a GraphQL API back"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "Fireship",
-    "duration": 136,
-    "timestamps": "whole-video"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/page/9"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "ds-having"
-   }
-  },
-  {
-   "id": "y-fs-linux-dirs",
-   "yt": "42iQKuQodW4",
-   "lang": "en",
-   "kind": "swe",
-   "topic": "SWE",
-   "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=42iQKuQodW4",
-   "headline": "Linux directories in 100 seconds",
-   "kicker": "SWE · TOOLS",
-   "published": "2021-02-12T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "Fireship"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": 172,
-     "cue": "What actually lives in /etc, /bin, /var and the rest"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "Fireship",
-    "duration": 172,
-    "timestamps": "whole-video"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/page/9"
    },
    "follow": {
     "type": "try",
     "drill": "dx-boundary-test"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "Rosetta archive: Fireship",
+    "url": "https://rosetta.to/u/fireship/page/10"
    }
   },
   {
-   "id": "y-fs-react-haters",
-   "yt": "HyWYpM_S-2c",
+   "id": "y-fs-css-animation",
+   "yt": "HZHHBwzmJLk",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=HyWYpM_S-2c",
-   "headline": "React for the haters in 100 seconds",
-   "kicker": "SWE · WEB",
-   "published": "2022-04-22T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=HZHHBwzmJLk",
+   "headline": "CSS animation in 100 seconds",
+   "kicker": "SWE · FRONTEND",
+   "published": "2020-04-21T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -152,16 +152,20 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 153,
-     "cue": "Every complaint about React, rapid fire"
+     "end": 124,
+     "cue": "Keyframes vs transitions, and which one to reach for"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 153,
+    "duration": 124,
     "timestamps": "whole-video"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "d-27"
    },
    "playback": {
     "provider": "YouTube",
@@ -169,57 +173,29 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/topic/programming/page/3"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "d-18"
-   }
-  },
-  {
-   "id": "y-fs-java-haters",
-   "yt": "m4-HM_sCvtQ",
-   "lang": "en",
-   "kind": "swe",
-   "topic": "SWE",
-   "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=m4-HM_sCvtQ",
-   "headline": "Java for the haters in 100 seconds",
-   "kicker": "SWE · LANGUAGES",
-   "published": "2022-04-01T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "Fireship"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": 141,
-     "cue": "The case against Java, from boilerplate to the JVM"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "Fireship",
-    "duration": 141,
-    "timestamps": "whole-video"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/topic/programming/page/3"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "dx-alias-grid"
+    "url": "https://rosetta.to/u/fireship/page/10"
    }
   }
  ],
- "stories": []
+ "stories": [
+  {
+   "id": "s-fla-campeao-2026",
+   "lang": "pt",
+   "topic": "Sports",
+   "status": "completed",
+   "spoiler": true,
+   "headlineSafe": "Brasileirão 2026: a briga pelo título acabou no sábado",
+   "tags": [
+    "comp:brasileirao"
+   ],
+   "published": "2026-11-23T10:41:00Z",
+   "title": "Flamengo é campeão brasileiro com duas rodadas de sobra",
+   "summary": "O 1 a 1 com o Palmeiras no Nubank Parque, no sábado (21), levou o Flamengo a 80 pontos e fechou a conta. É o bi seguido.",
+   "happened": "Flamengo e Palmeiras empataram por 1 a 1 em São Paulo. Com 80 pontos contra 74 do Palmeiras e só duas rodadas pela frente, o título ficou garantido. No domingo (22), o Remo perdeu por 4 a 2 para o Athletico-PR e virou o segundo rebaixado.",
+   "why": "É o bicampeonato consecutivo do Flamengo. Agora o que sobra de tensão no campeonato está lá embaixo: o Corinthians está em 16º, com 40 pontos.",
+   "next": "A 36ª rodada fecha na quarta (25), com Atlético-MG x Corinthians às 20h na Arena MRV.",
+   "source": "Venceslau Notícias",
+   "url": "https://www.venceslaunoticias.com.br/2026/11/brasileirao-2026-36-rodada-flamengo.html"
+  }
+ ]
 }
