@@ -1,17 +1,19 @@
 {
- "at": "2026-11-24T13:49:14Z",
- "found": 4,
+ "at": "2026-11-24T17:41:55Z",
+ "found": 6,
  "clipsAdded": [
-  "y-fs-css-tips-3",
-  "y-fs-js-tier-list",
-  "y-fs-ditching-ts",
-  "y-fs-angular-back"
+  "y-fs-dotnet",
+  "y-fs-os-concepts",
+  "y-sq-gelu-swiglu",
+  "y-sq-rlhf",
+  "y-sq-encoder-rag",
+  "y-sq-ai-simple"
  ],
  "storiesAdded": [],
  "dropped": [],
  "expired": 0,
- "inventory": 169,
- "inline": 169,
+ "inventory": 175,
+ "inline": 175,
  "portuguese": 16,
- "build": "run-1124-1349-169"
+ "build": "run-1124-1741-175"
 }
