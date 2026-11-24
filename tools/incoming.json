@@ -1,159 +1,27 @@
 {
  "clips": [
   {
-   "id": "y-fs-dotnet",
-   "yt": "MFsYaRnrcPQ",
-   "lang": "en",
-   "kind": "swe",
-   "topic": "SWE",
-   "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=MFsYaRnrcPQ",
-   "headline": ".NET in 100 seconds",
-   "kicker": "SWE · TOOLS",
-   "published": "2026-01-16T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "Fireship"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": 164,
-     "cue": "One runtime, a pile of languages, and what C# actually compiles to"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "Fireship",
-    "timestamps": "whole-video",
-    "duration": 164
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "YouTube channel: Fireship (listing via https://rosetta.to/u/fireship/topic/programming/2026)",
-    "url": "https://www.youtube.com/watch?v=MFsYaRnrcPQ"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "d-26"
-   }
-  },
-  {
-   "id": "y-fs-os-concepts",
-   "yt": "MtxP2pyCvYA",
-   "lang": "en",
-   "kind": "swe",
-   "topic": "SWE",
-   "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=MtxP2pyCvYA",
-   "headline": "Every operating system concept in one video",
-   "kicker": "SWE · SYSTEMS",
-   "published": "2026-05-07T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "Fireship"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": 690,
-     "cue": "Processes, threads, scheduling and memory, in the order they stack up"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "Fireship",
-    "timestamps": "whole-video",
-    "duration": 690
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "YouTube channel: Fireship (listing via https://rosetta.to/u/fireship/topic/programming/2026)",
-    "url": "https://www.youtube.com/watch?v=MtxP2pyCvYA"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "dm-batching"
-   }
-  },
-  {
-   "id": "y-sq-gelu-swiglu",
-   "yt": "2FaI2Fen1mQ",
+   "id": "y-sq-grpo",
+   "yt": "4XqexiQSx_Y",
    "lang": "en",
    "kind": "mle",
    "topic": "MLE",
    "publisher": "StatQuest with Josh Starmer",
-   "url": "https://www.youtube.com/watch?v=2FaI2Fen1mQ",
-   "headline": "GELU, SiLU and SwiGLU, the activations in modern LLMs",
-   "kicker": "MLE · DEEP LEARNING",
-   "published": "2026-09-08T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "StatQuest with Josh Starmer"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": 1458,
-     "cue": "Why smooth curves replaced ReLU's hard corner inside transformers"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "StatQuest with Josh Starmer",
-    "timestamps": "whole-video",
-    "duration": 1458
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "YouTube channel: StatQuest with Josh Starmer (listing via https://vidiq.com/youtube-stats/channel/@statquest/videos/index.md)",
-    "url": "https://www.youtube.com/watch?v=2FaI2Fen1mQ"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "dm-train-score"
-   }
-  },
-  {
-   "id": "y-sq-rlhf",
-   "yt": "qPN_XZcJf_s",
-   "lang": "en",
-   "kind": "mle",
-   "topic": "MLE",
-   "publisher": "StatQuest with Josh Starmer",
-   "url": "https://www.youtube.com/watch?v=qPN_XZcJf_s",
-   "headline": "RLHF, how human feedback tunes a chatbot",
+   "url": "https://www.youtube.com/watch?v=4XqexiQSx_Y",
+   "headline": "GRPO, the RL trick behind reasoning models",
    "kicker": "MLE · LLMS",
-   "published": "2025-05-05T00:00:00Z",
+   "published": "2026-11-16T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
-    "comp": "StatQuest with Josh Starmer"
+    "comp": "StatQuest"
    },
    "moments": [
     {
      "label": "Watch",
      "start": 0,
-     "end": 1082,
-     "cue": "A reward model learns what people prefer, then the LLM gets trained against it"
+     "end": 1591,
+     "cue": "Watch how it scores a group of answers against each other, no critic model needed"
     }
    ],
    "sources": [],
@@ -161,7 +29,7 @@
     "embeddable": "allowlisted",
     "author": "StatQuest with Josh Starmer",
     "timestamps": "whole-video",
-    "duration": 1082
+    "duration": 1591
    },
    "playback": {
     "provider": "YouTube",
@@ -169,7 +37,7 @@
    },
    "discovery": {
     "provider": "YouTube channel: StatQuest with Josh Starmer (listing via https://vidiq.com/youtube-stats/channel/@statquest/videos/index.md)",
-    "url": "https://www.youtube.com/watch?v=qPN_XZcJf_s"
+    "url": "https://www.youtube.com/watch?v=4XqexiQSx_Y"
    },
    "follow": {
     "type": "try",
@@ -177,27 +45,27 @@
    }
   },
   {
-   "id": "y-sq-encoder-rag",
-   "yt": "GDN649X_acE",
+   "id": "y-sq-rf-missing",
+   "yt": "mIlw5j3WyVk",
    "lang": "en",
    "kind": "mle",
    "topic": "MLE",
    "publisher": "StatQuest with Josh Starmer",
-   "url": "https://www.youtube.com/watch?v=GDN649X_acE",
-   "headline": "Encoder-only transformers like BERT, and why RAG uses them",
-   "kicker": "MLE · LLMS",
-   "published": "2024-11-18T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=mIlw5j3WyVk",
+   "headline": "Random forests part 2: missing data and clustering",
+   "kicker": "MLE · TREES",
+   "published": "2026-06-08T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
-    "comp": "StatQuest with Josh Starmer"
+    "comp": "StatQuest"
    },
    "moments": [
     {
      "label": "Watch",
      "start": 0,
-     "end": 1132,
-     "cue": "Turn text into embeddings, then find the closest chunks to a question"
+     "end": 648,
+     "cue": "Watch how the forest fills in missing values with its own proximity matrix"
     }
    ],
    "sources": [],
@@ -205,7 +73,7 @@
     "embeddable": "allowlisted",
     "author": "StatQuest with Josh Starmer",
     "timestamps": "whole-video",
-    "duration": 1132
+    "duration": 648
    },
    "playback": {
     "provider": "YouTube",
@@ -213,35 +81,35 @@
    },
    "discovery": {
     "provider": "YouTube channel: StatQuest with Josh Starmer (listing via https://vidiq.com/youtube-stats/channel/@statquest/videos/index.md)",
-    "url": "https://www.youtube.com/watch?v=GDN649X_acE"
+    "url": "https://www.youtube.com/watch?v=mIlw5j3WyVk"
    },
    "follow": {
     "type": "try",
-    "drill": "dx-rerank-latency"
+    "drill": "dm-leak-scaler"
    }
   },
   {
-   "id": "y-sq-ai-simple",
-   "yt": "q-BiW5srMFQ",
+   "id": "y-sq-rl-basics",
+   "yt": "Z-T0iJEXiwM",
    "lang": "en",
    "kind": "mle",
    "topic": "MLE",
    "publisher": "StatQuest with Josh Starmer",
-   "url": "https://www.youtube.com/watch?v=q-BiW5srMFQ",
-   "headline": "How AI works, in super simple terms",
-   "kicker": "MLE · BASICS",
-   "published": "2026-01-12T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=Z-T0iJEXiwM",
+   "headline": "Reinforcement learning, the essential concepts",
+   "kicker": "MLE · RL",
+   "published": "2025-03-31T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
-    "comp": "StatQuest with Josh Starmer"
+    "comp": "StatQuest"
    },
    "moments": [
     {
      "label": "Watch",
      "start": 0,
-     "end": 1371,
-     "cue": "From fitting a line to a neural net predicting the next word"
+     "end": 1093,
+     "cue": "States, actions, rewards, and why it's not just supervised learning"
     }
    ],
    "sources": [],
@@ -249,7 +117,7 @@
     "embeddable": "allowlisted",
     "author": "StatQuest with Josh Starmer",
     "timestamps": "whole-video",
-    "duration": 1371
+    "duration": 1093
    },
    "playback": {
     "provider": "YouTube",
@@ -257,11 +125,55 @@
    },
    "discovery": {
     "provider": "YouTube channel: StatQuest with Josh Starmer (listing via https://vidiq.com/youtube-stats/channel/@statquest/videos/index.md)",
-    "url": "https://www.youtube.com/watch?v=q-BiW5srMFQ"
+    "url": "https://www.youtube.com/watch?v=Z-T0iJEXiwM"
    },
    "follow": {
     "type": "try",
     "drill": "dm-baseline"
+   }
+  },
+  {
+   "id": "y-sq-transformer-matrix",
+   "yt": "KphmOJnLAdI",
+   "lang": "en",
+   "kind": "mle",
+   "topic": "MLE",
+   "publisher": "StatQuest with Josh Starmer",
+   "url": "https://www.youtube.com/watch?v=KphmOJnLAdI",
+   "headline": "The matrix math inside a transformer, step by step",
+   "kicker": "MLE · LLMS",
+   "published": "2024-04-08T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "StatQuest"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": 1423,
+     "cue": "Watch attention turn into a few matrix multiplies"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "StatQuest with Josh Starmer",
+    "timestamps": "whole-video",
+    "duration": 1423
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "YouTube channel: StatQuest with Josh Starmer (listing via https://vidiq.com/youtube-stats/channel/@statquest/videos/index.md)",
+    "url": "https://www.youtube.com/watch?v=KphmOJnLAdI"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "dm-cosine"
    }
   }
  ],

@@ -1,19 +1,17 @@
 {
- "at": "2026-11-24T17:41:55Z",
- "found": 6,
+ "at": "2026-11-24T21:43:19Z",
+ "found": 4,
  "clipsAdded": [
-  "y-fs-dotnet",
-  "y-fs-os-concepts",
-  "y-sq-gelu-swiglu",
-  "y-sq-rlhf",
-  "y-sq-encoder-rag",
-  "y-sq-ai-simple"
+  "y-sq-grpo",
+  "y-sq-rf-missing",
+  "y-sq-rl-basics",
+  "y-sq-transformer-matrix"
  ],
  "storiesAdded": [],
  "dropped": [],
  "expired": 0,
- "inventory": 175,
- "inline": 175,
+ "inventory": 179,
+ "inline": 179,
  "portuguese": 16,
- "build": "run-1124-1741-175"
+ "build": "run-1124-2143-179"
 }
