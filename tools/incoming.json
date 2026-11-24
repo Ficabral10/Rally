@@ -1,16 +1,148 @@
 {
  "clips": [
   {
-   "id": "y-fs-templeos",
-   "yt": "h7gf5M04hdg",
+   "id": "y-sq-logit",
+   "yt": "8ZcccMzTz7Y",
+   "lang": "en",
+   "kind": "mle",
+   "topic": "MLE",
+   "publisher": "StatQuest with Josh Starmer",
+   "url": "https://www.youtube.com/watch?v=8ZcccMzTz7Y",
+   "headline": "What's a logit? 29 seconds",
+   "kicker": "MLE · STATS",
+   "published": "2023-06-19T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "StatQuest with Josh Starmer"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": 29,
+     "cue": "Log of the odds, and why models like it"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "StatQuest with Josh Starmer",
+    "timestamps": "whole-video",
+    "duration": 29
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "vidIQ: StatQuest uploads",
+    "url": "https://vidiq.com/youtube-stats/channel/@statquest/videos/index.md"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "dm-calibration"
+   }
+  },
+  {
+   "id": "y-sq-logistic-vs-logit",
+   "yt": "YaQEUgIr4Mk",
+   "lang": "en",
+   "kind": "mle",
+   "topic": "MLE",
+   "publisher": "StatQuest with Josh Starmer",
+   "url": "https://www.youtube.com/watch?v=YaQEUgIr4Mk",
+   "headline": "Logistic vs logit: same curve, flipped",
+   "kicker": "MLE · STATS",
+   "published": "2023-06-12T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "StatQuest with Josh Starmer"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": 30,
+     "cue": "One maps log(odds) to probability, the other goes back"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "StatQuest with Josh Starmer",
+    "timestamps": "whole-video",
+    "duration": 30
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "vidIQ: StatQuest uploads",
+    "url": "https://vidiq.com/youtube-stats/channel/@statquest/videos/index.md"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "dm-calibration"
+   }
+  },
+  {
+   "id": "y-sq-likelihood-prob",
+   "yt": "953NHzFtGHc",
+   "lang": "en",
+   "kind": "mle",
+   "topic": "MLE",
+   "publisher": "StatQuest with Josh Starmer",
+   "url": "https://www.youtube.com/watch?v=953NHzFtGHc",
+   "headline": "Likelihood vs probability in 30 seconds",
+   "kicker": "MLE · STATS",
+   "published": "2023-05-15T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "StatQuest with Josh Starmer"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": 30,
+     "cue": "Same curve, different question: what's fixed and what moves"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "StatQuest with Josh Starmer",
+    "timestamps": "whole-video",
+    "duration": 30
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "vidIQ: StatQuest uploads",
+    "url": "https://vidiq.com/youtube-stats/channel/@statquest/videos/index.md"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "dm-calibration"
+   }
+  },
+  {
+   "id": "y-fs-destructuring",
+   "yt": "UgEaJBz3bjY",
    "lang": "en",
    "kind": "tech",
    "topic": "Tech",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=h7gf5M04hdg",
-   "headline": "TempleOS in 100 seconds",
-   "kicker": "TECH · OPERATING SYSTEMS",
-   "published": "2022-07-24T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=UgEaJBz3bjY",
+   "headline": "JS destructuring in 100 seconds",
+   "kicker": "TECH · JAVASCRIPT",
+   "published": "2021-01-12T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -20,16 +152,16 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 152,
-     "cue": "One person wrote a whole OS, compiler and language. Here's what's inside"
+     "end": 211,
+     "cue": "Pull values out of objects and arrays in one line"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 152,
-    "timestamps": "whole-video"
+    "timestamps": "whole-video",
+    "duration": 211
    },
    "playback": {
     "provider": "YouTube",
@@ -37,21 +169,21 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/page/7"
+    "url": "https://rosetta.to/u/fireship/topic/programming/page/4"
    }
   },
   {
-   "id": "y-fs-tensorflow",
-   "yt": "i8NETqtGHms",
+   "id": "y-fs-devday-2026",
+   "yt": "No-JPdFvYWU",
    "lang": "en",
-   "kind": "mle",
-   "topic": "MLE",
+   "kind": "tech",
+   "topic": "Tech",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=i8NETqtGHms",
-   "headline": "TensorFlow in 100 seconds",
-   "kicker": "MLE · FRAMEWORKS",
-   "published": "2022-08-03T00:00:00Z",
-   "evergreen": true,
+   "url": "https://www.youtube.com/watch?v=No-JPdFvYWU",
+   "headline": "Fireship's rundown of OpenAI Dev Day 2026",
+   "kicker": "TECH · AI",
+   "published": "2026-10-01T00:00:00Z",
+   "evergreen": false,
    "spoiler": false,
    "match": {
     "comp": "Fireship"
@@ -60,204 +192,23 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 159,
-     "cue": "Tensors, graphs and where Keras fits in"
+     "end": null,
+     "cue": "Everything OpenAI shipped at Dev Day, fast"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 159,
     "timestamps": "whole-video"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "dm-train-score"
    },
    "playback": {
     "provider": "YouTube",
     "method": "IFrame API"
    },
    "discovery": {
-    "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/page/7"
-   }
-  },
-  {
-   "id": "y-fs-julia",
-   "yt": "JYs_94znYy0",
-   "lang": "en",
-   "kind": "mle",
-   "topic": "MLE",
-   "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=JYs_94znYy0",
-   "headline": "Julia in 100 seconds",
-   "kicker": "MLE · LANGUAGES",
-   "published": "2022-05-19T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "Fireship"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": 159,
-     "cue": "Why a language for numbers cares so much about speed"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "Fireship",
-    "duration": 159,
-    "timestamps": "whole-video"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "dm-batching"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/page/7"
-   }
-  },
-  {
-   "id": "y-fs-cypress",
-   "yt": "BQqzfHQkREo",
-   "lang": "en",
-   "kind": "swe",
-   "topic": "SWE",
-   "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=BQqzfHQkREo",
-   "headline": "Cypress in 100 seconds",
-   "kicker": "SWE · TESTING",
-   "published": "2022-03-29T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "Fireship"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": 150,
-     "cue": "End-to-end tests that click through the app like a user"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "Fireship",
-    "duration": 150,
-    "timestamps": "whole-video"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "dx-boundary-test"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/page/7"
-   }
-  },
-  {
-   "id": "y-fs-elixir",
-   "yt": "R7t7zca8SyM",
-   "lang": "en",
-   "kind": "swe",
-   "topic": "SWE",
-   "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=R7t7zca8SyM",
-   "headline": "Elixir in 100 seconds",
-   "kicker": "SWE · LANGUAGES",
-   "published": "2022-04-08T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "Fireship"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": 154,
-     "cue": "Immutable data, so nothing changes behind your back"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "Fireship",
-    "duration": 154,
-    "timestamps": "whole-video"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "d-10"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/page/7"
-   }
-  },
-  {
-   "id": "y-fs-assembly",
-   "yt": "4gwYkEK0gOk",
-   "lang": "en",
-   "kind": "swe",
-   "topic": "SWE",
-   "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=4gwYkEK0gOk",
-   "headline": "Assembly language in 100 seconds",
-   "kicker": "SWE · LOW LEVEL",
-   "published": "2022-04-14T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "Fireship"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": 164,
-     "cue": "What your loops look like once the compiler's done"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "Fireship",
-    "duration": 164,
-    "timestamps": "whole-video"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "d-27"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/page/7"
+    "provider": "Web search: YouTube",
+    "url": "https://www.youtube.com/watch?v=No-JPdFvYWU"
    }
   }
  ],

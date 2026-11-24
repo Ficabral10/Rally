@@ -1,40 +1,18 @@
 {
- "at": "2026-11-24T05:48:56Z",
- "found": 6,
+ "at": "2026-11-24T09:43:15Z",
+ "found": 5,
  "clipsAdded": [
-  "y-fs-templeos"
+  "y-sq-logit",
+  "y-sq-logistic-vs-logit",
+  "y-sq-likelihood-prob",
+  "y-fs-destructuring",
+  "y-fs-devday-2026"
  ],
  "storiesAdded": [],
- "dropped": [
-  {
-   "id": "y-fs-tensorflow",
-   "headline": "TensorFlow in 100 seconds",
-   "why": "already live (same video)"
-  },
-  {
-   "id": "y-fs-julia",
-   "headline": "Julia in 100 seconds",
-   "why": "already live (same video)"
-  },
-  {
-   "id": "y-fs-cypress",
-   "headline": "Cypress in 100 seconds",
-   "why": "already live (same video)"
-  },
-  {
-   "id": "y-fs-elixir",
-   "headline": "Elixir in 100 seconds",
-   "why": "already live (same video)"
-  },
-  {
-   "id": "y-fs-assembly",
-   "headline": "Assembly language in 100 seconds",
-   "why": "already live (same video)"
-  }
- ],
+ "dropped": [],
  "expired": 0,
- "inventory": 160,
- "inline": 160,
+ "inventory": 165,
+ "inline": 165,
  "portuguese": 16,
- "build": "run-1124-0548-160"
+ "build": "run-1124-0943-165"
 }

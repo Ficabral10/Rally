@@ -1,5 +1,226 @@
 [
  {
+  "id": "y-fs-devday-2026",
+  "yt": "No-JPdFvYWU",
+  "lang": "en",
+  "kind": "tech",
+  "topic": "Tech",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=No-JPdFvYWU",
+  "headline": "Fireship's rundown of OpenAI Dev Day 2026",
+  "kicker": "TECH · AI",
+  "published": "2026-10-01T00:00:00Z",
+  "evergreen": false,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Everything OpenAI shipped at Dev Day, fast"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search: YouTube",
+   "url": "https://www.youtube.com/watch?v=No-JPdFvYWU"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-24T09:43:15Z"
+ },
+ {
+  "id": "y-fs-destructuring",
+  "yt": "UgEaJBz3bjY",
+  "lang": "en",
+  "kind": "tech",
+  "topic": "Tech",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=UgEaJBz3bjY",
+  "headline": "JS destructuring in 100 seconds",
+  "kicker": "TECH · JAVASCRIPT",
+  "published": "2021-01-12T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 211,
+    "cue": "Pull values out of objects and arrays in one line"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "timestamps": "whole-video",
+   "duration": 211
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/topic/programming/page/4"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-24T09:43:15Z"
+ },
+ {
+  "id": "y-sq-likelihood-prob",
+  "yt": "953NHzFtGHc",
+  "lang": "en",
+  "kind": "mle",
+  "topic": "MLE",
+  "publisher": "StatQuest with Josh Starmer",
+  "url": "https://www.youtube.com/watch?v=953NHzFtGHc",
+  "headline": "Likelihood vs probability in 30 seconds",
+  "kicker": "MLE · STATS",
+  "published": "2023-05-15T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "StatQuest with Josh Starmer"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 30,
+    "cue": "Same curve, different question: what's fixed and what moves"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "StatQuest with Josh Starmer",
+   "timestamps": "whole-video",
+   "duration": 30
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "vidIQ: StatQuest uploads",
+   "url": "https://vidiq.com/youtube-stats/channel/@statquest/videos/index.md"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dm-calibration"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-24T09:43:15Z"
+ },
+ {
+  "id": "y-sq-logistic-vs-logit",
+  "yt": "YaQEUgIr4Mk",
+  "lang": "en",
+  "kind": "mle",
+  "topic": "MLE",
+  "publisher": "StatQuest with Josh Starmer",
+  "url": "https://www.youtube.com/watch?v=YaQEUgIr4Mk",
+  "headline": "Logistic vs logit: same curve, flipped",
+  "kicker": "MLE · STATS",
+  "published": "2023-06-12T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "StatQuest with Josh Starmer"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 30,
+    "cue": "One maps log(odds) to probability, the other goes back"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "StatQuest with Josh Starmer",
+   "timestamps": "whole-video",
+   "duration": 30
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "vidIQ: StatQuest uploads",
+   "url": "https://vidiq.com/youtube-stats/channel/@statquest/videos/index.md"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dm-calibration"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-24T09:43:15Z"
+ },
+ {
+  "id": "y-sq-logit",
+  "yt": "8ZcccMzTz7Y",
+  "lang": "en",
+  "kind": "mle",
+  "topic": "MLE",
+  "publisher": "StatQuest with Josh Starmer",
+  "url": "https://www.youtube.com/watch?v=8ZcccMzTz7Y",
+  "headline": "What's a logit? 29 seconds",
+  "kicker": "MLE · STATS",
+  "published": "2023-06-19T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "StatQuest with Josh Starmer"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 29,
+    "cue": "Log of the odds, and why models like it"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "StatQuest with Josh Starmer",
+   "timestamps": "whole-video",
+   "duration": 29
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "vidIQ: StatQuest uploads",
+   "url": "https://vidiq.com/youtube-stats/channel/@statquest/videos/index.md"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dm-calibration"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-24T09:43:15Z"
+ },
+ {
   "id": "y-fs-templeos",
   "yt": "h7gf5M04hdg",
   "lang": "en",
