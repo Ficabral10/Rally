@@ -1,19 +1,40 @@
 {
- "at": "2026-11-24T01:42:43Z",
- "found": 5,
+ "at": "2026-11-24T05:48:56Z",
+ "found": 6,
  "clipsAdded": [
-  "y-fs-css-pseudo-classes",
-  "y-fs-css-pseudo-elements",
-  "y-fs-stripe",
-  "y-fs-css-animation"
+  "y-fs-templeos"
  ],
- "storiesAdded": [
-  "s-fla-campeao-2026"
+ "storiesAdded": [],
+ "dropped": [
+  {
+   "id": "y-fs-tensorflow",
+   "headline": "TensorFlow in 100 seconds",
+   "why": "already live (same video)"
+  },
+  {
+   "id": "y-fs-julia",
+   "headline": "Julia in 100 seconds",
+   "why": "already live (same video)"
+  },
+  {
+   "id": "y-fs-cypress",
+   "headline": "Cypress in 100 seconds",
+   "why": "already live (same video)"
+  },
+  {
+   "id": "y-fs-elixir",
+   "headline": "Elixir in 100 seconds",
+   "why": "already live (same video)"
+  },
+  {
+   "id": "y-fs-assembly",
+   "headline": "Assembly language in 100 seconds",
+   "why": "already live (same video)"
+  }
  ],
- "dropped": [],
  "expired": 0,
- "inventory": 159,
- "inline": 159,
+ "inventory": 160,
+ "inline": 160,
  "portuguese": 16,
- "build": "run-1124-0142-159"
+ "build": "run-1124-0548-160"
 }

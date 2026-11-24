@@ -1,5 +1,47 @@
 [
  {
+  "id": "y-fs-templeos",
+  "yt": "h7gf5M04hdg",
+  "lang": "en",
+  "kind": "tech",
+  "topic": "Tech",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=h7gf5M04hdg",
+  "headline": "TempleOS in 100 seconds",
+  "kicker": "TECH · OPERATING SYSTEMS",
+  "published": "2022-07-24T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": 152,
+    "cue": "One person wrote a whole OS, compiler and language. Here's what's inside"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 152,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Rosetta archive: Fireship",
+   "url": "https://rosetta.to/u/fireship/page/7"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-24T05:48:56Z"
+ },
+ {
   "id": "y-fs-css-animation",
   "yt": "HZHHBwzmJLk",
   "lang": "en",

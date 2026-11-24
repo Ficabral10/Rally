@@ -1,16 +1,16 @@
 {
  "clips": [
   {
-   "id": "y-fs-css-pseudo-classes",
-   "yt": "kpXKwDGtjGE",
+   "id": "y-fs-templeos",
+   "yt": "h7gf5M04hdg",
    "lang": "en",
-   "kind": "swe",
-   "topic": "SWE",
+   "kind": "tech",
+   "topic": "Tech",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=kpXKwDGtjGE",
-   "headline": "CSS pseudo-classes in 100 seconds",
-   "kicker": "SWE · FRONTEND",
-   "published": "2020-06-08T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=h7gf5M04hdg",
+   "headline": "TempleOS in 100 seconds",
+   "kicker": "TECH · OPERATING SYSTEMS",
+   "published": "2022-07-24T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -20,20 +20,16 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 120,
-     "cue": "Style hover, focus and nth-child states without touching JS"
+     "end": 152,
+     "cue": "One person wrote a whole OS, compiler and language. Here's what's inside"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 120,
+    "duration": 152,
     "timestamps": "whole-video"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "d-10"
    },
    "playback": {
     "provider": "YouTube",
@@ -41,20 +37,20 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/page/10"
+    "url": "https://rosetta.to/u/fireship/page/7"
    }
   },
   {
-   "id": "y-fs-css-pseudo-elements",
-   "yt": "e1KpKBHJOrA",
+   "id": "y-fs-tensorflow",
+   "yt": "i8NETqtGHms",
    "lang": "en",
-   "kind": "swe",
-   "topic": "SWE",
+   "kind": "mle",
+   "topic": "MLE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=e1KpKBHJOrA",
-   "headline": "CSS pseudo-elements in 100 seconds",
-   "kicker": "SWE · FRONTEND",
-   "published": "2020-06-08T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=i8NETqtGHms",
+   "headline": "TensorFlow in 100 seconds",
+   "kicker": "MLE · FRAMEWORKS",
+   "published": "2022-08-03T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -64,20 +60,20 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 117,
-     "cue": "::before and ::after add content that isn't in your HTML"
+     "end": 159,
+     "cue": "Tensors, graphs and where Keras fits in"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 117,
+    "duration": 159,
     "timestamps": "whole-video"
    },
    "follow": {
     "type": "try",
-    "drill": "d-11"
+    "drill": "dm-train-score"
    },
    "playback": {
     "provider": "YouTube",
@@ -85,20 +81,20 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/page/10"
+    "url": "https://rosetta.to/u/fireship/page/7"
    }
   },
   {
-   "id": "y-fs-stripe",
-   "yt": "7edR32QVp_A",
+   "id": "y-fs-julia",
+   "yt": "JYs_94znYy0",
    "lang": "en",
-   "kind": "swe",
-   "topic": "SWE",
+   "kind": "mle",
+   "topic": "MLE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=7edR32QVp_A",
-   "headline": "Get paid with Stripe in 100 seconds",
-   "kicker": "SWE · BACKEND",
-   "published": "2020-05-12T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=JYs_94znYy0",
+   "headline": "Julia in 100 seconds",
+   "kicker": "MLE · LANGUAGES",
+   "published": "2022-05-19T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -108,15 +104,59 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 130,
-     "cue": "Why the card never touches your server"
+     "end": 159,
+     "cue": "Why a language for numbers cares so much about speed"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 130,
+    "duration": 159,
+    "timestamps": "whole-video"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "dm-batching"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "Rosetta archive: Fireship",
+    "url": "https://rosetta.to/u/fireship/page/7"
+   }
+  },
+  {
+   "id": "y-fs-cypress",
+   "yt": "BQqzfHQkREo",
+   "lang": "en",
+   "kind": "swe",
+   "topic": "SWE",
+   "publisher": "Fireship",
+   "url": "https://www.youtube.com/watch?v=BQqzfHQkREo",
+   "headline": "Cypress in 100 seconds",
+   "kicker": "SWE · TESTING",
+   "published": "2022-03-29T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "Fireship"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": 150,
+     "cue": "End-to-end tests that click through the app like a user"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "Fireship",
+    "duration": 150,
     "timestamps": "whole-video"
    },
    "follow": {
@@ -129,20 +169,20 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/page/10"
+    "url": "https://rosetta.to/u/fireship/page/7"
    }
   },
   {
-   "id": "y-fs-css-animation",
-   "yt": "HZHHBwzmJLk",
+   "id": "y-fs-elixir",
+   "yt": "R7t7zca8SyM",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=HZHHBwzmJLk",
-   "headline": "CSS animation in 100 seconds",
-   "kicker": "SWE · FRONTEND",
-   "published": "2020-04-21T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=R7t7zca8SyM",
+   "headline": "Elixir in 100 seconds",
+   "kicker": "SWE · LANGUAGES",
+   "published": "2022-04-08T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -152,15 +192,59 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 124,
-     "cue": "Keyframes vs transitions, and which one to reach for"
+     "end": 154,
+     "cue": "Immutable data, so nothing changes behind your back"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "duration": 124,
+    "duration": 154,
+    "timestamps": "whole-video"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "d-10"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "Rosetta archive: Fireship",
+    "url": "https://rosetta.to/u/fireship/page/7"
+   }
+  },
+  {
+   "id": "y-fs-assembly",
+   "yt": "4gwYkEK0gOk",
+   "lang": "en",
+   "kind": "swe",
+   "topic": "SWE",
+   "publisher": "Fireship",
+   "url": "https://www.youtube.com/watch?v=4gwYkEK0gOk",
+   "headline": "Assembly language in 100 seconds",
+   "kicker": "SWE · LOW LEVEL",
+   "published": "2022-04-14T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "Fireship"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": 164,
+     "cue": "What your loops look like once the compiler's done"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "Fireship",
+    "duration": 164,
     "timestamps": "whole-video"
    },
    "follow": {
@@ -173,29 +257,9 @@
    },
    "discovery": {
     "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/page/10"
+    "url": "https://rosetta.to/u/fireship/page/7"
    }
   }
  ],
- "stories": [
-  {
-   "id": "s-fla-campeao-2026",
-   "lang": "pt",
-   "topic": "Sports",
-   "status": "completed",
-   "spoiler": true,
-   "headlineSafe": "Brasileirão 2026: a briga pelo título acabou no sábado",
-   "tags": [
-    "comp:brasileirao"
-   ],
-   "published": "2026-11-23T10:41:00Z",
-   "title": "Flamengo é campeão brasileiro com duas rodadas de sobra",
-   "summary": "O 1 a 1 com o Palmeiras no Nubank Parque, no sábado (21), levou o Flamengo a 80 pontos e fechou a conta. É o bi seguido.",
-   "happened": "Flamengo e Palmeiras empataram por 1 a 1 em São Paulo. Com 80 pontos contra 74 do Palmeiras e só duas rodadas pela frente, o título ficou garantido. No domingo (22), o Remo perdeu por 4 a 2 para o Athletico-PR e virou o segundo rebaixado.",
-   "why": "É o bicampeonato consecutivo do Flamengo. Agora o que sobra de tensão no campeonato está lá embaixo: o Corinthians está em 16º, com 40 pontos.",
-   "next": "A 36ª rodada fecha na quarta (25), com Atlético-MG x Corinthians às 20h na Arena MRV.",
-   "source": "Venceslau Notícias",
-   "url": "https://www.venceslaunoticias.com.br/2026/11/brasileirao-2026-36-rodada-flamengo.html"
-  }
- ]
+ "stories": []
 }
