@@ -1,148 +1,16 @@
 {
  "clips": [
   {
-   "id": "y-sq-logit",
-   "yt": "8ZcccMzTz7Y",
+   "id": "y-fs-css-tips-3",
+   "yt": "JSURzPQnkl0",
    "lang": "en",
-   "kind": "mle",
-   "topic": "MLE",
-   "publisher": "StatQuest with Josh Starmer",
-   "url": "https://www.youtube.com/watch?v=8ZcccMzTz7Y",
-   "headline": "What's a logit? 29 seconds",
-   "kicker": "MLE · STATS",
-   "published": "2023-06-19T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "StatQuest with Josh Starmer"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": 29,
-     "cue": "Log of the odds, and why models like it"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "StatQuest with Josh Starmer",
-    "timestamps": "whole-video",
-    "duration": 29
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "vidIQ: StatQuest uploads",
-    "url": "https://vidiq.com/youtube-stats/channel/@statquest/videos/index.md"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "dm-calibration"
-   }
-  },
-  {
-   "id": "y-sq-logistic-vs-logit",
-   "yt": "YaQEUgIr4Mk",
-   "lang": "en",
-   "kind": "mle",
-   "topic": "MLE",
-   "publisher": "StatQuest with Josh Starmer",
-   "url": "https://www.youtube.com/watch?v=YaQEUgIr4Mk",
-   "headline": "Logistic vs logit: same curve, flipped",
-   "kicker": "MLE · STATS",
-   "published": "2023-06-12T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "StatQuest with Josh Starmer"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": 30,
-     "cue": "One maps log(odds) to probability, the other goes back"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "StatQuest with Josh Starmer",
-    "timestamps": "whole-video",
-    "duration": 30
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "vidIQ: StatQuest uploads",
-    "url": "https://vidiq.com/youtube-stats/channel/@statquest/videos/index.md"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "dm-calibration"
-   }
-  },
-  {
-   "id": "y-sq-likelihood-prob",
-   "yt": "953NHzFtGHc",
-   "lang": "en",
-   "kind": "mle",
-   "topic": "MLE",
-   "publisher": "StatQuest with Josh Starmer",
-   "url": "https://www.youtube.com/watch?v=953NHzFtGHc",
-   "headline": "Likelihood vs probability in 30 seconds",
-   "kicker": "MLE · STATS",
-   "published": "2023-05-15T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "StatQuest with Josh Starmer"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": 30,
-     "cue": "Same curve, different question: what's fixed and what moves"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "StatQuest with Josh Starmer",
-    "timestamps": "whole-video",
-    "duration": 30
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "vidIQ: StatQuest uploads",
-    "url": "https://vidiq.com/youtube-stats/channel/@statquest/videos/index.md"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "dm-calibration"
-   }
-  },
-  {
-   "id": "y-fs-destructuring",
-   "yt": "UgEaJBz3bjY",
-   "lang": "en",
-   "kind": "tech",
-   "topic": "Tech",
+   "kind": "swe",
+   "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=UgEaJBz3bjY",
-   "headline": "JS destructuring in 100 seconds",
-   "kicker": "TECH · JAVASCRIPT",
-   "published": "2021-01-12T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=JSURzPQnkl0",
+   "headline": "3 more CSS tips worth stealing",
+   "kicker": "SWE · FRONTEND",
+   "published": "2021-04-14T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -152,54 +20,15 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 211,
-     "cue": "Pull values out of objects and arrays in one line"
+     "end": 178,
+     "cue": "Three small CSS tricks that save you real code"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "Fireship",
-    "timestamps": "whole-video",
-    "duration": 211
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "Rosetta archive: Fireship",
-    "url": "https://rosetta.to/u/fireship/topic/programming/page/4"
-   }
-  },
-  {
-   "id": "y-fs-devday-2026",
-   "yt": "No-JPdFvYWU",
-   "lang": "en",
-   "kind": "tech",
-   "topic": "Tech",
-   "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=No-JPdFvYWU",
-   "headline": "Fireship's rundown of OpenAI Dev Day 2026",
-   "kicker": "TECH · AI",
-   "published": "2026-10-01T00:00:00Z",
-   "evergreen": false,
-   "spoiler": false,
-   "match": {
-    "comp": "Fireship"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": null,
-     "cue": "Everything OpenAI shipped at Dev Day, fast"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "Fireship",
+    "duration": 178,
     "timestamps": "whole-video"
    },
    "playback": {
@@ -207,8 +36,132 @@
     "method": "IFrame API"
    },
    "discovery": {
-    "provider": "Web search: YouTube",
-    "url": "https://www.youtube.com/watch?v=No-JPdFvYWU"
+    "provider": "Rosetta archive: Fireship",
+    "url": "https://rosetta.to/u/fireship/page/9"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "d-11"
+   }
+  },
+  {
+   "id": "y-fs-js-tier-list",
+   "yt": "vdiYtiKD8eI",
+   "lang": "en",
+   "kind": "tech",
+   "topic": "Tech",
+   "publisher": "Fireship",
+   "url": "https://www.youtube.com/watch?v=vdiYtiKD8eI",
+   "headline": "The official JavaScript tier list",
+   "kicker": "TECH · WEB",
+   "published": "2023-01-15T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "Fireship"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": 203,
+     "cue": "Every JS framework and tool, ranked fast"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "Fireship",
+    "duration": 203,
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "Rosetta archive: Fireship",
+    "url": "https://rosetta.to/u/fireship/topic/web-development/2023"
+   }
+  },
+  {
+   "id": "y-fs-ditching-ts",
+   "yt": "5ChkQKUzDCs",
+   "lang": "en",
+   "kind": "tech",
+   "topic": "Tech",
+   "publisher": "Fireship",
+   "url": "https://www.youtube.com/watch?v=5ChkQKUzDCs",
+   "headline": "Why big projects are ditching TypeScript",
+   "kicker": "TECH · WEB",
+   "published": "2023-09-07T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "Fireship"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": 218,
+     "cue": "JSDoc types vs a TS build step, and the tradeoff"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "Fireship",
+    "duration": 218,
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "Rosetta archive: Fireship",
+    "url": "https://rosetta.to/u/fireship/topic/web-development/2023"
+   }
+  },
+  {
+   "id": "y-fs-angular-back",
+   "yt": "nQ2A30cD3Q8",
+   "lang": "en",
+   "kind": "tech",
+   "topic": "Tech",
+   "publisher": "Fireship",
+   "url": "https://www.youtube.com/watch?v=nQ2A30cD3Q8",
+   "headline": "Angular's comeback, explained",
+   "kicker": "TECH · WEB",
+   "published": "2023-04-12T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "Fireship"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": 227,
+     "cue": "Signals and what changed in Angular"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "Fireship",
+    "duration": 227,
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "Rosetta archive: Fireship",
+    "url": "https://rosetta.to/u/fireship/topic/web-development/2023"
    }
   }
  ],
