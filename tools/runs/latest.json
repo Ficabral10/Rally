@@ -1,14 +1,16 @@
 {
- "at": "2026-11-25T17:47:40Z",
- "found": 1,
+ "at": "2026-11-25T21:41:47Z",
+ "found": 3,
  "clipsAdded": [
-  "y-cftv-w3c"
+  "y-fs-astro",
+  "y-cftv-python",
+  "y-sq-pytorch-intro"
  ],
  "storiesAdded": [],
  "dropped": [],
  "expired": 0,
- "inventory": 190,
- "inline": 190,
- "portuguese": 20,
- "build": "run-1125-1747-190"
+ "inventory": 193,
+ "inline": 193,
+ "portuguese": 21,
+ "build": "run-1125-2141-193"
 }

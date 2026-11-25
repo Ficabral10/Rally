@@ -1,5 +1,136 @@
 [
  {
+  "id": "y-sq-pytorch-intro",
+  "yt": "FHdlXe1bSe4",
+  "lang": "en",
+  "kind": "mle",
+  "topic": "MLE",
+  "publisher": "StatQuest with Josh Starmer",
+  "url": "https://www.youtube.com/watch?v=FHdlXe1bSe4",
+  "headline": "Build a tiny neural network in PyTorch",
+  "kicker": "MLE · PYTORCH",
+  "published": "2022-04-24T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "StatQuest"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 135,
+    "end": 474,
+    "cue": "Watch each weight and bias become a parameter PyTorch can track"
+   }
+  ],
+  "sources": [],
+  "follow": {
+   "type": "try",
+   "drill": "dm-train-score"
+  },
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "StatQuest with Josh Starmer",
+   "timestamps": "chapters"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com listing) + watch page chapters (2:15 Creating a neural network, 7:54 Graphing)",
+   "url": "https://www.youtube.com/watch?v=FHdlXe1bSe4"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-25T21:41:47Z"
+ },
+ {
+  "id": "y-cftv-python",
+  "yt": "uOgDa1rlqjE",
+  "lang": "pt",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Código Fonte TV",
+  "url": "https://www.youtube.com/watch?v=uOgDa1rlqjE",
+  "headline": "Python: por que todo mundo começa por ela",
+  "kicker": "SWE · DICIONÁRIO DO PROGRAMADOR",
+  "published": "2019-07-29T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Código Fonte TV"
+  },
+  "moments": [
+   {
+    "label": "Assistir",
+    "start": 0,
+    "end": null,
+    "cue": "Repara no que faz a linguagem ser tão fácil de ler"
+   }
+  ],
+  "sources": [],
+  "follow": {
+   "type": "try",
+   "drill": "d-10"
+  },
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Código Fonte TV",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com listing) + watch page metadata",
+   "url": "https://www.youtube.com/watch?v=uOgDa1rlqjE"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-25T21:41:47Z"
+ },
+ {
+  "id": "y-fs-astro",
+  "yt": "dsTXcSeAZq8",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=dsTXcSeAZq8",
+  "headline": "Astro in 100 seconds",
+  "kicker": "SWE · WEB",
+  "published": "2021-07-15T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Watch how it ships zero JavaScript unless a component asks for it"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com listing) + watch page metadata",
+   "url": "https://www.youtube.com/watch?v=dsTXcSeAZq8"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-25T21:41:47Z"
+ },
+ {
   "id": "y-cftv-w3c",
   "yt": "5aY5LTkfBi0",
   "lang": "pt",
