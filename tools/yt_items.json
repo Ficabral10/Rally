@@ -1,5 +1,128 @@
 [
  {
+  "id": "y-fs-astro",
+  "yt": "dsTXcSeAZq8",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=dsTXcSeAZq8",
+  "headline": "Astro in 100 seconds",
+  "kicker": "SWE · WEB",
+  "published": "2022-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Watch how islands ship zero JS until a component needs it"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com listing, 'Astro in 100 Seconds')",
+   "url": "https://www.youtube.com/watch?v=dsTXcSeAZq8"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-25T17:47:19Z"
+ },
+ {
+  "id": "y-cftv-mvc",
+  "yt": "jyTNhT67ZyY",
+  "lang": "pt",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Código Fonte TV",
+  "url": "https://www.youtube.com/watch?v=jyTNhT67ZyY",
+  "headline": "MVC: model, view e controller sem enrolação",
+  "kicker": "SWE · DICIONÁRIO DO PROGRAMADOR",
+  "published": "2019-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Código Fonte TV"
+  },
+  "moments": [
+   {
+    "label": "Assistir",
+    "start": 0,
+    "end": null,
+    "cue": "Repara em qual camada conversa com qual"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Código Fonte TV",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com listing, 'MVC // Dicionário do Programador')",
+   "url": "https://www.youtube.com/watch?v=jyTNhT67ZyY"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-25T17:47:19Z"
+ },
+ {
+  "id": "y-cftv-w3c",
+  "yt": "5aY5LTkfBi0",
+  "lang": "pt",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Código Fonte TV",
+  "url": "https://www.youtube.com/watch?v=5aY5LTkfBi0",
+  "headline": "W3C: quem define os padrões da web",
+  "kicker": "SWE · DICIONÁRIO DO PROGRAMADOR",
+  "published": "2019-02-11T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Código Fonte TV"
+  },
+  "moments": [
+   {
+    "label": "Assistir",
+    "start": 0,
+    "end": null,
+    "cue": "Repara em quem escreve as regras que todo navegador segue"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Código Fonte TV",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com listing) + watch page metadata",
+   "url": "https://www.youtube.com/watch?v=5aY5LTkfBi0"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-25T17:47:19Z"
+ },
+ {
   "id": "y-cftv-html",
   "yt": "4dQtz1PpY9A",
   "lang": "pt",
