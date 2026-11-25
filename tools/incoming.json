@@ -1,16 +1,16 @@
 {
  "clips": [
   {
-   "id": "y-sq-grpo",
-   "yt": "4XqexiQSx_Y",
+   "id": "y-sq-nn-main-ideas",
+   "yt": "CqOfi41LfDw",
    "lang": "en",
    "kind": "mle",
    "topic": "MLE",
    "publisher": "StatQuest with Josh Starmer",
-   "url": "https://www.youtube.com/watch?v=4XqexiQSx_Y",
-   "headline": "GRPO, the RL trick behind reasoning models",
-   "kicker": "MLE · LLMS",
-   "published": "2026-11-16T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=CqOfi41LfDw",
+   "headline": "Neural networks, the essential main ideas",
+   "kicker": "MLE · NEURAL NETS",
+   "published": "2024-01-01T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -20,112 +20,23 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 1591,
-     "cue": "Watch how it scores a group of answers against each other, no critic model needed"
+     "end": null,
+     "cue": "Watch how a few bent and squished curves add up to fit the data"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "StatQuest with Josh Starmer",
-    "timestamps": "whole-video",
-    "duration": 1591
+    "timestamps": "whole-video"
    },
    "playback": {
     "provider": "YouTube",
     "method": "IFrame API"
    },
    "discovery": {
-    "provider": "YouTube channel: StatQuest with Josh Starmer (listing via https://vidiq.com/youtube-stats/channel/@statquest/videos/index.md)",
-    "url": "https://www.youtube.com/watch?v=4XqexiQSx_Y"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "dm-online-offline"
-   }
-  },
-  {
-   "id": "y-sq-rf-missing",
-   "yt": "mIlw5j3WyVk",
-   "lang": "en",
-   "kind": "mle",
-   "topic": "MLE",
-   "publisher": "StatQuest with Josh Starmer",
-   "url": "https://www.youtube.com/watch?v=mIlw5j3WyVk",
-   "headline": "Random forests part 2: missing data and clustering",
-   "kicker": "MLE · TREES",
-   "published": "2026-06-08T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "StatQuest"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": 648,
-     "cue": "Watch how the forest fills in missing values with its own proximity matrix"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "StatQuest with Josh Starmer",
-    "timestamps": "whole-video",
-    "duration": 648
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "YouTube channel: StatQuest with Josh Starmer (listing via https://vidiq.com/youtube-stats/channel/@statquest/videos/index.md)",
-    "url": "https://www.youtube.com/watch?v=mIlw5j3WyVk"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "dm-leak-scaler"
-   }
-  },
-  {
-   "id": "y-sq-rl-basics",
-   "yt": "Z-T0iJEXiwM",
-   "lang": "en",
-   "kind": "mle",
-   "topic": "MLE",
-   "publisher": "StatQuest with Josh Starmer",
-   "url": "https://www.youtube.com/watch?v=Z-T0iJEXiwM",
-   "headline": "Reinforcement learning, the essential concepts",
-   "kicker": "MLE · RL",
-   "published": "2025-03-31T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "StatQuest"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": 1093,
-     "cue": "States, actions, rewards, and why it's not just supervised learning"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "StatQuest with Josh Starmer",
-    "timestamps": "whole-video",
-    "duration": 1093
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "YouTube channel: StatQuest with Josh Starmer (listing via https://vidiq.com/youtube-stats/channel/@statquest/videos/index.md)",
-    "url": "https://www.youtube.com/watch?v=Z-T0iJEXiwM"
+    "provider": "YouTube channel: StatQuest with Josh Starmer (listed on statquest.org/video_index.html)",
+    "url": "https://www.youtube.com/watch?v=CqOfi41LfDw"
    },
    "follow": {
     "type": "try",
@@ -133,16 +44,16 @@
    }
   },
   {
-   "id": "y-sq-transformer-matrix",
-   "yt": "KphmOJnLAdI",
+   "id": "y-sq-backprop-main",
+   "yt": "IN2XmBhILt4",
    "lang": "en",
    "kind": "mle",
    "topic": "MLE",
    "publisher": "StatQuest with Josh Starmer",
-   "url": "https://www.youtube.com/watch?v=KphmOJnLAdI",
-   "headline": "The matrix math inside a transformer, step by step",
-   "kicker": "MLE · LLMS",
-   "published": "2024-04-08T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=IN2XmBhILt4",
+   "headline": "Backpropagation, the main ideas",
+   "kicker": "MLE · NEURAL NETS",
+   "published": "2024-01-01T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -152,28 +63,199 @@
     {
      "label": "Watch",
      "start": 0,
-     "end": 1423,
-     "cue": "Watch attention turn into a few matrix multiplies"
+     "end": null,
+     "cue": "Watch how the chain rule nudges each weight downhill"
     }
    ],
    "sources": [],
    "verify": {
     "embeddable": "allowlisted",
     "author": "StatQuest with Josh Starmer",
-    "timestamps": "whole-video",
-    "duration": 1423
+    "timestamps": "whole-video"
    },
    "playback": {
     "provider": "YouTube",
     "method": "IFrame API"
    },
    "discovery": {
-    "provider": "YouTube channel: StatQuest with Josh Starmer (listing via https://vidiq.com/youtube-stats/channel/@statquest/videos/index.md)",
-    "url": "https://www.youtube.com/watch?v=KphmOJnLAdI"
+    "provider": "YouTube channel: StatQuest with Josh Starmer (listed on statquest.org/video_index.html)",
+    "url": "https://www.youtube.com/watch?v=IN2XmBhILt4"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "dm-train-score"
+   }
+  },
+  {
+   "id": "y-sq-word2vec",
+   "yt": "viZrOnJclY0",
+   "lang": "en",
+   "kind": "mle",
+   "topic": "MLE",
+   "publisher": "StatQuest with Josh Starmer",
+   "url": "https://www.youtube.com/watch?v=viZrOnJclY0",
+   "headline": "Word embeddings and word2vec, clearly explained",
+   "kicker": "MLE · NLP",
+   "published": "2024-01-01T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "StatQuest"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": null,
+     "cue": "Watch similar words end up with similar numbers"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "StatQuest with Josh Starmer",
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "YouTube channel: StatQuest with Josh Starmer (listed on statquest.org/video_index.html)",
+    "url": "https://www.youtube.com/watch?v=viZrOnJclY0"
    },
    "follow": {
     "type": "try",
     "drill": "dm-cosine"
+   }
+  },
+  {
+   "id": "y-sq-softmax",
+   "yt": "KpKog-L9veg",
+   "lang": "en",
+   "kind": "mle",
+   "topic": "MLE",
+   "publisher": "StatQuest with Josh Starmer",
+   "url": "https://www.youtube.com/watch?v=KpKog-L9veg",
+   "headline": "ArgMax and SoftMax, and when to use which",
+   "kicker": "MLE · NEURAL NETS",
+   "published": "2024-01-01T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "StatQuest"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": null,
+     "cue": "Watch why softmax outputs look like probabilities but shouldn't be trusted as confidence"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "StatQuest with Josh Starmer",
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "YouTube channel: StatQuest with Josh Starmer (listed on statquest.org/video_index.html)",
+    "url": "https://www.youtube.com/watch?v=KpKog-L9veg"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "dm-calibration"
+   }
+  },
+  {
+   "id": "y-cftv-kubernetes",
+   "yt": "mVL0nOM3AGo",
+   "lang": "pt",
+   "kind": "swe",
+   "topic": "SWE",
+   "publisher": "Código Fonte TV",
+   "url": "https://www.youtube.com/watch?v=mVL0nOM3AGo",
+   "headline": "Kubernetes, o maestro dos containers",
+   "kicker": "SWE · INFRA",
+   "published": "2024-01-01T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "Código Fonte TV"
+   },
+   "moments": [
+    {
+     "label": "Assista",
+     "start": 0,
+     "end": null,
+     "cue": "Veja o que o Kubernetes resolve quando os containers viram dezenas"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "Código Fonte TV",
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "YouTube channel: Código Fonte TV (series 'Dicionário do Programador', web search listing)",
+    "url": "https://www.youtube.com/watch?v=mVL0nOM3AGo"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "dm-batching"
+   }
+  },
+  {
+   "id": "y-cftv-git",
+   "yt": "za5KWZ5pRag",
+   "lang": "pt",
+   "kind": "swe",
+   "topic": "SWE",
+   "publisher": "Código Fonte TV",
+   "url": "https://www.youtube.com/watch?v=za5KWZ5pRag",
+   "headline": "Git, o histórico que salva seu código",
+   "kicker": "SWE · FERRAMENTAS",
+   "published": "2024-01-01T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "Código Fonte TV"
+   },
+   "moments": [
+    {
+     "label": "Assista",
+     "start": 0,
+     "end": null,
+     "cue": "Veja por que commit, branch e merge mudaram o jeito de trabalhar em equipe"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "Código Fonte TV",
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "YouTube channel: Código Fonte TV (series 'Dicionário do Programador', web search listing)",
+    "url": "https://www.youtube.com/watch?v=za5KWZ5pRag"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "dx-boundary-test"
    }
   }
  ],
