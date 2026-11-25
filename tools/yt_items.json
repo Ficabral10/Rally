@@ -1,5 +1,96 @@
 [
  {
+  "id": "y-fs-history-programming",
+  "yt": "9uW6B9LPntY",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=9uW6B9LPntY",
+  "headline": "A brief history of programming, binary to AI",
+  "kicker": "SWE · HISTORY",
+  "published": "2026-01-20T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Watch how each layer, assembly to C to Python, hides the one below"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 369,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "YouTube channel: Fireship (watch link on rosetta.to/u/fireship)",
+   "url": "https://www.youtube.com/watch?v=9uW6B9LPntY"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-10"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-25T05:43:02Z"
+ },
+ {
+  "id": "y-fs-p-vs-np",
+  "yt": "x36UmiSiEzc",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=x36UmiSiEzc",
+  "headline": "P vs NP, the million-dollar question",
+  "kicker": "SWE · CS THEORY",
+  "published": "2026-03-09T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Watch why checking a Sudoku is easy but solving one isn't"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "YouTube channel: Fireship (watch link on rosetta.to/u/fireship)",
+   "url": "https://www.youtube.com/watch?v=x36UmiSiEzc"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dx-two-loops"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-25T05:43:02Z"
+ },
+ {
   "id": "y-cftv-git",
   "yt": "za5KWZ5pRag",
   "lang": "pt",
