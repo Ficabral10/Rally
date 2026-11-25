@@ -1,5 +1,51 @@
 [
  {
+  "id": "y-3b1b-attention",
+  "yt": "eMlx5fFNoYc",
+  "lang": "en",
+  "kind": "mle",
+  "topic": "MLE",
+  "publisher": "3Blue1Brown",
+  "url": "https://www.youtube.com/watch?v=eMlx5fFNoYc",
+  "headline": "Attention in transformers, step by step",
+  "kicker": "MLE · TRANSFORMERS",
+  "published": "2024-04-07T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "3Blue1Brown"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Watch how query and key dot products decide which words talk to each other"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "3Blue1Brown",
+   "duration": 1569,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "YouTube channel: 3Blue1Brown (watch link on rosetta.to/u/3blue1brown)",
+   "url": "https://www.youtube.com/watch?v=eMlx5fFNoYc"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dm-cosine"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-25T09:47:53Z"
+ },
+ {
   "id": "y-fs-history-programming",
   "yt": "9uW6B9LPntY",
   "lang": "en",
@@ -7247,198 +7293,6 @@
   "discovery": {
    "provider": "YouTube channel: Fireship",
    "url": "https://www.youtube.com/watch?v=zsjvFFKOm3c"
-  }
- },
- {
-  "id": "y-arg-cri-7",
-  "yt": "tZX91fVB1R4",
-  "publisher": "CONMEBOL",
-  "url": "https://www.youtube.com/watch?v=tZX91fVB1R4",
-  "lang": "es",
-  "kind": "sports",
-  "topic": "Sports",
-  "headline": "Argentina 7, Costa Rica 0: Paz, Álvarez and Mastantuono all score twice",
-  "headlineSafe": "Argentina vs Costa Rica in Córdoba: the highlights",
-  "kicker": "ARGENTINA · FRIENDLY",
-  "published": "2026-11-18T02:30:00Z",
-  "spoiler": true,
-  "story": "arg-cri-2026-11-17",
-  "match": {
-   "home": "Argentina",
-   "away": "Costa Rica",
-   "comp": "International friendly",
-   "date": "Nov 17, 2026",
-   "venue": "Córdoba"
-  },
-  "moments": [
-   {
-    "label": "All seven goals",
-    "minute": "8'–88'",
-    "start": 0,
-    "end": 176,
-    "cue": "Two each for Paz, Álvarez and Mastantuono, one for Mac Allister",
-    "note": "Paz 8' and 38', Álvarez 35' and 43', Mastantuono 48' and 88', Mac Allister 78'. This was Argentina's second game since Messi retired; the first was a 2-1 loss to Uruguay."
-   }
-  ],
-  "sources": [
-   {
-    "name": "ESPN match report",
-    "url": "https://www.espn.com/soccer/report/_/gameId/401930895"
-   }
-  ],
-  "verify": {
-   "embeddable": true,
-   "author": "CONMEBOL",
-   "duration": 178.2,
-   "timestamps": "whole-video",
-   "checked": "oEmbed + played in Chrome (US), Nov 17"
-  },
-  "type": "yt",
-  "follow": {
-   "type": "match"
-  },
-  "addedAt": "2026-11-18T06:07:32Z",
-  "tags": [],
-  "playback": {
-   "provider": "YouTube",
-   "method": "IFrame API"
-  },
-  "discovery": {
-   "provider": "YouTube channel: CONMEBOL",
-   "url": "https://www.youtube.com/watch?v=tZX91fVB1R4"
-  }
- },
- {
-  "id": "y-bra-sin-vini",
-  "type": "yt",
-  "yt": "VXDnHnWsC_A",
-  "lang": "pt",
-  "kind": "sports",
-  "topic": "Sports",
-  "publisher": "TNT Sports Brasil",
-  "url": "https://www.youtube.com/watch?v=VXDnHnWsC_A",
-  "headline": "Os três gols do Vini em 12 minutos contra Singapura",
-  "headlineSafe": "Seleção x Singapura: os lances do Vini",
-  "kicker": "SELEÇÃO · AMISTOSO",
-  "published": "2026-11-17T12:30:00Z",
-  "spoiler": true,
-  "related": "s-brasil-singapura",
-  "match": {
-   "home": "Singapura",
-   "away": "Brasil",
-   "comp": "Amistoso",
-   "date": "17 nov 2026",
-   "venue": "Estádio Nacional de Singapura"
-  },
-  "follow": {
-   "type": "match"
-  },
-  "moments": [
-   {
-    "label": "1º gol",
-    "minute": "8'",
-    "start": 18.5,
-    "end": 26,
-    "cue": "Olha o Vini (7) entrando pela esquerda da área"
-   },
-   {
-    "label": "2º gol",
-    "minute": "13'",
-    "start": 35,
-    "end": 45,
-    "cue": "Arrancada desde o meio-campo, depois o drible no goleiro"
-   },
-   {
-    "label": "3º gol",
-    "minute": "20'",
-    "start": 61,
-    "end": 69,
-    "cue": "Repara em quem ataca o primeiro pau"
-   }
-  ],
-  "sources": [
-   {
-    "name": "O Povo",
-    "url": "https://www.opovo.com.br/esportes/futebol-internacional/2026/11/17/com-hat-trick-de-vini-jr-brasil-goleou-singapura-em-ultimo-compromisso-de-2026.html"
-   }
-  ],
-  "addedAt": "2026-11-18T06:07:32Z",
-  "verify": {
-   "embeddable": true,
-   "author": "TNT Sports Brasil",
-   "duration": 169.1,
-   "timestamps": "frames"
-  },
-  "story": "bra-sin-2026",
-  "tags": [],
-  "playback": {
-   "provider": "YouTube",
-   "method": "IFrame API"
-  },
-  "discovery": {
-   "provider": "YouTube channel: TNT Sports Brasil",
-   "url": "https://www.youtube.com/watch?v=VXDnHnWsC_A"
-  }
- },
- {
-  "id": "y-depaul-35yd",
-  "type": "yt",
-  "yt": "Yi1pUQxXbP0",
-  "lang": "en",
-  "kind": "sports",
-  "topic": "Sports",
-  "publisher": "Major League Soccer",
-  "url": "https://www.youtube.com/watch?v=Yi1pUQxXbP0",
-  "headline": "De Paul gets 30 yards of space and puts it in the bottom corner",
-  "kicker": "MLS · DECISION DAY",
-  "published": "2026-11-08T00:00:00Z",
-  "spoiler": false,
-  "match": {
-   "home": "Inter Miami",
-   "away": "Charlotte FC",
-   "comp": "MLS Decision Day",
-   "date": "Nov 7, 2026",
-   "venue": "Nu Stadium, Miami"
-  },
-  "follow": {
-   "type": "match"
-  },
-  "moments": [
-   {
-    "label": "Goal",
-    "minute": "42'",
-    "start": 3,
-    "end": 17,
-    "cue": "Watch how much room De Paul gets after Segovia's pass",
-    "note": "Collects Telasco Segovia's pass and drills a low shot into the bottom corner from about 35 yards."
-   }
-  ],
-  "sources": [
-   {
-    "name": "Inter Miami CF match recap",
-    "url": "https://www.intermiamicf.com/news/match-recap-inter-miami-cf-closes-out-regular-season-with-3-3-draw-against-charlotte-fc"
-   },
-   {
-    "name": "101 Great Goals",
-    "url": "https://www.101greatgoals.com/?p=221439"
-   }
-  ],
-  "addedAt": "2026-11-18T06:07:32Z",
-  "verify": {
-   "embeddable": true,
-   "author": "Major League Soccer",
-   "duration": 61.3,
-   "timestamps": "frames"
-  },
-  "story": "mia-clt-2026-11-07",
-  "tags": [],
-  "playback": {
-   "provider": "YouTube",
-   "method": "IFrame API"
-  },
-  "discovery": {
-   "provider": "YouTube channel: Major League Soccer",
-   "url": "https://www.youtube.com/watch?v=Yi1pUQxXbP0"
   }
  },
  {
