@@ -1,5 +1,95 @@
 [
  {
+  "id": "y-3b1b-backprop-calc",
+  "yt": "tIeHLnjs5U8",
+  "lang": "en",
+  "kind": "mle",
+  "topic": "MLE",
+  "publisher": "3Blue1Brown",
+  "url": "https://www.youtube.com/watch?v=tIeHLnjs5U8",
+  "headline": "Backpropagation calculus, the chain rule up close",
+  "kicker": "MLE · NEURAL NETS",
+  "published": "2017-11-03T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "3Blue1Brown"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Follow one weight's nudge all the way through to the cost"
+   }
+  ],
+  "sources": [],
+  "follow": {
+   "type": "try",
+   "drill": "dm-train-score"
+  },
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "3Blue1Brown",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com listing) + watch page metadata",
+   "url": "https://www.youtube.com/watch?v=tIeHLnjs5U8"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-26T01:42:55Z"
+ },
+ {
+  "id": "y-fs-postgres",
+  "yt": "n2Fluyr3lbc",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=n2Fluyr3lbc",
+  "headline": "PostgreSQL in 100 seconds",
+  "kicker": "SWE · DATA",
+  "published": "2023-07-27T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Watch why Postgres gets called the database that does everything"
+   }
+  ],
+  "sources": [],
+  "follow": {
+   "type": "try",
+   "drill": "ds-having"
+  },
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com listing) + watch page metadata",
+   "url": "https://www.youtube.com/watch?v=n2Fluyr3lbc"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-26T01:42:55Z"
+ },
+ {
   "id": "y-sq-pytorch-intro",
   "yt": "FHdlXe1bSe4",
   "lang": "en",
