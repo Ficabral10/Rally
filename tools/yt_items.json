@@ -1,5 +1,46 @@
 [
  {
+  "id": "y-fs-websockets",
+  "yt": "1BfCnjr_Vjg",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=1BfCnjr_Vjg",
+  "headline": "WebSockets in 100 seconds, then Socket.io",
+  "kicker": "SWE · NETWORKING",
+  "published": "2020-12-10T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "See why a socket beats polling when the server needs to talk first"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com listing) + watch page metadata",
+   "url": "https://www.youtube.com/watch?v=1BfCnjr_Vjg"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-26T05:42:30Z"
+ },
+ {
   "id": "y-3b1b-backprop-calc",
   "yt": "tIeHLnjs5U8",
   "lang": "en",
