@@ -1,26 +1,43 @@
 {
  "clips": [
   {
-   "id": "y-fs-neovim",
-   "yt": "c4OyfL5o7DU",
-   "lang": "en",
-   "kind": "swe",
-   "topic": "SWE",
-   "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=c4OyfL5o7DU",
-   "headline": "Neovim in 100 seconds",
-   "kicker": "SWE · TOOLS",
-   "published": "2023-02-15T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
+   "id": "y-fs-tmux", "yt": "vtB1J_zCv8I", "lang": "en", "kind": "swe", "topic": "SWE",
+   "publisher": "Fireship", "url": "https://www.youtube.com/watch?v=vtB1J_zCv8I",
+   "headline": "Tmux in 100 seconds", "kicker": "SWE · TOOLS",
+   "published": "2024-09-22T00:00:00Z", "evergreen": true, "spoiler": false,
    "match": {"comp": "Fireship"},
-   "moments": [
-    {"label": "Watch", "start": 0, "end": null, "cue": "Watch how Lua config turns Vim into a full editor"}
-   ],
+   "follow": {"type": "try", "drill": "d-24"},
+   "moments": [{"label": "Watch", "start": 0, "end": null, "cue": "Sessions, windows and panes that survive closing your terminal"}],
    "sources": [],
-   "verify": {"embeddable": "allowlisted", "author": "Fireship", "duration": 131, "timestamps": "whole-video"},
+   "verify": {"embeddable": "allowlisted", "author": "Fireship", "duration": 181, "timestamps": "whole-video"},
    "playback": {"provider": "YouTube", "method": "IFrame API"},
-   "discovery": {"provider": "YouTube channel: Fireship (listed on rosetta.to/u/fireship/neovim-in-100-seconds)", "url": "https://www.youtube.com/watch?v=c4OyfL5o7DU"}
+   "discovery": {"provider": "YouTube channel: Fireship (listed on rosetta.to/u/fireship/tmux-in-100-seconds)", "url": "https://www.youtube.com/watch?v=vtB1J_zCv8I"}
+  },
+  {
+   "id": "y-fs-appwrite", "yt": "L07xPMyL8sY", "lang": "en", "kind": "swe", "topic": "SWE",
+   "publisher": "Fireship", "url": "https://www.youtube.com/watch?v=L07xPMyL8sY",
+   "headline": "Appwrite in 100 seconds", "kicker": "SWE · DATA",
+   "published": "2024-10-21T00:00:00Z", "evergreen": true, "spoiler": false,
+   "match": {"comp": "Fireship"},
+   "follow": {"type": "try", "drill": "ds-null"},
+   "moments": [{"label": "Watch", "start": 0, "end": null, "cue": "An open-source backend: auth, database and storage you can self-host"}],
+   "sources": [],
+   "verify": {"embeddable": "allowlisted", "author": "Fireship", "duration": 156, "timestamps": "whole-video"},
+   "playback": {"provider": "YouTube", "method": "IFrame API"},
+   "discovery": {"provider": "YouTube channel: Fireship (listed on rosetta.to/u/fireship/appwrite-in-100-seconds)", "url": "https://www.youtube.com/watch?v=L07xPMyL8sY"}
+  },
+  {
+   "id": "y-3b1b-bayes-quick", "yt": "U_85TaXbeIo", "lang": "en", "kind": "mle", "topic": "MLE",
+   "publisher": "3Blue1Brown", "url": "https://www.youtube.com/watch?v=U_85TaXbeIo",
+   "headline": "The quick proof of Bayes' theorem", "kicker": "MLE · PROBABILITY",
+   "published": "2019-12-22T00:00:00Z", "evergreen": true, "spoiler": false,
+   "match": {"comp": "3Blue1Brown"},
+   "follow": {"type": "try", "drill": "dx-rare-screen"},
+   "moments": [{"label": "Watch", "start": 0, "end": null, "cue": "Why Bayes falls right out of counting the overlap two ways"}],
+   "sources": [],
+   "verify": {"embeddable": "allowlisted", "author": "3Blue1Brown", "timestamps": "whole-video"},
+   "playback": {"provider": "YouTube", "method": "IFrame API"},
+   "discovery": {"provider": "YouTube channel: 3Blue1Brown (listed on rosetta.to/u/3blue1brown/the-quick-proof-of-bayes-theorem)", "url": "https://www.youtube.com/watch?v=U_85TaXbeIo"}
   }
  ],
  "stories": []
