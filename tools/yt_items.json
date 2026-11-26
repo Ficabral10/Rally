@@ -1,5 +1,51 @@
 [
  {
+  "id": "y-fs-duckdb",
+  "yt": "uHm6FEb2Re4",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=uHm6FEb2Re4",
+  "headline": "DuckDB in 100 seconds",
+  "kicker": "SWE · DATA",
+  "published": "2025-08-14T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Watch why column storage makes big aggregations fast"
+   }
+  ],
+  "sources": [],
+  "follow": {
+   "type": "try",
+   "drill": "ds-having"
+  },
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 142,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (rosetta.to Fireship listing, cross-checked on duckdb.org)",
+   "url": "https://www.youtube.com/watch?v=uHm6FEb2Re4"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-26T09:41:30Z"
+ },
+ {
   "id": "y-fs-websockets",
   "yt": "1BfCnjr_Vjg",
   "lang": "en",
@@ -7454,100 +7500,6 @@
   },
   "type": "yt",
   "addedAt": "2026-11-19T09:42:37Z"
- },
- {
-  "id": "tt-cor-bot-4x0",
-  "type": "tt",
-  "lang": "pt",
-  "kind": "sports",
-  "topic": "Sports",
-  "publisher": "Corinthians",
-  "url": "https://www.tiktok.com/@corinthians/video/7709719797948288277",
-  "headline": "Corinthians 4 x 0 Botafogo: o hat-trick do Kaio César e o gol do Memphis",
-  "headlineSafe": "Corinthians x Botafogo: os gols da noite na Neo Química Arena",
-  "kicker": "CORINTHIANS · BRASILEIRÃO",
-  "published": "2026-11-19T03:30:32Z",
-  "addedAt": "2026-11-19T07:11:08Z",
-  "spoiler": true,
-  "story": "cor-bot-2026-11-18",
-  "related": "s-cor-bot",
-  "tags": [
-   "club:corinthians",
-   "comp:brasileirao"
-  ],
-  "match": {
-   "home": "Corinthians",
-   "away": "Botafogo",
-   "comp": "Brasileirão · 35ª rodada",
-   "date": "18 nov 2026",
-   "venue": "Neo Química Arena"
-  },
-  "follow": {
-   "type": "match"
-  },
-  "moments": [
-   {
-    "label": "1º gol · Kaio César",
-    "minute": "27'",
-    "tt": "7709719797948288277",
-    "start": 0,
-    "end": null,
-    "dur": 38,
-    "cue": "Olha a jogada do Vitinho pela esquerda antes do chute"
-   },
-   {
-    "label": "2º gol · Memphis",
-    "minute": "33'",
-    "tt": "7709725975398878516",
-    "start": 0,
-    "end": null,
-    "dur": 30,
-    "cue": "O clube dá o gol ao Memphis; parte da imprensa registrou contra do Arthur Chaves",
-    "note": "Some reports (Estadão's match sheet) list it as an Arthur Chaves own goal; the club and Lance credit Memphis."
-   },
-   {
-    "label": "3º gol · Kaio César",
-    "minute": "60'",
-    "tt": "7709718314158656789",
-    "start": 0,
-    "end": null,
-    "dur": 39,
-    "cue": "Tabela entre Memphis e Kaio César"
-   },
-   {
-    "label": "4º gol · Kaio César",
-    "minute": "66'",
-    "tt": "7709721711238843700",
-    "start": 0,
-    "end": null,
-    "dur": 48,
-    "cue": "Contra-ataque rápido, passe do Vitinho, hat-trick"
-   }
-  ],
-  "sources": [
-   {
-    "name": "Lance!",
-    "url": "https://www.lance.com.br/futebol-nacional/ao-vivo-siga-corinthians-x-botafogo-pelo-brasileirao.html"
-   },
-   {
-    "name": "O Estado de Rondônia (ficha técnica, Estadão Conteúdo)",
-    "url": "https://oestadoderondonia.com.br/corinthians-atropela-o-botafogo-por-4-a-0-e-deixa-o-z4/"
-   }
-  ],
-  "discovery": {
-   "provider": "Corinthians on TikTok",
-   "url": "https://www.tiktok.com/@corinthians"
-  },
-  "playback": {
-   "provider": "TikTok",
-   "method": "embed player v1"
-  },
-  "verify": {
-   "embeddable": true,
-   "author": "Corinthians",
-   "timestamps": "whole-video",
-   "checked": "played inline in Chrome on GitHub Pages, Nov 18 PT"
-  }
  },
  {
   "id": "n-nasa-splice",
