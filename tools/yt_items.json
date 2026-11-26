@@ -1,5 +1,47 @@
 [
  {
+  "id": "y-fs-neovim",
+  "yt": "c4OyfL5o7DU",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=c4OyfL5o7DU",
+  "headline": "Neovim in 100 seconds",
+  "kicker": "SWE · TOOLS",
+  "published": "2023-02-15T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Watch how Lua config turns Vim into a full editor"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 131,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "YouTube channel: Fireship (listed on rosetta.to/u/fireship/neovim-in-100-seconds)",
+   "url": "https://www.youtube.com/watch?v=c4OyfL5o7DU"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-26T17:48:54Z"
+ },
+ {
   "id": "y-sq-entropy",
   "yt": "YtebGVx-Fxw",
   "lang": "en",

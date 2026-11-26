@@ -1,168 +1,26 @@
 {
  "clips": [
   {
-   "id": "y-sq-cosine",
-   "yt": "e9U0QAFbfLI",
+   "id": "y-fs-neovim",
+   "yt": "c4OyfL5o7DU",
    "lang": "en",
-   "kind": "mle",
-   "topic": "MLE",
-   "publisher": "StatQuest with Josh Starmer",
-   "url": "https://www.youtube.com/watch?v=e9U0QAFbfLI",
-   "headline": "Cosine similarity, clearly explained",
-   "kicker": "MLE · EMBEDDINGS",
-   "published": "2024-01-01T00:00:00Z",
+   "kind": "swe",
+   "topic": "SWE",
+   "publisher": "Fireship",
+   "url": "https://www.youtube.com/watch?v=c4OyfL5o7DU",
+   "headline": "Neovim in 100 seconds",
+   "kicker": "SWE · TOOLS",
+   "published": "2023-02-15T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
-   "match": {
-    "comp": "StatQuest"
-   },
+   "match": {"comp": "Fireship"},
    "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": null,
-     "cue": "Watch why the angle between vectors matters more than their length"
-    }
+    {"label": "Watch", "start": 0, "end": null, "cue": "Watch how Lua config turns Vim into a full editor"}
    ],
    "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "StatQuest with Josh Starmer",
-    "timestamps": "whole-video"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "YouTube channel: StatQuest with Josh Starmer (listed on statquest.org/video_index.html)",
-    "url": "https://www.youtube.com/watch?v=e9U0QAFbfLI"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "dm-cosine"
-   }
-  },
-  {
-   "id": "y-sq-ridge",
-   "yt": "Q81RR3yKn30",
-   "lang": "en",
-   "kind": "mle",
-   "topic": "MLE",
-   "publisher": "StatQuest with Josh Starmer",
-   "url": "https://www.youtube.com/watch?v=Q81RR3yKn30",
-   "headline": "Ridge regression: trading a little bias for less variance",
-   "kicker": "MLE · CLASSIC ML",
-   "published": "2024-01-01T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "StatQuest"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": null,
-     "cue": "Watch how the penalty keeps a model from chasing its training data"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "StatQuest with Josh Starmer",
-    "timestamps": "whole-video"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "YouTube channel: StatQuest with Josh Starmer (listed on statquest.org/video_index.html)",
-    "url": "https://www.youtube.com/watch?v=Q81RR3yKn30"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "dm-train-score"
-   }
-  },
-  {
-   "id": "y-sq-kmeans",
-   "yt": "4b5d3muPQmA",
-   "lang": "en",
-   "kind": "mle",
-   "topic": "MLE",
-   "publisher": "StatQuest with Josh Starmer",
-   "url": "https://www.youtube.com/watch?v=4b5d3muPQmA",
-   "headline": "K-means clustering, clearly explained",
-   "kicker": "MLE · CLASSIC ML",
-   "published": "2024-01-01T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "StatQuest"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": null,
-     "cue": "Watch how picking k turns into an elbow plot"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "StatQuest with Josh Starmer",
-    "timestamps": "whole-video"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "YouTube channel: StatQuest with Josh Starmer (listed on statquest.org/video_index.html)",
-    "url": "https://www.youtube.com/watch?v=4b5d3muPQmA"
-   }
-  },
-  {
-   "id": "y-sq-entropy",
-   "yt": "YtebGVx-Fxw",
-   "lang": "en",
-   "kind": "mle",
-   "topic": "MLE",
-   "publisher": "StatQuest with Josh Starmer",
-   "url": "https://www.youtube.com/watch?v=YtebGVx-Fxw",
-   "headline": "Entropy, clearly explained",
-   "kicker": "MLE · FOUNDATIONS",
-   "published": "2024-01-01T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "StatQuest"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": null,
-     "cue": "Watch surprise turn into the number behind decision trees and cross entropy"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "StatQuest with Josh Starmer",
-    "timestamps": "whole-video"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "YouTube channel: StatQuest with Josh Starmer (listed on statquest.org/video_index.html)",
-    "url": "https://www.youtube.com/watch?v=YtebGVx-Fxw"
-   }
+   "verify": {"embeddable": "allowlisted", "author": "Fireship", "duration": 131, "timestamps": "whole-video"},
+   "playback": {"provider": "YouTube", "method": "IFrame API"},
+   "discovery": {"provider": "YouTube channel: Fireship (listed on rosetta.to/u/fireship/neovim-in-100-seconds)", "url": "https://www.youtube.com/watch?v=c4OyfL5o7DU"}
   }
  ],
  "stories": []
