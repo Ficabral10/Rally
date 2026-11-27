@@ -1,56 +1,223 @@
 {
  "clips": [
   {
-   "id": "y-fs-this-js", "yt": "YOlr79NaAtQ", "lang": "en", "kind": "swe", "topic": "SWE",
-   "publisher": "Fireship", "url": "https://www.youtube.com/watch?v=YOlr79NaAtQ",
-   "headline": "What is this in JavaScript?", "kicker": "SWE · JAVASCRIPT",
-   "published": "2020-03-27T00:00:00Z", "evergreen": true, "spoiler": false,
-   "match": {"comp": "Fireship"},
-   "follow": {"type": "try", "drill": "d-18"},
-   "moments": [{"label": "Watch", "start": 0, "end": null, "cue": "Why this changes depending on how a function gets called"}],
+   "id": "y-fs-js-100-concepts",
+   "yt": "lkIFF4maKMU",
+   "lang": "en",
+   "kind": "swe",
+   "topic": "SWE",
+   "publisher": "Fireship",
+   "url": "https://www.youtube.com/watch?v=lkIFF4maKMU",
+   "headline": "100+ JavaScript concepts in 12 minutes",
+   "kicker": "SWE · JAVASCRIPT",
+   "published": "2022-11-22T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "Fireship"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "d-12"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": null,
+     "cue": "Closures, the event loop, prototypes and the rest, rapid fire"
+    }
+   ],
    "sources": [],
-   "verify": {"embeddable": "allowlisted", "author": "Fireship", "duration": 397, "timestamps": "whole-video"},
-   "playback": {"provider": "YouTube", "method": "IFrame API"},
-   "discovery": {"provider": "YouTube channel: Fireship (listed on rosetta.to/u/fireship/page/10)", "url": "https://www.youtube.com/watch?v=YOlr79NaAtQ"}
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "Fireship",
+    "duration": 743,
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "YouTube channel: Fireship (listed on rosetta.to/u/fireship/topic/programming/2022)",
+    "url": "https://www.youtube.com/watch?v=lkIFF4maKMU"
+   }
   },
   {
-   "id": "y-fs-fancy-words", "yt": "4Zc9ci9L5wY", "lang": "en", "kind": "swe", "topic": "SWE",
-   "publisher": "Fireship", "url": "https://www.youtube.com/watch?v=4Zc9ci9L5wY",
-   "headline": "7 fancy words that make you sound like a 10x dev", "kicker": "SWE · VOCAB",
-   "published": "2020-11-23T00:00:00Z", "evergreen": true, "spoiler": false,
-   "match": {"comp": "Fireship"},
-   "follow": {"type": "try", "drill": "d-23"},
-   "moments": [{"label": "Watch", "start": 0, "end": null, "cue": "Jargon you'll hear in code review, finally explained"}],
+   "id": "y-fs-never-bug",
+   "yt": "X3jw1JVNdPE",
+   "lang": "en",
+   "kind": "swe",
+   "topic": "SWE",
+   "publisher": "Fireship",
+   "url": "https://www.youtube.com/watch?v=X3jw1JVNdPE",
+   "headline": "How to never write a bug (sort of)",
+   "kicker": "SWE · TESTING",
+   "published": "2022-10-18T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "Fireship"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "dx-boundary-test"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": null,
+     "cue": "Types, tests and the habits that catch bugs before users do"
+    }
+   ],
    "sources": [],
-   "verify": {"embeddable": "allowlisted", "author": "Fireship", "duration": 505, "timestamps": "whole-video"},
-   "playback": {"provider": "YouTube", "method": "IFrame API"},
-   "discovery": {"provider": "YouTube channel: Fireship (listed on rosetta.to/u/fireship/page/10)", "url": "https://www.youtube.com/watch?v=4Zc9ci9L5wY"}
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "Fireship",
+    "duration": 439,
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "YouTube channel: Fireship (listed on rosetta.to/u/fireship/topic/programming/2022)",
+    "url": "https://www.youtube.com/watch?v=X3jw1JVNdPE"
+   }
   },
   {
-   "id": "y-fs-carbon", "yt": "-bHK0qmp06c", "lang": "en", "kind": "swe", "topic": "SWE",
-   "publisher": "Fireship", "url": "https://www.youtube.com/watch?v=-bHK0qmp06c",
-   "headline": "Carbon, Google's 2022 pitch for a C++ successor", "kicker": "SWE · LANGUAGES",
-   "published": "2022-07-22T00:00:00Z", "evergreen": true, "spoiler": false,
-   "match": {"comp": "Fireship"},
-   "follow": {"type": "try", "drill": "d-24"},
-   "moments": [{"label": "Watch", "start": 0, "end": null, "cue": "What Carbon promised C++ devs when it was announced"}],
+   "id": "y-fs-tech-interview",
+   "yt": "1t1_a1BZ04o",
+   "lang": "en",
+   "kind": "swe",
+   "topic": "SWE",
+   "publisher": "Fireship",
+   "url": "https://www.youtube.com/watch?v=1t1_a1BZ04o",
+   "headline": "How not to fail a technical interview",
+   "kicker": "SWE · INTERVIEWS",
+   "published": "2022-08-01T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "Fireship"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "d-0"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": null,
+     "cue": "What interviewers actually watch for while you solve"
+    }
+   ],
    "sources": [],
-   "verify": {"embeddable": "allowlisted", "author": "Fireship", "duration": 206, "timestamps": "whole-video"},
-   "playback": {"provider": "YouTube", "method": "IFrame API"},
-   "discovery": {"provider": "YouTube channel: Fireship (listed on rosetta.to/u/fireship/page/7)", "url": "https://www.youtube.com/watch?v=-bHK0qmp06c"}
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "Fireship",
+    "duration": 505,
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "YouTube channel: Fireship (listed on rosetta.to/u/fireship/topic/programming/2022)",
+    "url": "https://www.youtube.com/watch?v=1t1_a1BZ04o"
+   }
   },
   {
-   "id": "y-fs-time-enemy", "yt": "iMVgvkVJuDI", "lang": "en", "kind": "swe", "topic": "SWE",
-   "publisher": "Fireship", "url": "https://www.youtube.com/watch?v=iMVgvkVJuDI",
-   "headline": "Time, a programmer's worst enemy", "kicker": "SWE · EDGE CASES",
-   "published": "2022-03-17T00:00:00Z", "evergreen": true, "spoiler": false,
-   "match": {"comp": "Fireship"},
-   "follow": {"type": "try", "drill": "dx-boundary-test"},
-   "moments": [{"label": "Watch", "start": 0, "end": null, "cue": "Why dates and time zones break so much code"}],
+   "id": "y-fs-100-cs-concepts",
+   "yt": "-uleG_Vecis",
+   "lang": "en",
+   "kind": "swe",
+   "topic": "SWE",
+   "publisher": "Fireship",
+   "url": "https://www.youtube.com/watch?v=-uleG_Vecis",
+   "headline": "100+ computer science concepts, explained fast",
+   "kicker": "SWE · FUNDAMENTALS",
+   "published": "2022-05-04T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "Fireship"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "d-26"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": null,
+     "cue": "Bits to Big-O to graphs, the whole CS degree on fast forward"
+    }
+   ],
    "sources": [],
-   "verify": {"embeddable": "allowlisted", "author": "Fireship", "duration": 186, "timestamps": "whole-video"},
-   "playback": {"provider": "YouTube", "method": "IFrame API"},
-   "discovery": {"provider": "YouTube channel: Fireship (listed on rosetta.to/u/fireship/page/7)", "url": "https://www.youtube.com/watch?v=iMVgvkVJuDI"}
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "Fireship",
+    "duration": 787,
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "YouTube channel: Fireship (listed on rosetta.to/u/fireship/topic/computer-science/2022)",
+    "url": "https://www.youtube.com/watch?v=-uleG_Vecis"
+   }
+  },
+  {
+   "id": "y-3b1b-llm-brief",
+   "yt": "LPZh9BOjkQs",
+   "lang": "en",
+   "kind": "mle",
+   "topic": "MLE",
+   "publisher": "3Blue1Brown",
+   "url": "https://www.youtube.com/watch?v=LPZh9BOjkQs",
+   "headline": "Large language models, explained briefly",
+   "kicker": "MLE · LLMS",
+   "published": "2024-11-20T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "3Blue1Brown"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "dm-cosine"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": null,
+     "cue": "How a model turns words into vectors and predicts the next one"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "3Blue1Brown",
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "YouTube channel: 3Blue1Brown (listed on vidiq.com/youtube-stats/channel/@3blue1brown/)",
+    "url": "https://www.youtube.com/watch?v=LPZh9BOjkQs"
+   }
   }
  ],
  "stories": []

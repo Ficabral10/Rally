@@ -1,5 +1,234 @@
 [
  {
+  "id": "y-3b1b-llm-brief",
+  "yt": "LPZh9BOjkQs",
+  "lang": "en",
+  "kind": "mle",
+  "topic": "MLE",
+  "publisher": "3Blue1Brown",
+  "url": "https://www.youtube.com/watch?v=LPZh9BOjkQs",
+  "headline": "Large language models, explained briefly",
+  "kicker": "MLE · LLMS",
+  "published": "2024-11-20T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "3Blue1Brown"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dm-cosine"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "How a model turns words into vectors and predicts the next one"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "3Blue1Brown",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "YouTube channel: 3Blue1Brown (listed on vidiq.com/youtube-stats/channel/@3blue1brown/)",
+   "url": "https://www.youtube.com/watch?v=LPZh9BOjkQs"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-27T09:50:35Z"
+ },
+ {
+  "id": "y-fs-100-cs-concepts",
+  "yt": "-uleG_Vecis",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=-uleG_Vecis",
+  "headline": "100+ computer science concepts, explained fast",
+  "kicker": "SWE · FUNDAMENTALS",
+  "published": "2022-05-04T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-26"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Bits to Big-O to graphs, the whole CS degree on fast forward"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 787,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "YouTube channel: Fireship (listed on rosetta.to/u/fireship/topic/computer-science/2022)",
+   "url": "https://www.youtube.com/watch?v=-uleG_Vecis"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-27T09:50:35Z"
+ },
+ {
+  "id": "y-fs-tech-interview",
+  "yt": "1t1_a1BZ04o",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=1t1_a1BZ04o",
+  "headline": "How not to fail a technical interview",
+  "kicker": "SWE · INTERVIEWS",
+  "published": "2022-08-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-0"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "What interviewers actually watch for while you solve"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 505,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "YouTube channel: Fireship (listed on rosetta.to/u/fireship/topic/programming/2022)",
+   "url": "https://www.youtube.com/watch?v=1t1_a1BZ04o"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-27T09:50:35Z"
+ },
+ {
+  "id": "y-fs-never-bug",
+  "yt": "X3jw1JVNdPE",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=X3jw1JVNdPE",
+  "headline": "How to never write a bug (sort of)",
+  "kicker": "SWE · TESTING",
+  "published": "2022-10-18T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dx-boundary-test"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Types, tests and the habits that catch bugs before users do"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 439,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "YouTube channel: Fireship (listed on rosetta.to/u/fireship/topic/programming/2022)",
+   "url": "https://www.youtube.com/watch?v=X3jw1JVNdPE"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-27T09:50:35Z"
+ },
+ {
+  "id": "y-fs-js-100-concepts",
+  "yt": "lkIFF4maKMU",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=lkIFF4maKMU",
+  "headline": "100+ JavaScript concepts in 12 minutes",
+  "kicker": "SWE · JAVASCRIPT",
+  "published": "2022-11-22T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-12"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Closures, the event loop, prototypes and the rest, rapid fire"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "duration": 743,
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "YouTube channel: Fireship (listed on rosetta.to/u/fireship/topic/programming/2022)",
+   "url": "https://www.youtube.com/watch?v=lkIFF4maKMU"
+  },
+  "type": "yt",
+  "addedAt": "2026-11-27T09:50:35Z"
+ },
+ {
   "id": "y-fs-time-enemy",
   "yt": "iMVgvkVJuDI",
   "lang": "en",
@@ -2199,47 +2428,6 @@
   },
   "type": "yt",
   "addedAt": "2026-11-24T13:49:14Z"
- },
- {
-  "id": "y-fs-devday-2026",
-  "yt": "No-JPdFvYWU",
-  "lang": "en",
-  "kind": "tech",
-  "topic": "Tech",
-  "publisher": "Fireship",
-  "url": "https://www.youtube.com/watch?v=No-JPdFvYWU",
-  "headline": "Fireship's rundown of OpenAI Dev Day 2026",
-  "kicker": "TECH · AI",
-  "published": "2026-10-01T00:00:00Z",
-  "evergreen": false,
-  "spoiler": false,
-  "match": {
-   "comp": "Fireship"
-  },
-  "moments": [
-   {
-    "label": "Watch",
-    "start": 0,
-    "end": null,
-    "cue": "Everything OpenAI shipped at Dev Day, fast"
-   }
-  ],
-  "sources": [],
-  "verify": {
-   "embeddable": "allowlisted",
-   "author": "Fireship",
-   "timestamps": "whole-video"
-  },
-  "playback": {
-   "provider": "YouTube",
-   "method": "IFrame API"
-  },
-  "discovery": {
-   "provider": "Web search: YouTube",
-   "url": "https://www.youtube.com/watch?v=No-JPdFvYWU"
-  },
-  "type": "yt",
-  "addedAt": "2026-11-24T09:43:15Z"
  },
  {
   "id": "y-fs-destructuring",
