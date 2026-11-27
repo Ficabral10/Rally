@@ -1,5 +1,95 @@
 [
  {
+  "id": "y-sq-condprob",
+  "type": "yt",
+  "yt": "_IgyaD7vOOA",
+  "lang": "en",
+  "kind": "mle",
+  "topic": "MLE",
+  "publisher": "StatQuest with Josh Starmer",
+  "url": "https://www.youtube.com/watch?v=_IgyaD7vOOA",
+  "headline": "Conditional probabilities, clearly explained",
+  "kicker": "MLE · PROBABILITY",
+  "published": "2022-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "StatQuest"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dm-pr-calc"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Watch how the denominator changes once you condition on something"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "StatQuest with Josh Starmer",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com)",
+   "url": "https://www.youtube.com/watch?v=_IgyaD7vOOA"
+  },
+  "addedAt": "2026-11-27T21:42:08Z"
+ },
+ {
+  "id": "y-cftv-bigo",
+  "type": "yt",
+  "yt": "RGD3iwqDdAE",
+  "lang": "pt",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Código Fonte TV",
+  "url": "https://www.youtube.com/watch?v=RGD3iwqDdAE",
+  "headline": "Big O, ou como saber se seu algoritmo aguenta",
+  "kicker": "SWE · ALGORITMOS",
+  "published": "2021-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Dicionário do Programador"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dx-two-loops"
+  },
+  "moments": [
+   {
+    "label": "Assistir",
+    "start": 0,
+    "end": null,
+    "cue": "Repara como dois loops aninhados viram n² e por que constante não importa"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Código Fonte TV",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com)",
+   "url": "https://www.youtube.com/watch?v=RGD3iwqDdAE"
+  },
+  "addedAt": "2026-11-27T21:42:08Z"
+ },
+ {
   "id": "y-sq-regtrees",
   "type": "yt",
   "yt": "g9c66TUylZ4",
