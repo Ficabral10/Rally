@@ -1,224 +1,26 @@
-{
- "clips": [
-  {
-   "id": "y-fs-js-100-concepts",
-   "yt": "lkIFF4maKMU",
-   "lang": "en",
-   "kind": "swe",
-   "topic": "SWE",
-   "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=lkIFF4maKMU",
-   "headline": "100+ JavaScript concepts in 12 minutes",
-   "kicker": "SWE · JAVASCRIPT",
-   "published": "2022-11-22T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "Fireship"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "d-12"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": null,
-     "cue": "Closures, the event loop, prototypes and the rest, rapid fire"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "Fireship",
-    "duration": 743,
-    "timestamps": "whole-video"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "YouTube channel: Fireship (listed on rosetta.to/u/fireship/topic/programming/2022)",
-    "url": "https://www.youtube.com/watch?v=lkIFF4maKMU"
-   }
-  },
-  {
-   "id": "y-fs-never-bug",
-   "yt": "X3jw1JVNdPE",
-   "lang": "en",
-   "kind": "swe",
-   "topic": "SWE",
-   "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=X3jw1JVNdPE",
-   "headline": "How to never write a bug (sort of)",
-   "kicker": "SWE · TESTING",
-   "published": "2022-10-18T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "Fireship"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "dx-boundary-test"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": null,
-     "cue": "Types, tests and the habits that catch bugs before users do"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "Fireship",
-    "duration": 439,
-    "timestamps": "whole-video"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "YouTube channel: Fireship (listed on rosetta.to/u/fireship/topic/programming/2022)",
-    "url": "https://www.youtube.com/watch?v=X3jw1JVNdPE"
-   }
-  },
-  {
-   "id": "y-fs-tech-interview",
-   "yt": "1t1_a1BZ04o",
-   "lang": "en",
-   "kind": "swe",
-   "topic": "SWE",
-   "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=1t1_a1BZ04o",
-   "headline": "How not to fail a technical interview",
-   "kicker": "SWE · INTERVIEWS",
-   "published": "2022-08-01T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "Fireship"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "d-0"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": null,
-     "cue": "What interviewers actually watch for while you solve"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "Fireship",
-    "duration": 505,
-    "timestamps": "whole-video"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "YouTube channel: Fireship (listed on rosetta.to/u/fireship/topic/programming/2022)",
-    "url": "https://www.youtube.com/watch?v=1t1_a1BZ04o"
-   }
-  },
-  {
-   "id": "y-fs-100-cs-concepts",
-   "yt": "-uleG_Vecis",
-   "lang": "en",
-   "kind": "swe",
-   "topic": "SWE",
-   "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=-uleG_Vecis",
-   "headline": "100+ computer science concepts, explained fast",
-   "kicker": "SWE · FUNDAMENTALS",
-   "published": "2022-05-04T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "Fireship"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "d-26"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": null,
-     "cue": "Bits to Big-O to graphs, the whole CS degree on fast forward"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "Fireship",
-    "duration": 787,
-    "timestamps": "whole-video"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "YouTube channel: Fireship (listed on rosetta.to/u/fireship/topic/computer-science/2022)",
-    "url": "https://www.youtube.com/watch?v=-uleG_Vecis"
-   }
-  },
-  {
-   "id": "y-3b1b-llm-brief",
-   "yt": "LPZh9BOjkQs",
-   "lang": "en",
-   "kind": "mle",
-   "topic": "MLE",
-   "publisher": "3Blue1Brown",
-   "url": "https://www.youtube.com/watch?v=LPZh9BOjkQs",
-   "headline": "Large language models, explained briefly",
-   "kicker": "MLE · LLMS",
-   "published": "2024-11-20T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "3Blue1Brown"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "dm-cosine"
-   },
-   "moments": [
-    {
-     "label": "Watch",
-     "start": 0,
-     "end": null,
-     "cue": "How a model turns words into vectors and predicts the next one"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "3Blue1Brown",
-    "timestamps": "whole-video"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "YouTube channel: 3Blue1Brown (listed on vidiq.com/youtube-stats/channel/@3blue1brown/)",
-    "url": "https://www.youtube.com/watch?v=LPZh9BOjkQs"
-   }
-  }
- ],
- "stories": []
-}
+{"clips": [
+ {"id": "y-fs-design-patterns", "type": "yt", "yt": "tv-_1er1mWI", "lang": "en", "kind": "swe", "topic": "SWE", "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=tv-_1er1mWI", "headline": "10 design patterns in 10 minutes", "kicker": "SWE · DESIGN",
+  "published": "2022-03-14T00:00:00Z", "evergreen": true, "spoiler": false, "match": {"comp": "Fireship"},
+  "follow": {"type": "try", "drill": "d-18"},
+  "moments": [{"label": "Watch", "start": 0, "end": 664, "cue": "Singleton, factory, observer and friends, plus when each one is overkill"}],
+  "sources": [], "verify": {"embeddable": "allowlisted", "author": "Fireship", "duration": 664, "timestamps": "whole-video"},
+  "playback": {"provider": "YouTube", "method": "IFrame API"},
+  "discovery": {"provider": "Rosetta archive: Fireship", "url": "https://rosetta.to/u/fireship/10-design-patterns-explained-in-10-minutes"}},
+ {"id": "y-3b1b-backprop", "type": "yt", "yt": "Ilg3gGewQ5U", "lang": "en", "kind": "mle", "topic": "MLE", "publisher": "3Blue1Brown",
+  "url": "https://www.youtube.com/watch?v=Ilg3gGewQ5U", "headline": "Backpropagation, intuitively", "kicker": "MLE · DEEP LEARNING",
+  "published": "2017-11-03T00:00:00Z", "evergreen": true, "spoiler": false, "match": {"comp": "3Blue1Brown"},
+  "follow": {"type": "try", "drill": "dm-train-score"},
+  "moments": [{"label": "Watch", "start": 0, "end": 767, "cue": "How each weight gets nudged, traced back from one wrong answer"}],
+  "sources": [], "verify": {"embeddable": "allowlisted", "author": "3Blue1Brown", "duration": 767, "timestamps": "whole-video"},
+  "playback": {"provider": "YouTube", "method": "IFrame API"},
+  "discovery": {"provider": "Web search (youtube.com)", "url": "https://www.youtube.com/watch?v=Ilg3gGewQ5U"}},
+ {"id": "y-cftv-bigdata", "type": "yt", "yt": "IpfE8B9H9cI", "lang": "pt", "kind": "swe", "topic": "SWE", "publisher": "Código Fonte TV",
+  "url": "https://www.youtube.com/watch?v=IpfE8B9H9cI", "headline": "Big Data, quando os dados não cabem numa máquina", "kicker": "SWE · DADOS",
+  "published": "2019-02-04T00:00:00Z", "evergreen": true, "spoiler": false, "match": {"comp": "Dicionário do Programador"},
+  "follow": {"type": "try", "drill": "dx-two-loops"},
+  "moments": [{"label": "Assistir", "start": 0, "end": null, "cue": "Volume, velocidade e variedade, e por que escala muda tudo"}],
+  "sources": [], "verify": {"embeddable": "allowlisted", "author": "Código Fonte TV", "timestamps": "whole-video"},
+  "playback": {"provider": "YouTube", "method": "IFrame API"},
+  "discovery": {"provider": "Web search (youtube.com)", "url": "https://www.youtube.com/watch?v=IpfE8B9H9cI"}}
+], "stories": []}
