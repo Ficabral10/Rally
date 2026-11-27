@@ -1,0 +1,17 @@
+{
+ "at": "2026-11-27T17:42:31Z",
+ "found": 4,
+ "clipsAdded": [
+  "y-cftv-tdd",
+  "y-cftv-cdn",
+  "y-sq-linreg",
+  "y-sq-regtrees"
+ ],
+ "storiesAdded": [],
+ "dropped": [],
+ "expired": 0,
+ "inventory": 221,
+ "inline": 221,
+ "portuguese": 23,
+ "build": "run-1127-1742-221"
+}

@@ -1,26 +1,181 @@
-{"clips": [
- {"id": "y-fs-design-patterns", "type": "yt", "yt": "tv-_1er1mWI", "lang": "en", "kind": "swe", "topic": "SWE", "publisher": "Fireship",
-  "url": "https://www.youtube.com/watch?v=tv-_1er1mWI", "headline": "10 design patterns in 10 minutes", "kicker": "SWE · DESIGN",
-  "published": "2022-03-14T00:00:00Z", "evergreen": true, "spoiler": false, "match": {"comp": "Fireship"},
-  "follow": {"type": "try", "drill": "d-18"},
-  "moments": [{"label": "Watch", "start": 0, "end": 664, "cue": "Singleton, factory, observer and friends, plus when each one is overkill"}],
-  "sources": [], "verify": {"embeddable": "allowlisted", "author": "Fireship", "duration": 664, "timestamps": "whole-video"},
-  "playback": {"provider": "YouTube", "method": "IFrame API"},
-  "discovery": {"provider": "Rosetta archive: Fireship", "url": "https://rosetta.to/u/fireship/10-design-patterns-explained-in-10-minutes"}},
- {"id": "y-3b1b-backprop", "type": "yt", "yt": "Ilg3gGewQ5U", "lang": "en", "kind": "mle", "topic": "MLE", "publisher": "3Blue1Brown",
-  "url": "https://www.youtube.com/watch?v=Ilg3gGewQ5U", "headline": "Backpropagation, intuitively", "kicker": "MLE · DEEP LEARNING",
-  "published": "2017-11-03T00:00:00Z", "evergreen": true, "spoiler": false, "match": {"comp": "3Blue1Brown"},
-  "follow": {"type": "try", "drill": "dm-train-score"},
-  "moments": [{"label": "Watch", "start": 0, "end": 767, "cue": "How each weight gets nudged, traced back from one wrong answer"}],
-  "sources": [], "verify": {"embeddable": "allowlisted", "author": "3Blue1Brown", "duration": 767, "timestamps": "whole-video"},
-  "playback": {"provider": "YouTube", "method": "IFrame API"},
-  "discovery": {"provider": "Web search (youtube.com)", "url": "https://www.youtube.com/watch?v=Ilg3gGewQ5U"}},
- {"id": "y-cftv-bigdata", "type": "yt", "yt": "IpfE8B9H9cI", "lang": "pt", "kind": "swe", "topic": "SWE", "publisher": "Código Fonte TV",
-  "url": "https://www.youtube.com/watch?v=IpfE8B9H9cI", "headline": "Big Data, quando os dados não cabem numa máquina", "kicker": "SWE · DADOS",
-  "published": "2019-02-04T00:00:00Z", "evergreen": true, "spoiler": false, "match": {"comp": "Dicionário do Programador"},
-  "follow": {"type": "try", "drill": "dx-two-loops"},
-  "moments": [{"label": "Assistir", "start": 0, "end": null, "cue": "Volume, velocidade e variedade, e por que escala muda tudo"}],
-  "sources": [], "verify": {"embeddable": "allowlisted", "author": "Código Fonte TV", "timestamps": "whole-video"},
-  "playback": {"provider": "YouTube", "method": "IFrame API"},
-  "discovery": {"provider": "Web search (youtube.com)", "url": "https://www.youtube.com/watch?v=IpfE8B9H9cI"}}
-], "stories": []}
+{
+ "clips": [
+  {
+   "id": "y-cftv-tdd",
+   "type": "yt",
+   "yt": "bLdEypr2e-8",
+   "lang": "pt",
+   "kind": "swe",
+   "topic": "SWE",
+   "publisher": "Código Fonte TV",
+   "url": "https://www.youtube.com/watch?v=bLdEypr2e-8",
+   "headline": "TDD, o teste vem antes do código",
+   "kicker": "SWE · TESTES",
+   "published": "2019-01-01T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "Dicionário do Programador"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "dx-boundary-test"
+   },
+   "moments": [
+    {
+     "label": "Assistir",
+     "start": 0,
+     "end": null,
+     "cue": "Vermelho, verde, refatora, e por que escrever o teste primeiro muda o design"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "Código Fonte TV",
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "Web search (youtube.com)",
+    "url": "https://www.youtube.com/watch?v=bLdEypr2e-8"
+   }
+  },
+  {
+   "id": "y-cftv-cdn",
+   "type": "yt",
+   "yt": "02rvd_7HcFY",
+   "lang": "pt",
+   "kind": "swe",
+   "topic": "SWE",
+   "publisher": "Código Fonte TV",
+   "url": "https://www.youtube.com/watch?v=02rvd_7HcFY",
+   "headline": "CDN, o conteúdo perto de quem pede",
+   "kicker": "SWE · INFRA",
+   "published": "2020-01-01T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "Dicionário do Programador"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "dx-rerank-latency"
+   },
+   "moments": [
+    {
+     "label": "Assistir",
+     "start": 0,
+     "end": null,
+     "cue": "Por que servir do servidor mais perto corta latência e alivia a origem"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "Código Fonte TV",
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "Web search (youtube.com)",
+    "url": "https://www.youtube.com/watch?v=02rvd_7HcFY"
+   }
+  },
+  {
+   "id": "y-sq-linreg",
+   "type": "yt",
+   "yt": "7ArmBVF2dCs",
+   "lang": "en",
+   "kind": "mle",
+   "topic": "MLE",
+   "publisher": "StatQuest with Josh Starmer",
+   "url": "https://www.youtube.com/watch?v=7ArmBVF2dCs",
+   "headline": "Linear regression, clearly explained",
+   "kicker": "MLE · REGRESSION",
+   "published": "2017-01-01T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "StatQuest"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "dm-baseline"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": null,
+     "cue": "Least squares, R-squared and the p-value, and what each one actually tells you"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "StatQuest with Josh Starmer",
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "Web search (youtube.com)",
+    "url": "https://www.youtube.com/watch?v=7ArmBVF2dCs"
+   }
+  },
+  {
+   "id": "y-sq-regtrees",
+   "type": "yt",
+   "yt": "g9c66TUylZ4",
+   "lang": "en",
+   "kind": "mle",
+   "topic": "MLE",
+   "publisher": "StatQuest with Josh Starmer",
+   "url": "https://www.youtube.com/watch?v=g9c66TUylZ4",
+   "headline": "Regression trees, clearly explained",
+   "kicker": "MLE · TREES",
+   "published": "2019-01-01T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "StatQuest"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "dm-train-score"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": null,
+     "cue": "How a tree picks its splits, and why you stop it before it memorizes the data"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "StatQuest with Josh Starmer",
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "Web search (youtube.com)",
+    "url": "https://www.youtube.com/watch?v=g9c66TUylZ4"
+   }
+  }
+ ],
+ "stories": []
+}
