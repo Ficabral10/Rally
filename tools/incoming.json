@@ -1,30 +1,56 @@
 {
  "clips": [
   {
-   "id": "y-fs-brainfk", "yt": "hdHjjBS4cs8", "lang": "en", "kind": "swe", "topic": "SWE",
-   "publisher": "Fireship", "url": "https://www.youtube.com/watch?v=hdHjjBS4cs8",
-   "headline": "Brainf**k in 100 seconds", "kicker": "SWE · LANGUAGES",
-   "published": "2021-12-10T00:00:00Z", "evergreen": true, "spoiler": false,
+   "id": "y-fs-this-js", "yt": "YOlr79NaAtQ", "lang": "en", "kind": "swe", "topic": "SWE",
+   "publisher": "Fireship", "url": "https://www.youtube.com/watch?v=YOlr79NaAtQ",
+   "headline": "What is this in JavaScript?", "kicker": "SWE · JAVASCRIPT",
+   "published": "2020-03-27T00:00:00Z", "evergreen": true, "spoiler": false,
    "match": {"comp": "Fireship"},
-   "follow": {"type": "try", "drill": "d-10"},
-   "moments": [{"label": "Watch", "start": 0, "end": null, "cue": "Eight commands, one tape of bytes and a pointer. That's the whole language"}],
+   "follow": {"type": "try", "drill": "d-18"},
+   "moments": [{"label": "Watch", "start": 0, "end": null, "cue": "Why this changes depending on how a function gets called"}],
    "sources": [],
-   "verify": {"embeddable": "allowlisted", "author": "Fireship", "duration": 130, "timestamps": "whole-video"},
+   "verify": {"embeddable": "allowlisted", "author": "Fireship", "duration": 397, "timestamps": "whole-video"},
    "playback": {"provider": "YouTube", "method": "IFrame API"},
-   "discovery": {"provider": "YouTube channel: Fireship (listed on rosetta.to/u/fireship/brainf-k-in-100-seconds)", "url": "https://www.youtube.com/watch?v=hdHjjBS4cs8"}
+   "discovery": {"provider": "YouTube channel: Fireship (listed on rosetta.to/u/fireship/page/10)", "url": "https://www.youtube.com/watch?v=YOlr79NaAtQ"}
   },
   {
-   "id": "y-fs-wild-ds", "yt": "6fnmXX8RK0s", "lang": "en", "kind": "swe", "topic": "SWE",
-   "publisher": "Fireship", "url": "https://www.youtube.com/watch?v=6fnmXX8RK0s",
-   "headline": "5 wild data structures worth knowing", "kicker": "SWE · DATA STRUCTURES",
-   "published": "2025-05-15T00:00:00Z", "evergreen": true, "spoiler": false,
+   "id": "y-fs-fancy-words", "yt": "4Zc9ci9L5wY", "lang": "en", "kind": "swe", "topic": "SWE",
+   "publisher": "Fireship", "url": "https://www.youtube.com/watch?v=4Zc9ci9L5wY",
+   "headline": "7 fancy words that make you sound like a 10x dev", "kicker": "SWE · VOCAB",
+   "published": "2020-11-23T00:00:00Z", "evergreen": true, "spoiler": false,
    "match": {"comp": "Fireship"},
-   "follow": {"type": "try", "drill": "dv-two-sum-set"},
-   "moments": [{"label": "Watch", "start": 0, "end": null, "cue": "B-trees, radix trees, ropes, Bloom filters and cuckoo hashing"}],
+   "follow": {"type": "try", "drill": "d-23"},
+   "moments": [{"label": "Watch", "start": 0, "end": null, "cue": "Jargon you'll hear in code review, finally explained"}],
    "sources": [],
-   "verify": {"embeddable": "allowlisted", "author": "Fireship", "duration": 269, "timestamps": "whole-video"},
+   "verify": {"embeddable": "allowlisted", "author": "Fireship", "duration": 505, "timestamps": "whole-video"},
    "playback": {"provider": "YouTube", "method": "IFrame API"},
-   "discovery": {"provider": "YouTube channel: Fireship (listed on rosetta.to/u/fireship/5-wild-data-structures-every-developer-should-know)", "url": "https://www.youtube.com/watch?v=6fnmXX8RK0s"}
+   "discovery": {"provider": "YouTube channel: Fireship (listed on rosetta.to/u/fireship/page/10)", "url": "https://www.youtube.com/watch?v=4Zc9ci9L5wY"}
+  },
+  {
+   "id": "y-fs-carbon", "yt": "-bHK0qmp06c", "lang": "en", "kind": "swe", "topic": "SWE",
+   "publisher": "Fireship", "url": "https://www.youtube.com/watch?v=-bHK0qmp06c",
+   "headline": "Carbon, Google's 2022 pitch for a C++ successor", "kicker": "SWE · LANGUAGES",
+   "published": "2022-07-22T00:00:00Z", "evergreen": true, "spoiler": false,
+   "match": {"comp": "Fireship"},
+   "follow": {"type": "try", "drill": "d-24"},
+   "moments": [{"label": "Watch", "start": 0, "end": null, "cue": "What Carbon promised C++ devs when it was announced"}],
+   "sources": [],
+   "verify": {"embeddable": "allowlisted", "author": "Fireship", "duration": 206, "timestamps": "whole-video"},
+   "playback": {"provider": "YouTube", "method": "IFrame API"},
+   "discovery": {"provider": "YouTube channel: Fireship (listed on rosetta.to/u/fireship/page/7)", "url": "https://www.youtube.com/watch?v=-bHK0qmp06c"}
+  },
+  {
+   "id": "y-fs-time-enemy", "yt": "iMVgvkVJuDI", "lang": "en", "kind": "swe", "topic": "SWE",
+   "publisher": "Fireship", "url": "https://www.youtube.com/watch?v=iMVgvkVJuDI",
+   "headline": "Time, a programmer's worst enemy", "kicker": "SWE · EDGE CASES",
+   "published": "2022-03-17T00:00:00Z", "evergreen": true, "spoiler": false,
+   "match": {"comp": "Fireship"},
+   "follow": {"type": "try", "drill": "dx-boundary-test"},
+   "moments": [{"label": "Watch", "start": 0, "end": null, "cue": "Why dates and time zones break so much code"}],
+   "sources": [],
+   "verify": {"embeddable": "allowlisted", "author": "Fireship", "duration": 186, "timestamps": "whole-video"},
+   "playback": {"provider": "YouTube", "method": "IFrame API"},
+   "discovery": {"provider": "YouTube channel: Fireship (listed on rosetta.to/u/fireship/page/7)", "url": "https://www.youtube.com/watch?v=iMVgvkVJuDI"}
   }
  ],
  "stories": []
