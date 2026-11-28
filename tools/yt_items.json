@@ -1,5 +1,230 @@
 [
  {
+  "id": "y-cftv-typescript",
+  "type": "yt",
+  "yt": "gmupEp468lY",
+  "lang": "pt",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Código Fonte TV",
+  "url": "https://www.youtube.com/watch?v=gmupEp468lY",
+  "headline": "TypeScript, o JavaScript com tipos",
+  "kicker": "SWE · WEB",
+  "published": "2020-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Código Fonte TV"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-17"
+  },
+  "moments": [
+   {
+    "label": "Assistir",
+    "start": 0,
+    "end": null,
+    "cue": "Por que pegar o erro de tipo antes de rodar economiza dor de cabeça"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Código Fonte TV",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com)",
+   "url": "https://www.youtube.com/watch?v=gmupEp468lY"
+  },
+  "addedAt": "2026-11-28T17:42:19Z"
+ },
+ {
+  "id": "y-cftv-react",
+  "type": "yt",
+  "yt": "NhUr8cwDiiM",
+  "lang": "pt",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Código Fonte TV",
+  "url": "https://www.youtube.com/watch?v=NhUr8cwDiiM",
+  "headline": "React, a interface feita de componentes",
+  "kicker": "SWE · WEB",
+  "published": "2020-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Código Fonte TV"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-10"
+  },
+  "moments": [
+   {
+    "label": "Assistir",
+    "start": 0,
+    "end": null,
+    "cue": "Repara como a tela vira peças reutilizáveis que reagem ao estado"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Código Fonte TV",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com)",
+   "url": "https://www.youtube.com/watch?v=NhUr8cwDiiM"
+  },
+  "addedAt": "2026-11-28T17:42:19Z"
+ },
+ {
+  "id": "y-sq-xgboost-2",
+  "type": "yt",
+  "yt": "8b1JEDvenQU",
+  "lang": "en",
+  "kind": "mle",
+  "topic": "MLE",
+  "publisher": "StatQuest with Josh Starmer",
+  "url": "https://www.youtube.com/watch?v=8b1JEDvenQU",
+  "headline": "XGBoost part 2: classification",
+  "kicker": "MLE · TREES",
+  "published": "2020-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "StatQuest with Josh Starmer"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dm-train-score"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Similarity scores, gain and pruning, tree by tree"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "StatQuest with Josh Starmer",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com)",
+   "url": "https://www.youtube.com/watch?v=8b1JEDvenQU"
+  },
+  "addedAt": "2026-11-28T17:42:19Z"
+ },
+ {
+  "id": "y-sq-design-matrix",
+  "type": "yt",
+  "yt": "CqLGvwi-5Pc",
+  "lang": "en",
+  "kind": "mle",
+  "topic": "MLE",
+  "publisher": "StatQuest with Josh Starmer",
+  "url": "https://www.youtube.com/watch?v=CqLGvwi-5Pc",
+  "headline": "Design matrices for linear models, clearly explained",
+  "kicker": "MLE · STATS",
+  "published": "2020-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "StatQuest with Josh Starmer"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dm-baseline"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "See how a grid of 0s and 1s turns groups into a regression"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "StatQuest with Josh Starmer",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com)",
+   "url": "https://www.youtube.com/watch?v=CqLGvwi-5Pc"
+  },
+  "addedAt": "2026-11-28T17:42:19Z"
+ },
+ {
+  "id": "y-fs-regex",
+  "type": "yt",
+  "yt": "sXQxhojSdZM",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=sXQxhojSdZM",
+  "headline": "Regular expressions in 100 seconds",
+  "kicker": "SWE · TOOLS",
+  "published": "2020-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-15"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "A few symbols that match, capture and replace text"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com)",
+   "url": "https://www.youtube.com/watch?v=sXQxhojSdZM"
+  },
+  "addedAt": "2026-11-28T17:42:19Z"
+ },
+ {
   "id": "y-cftv-frameworks",
   "type": "yt",
   "yt": "2zqzzTnfa0E",

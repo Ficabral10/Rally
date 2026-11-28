@@ -1,16 +1,16 @@
 {
  "clips": [
   {
-   "id": "y-fs-flexbox",
+   "id": "y-fs-regex",
    "type": "yt",
-   "yt": "K74l26pE4YA",
+   "yt": "sXQxhojSdZM",
    "lang": "en",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Fireship",
-   "url": "https://www.youtube.com/watch?v=K74l26pE4YA",
-   "headline": "CSS Flexbox in 100 seconds",
-   "kicker": "SWE · WEB",
+   "url": "https://www.youtube.com/watch?v=sXQxhojSdZM",
+   "headline": "Regular expressions in 100 seconds",
+   "kicker": "SWE · TOOLS",
    "published": "2020-01-01T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
@@ -19,14 +19,14 @@
    },
    "follow": {
     "type": "try",
-    "drill": "d-16"
+    "drill": "d-15"
    },
    "moments": [
     {
      "label": "Watch",
      "start": 0,
      "end": null,
-     "cue": "One axis, a few properties, and the layout lines itself up"
+     "cue": "A few symbols that match, capture and replace text"
     }
    ],
    "sources": [],
@@ -41,25 +41,25 @@
    },
    "discovery": {
     "provider": "Web search (youtube.com)",
-    "url": "https://www.youtube.com/watch?v=K74l26pE4YA"
+    "url": "https://www.youtube.com/watch?v=sXQxhojSdZM"
    }
   },
   {
-   "id": "y-sq-adaboost",
+   "id": "y-sq-design-matrix",
    "type": "yt",
-   "yt": "LsK-xG1cLYA",
+   "yt": "CqLGvwi-5Pc",
    "lang": "en",
    "kind": "mle",
    "topic": "MLE",
    "publisher": "StatQuest with Josh Starmer",
-   "url": "https://www.youtube.com/watch?v=LsK-xG1cLYA",
-   "headline": "AdaBoost, stump by stump",
-   "kicker": "MLE · CLASSIC ML",
+   "url": "https://www.youtube.com/watch?v=CqLGvwi-5Pc",
+   "headline": "Design matrices for linear models, clearly explained",
+   "kicker": "MLE · STATS",
    "published": "2020-01-01T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
-    "comp": "StatQuest"
+    "comp": "StatQuest with Josh Starmer"
    },
    "follow": {
     "type": "try",
@@ -70,7 +70,7 @@
      "label": "Watch",
      "start": 0,
      "end": null,
-     "cue": "Weak little stumps, each one fixing the last one's mistakes"
+     "cue": "See how a grid of 0s and 1s turns groups into a regression"
     }
    ],
    "sources": [],
@@ -85,25 +85,25 @@
    },
    "discovery": {
     "provider": "Web search (youtube.com)",
-    "url": "https://www.youtube.com/watch?v=LsK-xG1cLYA"
+    "url": "https://www.youtube.com/watch?v=CqLGvwi-5Pc"
    }
   },
   {
-   "id": "y-sq-gradboost-1",
+   "id": "y-sq-xgboost-2",
    "type": "yt",
-   "yt": "3CC4N4z3GJc",
+   "yt": "8b1JEDvenQU",
    "lang": "en",
    "kind": "mle",
    "topic": "MLE",
    "publisher": "StatQuest with Josh Starmer",
-   "url": "https://www.youtube.com/watch?v=3CC4N4z3GJc",
-   "headline": "Gradient boosting for regression, the main ideas",
-   "kicker": "MLE · CLASSIC ML",
+   "url": "https://www.youtube.com/watch?v=8b1JEDvenQU",
+   "headline": "XGBoost part 2: classification",
+   "kicker": "MLE · TREES",
    "published": "2020-01-01T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
-    "comp": "StatQuest"
+    "comp": "StatQuest with Josh Starmer"
    },
    "follow": {
     "type": "try",
@@ -114,7 +114,7 @@
      "label": "Watch",
      "start": 0,
      "end": null,
-     "cue": "Each new tree fits what the last ones got wrong, scaled down by a learning rate"
+     "cue": "Similarity scores, gain and pruning, tree by tree"
     }
    ],
    "sources": [],
@@ -129,107 +129,19 @@
    },
    "discovery": {
     "provider": "Web search (youtube.com)",
-    "url": "https://www.youtube.com/watch?v=3CC4N4z3GJc"
+    "url": "https://www.youtube.com/watch?v=8b1JEDvenQU"
    }
   },
   {
-   "id": "y-cftv-devops",
+   "id": "y-cftv-react",
    "type": "yt",
-   "yt": "iwf6kcvxeD4",
+   "yt": "NhUr8cwDiiM",
    "lang": "pt",
    "kind": "swe",
    "topic": "SWE",
    "publisher": "Código Fonte TV",
-   "url": "https://www.youtube.com/watch?v=iwf6kcvxeD4",
-   "headline": "DevOps, quando dev e ops param de brigar",
-   "kicker": "SWE · INFRA",
-   "published": "2020-01-01T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "Código Fonte TV"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "dx-boundary-test"
-   },
-   "moments": [
-    {
-     "label": "Assista",
-     "start": 0,
-     "end": null,
-     "cue": "Veja por que DevOps é cultura antes de ser ferramenta"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "Código Fonte TV",
-    "timestamps": "whole-video"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "Web search (youtube.com)",
-    "url": "https://www.youtube.com/watch?v=iwf6kcvxeD4"
-   }
-  },
-  {
-   "id": "y-cftv-microservices",
-   "type": "yt",
-   "yt": "_2bDOCTnbKc",
-   "lang": "pt",
-   "kind": "swe",
-   "topic": "SWE",
-   "publisher": "Código Fonte TV",
-   "url": "https://www.youtube.com/watch?v=_2bDOCTnbKc",
-   "headline": "Microsserviços, o sistema em pedaços",
-   "kicker": "SWE · ARQUITETURA",
-   "published": "2020-01-01T00:00:00Z",
-   "evergreen": true,
-   "spoiler": false,
-   "match": {
-    "comp": "Código Fonte TV"
-   },
-   "follow": {
-    "type": "try",
-    "drill": "dm-batching"
-   },
-   "moments": [
-    {
-     "label": "Assista",
-     "start": 0,
-     "end": null,
-     "cue": "Veja o que você ganha e o que paga ao quebrar o monolito"
-    }
-   ],
-   "sources": [],
-   "verify": {
-    "embeddable": "allowlisted",
-    "author": "Código Fonte TV",
-    "timestamps": "whole-video"
-   },
-   "playback": {
-    "provider": "YouTube",
-    "method": "IFrame API"
-   },
-   "discovery": {
-    "provider": "Web search (youtube.com)",
-    "url": "https://www.youtube.com/watch?v=_2bDOCTnbKc"
-   }
-  },
-  {
-   "id": "y-cftv-frameworks",
-   "type": "yt",
-   "yt": "2zqzzTnfa0E",
-   "lang": "pt",
-   "kind": "swe",
-   "topic": "SWE",
-   "publisher": "Código Fonte TV",
-   "url": "https://www.youtube.com/watch?v=2zqzzTnfa0E",
-   "headline": "Frameworks, o esqueleto que já vem pronto",
+   "url": "https://www.youtube.com/watch?v=NhUr8cwDiiM",
+   "headline": "React, a interface feita de componentes",
    "kicker": "SWE · WEB",
    "published": "2020-01-01T00:00:00Z",
    "evergreen": true,
@@ -239,14 +151,14 @@
    },
    "follow": {
     "type": "try",
-    "drill": "dx-boundary-test"
+    "drill": "d-10"
    },
    "moments": [
     {
-     "label": "Assista",
+     "label": "Assistir",
      "start": 0,
      "end": null,
-     "cue": "Veja a diferença entre usar uma biblioteca e viver dentro de um framework"
+     "cue": "Repara como a tela vira peças reutilizáveis que reagem ao estado"
     }
    ],
    "sources": [],
@@ -261,7 +173,51 @@
    },
    "discovery": {
     "provider": "Web search (youtube.com)",
-    "url": "https://www.youtube.com/watch?v=2zqzzTnfa0E"
+    "url": "https://www.youtube.com/watch?v=NhUr8cwDiiM"
+   }
+  },
+  {
+   "id": "y-cftv-typescript",
+   "type": "yt",
+   "yt": "gmupEp468lY",
+   "lang": "pt",
+   "kind": "swe",
+   "topic": "SWE",
+   "publisher": "Código Fonte TV",
+   "url": "https://www.youtube.com/watch?v=gmupEp468lY",
+   "headline": "TypeScript, o JavaScript com tipos",
+   "kicker": "SWE · WEB",
+   "published": "2020-01-01T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "Código Fonte TV"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "d-17"
+   },
+   "moments": [
+    {
+     "label": "Assistir",
+     "start": 0,
+     "end": null,
+     "cue": "Por que pegar o erro de tipo antes de rodar economiza dor de cabeça"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "Código Fonte TV",
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "Web search (youtube.com)",
+    "url": "https://www.youtube.com/watch?v=gmupEp468lY"
    }
   }
  ],
