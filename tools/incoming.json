@@ -1,17 +1,17 @@
 {
  "clips": [
   {
-   "id": "y-sq-pvalues",
+   "id": "y-sq-hclust",
    "type": "yt",
-   "yt": "vemZtEM63GY",
+   "yt": "7xHsRkOdVwo",
    "lang": "en",
    "kind": "mle",
    "topic": "MLE",
    "publisher": "StatQuest with Josh Starmer",
-   "url": "https://www.youtube.com/watch?v=vemZtEM63GY",
-   "headline": "p-values, what they are and how to read them",
-   "kicker": "MLE · STATS",
-   "published": "2021-01-01T00:00:00Z",
+   "url": "https://www.youtube.com/watch?v=7xHsRkOdVwo",
+   "headline": "Hierarchical clustering, merge by merge",
+   "kicker": "MLE · CLUSTERING",
+   "published": "2020-01-01T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -19,14 +19,14 @@
    },
    "follow": {
     "type": "try",
-    "drill": "dm-online-offline"
+    "drill": "dm-cosine"
    },
    "moments": [
     {
      "label": "Watch",
      "start": 0,
      "end": null,
-     "cue": "Watch why a small p-value isn't the same as a big effect"
+     "cue": "Watch how the closest pair keeps getting merged until one tree is left"
     }
    ],
    "sources": [],
@@ -41,21 +41,21 @@
    },
    "discovery": {
     "provider": "Web search (youtube.com)",
-    "url": "https://www.youtube.com/watch?v=vemZtEM63GY"
+    "url": "https://www.youtube.com/watch?v=7xHsRkOdVwo"
    }
   },
   {
-   "id": "y-sq-stderr",
+   "id": "y-sq-logreg-coef",
    "type": "yt",
-   "yt": "XNgt7F6FqDU",
+   "yt": "vN5cNN2-HWE",
    "lang": "en",
    "kind": "mle",
    "topic": "MLE",
    "publisher": "StatQuest with Josh Starmer",
-   "url": "https://www.youtube.com/watch?v=XNgt7F6FqDU",
-   "headline": "The standard error, clearly explained",
+   "url": "https://www.youtube.com/watch?v=vN5cNN2-HWE",
+   "headline": "Logistic regression coefficients, what they actually mean",
    "kicker": "MLE · STATS",
-   "published": "2021-01-01T00:00:00Z",
+   "published": "2020-01-01T00:00:00Z",
    "evergreen": true,
    "spoiler": false,
    "match": {
@@ -63,14 +63,14 @@
    },
    "follow": {
     "type": "try",
-    "drill": "dm-online-offline"
+    "drill": "dm-calibration"
    },
    "moments": [
     {
      "label": "Watch",
      "start": 0,
      "end": null,
-     "cue": "Watch how the spread of the mean shrinks as you add samples"
+     "cue": "Watch why the coefficients live on the log(odds) scale"
     }
    ],
    "sources": [],
@@ -85,7 +85,95 @@
    },
    "discovery": {
     "provider": "Web search (youtube.com)",
-    "url": "https://www.youtube.com/watch?v=XNgt7F6FqDU"
+    "url": "https://www.youtube.com/watch?v=vN5cNN2-HWE"
+   }
+  },
+  {
+   "id": "y-sq-logreg-mle",
+   "type": "yt",
+   "yt": "BfKanl1aSG0",
+   "lang": "en",
+   "kind": "mle",
+   "topic": "MLE",
+   "publisher": "StatQuest with Josh Starmer",
+   "url": "https://www.youtube.com/watch?v=BfKanl1aSG0",
+   "headline": "Fitting logistic regression with maximum likelihood",
+   "kicker": "MLE · STATS",
+   "published": "2020-01-01T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "StatQuest"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "dm-calibration"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": null,
+     "cue": "Watch how it picks the squiggle that makes the data most likely"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "StatQuest with Josh Starmer",
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "Web search (youtube.com)",
+    "url": "https://www.youtube.com/watch?v=BfKanl1aSG0"
+   }
+  },
+  {
+   "id": "y-cftv-mvc",
+   "type": "yt",
+   "yt": "jyTNhT67ZyY",
+   "lang": "pt",
+   "kind": "swe",
+   "topic": "SWE",
+   "publisher": "Código Fonte TV",
+   "url": "https://www.youtube.com/watch?v=jyTNhT67ZyY",
+   "headline": "MVC, quem faz o quê numa aplicação",
+   "kicker": "SWE · ARQUITETURA",
+   "published": "2020-01-01T00:00:00Z",
+   "evergreen": true,
+   "spoiler": false,
+   "match": {
+    "comp": "Código Fonte TV"
+   },
+   "follow": {
+    "type": "try",
+    "drill": "dx-boundary-test"
+   },
+   "moments": [
+    {
+     "label": "Watch",
+     "start": 0,
+     "end": null,
+     "cue": "Veja como model, view e controller dividem o trabalho"
+    }
+   ],
+   "sources": [],
+   "verify": {
+    "embeddable": "allowlisted",
+    "author": "Código Fonte TV",
+    "timestamps": "whole-video"
+   },
+   "playback": {
+    "provider": "YouTube",
+    "method": "IFrame API"
+   },
+   "discovery": {
+    "provider": "Web search (youtube.com)",
+    "url": "https://www.youtube.com/watch?v=jyTNhT67ZyY"
    }
   }
  ],

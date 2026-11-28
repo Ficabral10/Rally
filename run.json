@@ -1,1 +1,1 @@
-{"at": "2026-11-28T05:42:25Z", "found": 2, "clipsAdded": ["y-sq-pvalues", "y-sq-stderr"], "storiesAdded": [], "dropped": [], "expired": 0, "inventory": 227, "inline": 227, "portuguese": 25, "build": "run-1128-0542-227"}
+{"at": "2026-11-28T09:41:36Z", "found": 4, "clipsAdded": ["y-sq-hclust", "y-sq-logreg-coef", "y-sq-logreg-mle", "y-cftv-mvc"], "storiesAdded": [], "dropped": [], "expired": 0, "inventory": 231, "inline": 231, "portuguese": 26, "build": "run-1128-0941-231"}

@@ -1,5 +1,185 @@
 [
  {
+  "id": "y-cftv-mvc",
+  "type": "yt",
+  "yt": "jyTNhT67ZyY",
+  "lang": "pt",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Código Fonte TV",
+  "url": "https://www.youtube.com/watch?v=jyTNhT67ZyY",
+  "headline": "MVC, quem faz o quê numa aplicação",
+  "kicker": "SWE · ARQUITETURA",
+  "published": "2020-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Código Fonte TV"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dx-boundary-test"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Veja como model, view e controller dividem o trabalho"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Código Fonte TV",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com)",
+   "url": "https://www.youtube.com/watch?v=jyTNhT67ZyY"
+  },
+  "addedAt": "2026-11-28T09:41:36Z"
+ },
+ {
+  "id": "y-sq-logreg-mle",
+  "type": "yt",
+  "yt": "BfKanl1aSG0",
+  "lang": "en",
+  "kind": "mle",
+  "topic": "MLE",
+  "publisher": "StatQuest with Josh Starmer",
+  "url": "https://www.youtube.com/watch?v=BfKanl1aSG0",
+  "headline": "Fitting logistic regression with maximum likelihood",
+  "kicker": "MLE · STATS",
+  "published": "2020-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "StatQuest"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dm-calibration"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Watch how it picks the squiggle that makes the data most likely"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "StatQuest with Josh Starmer",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com)",
+   "url": "https://www.youtube.com/watch?v=BfKanl1aSG0"
+  },
+  "addedAt": "2026-11-28T09:41:36Z"
+ },
+ {
+  "id": "y-sq-logreg-coef",
+  "type": "yt",
+  "yt": "vN5cNN2-HWE",
+  "lang": "en",
+  "kind": "mle",
+  "topic": "MLE",
+  "publisher": "StatQuest with Josh Starmer",
+  "url": "https://www.youtube.com/watch?v=vN5cNN2-HWE",
+  "headline": "Logistic regression coefficients, what they actually mean",
+  "kicker": "MLE · STATS",
+  "published": "2020-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "StatQuest"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dm-calibration"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Watch why the coefficients live on the log(odds) scale"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "StatQuest with Josh Starmer",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com)",
+   "url": "https://www.youtube.com/watch?v=vN5cNN2-HWE"
+  },
+  "addedAt": "2026-11-28T09:41:36Z"
+ },
+ {
+  "id": "y-sq-hclust",
+  "type": "yt",
+  "yt": "7xHsRkOdVwo",
+  "lang": "en",
+  "kind": "mle",
+  "topic": "MLE",
+  "publisher": "StatQuest with Josh Starmer",
+  "url": "https://www.youtube.com/watch?v=7xHsRkOdVwo",
+  "headline": "Hierarchical clustering, merge by merge",
+  "kicker": "MLE · CLUSTERING",
+  "published": "2020-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "StatQuest"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dm-cosine"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Watch how the closest pair keeps getting merged until one tree is left"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "StatQuest with Josh Starmer",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com)",
+   "url": "https://www.youtube.com/watch?v=7xHsRkOdVwo"
+  },
+  "addedAt": "2026-11-28T09:41:36Z"
+ },
+ {
   "id": "y-sq-stderr",
   "type": "yt",
   "yt": "XNgt7F6FqDU",
