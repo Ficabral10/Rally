@@ -1,5 +1,95 @@
 [
  {
+  "id": "y-sq-crossent",
+  "type": "yt",
+  "yt": "6ArSys5qHAU",
+  "lang": "en",
+  "kind": "mle",
+  "topic": "MLE",
+  "publisher": "StatQuest with Josh Starmer",
+  "url": "https://www.youtube.com/watch?v=6ArSys5qHAU",
+  "headline": "Cross entropy, the loss that punishes confident mistakes",
+  "kicker": "MLE · LOSS",
+  "published": "2021-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "StatQuest"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dm-calibration"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Watch how the loss blows up when the model is sure and wrong"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "StatQuest with Josh Starmer",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com)",
+   "url": "https://www.youtube.com/watch?v=6ArSys5qHAU"
+  },
+  "addedAt": "2026-11-28T01:42:32Z"
+ },
+ {
+  "id": "y-cftv-estdados",
+  "type": "yt",
+  "yt": "EfF1M7myAyY",
+  "lang": "pt",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Código Fonte TV",
+  "url": "https://www.youtube.com/watch?v=EfF1M7myAyY",
+  "headline": "Estrutura de dados, a escolha que decide o custo",
+  "kicker": "SWE · ESTRUTURAS",
+  "published": "2021-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Dicionário do Programador"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dx-heap-median"
+  },
+  "moments": [
+   {
+    "label": "Assistir",
+    "start": 0,
+    "end": null,
+    "cue": "Repara como a mesma tarefa fica barata ou cara dependendo da estrutura"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Código Fonte TV",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com)",
+   "url": "https://www.youtube.com/watch?v=EfF1M7myAyY"
+  },
+  "addedAt": "2026-11-28T01:42:32Z"
+ },
+ {
   "id": "y-sq-condprob",
   "type": "yt",
   "yt": "_IgyaD7vOOA",
