@@ -1,5 +1,275 @@
 [
  {
+  "id": "y-cftv-frameworks",
+  "type": "yt",
+  "yt": "2zqzzTnfa0E",
+  "lang": "pt",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Código Fonte TV",
+  "url": "https://www.youtube.com/watch?v=2zqzzTnfa0E",
+  "headline": "Frameworks, o esqueleto que já vem pronto",
+  "kicker": "SWE · WEB",
+  "published": "2020-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Código Fonte TV"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dx-boundary-test"
+  },
+  "moments": [
+   {
+    "label": "Assista",
+    "start": 0,
+    "end": null,
+    "cue": "Veja a diferença entre usar uma biblioteca e viver dentro de um framework"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Código Fonte TV",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com)",
+   "url": "https://www.youtube.com/watch?v=2zqzzTnfa0E"
+  },
+  "addedAt": "2026-11-28T13:42:11Z"
+ },
+ {
+  "id": "y-cftv-microservices",
+  "type": "yt",
+  "yt": "_2bDOCTnbKc",
+  "lang": "pt",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Código Fonte TV",
+  "url": "https://www.youtube.com/watch?v=_2bDOCTnbKc",
+  "headline": "Microsserviços, o sistema em pedaços",
+  "kicker": "SWE · ARQUITETURA",
+  "published": "2020-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Código Fonte TV"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dm-batching"
+  },
+  "moments": [
+   {
+    "label": "Assista",
+    "start": 0,
+    "end": null,
+    "cue": "Veja o que você ganha e o que paga ao quebrar o monolito"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Código Fonte TV",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com)",
+   "url": "https://www.youtube.com/watch?v=_2bDOCTnbKc"
+  },
+  "addedAt": "2026-11-28T13:42:11Z"
+ },
+ {
+  "id": "y-cftv-devops",
+  "type": "yt",
+  "yt": "iwf6kcvxeD4",
+  "lang": "pt",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Código Fonte TV",
+  "url": "https://www.youtube.com/watch?v=iwf6kcvxeD4",
+  "headline": "DevOps, quando dev e ops param de brigar",
+  "kicker": "SWE · INFRA",
+  "published": "2020-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Código Fonte TV"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dx-boundary-test"
+  },
+  "moments": [
+   {
+    "label": "Assista",
+    "start": 0,
+    "end": null,
+    "cue": "Veja por que DevOps é cultura antes de ser ferramenta"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Código Fonte TV",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com)",
+   "url": "https://www.youtube.com/watch?v=iwf6kcvxeD4"
+  },
+  "addedAt": "2026-11-28T13:42:11Z"
+ },
+ {
+  "id": "y-sq-gradboost-1",
+  "type": "yt",
+  "yt": "3CC4N4z3GJc",
+  "lang": "en",
+  "kind": "mle",
+  "topic": "MLE",
+  "publisher": "StatQuest with Josh Starmer",
+  "url": "https://www.youtube.com/watch?v=3CC4N4z3GJc",
+  "headline": "Gradient boosting for regression, the main ideas",
+  "kicker": "MLE · CLASSIC ML",
+  "published": "2020-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "StatQuest"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dm-train-score"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Each new tree fits what the last ones got wrong, scaled down by a learning rate"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "StatQuest with Josh Starmer",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com)",
+   "url": "https://www.youtube.com/watch?v=3CC4N4z3GJc"
+  },
+  "addedAt": "2026-11-28T13:42:11Z"
+ },
+ {
+  "id": "y-sq-adaboost",
+  "type": "yt",
+  "yt": "LsK-xG1cLYA",
+  "lang": "en",
+  "kind": "mle",
+  "topic": "MLE",
+  "publisher": "StatQuest with Josh Starmer",
+  "url": "https://www.youtube.com/watch?v=LsK-xG1cLYA",
+  "headline": "AdaBoost, stump by stump",
+  "kicker": "MLE · CLASSIC ML",
+  "published": "2020-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "StatQuest"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "dm-baseline"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "Weak little stumps, each one fixing the last one's mistakes"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "StatQuest with Josh Starmer",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com)",
+   "url": "https://www.youtube.com/watch?v=LsK-xG1cLYA"
+  },
+  "addedAt": "2026-11-28T13:42:11Z"
+ },
+ {
+  "id": "y-fs-flexbox",
+  "type": "yt",
+  "yt": "K74l26pE4YA",
+  "lang": "en",
+  "kind": "swe",
+  "topic": "SWE",
+  "publisher": "Fireship",
+  "url": "https://www.youtube.com/watch?v=K74l26pE4YA",
+  "headline": "CSS Flexbox in 100 seconds",
+  "kicker": "SWE · WEB",
+  "published": "2020-01-01T00:00:00Z",
+  "evergreen": true,
+  "spoiler": false,
+  "match": {
+   "comp": "Fireship"
+  },
+  "follow": {
+   "type": "try",
+   "drill": "d-16"
+  },
+  "moments": [
+   {
+    "label": "Watch",
+    "start": 0,
+    "end": null,
+    "cue": "One axis, a few properties, and the layout lines itself up"
+   }
+  ],
+  "sources": [],
+  "verify": {
+   "embeddable": "allowlisted",
+   "author": "Fireship",
+   "timestamps": "whole-video"
+  },
+  "playback": {
+   "provider": "YouTube",
+   "method": "IFrame API"
+  },
+  "discovery": {
+   "provider": "Web search (youtube.com)",
+   "url": "https://www.youtube.com/watch?v=K74l26pE4YA"
+  },
+  "addedAt": "2026-11-28T13:42:11Z"
+ },
+ {
   "id": "y-cftv-mvc",
   "type": "yt",
   "yt": "jyTNhT67ZyY",
