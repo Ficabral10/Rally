@@ -1,0 +1,15 @@
+{
+ "at": "2026-11-28T05:42:25Z",
+ "found": 2,
+ "clipsAdded": [
+  "y-sq-pvalues",
+  "y-sq-stderr"
+ ],
+ "storiesAdded": [],
+ "dropped": [],
+ "expired": 0,
+ "inventory": 227,
+ "inline": 227,
+ "portuguese": 25,
+ "build": "run-1128-0542-227"
+}
